@@ -1,0 +1,31 @@
+[
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-4",
+        "model_name": "gpt-4-turbo-preview",
+        "api_key": "api",
+        "generate_args": {
+            "temperature": 0.5
+        }
+    },
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-3.5-turbo-0125",
+        "model_name": "gpt-3.5-turbo-0125",
+        "api_key": "api",
+        "generate_args": {
+            "max_tokens": 2000,
+            "temperature": 0.8
+        }
+    },
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-4-turbo-preview",
+        "model_name": "gpt-4-turbo-preview",
+        "api_key": "api",
+        "generate_args": {
+            "max_tokens": 1000,
+            "temperature": 0.8
+        }
+    }
+]

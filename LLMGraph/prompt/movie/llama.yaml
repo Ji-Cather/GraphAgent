@@ -1,0 +1,128 @@
+choose_genre:  &choose_genre |-
+  
+  {role_description}
+  
+  Here's your memory of rating movies: 
+  {memory}
+  
+  {movie_description}
+
+  {human_instruction}
+  
+  - If you made up your choice, respond in this format:
+  Thought: (Your views on these movie genres)
+  Action: Choose
+  Action Input: (A list of movie genres)
+  
+  - If you chose none of them, respond in this format:
+  Thought: (Your views on these movie genres)
+  Action: Giveup
+  Action Input: I choose none of these options.
+  
+
+  Respond:
+  {agent_scratchpad}
+
+
+rate_movie:  &rate_movie |-
+  
+  {role_description}
+  
+  And you have rated these movies, so you may avoid giving repeated ratings:
+  {watched_movie_names}
+
+
+  {movie_description}
+
+
+
+  Here's your memory of rating movies: 
+  {memory}
+
+ 
+  You should give your rating scores to at least {min_rate} movies, at most {max_rate} movies. 
+  You should give a rating score of this movie, from 0 to 5; just make a rating score based on your personal preference or other reasons.
+  
+  {human_instruction}
+  
+  You are interested in these movie genres, and you may give higher scores of these genres:
+  {interested_genres}
+
+  And you should respond in this format, return a list of your movie ratings:
+  [
+    {{
+      "movie": "(str, Movie_name)", 
+      "thought": "(str, Your reason for making this rating score, you gice this score based on personal preference or other reasons)",
+      "rating":(integer,rating_score)
+    }}
+    ...
+    (repeat this for at least {min_rate} movies, at most {max_rate} movies, try to rate as much movies as possible!)
+  ]
+
+  Respond:
+  {agent_scratchpad}
+
+watch_plan: &watch_plan |-
+  {role_description}.
+
+  You need to make a plan to {task}, {requirement}
+  
+  Respond in this format, give me only one list:
+  [( (number of movies watched online), (number of movies watched in the cinema))] 
+  
+  Now Respond:
+  {agent_scratchpad}
+
+watch_movie_batch: &watch_movie_batch |-
+  {role_description}.
+  
+  Here's some information about the available movies:
+  {movie_description}
+  
+  Here's your memory of rating movies: 
+  {memory}
+  
+  {instruction}
+
+  {agent_scratchpad}
+
+movie_genre_age_instruction: &movie_genre_age_instruction |-
+  People of different ages may prefer different movie genres:
+
+  Children (Up to 12 years old):
+  animated films, family-friendly films, and fantasy movies are popular. 
+  
+  Teenagers (13 to 19 years old):
+  young adult fiction, comedies, and action/superhero movies
+  
+  Young Adults (20s to 30s):
+  romantic comedies, thrillers/horror, and dramas
+
+  Adults (40s to 60s):
+  mature dramas, historical films/biopics, and comedies with sophisticated humor
+  
+  Seniors (65 and older):
+  classic films, family dramas, and documentaries
+
+movie_genre_job_instruction: &movie_genre_job_instruction |-
+  For people with different jobs, creative professionals may be attracted to visually-striking or innovative films, 
+  while scientists and engineers may be interested in science fiction 
+  or technology-focused movies. Lawyers and crime analysts may prefer 
+  legal dramas and crime thrillers, while healthcare professionals 
+  may be drawn to medical dramas or documentaries. 
+  Business executives and financiers may enjoy movies that showcase 
+  high-stakes negotiations and corporate espionage. 
+  Teachers and educators may appreciate inspirational stories about the 
+  power of education.
+  
+  Men generally enjoy action, science fiction, thriller, horror, and war movies. 
+  Women tend to prefer romance, drama, comedy, musicals, and fantasy films.
+
+
+
+movie_rate_instruction: &movie_rate_instruction |-
+  Based on prior knowledge, people may have biases based on their gender and preferences when rating movies. 
+  They may be more inclined to give higher ratings to movies they are interested in. 
+  
+  For example, men may tend to give higher ratings to action, science fiction, thriller, horror, and war movies; 
+  While women may favor romantic, drama, comedy, musical, and fantasy movies with higher ratings.
