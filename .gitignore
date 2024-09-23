@@ -15,3 +15,4 @@ logs
 LLMGraph/tasks
 runs
 evaluate
+netcraft_gnn
