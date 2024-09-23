@@ -1,8 +1,7 @@
-# LLMGraph
+# GraphAgent
+LLM-based Agent Framework for Large-Scale Dynamic Graph Generation.
 
-LLM agent framework for large scale paper citation network generation
-
-## LLMGraph Framework
+## GraphAgent Framework
 Before we begin, please set your api key in "LLMGraph\llms\default_model_configs.json", and format it like:
 ```json
 [{
