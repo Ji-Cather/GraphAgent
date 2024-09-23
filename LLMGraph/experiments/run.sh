@@ -7,8 +7,6 @@ python main.py --task tweets --config "large" --build
 python main.py --task tweets --config "llama_test_7000_p0.0025" --build
 python main.py --task tweets --config "llama_test_7000_p0.0025_hubFalse" --build
 
-# gnn experiments:
-bash netcraft_gnn\exp_prd.sh
 
 # baselines:
 # refer to LLMGraph\baselines
