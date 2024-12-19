@@ -1,0 +1,3312 @@
+[
+    {
+        "page_content":"Visited a breathtaking exhibition at the local museum today. The art was truly inspiring! #art #culture",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":0,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Exploring the vibrant street art scene in the city brings a whole new perspective to urban culture. #streetart #urbanart",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":1,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Delving into the rich history of ancient civilizations through art is truly mesmerizing. #history #artifacts",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":2,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Finding inspiration in the beauty of traditional folk art from around the world. #folkart #globalculture",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":3,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Love exploring urban art! What's your favorite piece?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":4,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"The intersection of art and history is so fascinating! What's your favorite art movement?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":5,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"That sounds amazing! I've been meaning to check out that exhibition. What was your favorite piece?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":6,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just discovered the most incredible fusion of traditional and modern art. The possibilities are endless! #artmeetsculture",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":7,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"I completely agree! Ancient civilizations have so much to teach us about art and culture. Have you come across any fascinating artifacts recently?",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":8,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Just spent the day at the museum and I'm still reeling from the experience! The preservation of cultural heritage is so important. #museumlife #culturalheritage",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"history",
+        "tweet_idx":9,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"That sounds amazing! What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":10,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Discovering the diversity of cultures through art is a lifelong journey! What's your favorite cultural art form? #art #culture",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":11,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"I completely agree! Folk art has so much character and history behind it.",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":12,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Just learned about an amazing new exhibition on ancient art at the local museum! Can't wait to check it out. #art #history",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":13,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"I'm loving the vibe of traditional folk art too! What's your favorite piece?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":14,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just learned about the fascinating history of street art! Anyone have any recommendations for must-see murals in the city? #streetart #urbanexploration",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":15,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"I completely agree! Ancient civilizations have so much to teach us about art and culture.",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":16,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Just learned about a new exhibit on cultural heritage at the local museum. Can't wait to check it out! #museum #culturalheritage",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":17,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"That sounds amazing! What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":18,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Discovering the beauty of diverse cultures through art is a true passion of mine! What inspires you? #art #culture",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":19,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Love the sound of that exhibition! Which pieces stood out to you?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":20,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Just discovered an amazing art collective in my neighborhood! The creativity is thriving #artcommunity #localart",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":21,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"I completely agree! The ancient civilizations have so much to teach us about art and culture.",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":22,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Love the idea of exploring traditional folk art! Can you share some of your favorite pieces?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":23,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just discovered an amazing local artist who combines traditional techniques with modern themes. The fusion is stunning! #art #culture",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":24,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"I completely agree! Folk art is a treasure trove of cultural heritage.",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":25,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Just spent the day exploring the city's museum and fell in love with the ancient artifacts on display! #museumlove #history",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":26,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Beautiful! I'm also fascinated by traditional folk art. What's your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":27,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just discovered an amazing art exhibition in my city! Can't wait to share my experiences with you all #art #exhibition",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":28,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"That sounds amazing! I'd love to hear more about the exhibition.",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":29,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"I completely agree! Ancient civilizations are so fascinating.",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":30,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Just discovered this amazing street artist in the city! Their work is incredible. #streetart #urbanart",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":31,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"I'm loving the mix of traditional and modern elements in folk art!",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":32,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just learned about an ancient civilization's art techniques that are still used today Mind blown! #art #history",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":33,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"What a wonderful experience! I'm a curator of historical artifacts and I'd love to know more about the exhibition.",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":34,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"I'm fascinated by traditional folk art! As a curator, I've had the opportunity to work with some stunning pieces. Anyone have any favorite folk art styles? #folkart #globalculture",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":35,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"The intersection of art and history is where my heart is. As a curator, I'm always on the lookout for new discoveries and perspectives. #art #history",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":36,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Loved the exhibition too! What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":37,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just discovered the stunning beauty of traditional Batik art from Indonesia. Anyone else a fan of this ancient technique? #BatikArt #TraditionalCrafts",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":38,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just learned about the recent advancements in AI-powered robotics! Exciting times ahead! #AI #Robotics",
+        "user_index":4,
+        "user_name":"TechTitan2020",
+        "topic":"AI and Robotics",
+        "tweet_idx":39,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":4
+    },
+    {
+        "page_content":"Kicking off my day with a morning run! Nothing beats the feeling of a great workout Ready to tackle the day! #fitnessmotivation #wellness",
+        "user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"fitness",
+        "tweet_idx":40,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":5
+    },
+    {
+        "page_content":"Just whipped up a delicious and healthy smoothie bowl for breakfast! Recipe coming soon on my blog! #healthyliving #breakfastinspo",
+        "user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"healthyliving",
+        "tweet_idx":41,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":5
+    },
+    {
+        "page_content":"In the midst of all the art and culture, let's not forget about the impact of human actions on the environment. Sustainability should be at the forefront of our minds. #ClimateAction #Sustainability",
+        "user_index":6,
+        "user_name":"EarthLover3000",
+        "topic":"environmental activism",
+        "tweet_idx":42,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":6
+    },
+    {
+        "page_content":"Art and culture are indeed a great source of inspiration for any programmer! The attention to detail and creativity can definitely influence our coding style. #artMeetsCode",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"arts & culture",
+        "tweet_idx":43,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"@creativefusions I've always been fascinated by street art's ability to convey powerful messages. Have you seen any notable murals recently?",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"arts & culture",
+        "tweet_idx":44,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Just found some amazing art-related tweets! Anyone have any book recs that explore the intersection of art and literature? #art #lit",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"arts & culture",
+        "tweet_idx":45,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"Looking for some literary fiction that explores the world of art and culture. Any recommendations? #bookrecs #art #lit",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"literary fiction",
+        "tweet_idx":46,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"Just learned about the latest advancements in AI-powered robots! Can't wait to see how they'll transform industries. #AI #Robotics",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":47,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Cybersecurity is more crucial than ever! Staying updated on the latest threats and defenses is a must. #Cybersecurity",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"Cybersecurity",
+        "tweet_idx":48,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Just learned about a fascinating art exhibition at the local museum. #art #culture",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"arts & culture",
+        "tweet_idx":49,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"What's your take on the current state of global politics? Let's discuss! #politics #globalaffairs",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"politics",
+        "tweet_idx":50,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"I love how street art adds character to a city! Have you seen any impressive murals lately?",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"arts & culture",
+        "tweet_idx":51,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Just finished a fascinating book on the history of ancient art. Highly recommend it to anyone interested in the subject! #art #history",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"history",
+        "tweet_idx":52,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Anyone have any book recommendations for romance novels with strong female leads? #romance #bookreview",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"romance",
+        "tweet_idx":53,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Love the energy of street art!",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":54,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Planning my next adventure to explore the vibrant art scene in Tokyo! Who's been? #arttravel #tokyo",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "tweet_idx":55,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Just had an amazing discussion on AI applications in healthcare with a fellow expert. Exciting times ahead! #AIinhealthcare #machinelearning",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and machine learning",
+        "tweet_idx":56,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"What are your thoughts on the ethics of AI decision-making? Let's explore this topic further! #AIethics #machinelearning",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and machine learning",
+        "tweet_idx":57,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"Exciting to see people engaging with art and culture! However, let's not forget to consider the environmental impact of our creative pursuits. Sustainability in the arts is crucial for a greener tomorrow! #SustainabilityInArt #ClimateAction",
+        "user_index":15,
+        "user_name":"EcoWarrior95",
+        "topic":"Sustainability",
+        "tweet_idx":58,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":15
+    },
+    {
+        "page_content":"Did the exhibition highlight any eco-friendly practices or sustainable art initiatives?",
+        "user_index":15,
+        "user_name":"EcoWarrior95",
+        "topic":"arts & culture",
+        "tweet_idx":59,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":15
+    },
+    {
+        "page_content":"Excited to explore more of NYC's vibrant food scene! Anyone know some hidden gems? #Foodie #NYC #RestaurantReview",
+        "user_index":16,
+        "user_name":"foodie_in_nyc",
+        "topic":"Food",
+        "tweet_idx":60,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":16
+    },
+    {
+        "page_content":"Just learned about the latest breakthrough in black hole research! The mysteries of the cosmos continue to amaze me #astrophysics #spaceexploration",
+        "user_index":17,
+        "user_name":"spacecowboy22",
+        "topic":"astrophysics",
+        "tweet_idx":61,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":17
+    },
+    {
+        "page_content":"Who else is excited about the upcoming NASA mission to Mars? The Red Planet is calling! #spaceexploration #MarsMission",
+        "user_index":17,
+        "user_name":"spacecowboy22",
+        "topic":"space exploration",
+        "tweet_idx":62,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":17
+    },
+    {
+        "page_content":"Stargazing on a clear night is always a reminder of the infinite wonders waiting to be discovered in the universe #stargazing #cosmos",
+        "user_index":17,
+        "user_name":"spacecowboy22",
+        "topic":"astrophysics",
+        "tweet_idx":63,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":17
+    },
+    {
+        "page_content":"What's the latest on the economic stimulus package? Any updates from the White House?",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"economy",
+        "tweet_idx":64,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"The healthcare system needs reform! What are your thoughts on the current state of healthcare in the US?",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"healthcare",
+        "tweet_idx":65,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":" Politics as usual in DC. When will we see real change? #politics #reform",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "tweet_idx":66,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"Just learned about an AI-powered art generator that can create stunning visuals! Anyone else exploring the intersection of AI and art? #AI #Art",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":67,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"Blockchain has the potential to revolutionize the art world by providing a secure and transparent way to verify ownership and provenance. Thoughts? #Blockchain #Art",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"Blockchain",
+        "tweet_idx":68,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"Which exhibition was it? Would love to check it out!",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"arts & culture",
+        "tweet_idx":69,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"Just finished a fascinating book on art history. The intersection of art and culture is so captivating! #arthistory #culture",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"literary fiction",
+        "tweet_idx":70,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"That sounds amazing! Which exhibition was it?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":104,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"I completely agree! Ancient art is so fascinating.",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":105,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Just discovered a new art gallery in town and can't wait to explore! #art #gallery",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":106,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Folk art is truly fascinating! Have you seen the traditional pottery from Japan?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":107,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just discovered an amazing mural in the city! Urban art is taking the city by storm! #streetart #urbanart",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":108,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"I completely agree! The artistic representation of ancient civilizations is truly captivating.",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":109,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Just discovered an incredible ancient artifact in our museum's collection. The cultural significance is immense! #history #museum",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"history",
+        "tweet_idx":110,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"That sounds amazing! What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":111,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just saw the most stunning traditional clothing from Japan at a cultural festival. The craftsmanship is incredible! #traditionalclothing #japaneseculture",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":112,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"What's new in AI and robotics? Anyone have any exciting projects or updates to share?",
+        "user_index":4,
+        "user_name":"TechTitan2020",
+        "topic":"AI and robotics",
+        "tweet_idx":113,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":4
+    },
+    {
+        "page_content":"Just learned about a new machine learning algorithm that can improve model performance by 20%! #MachineLearning #AI",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"Machine Learning",
+        "tweet_idx":114,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"I also love visiting art exhibitions! What was your favorite piece from the museum?",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"arts & culture",
+        "tweet_idx":115,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Looking for some great book recommendations! What's the best book you've read recently? #booklovers #reading",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"books",
+        "tweet_idx":116,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"Great insight! I love exploring street art in the city too!",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"arts & culture",
+        "tweet_idx":117,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"Just learned about the impact of art on cultural identity. Fascinating topic! #art #culture",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"arts & culture",
+        "tweet_idx":118,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"I'd love to explore more about urban culture through street art! Can you recommend some must-visit spots?",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"arts & culture",
+        "tweet_idx":119,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Currently reading a fascinating book about art history. Anyone else interested in art and culture?",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"arts & culture",
+        "tweet_idx":120,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"That sounds amazing! I've been to some incredible museums around the world. What was your favorite piece?",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":121,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Nothing beats the thrill of discovering new art and culture on my travels! What's your favorite cultural experience? #arttravel #adventure",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":122,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Just learned about the latest advancements in #AI and #MachineLearning. Very exciting times ahead!",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and Machine Learning",
+        "tweet_idx":123,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"What are the applications of #NaturalLanguageProcessing in today's world? Let's discuss!",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and Machine Learning",
+        "tweet_idx":124,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"How is #DeepLearning transforming the field of computer vision?",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and Machine Learning",
+        "tweet_idx":125,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"Let's take action now! We must reduce our carbon footprint and transition to renewable energy sources to combat climate change. Every small step counts! #ClimateAction #Sustainability",
+        "user_index":15,
+        "user_name":"EcoWarrior95",
+        "topic":"climate change",
+        "tweet_idx":126,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":15
+    },
+    {
+        "page_content":"Looking for the best eats in NYC! Any recommendations? #Foodie #NYC #RestaurantReview",
+        "user_index":16,
+        "user_name":"foodie_in_nyc",
+        "topic":"food",
+        "tweet_idx":127,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":16
+    },
+    {
+        "page_content":"Looking for some insightful tweets about politics, economy, and healthcare. Anyone have any updates?",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "tweet_idx":128,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"Just discovered a fascinating article on AI applications in fintech! #AI #fintech",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":129,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"That sounds amazing! I've always been fascinated by art exhibitions. Can you recommend any books on art history?",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"arts & culture",
+        "tweet_idx":130,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"Just finished reading a fascinating novel on ancient civilizations. Any recommendations for similar books?",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"literary fiction",
+        "tweet_idx":131,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"Loving the urban vibes! Have you checked out the new graffiti museum?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":151,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Fascinated by the intersection of art and history! Anyone have any recommendations for art history books?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":152,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"That sounds amazing! What was your favorite piece?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":153,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Street art is a great way to express urban culture. Have you seen any amazing murals lately? #streetart #urbanart",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":154,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"I completely agree! Ancient civilizations have so much to teach us about art and culture.",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":155,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Discovering hidden gems in cultural heritage museums is a true passion of mine. What's your favorite cultural artifact? #museumlife #culturalheritage",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":156,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"I completely agree! Local museums are such great resources for inspiration. What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":157,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just discovered a new art style that combines traditional and modern techniques. Can't wait to try it out! #art #culture",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":158,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just finished a killer leg day workout! Remember to stretch and refuel with a balanced meal for optimal recovery. #fitness #wellness",
+        "user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"fitness",
+        "tweet_idx":159,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":5
+    },
+    {
+        "page_content":"New recipe alert! Try my delicious and healthy quinoa salad recipe for a nutritious meal prep option. #healthyliving #recipe",
+        "user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"healthyliving",
+        "tweet_idx":160,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":5
+    },
+    {
+        "page_content":"I completely agree! Street art is a great way to express urban culture.",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"arts & culture",
+        "tweet_idx":161,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Just learned about a new data structure in Python! Excited to share it with the community. Stay tuned for my next post! #python #datascience",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"data structure",
+        "tweet_idx":162,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Just finished reading a fascinating novel! Anyone else a fan of literary fiction? #booklover #readingislife",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"literary fiction",
+        "tweet_idx":163,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"What are your favorite book recommendations for this summer? I'm always looking for a great read! #bookrecommendations #summerreads",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"book recommendations",
+        "tweet_idx":164,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"What's the latest in AI, robotics, and cybersecurity? #AI #robotics #cybersecurity",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":165,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Just read an interesting article about the impact of globalization on local economies. Thoughts? #economy #globalization",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"economy",
+        "tweet_idx":166,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"Looking for some new book recommendations! Has anyone read any great romance novels lately? #bookreview #romance",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"books",
+        "tweet_idx":167,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"I totally agree! The history of ancient civilizations is fascinating. Have you traveled to any historic sites recently?",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":168,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Folk art is so underrated! I've seen some amazing pieces during my travels. Which type of folk art inspires you the most?",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":169,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Just returned from an epic adventure and can't wait to share my travel tips and stunning visuals with you all! Stay tuned! #adventuretravel #travelblogger",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "tweet_idx":170,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Exciting advancements in #AI and #machinelearning are transforming industries! What are your thoughts on their potential impact?",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and machine learning",
+        "tweet_idx":171,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"Just learned about the importance of reducing plastic waste in our daily lives. Let's make a conscious effort to live more sustainably! #Sustainability #GoGreen",
+        "user_index":15,
+        "user_name":"EcoWarrior95",
+        "topic":"Sustainability",
+        "tweet_idx":172,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":15
+    },
+    {
+        "page_content":"Looking for some new food spots to review in NYC! Any recommendations? #Foodie #NYC #RestaurantReview",
+        "user_index":16,
+        "user_name":"foodie_in_nyc",
+        "topic":"food",
+        "tweet_idx":173,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":16
+    },
+    {
+        "page_content":"What's your take on the recent developments in the political landscape? Share your thoughts! #politics",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "tweet_idx":174,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"Just learned about the latest breakthroughs in #AI and #blockchain. Exciting times for tech enthusiasts! ",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":175,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"The intersection of #AI and #blockchain has the potential to revolutionize industries. What are your thoughts? ",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"blockchain",
+        "tweet_idx":176,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"Just finished reading a fascinating novel on literary fiction. The character development was exceptional! #literaryfiction #bookreview",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"literary fiction",
+        "tweet_idx":177,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"I completely agree! Folk art is so rich and diverse. What's your favorite piece so far?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":199,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Street art is so vibrant and thought-provoking! Have you checked out the murals in the downtown area?",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":200,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Just spent the day exploring local art galleries and I'm feeling so inspired! What's your favorite way to experience art? #artlover #culturevulture",
+        "user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "tweet_idx":201,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":0
+    },
+    {
+        "page_content":"Love the vibe of traditional folk art! Have you checked out the latest exhibits at the local museum?",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "tweet_idx":202,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Just discovered an amazing street art festival in the city! Who else is excited? #streetart #urbanart",
+        "user_index":1,
+        "user_name":" creativefusions",
+        "topic":"street art",
+        "tweet_idx":203,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":1
+    },
+    {
+        "page_content":"Thank you for sharing your experience! What was your favorite piece in the exhibition?",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"arts & culture",
+        "tweet_idx":204,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"Just came across an fascinating article about ancient artifacts. Can't wait to share my thoughts! #history #museum",
+        "user_index":2,
+        "user_name":" thecuriousmuse",
+        "topic":"history",
+        "tweet_idx":205,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":2
+    },
+    {
+        "page_content":"That sounds amazing! I'm a big fan of museums too. What was your favorite piece?",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":206,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just discovered some incredible traditional folk art from Africa! The colors and patterns are stunning. #folkart #africanart",
+        "user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "tweet_idx":207,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":3
+    },
+    {
+        "page_content":"Just finished reading about the latest advancements in AI and robotics. Exciting times ahead! #AI #Robotics",
+        "user_index":4,
+        "user_name":"TechTitan2020",
+        "topic":"AI and robotics",
+        "tweet_idx":208,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":4
+    },
+    {
+        "page_content":"What are the potential applications of AI in healthcare? Would love to discuss! #AI #Healthcare",
+        "user_index":4,
+        "user_name":"TechTitan2020",
+        "topic":"AI and healthcare",
+        "tweet_idx":209,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":4
+    },
+    {
+        "page_content":"Let's take action to reduce plastic waste! Every small step counts in our fight against climate change. #ReduceReuseRecycle #Sustainability",
+        "user_index":6,
+        "user_name":"EarthLover3000",
+        "topic":"Environment",
+        "tweet_idx":210,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":6
+    },
+    {
+        "page_content":"That sounds amazing! I'd love to hear more about the exhibition. What was your favorite piece?",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"arts & culture",
+        "tweet_idx":211,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Just learned about a new approach to machine learning. Can't wait to implement it in my next project! #machinelearning #AI",
+        "user_index":7,
+        "user_name":"Code Ninja99",
+        "topic":"machine learning",
+        "tweet_idx":212,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":7
+    },
+    {
+        "page_content":"Just finished reading 'The Nightingale' by Kristin Hannah. A historical fiction masterpiece! Anyone else love this book? #bookreview #historicalfiction",
+        "user_index":8,
+        "user_name":"BookWorm23",
+        "topic":"book review",
+        "tweet_idx":213,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":8
+    },
+    {
+        "page_content":"Exciting times for #AI enthusiasts! New advancements in natural language processing are opening up new possibilities. #NLP",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"AI",
+        "tweet_idx":214,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Just read about a fascinating #robotics project that's pushing the boundaries of autonomous systems. Can't wait to see the developments! #autonomous",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"robotics",
+        "tweet_idx":215,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Cybersecurity is more important than ever! Staying vigilant and up-to-date with the latest threats is crucial. #cybersecurity #infosec",
+        "user_index":9,
+        "user_name":"TechTitan2000",
+        "topic":"cybersecurity",
+        "tweet_idx":216,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":9
+    },
+    {
+        "page_content":"Just read an interesting article about the current state of global politics. Thoughts?",
+        "user_index":11,
+        "user_name":"BreakingNewsNow",
+        "topic":"politics",
+        "tweet_idx":217,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":11
+    },
+    {
+        "page_content":"Love the vibrant colors! Have you checked out the new gallery downtown?",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"arts & culture",
+        "tweet_idx":218,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Discovering new art forms is always exciting! What's your favorite type of art? #artlover #cultureenthusiast",
+        "user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"arts & culture",
+        "tweet_idx":219,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":12
+    },
+    {
+        "page_content":"Just got back from the most incredible adventure travel trip! Can't wait to share my stories and tips with you all! #adventuretravel #travelblog",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "tweet_idx":220,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"I completely agree! Folk art is a great way to experience the culture of a place. Have you ever been to a traditional festival?",
+        "user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "tweet_idx":221,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":13
+    },
+    {
+        "page_content":"Exciting to see the applications of AI and machine learning in various industries! What are some potential use cases you think will emerge in the next 5 years? #AI #machinelearning",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and machine learning",
+        "tweet_idx":222,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"Just came across an interesting article on the role of natural language processing in chatbots. Would love to hear from others in the field about their experiences! #NLP #chatbots",
+        "user_index":14,
+        "user_name":"techguru3000",
+        "topic":"AI and machine learning",
+        "tweet_idx":223,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":14
+    },
+    {
+        "page_content":"We need to take immediate action to reduce our carbon footprint and transition to renewable energy sources. Let's work together to create a sustainable future! #ClimateAction #RenewableEnergy #Sustainability",
+        "user_index":15,
+        "user_name":"EcoWarrior95",
+        "topic":"climate change",
+        "tweet_idx":224,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":15
+    },
+    {
+        "page_content":"Just had a great conversation with a fellow analyst about the current state of politics in the US. The future looks promising! #politics #usa",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "tweet_idx":225,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"Breaking: New developments in the healthcare sector. Stay tuned for my analysis! #healthcare #breakingnews",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"healthcare",
+        "tweet_idx":226,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"The economy is showing signs of recovery. What does this mean for the future? #economy #recovery",
+        "user_index":18,
+        "user_name":"politico_insider",
+        "topic":"economy",
+        "tweet_idx":227,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":18
+    },
+    {
+        "page_content":"Just learned about the latest advancements in AI and blockchain. Exciting times for tech enthusiasts! #AI #blockchain",
+        "user_index":19,
+        "user_name":"TechTitan2000",
+        "topic":"AI, blockchain",
+        "tweet_idx":228,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":19
+    },
+    {
+        "page_content":"I completely agree! The history of ancient civilizations is fascinating.",
+        "user_index":20,
+        "user_name":"BookWorm95",
+        "topic":"arts & culture",
+        "tweet_idx":229,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "owner_user_index":20
+    },
+    {
+        "page_content":"Excited to share my favorite healthy recipe today! 🌱🥗 Try this delicious quinoa salad packed with nutrients! Perfect for meal prep. #healthyliving #recipe",
+        "user_index":5,
+        "owner_user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"healthyliving",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":157
+    },
+    {
+        "page_content":"Just finished an intense workout session! Remember, consistency is key to achieving your fitness goals. Let's crush it together! 💪 #fitnessmotivation #wellness",
+        "user_index":5,
+        "owner_user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":158
+    },
+    {
+        "page_content":"Exploring NYC's food scene! 🌆🍽️ What are your favorite hidden gems? #NYC #Foodie #RestaurantReview",
+        "user_index":16,
+        "owner_user_index":16,
+        "user_name":"foodie_in_nyc",
+        "topic":"food",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":159
+    },
+    {
+        "page_content":"Just finished reading 'The Nightingale' by Kristin Hannah. It was a historical fiction masterpiece! What are your thoughts on it? #bookreview #historicalfiction",
+        "user_index":12,
+        "owner_user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"book review",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":160
+    },
+    {
+        "page_content":"Looking for some great book recommendations! What's the best book you've read recently? #booklovers #reading",
+        "user_index":12,
+        "owner_user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"books",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":161
+    },
+    {
+        "page_content":"What are your favorite book recommendations for this summer? I'm always looking for a great read! #bookrecommendations #summerreads",
+        "user_index":12,
+        "owner_user_index":12,
+        "user_name":"Bookworm23",
+        "topic":"book recommendations",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":162
+    },
+    {
+        "page_content":"Analyzing the current political landscape, it's crucial to consider the implications of recent developments in healthcare and the economy. Let's discuss! #politics #healthcare #economy",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":163
+    },
+    {
+        "page_content":"Excited to explore the intersection of AI and machine learning! What new applications do you think we will see emerging in the next few years? #AI #machinelearning",
+        "user_index":21,
+        "owner_user_index":21,
+        "user_name":"TechGuruJane",
+        "topic":"AI and machine learning",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":164
+    },
+    {
+        "page_content":"I've seen some incredible pieces too! It's always inspiring to learn about others' favorites. What was the most memorable piece for you?",
+        "user_index":22,
+        "owner_user_index":16,
+        "user_name":"TravelWithTom",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":173,
+        "tweet_idx":165
+    },
+    {
+        "page_content":"Looking for NYC's best eats and hidden gems! Share your favorite spots with me! #NYCFoodie #HiddenGems",
+        "user_index":16,
+        "owner_user_index":16,
+        "user_name":"foodie_in_nyc",
+        "topic":"food",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":166
+    },
+    {
+        "page_content":"I agree! It's important to stay updated on these critical issues. Any specific updates you're looking for?",
+        "user_index":18,
+        "owner_user_index":0,
+        "user_name":"politico_insider",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":167
+    },
+    {
+        "page_content":"Consistency is key! Keep pushing your limits and don't forget to nourish your body with healthy foods. What are your favorite post-workout meals? 💪 #fitness #nutrition",
+        "user_index":10,
+        "owner_user_index":10,
+        "user_name":"FitFamGirl88",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":168
+    },
+    {
+        "page_content":"The current state of global politics is a hot topic! What do you think about the recent developments? #politics #globalaffairs",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":169
+    },
+    {
+        "page_content":"It's great to see art and culture being integrated with eco-friendly practices! We need more initiatives like this. #Sustainability #EcoArt",
+        "user_index":25,
+        "owner_user_index":15,
+        "user_name":"EcoWarriorMike",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":59,
+        "tweet_idx":170
+    },
+    {
+        "page_content":"Just got back from an amazing adventure trip! Can't wait to share my experiences and tips. Where's your favorite adventure destination? #AdventureSeeker #TravelBlog",
+        "user_index":13,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":171
+    },
+    {
+        "page_content":"You can't go wrong with Joe's Pizza or Katz's Delicatessen! Have you tried them? #NYCFoodie",
+        "user_index":13,
+        "owner_user_index":0,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":200,
+        "tweet_idx":172
+    },
+    {
+        "page_content":"Absolutely! 'The Story of Art' by E.H. Gombrich is a classic. What about you? #ArtHistory",
+        "user_index":13,
+        "owner_user_index":18,
+        "user_name":"TravelWithTom",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":173
+    },
+    {
+        "page_content":"Every small step counts! Let's continue to work together to reduce our carbon footprint and promote sustainability. #ClimateAction #Sustainability",
+        "user_index":40,
+        "owner_user_index":40,
+        "user_name":"EcoWarriorLily",
+        "topic":"Sustainability",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":174
+    },
+    {
+        "page_content":"Exploring the beauty of traditional folk art from around the world truly inspires me! What traditional art forms resonate with you? #folkart #globalculture",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":175
+    },
+    {
+        "page_content":"Art history books are such a great way to deepen your appreciation for art! I recommend 'The Story of Art' by E.H. Gombrich. What about you? #artlover",
+        "user_index":13,
+        "owner_user_index":18,
+        "user_name":"TravelWithTom",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":176
+    },
+    {
+        "page_content":"NYC's food scene is incredible! I love checking out the local food markets. Any recommendations for must-try dishes? #NYCFoodie",
+        "user_index":13,
+        "owner_user_index":16,
+        "user_name":"TravelWithTom",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":159,
+        "tweet_idx":177
+    },
+    {
+        "page_content":"Just returned from an amazing trip to the mountains! 🏔️ Can't wait to share my travel tips and stunning visuals with you all! #TravelBlogger #AdventureSeeker",
+        "user_index":13,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"travel",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":178
+    },
+    {
+        "page_content":"Exploring the beauty of traditional art forms from around the world has been a transformative journey for me. Each piece tells a story and connects us to diverse cultures. What's your favorite art form? #Art #CulturalDiversity",
+        "user_index":3,
+        "owner_user_index":3,
+        "user_name":" artistinprogress",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":179
+    },
+    {
+        "page_content":"Exploring the latest trends in AI and machine learning! What are some innovations you think will shape the future of tech? #AI #MachineLearning",
+        "user_index":21,
+        "owner_user_index":21,
+        "user_name":"TechGuruJane",
+        "topic":"AI and machine learning",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":180
+    },
+    {
+        "page_content":"Happy to share some workout tips! Remember, it's all about consistency and finding what works for you. 💪 What's your favorite way to stay active? #FitnessTips #Wellness",
+        "user_index":5,
+        "owner_user_index":5,
+        "user_name":"FitGirl88",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":181
+    },
+    {
+        "page_content":"Can't wait to see the recipe! Smoothie bowls are such a great way to start the day. #healthyliving",
+        "user_index":37,
+        "owner_user_index":5,
+        "user_name":"HealthyLivingMike",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":41,
+        "tweet_idx":182
+    },
+    {
+        "page_content":"Exploring the fusion of traditional and modern art is a never-ending journey! What are your thoughts on blending different art forms? #art #culture",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":183
+    },
+    {
+        "page_content":"The current political landscape is rapidly changing. I'm eager to see how these developments will shape our future. #politics #analysis",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":184
+    },
+    {
+        "page_content":"I completely agree! Folk art has such a rich history and tells powerful stories. What's your favorite piece you've seen during your travels?",
+        "user_index":38,
+        "owner_user_index":18,
+        "user_name":"TravelWithSara",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":169,
+        "tweet_idx":185
+    },
+    {
+        "page_content":"I find traditional folk art fascinating too! The stories behind each piece are so meaningful. What traditional art form resonates with you the most?",
+        "user_index":38,
+        "owner_user_index":0,
+        "user_name":"TravelWithSara",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":175,
+        "tweet_idx":186
+    },
+    {
+        "page_content":"I'm particularly interested in how AI is being integrated into cybersecurity. What are some of the most promising developments you've seen?",
+        "user_index":36,
+        "owner_user_index":16,
+        "user_name":"TechSavvyJane",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":165,
+        "tweet_idx":187
+    },
+    {
+        "page_content":"💪 Ready to crush your fitness goals? Remember, it's all about consistency and finding what works for you! Let's motivate each other! #FitnessMotivation #HealthyLiving",
+        "user_index":59,
+        "owner_user_index":59,
+        "user_name":"FitnessFanatic",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":188
+    },
+    {
+        "page_content":"Sounds amazing, TravelWithTom! Adventure trips are the best! What's the highlight of your recent trip? #AdventureSeeker",
+        "user_index":13,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":189
+    },
+    {
+        "page_content":"Exploring urban art is such a thrill! What are your favorite cities for street art? #UrbanArt #Travel",
+        "user_index":13,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":190
+    },
+    {
+        "page_content":"What are some of the most exciting AI innovations you've seen lately? Let's discuss! #AI #Innovation",
+        "user_index":41,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":191
+    },
+    {
+        "page_content":"I love discovering hidden gems in NYC! One of my favorites is a little Italian place called L'Artusi. What's yours? #NYCFoodie",
+        "user_index":43,
+        "owner_user_index":16,
+        "user_name":"FoodieExplorer",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":159,
+        "tweet_idx":192
+    },
+    {
+        "page_content":"You should definitely check out the bagels at Russ & Daughters! What type of cuisine are you most interested in? #Foodie #NYC",
+        "user_index":43,
+        "owner_user_index":0,
+        "user_name":"FoodieExplorer",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":200,
+        "tweet_idx":193
+    },
+    {
+        "page_content":"Excited to dive into the latest advancements in AI and robotics! What projects are you all working on? #AI #robotics",
+        "user_index":56,
+        "owner_user_index":56,
+        "user_name":"TechGuru99",
+        "topic":"AI and robotics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":194
+    },
+    {
+        "page_content":"Consistency is key in fitness! What's your favorite way to stay active? Let's inspire each other! 💪 #FitnessMotivation #HealthyLiving",
+        "user_index":44,
+        "owner_user_index":44,
+        "user_name":"FitnessFanatic",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":195
+    },
+    {
+        "page_content":"Absolutely! The innovations in AI and machine learning are indeed shaping the future of tech. What specific trends are you most excited about?",
+        "user_index":41,
+        "owner_user_index":21,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":180,
+        "tweet_idx":196
+    },
+    {
+        "page_content":"Excited to see how AI and machine learning will transform various industries in the coming years! What are your thoughts on the most promising applications? #AI #MachineLearning",
+        "user_index":41,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI and Machine Learning",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":197
+    },
+    {
+        "page_content":"I love literary fiction that delves into art and culture! Have you read 'The Goldfinch' by Donna Tartt? It's a beautiful exploration of art and loss. #bookrecommendations",
+        "user_index":74,
+        "owner_user_index":8,
+        "user_name":"BookLoverJane",
+        "topic":"literary fiction",
+        "action":"reply",
+        "origin_tweet_idx":46,
+        "tweet_idx":198
+    },
+    {
+        "page_content":"I completely agree! 'The Nightingale' is such a powerful story. What did you think of the character development? #bookdiscussion",
+        "user_index":74,
+        "owner_user_index":12,
+        "user_name":"BookLoverJane",
+        "topic":"book review",
+        "action":"reply",
+        "origin_tweet_idx":160,
+        "tweet_idx":199
+    },
+    {
+        "page_content":"Absolutely! I recommend 'The Rosie Project' by Graeme Simsion. It's a charming romance with a unique protagonist! #romance #bookrecommendations",
+        "user_index":74,
+        "owner_user_index":12,
+        "user_name":"BookLoverJane",
+        "topic":"romance",
+        "action":"reply",
+        "origin_tweet_idx":53,
+        "tweet_idx":200
+    },
+    {
+        "page_content":"What are your favorite book recommendations for the fall? I'm looking for some cozy reads! #bookrecommendations #fallreads",
+        "user_index":74,
+        "owner_user_index":74,
+        "user_name":"BookLoverJane",
+        "topic":"book recommendations",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":201
+    },
+    {
+        "page_content":"I absolutely loved 'The Nightingale'! Kristin Hannah has such a way with historical narratives. What did you think of the characters?",
+        "user_index":60,
+        "owner_user_index":12,
+        "user_name":"BookLoverSam",
+        "topic":"book review",
+        "action":"reply",
+        "origin_tweet_idx":160,
+        "tweet_idx":202
+    },
+    {
+        "page_content":"I'm a huge fan of literary fiction! What novel did you just finish? I'm always looking for recommendations.",
+        "user_index":60,
+        "owner_user_index":18,
+        "user_name":"BookLoverSam",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":163,
+        "tweet_idx":203
+    },
+    {
+        "page_content":"I'm on the lookout for books that explore the intersection of art and literature. Any recommendations? #art #lit",
+        "user_index":60,
+        "owner_user_index":60,
+        "user_name":"BookLoverSam",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":204
+    },
+    {
+        "page_content":"I have a few favorites! Have you tried the bagels at Russ & Daughters or the pizza at Joe's Pizza? Both are must-tries in NYC! #Foodie #NYC",
+        "user_index":58,
+        "owner_user_index":18,
+        "user_name":"FoodieExplorer",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":173,
+        "tweet_idx":205
+    },
+    {
+        "page_content":"Exploring local art galleries is such a great way to find inspiration! I love the energy and creativity in those spaces. What's your favorite gallery?",
+        "user_index":75,
+        "owner_user_index":74,
+        "user_name":"ArtisticSoul",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":206
+    },
+    {
+        "page_content":"I completely agree! Traditional art forms carry so much history and culture. Do you have a favorite piece or artist?",
+        "user_index":75,
+        "owner_user_index":3,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":179,
+        "tweet_idx":207
+    },
+    {
+        "page_content":"Exploring the beauty of diverse cultures through art is such a passion of mine! What inspires you? #art #culture",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":208
+    },
+    {
+        "page_content":"I've seen some amazing innovations lately, especially in natural language processing and AI applications in healthcare! What about you?",
+        "user_index":41,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":191,
+        "tweet_idx":209
+    },
+    {
+        "page_content":"What are everyone's thoughts on the future of AI in education? Excited to see how technology will enhance learning experiences! #AI #EdTech",
+        "user_index":41,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":210
+    },
+    {
+        "page_content":"The implications of recent developments in healthcare and the economy are crucial for understanding the political landscape. What are your thoughts? #politics #healthcare #economy",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":211
+    },
+    {
+        "page_content":"Can't wait to hear about your adventures! What was the most memorable experience on your trip? #AdventureSeeker",
+        "user_index":88,
+        "owner_user_index":13,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":212
+    },
+    {
+        "page_content":"Exploring the intersection of art and culture brings me so much joy! What are your favorite ways to celebrate creativity? #art #culture",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":213
+    },
+    {
+        "page_content":"Absolutely! It's essential to highlight eco-friendly practices in art exhibitions. Every step towards sustainability matters! #SustainabilityInArt",
+        "user_index":42,
+        "owner_user_index":15,
+        "user_name":"EcoWarriorJane",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":59,
+        "tweet_idx":214
+    },
+    {
+        "page_content":"Absolutely! I love exploring the intersection of art and literature. Have you read 'The Goldfinch' by Donna Tartt? It's a fantastic blend of both! #art #lit",
+        "user_index":60,
+        "owner_user_index":60,
+        "user_name":"BookLoverSam",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":204,
+        "tweet_idx":215
+    },
+    {
+        "page_content":"I completely agree! 'The Nightingale' is such a powerful read. What did you think of the character development? #bookreview #historicalfiction",
+        "user_index":60,
+        "owner_user_index":0,
+        "user_name":"BookLoverSam",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":213,
+        "tweet_idx":216
+    },
+    {
+        "page_content":"Currently diving into some amazing historical fiction! Any recommendations for books that beautifully weave history and narrative? #historicalfiction #bookrecommendations",
+        "user_index":60,
+        "owner_user_index":60,
+        "user_name":"BookLoverSam",
+        "topic":"books",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":217
+    },
+    {
+        "page_content":"I absolutely loved 'The Nightingale'! The storytelling and character depth were incredible. What did you think of the ending?",
+        "user_index":89,
+        "owner_user_index":0,
+        "user_name":"BookwormLover",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":213,
+        "tweet_idx":218
+    },
+    {
+        "page_content":"I can recommend 'The Story of Art' by E.H. Gombrich! It's a classic that beautifully intertwines art and history.",
+        "user_index":89,
+        "owner_user_index":18,
+        "user_name":"BookwormLover",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":219
+    },
+    {
+        "page_content":"I highly recommend 'Ways of Seeing' by John Berger for insights on art exhibitions! Have you read it?",
+        "user_index":89,
+        "owner_user_index":1,
+        "user_name":"BookwormLover",
+        "topic":"street art",
+        "action":"reply",
+        "origin_tweet_idx":203,
+        "tweet_idx":220
+    },
+    {
+        "page_content":"Looking for some new literary fiction recommendations! What are some of your favorites that explore art and culture? #bookrecs #literaryfiction",
+        "user_index":89,
+        "owner_user_index":89,
+        "user_name":"BookwormLover",
+        "topic":"books",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":221
+    },
+    {
+        "page_content":"I completely agree! Street art has a unique way of telling stories and connecting communities. Have you seen any that stood out to you recently?",
+        "user_index":75,
+        "owner_user_index":7,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":44,
+        "tweet_idx":222
+    },
+    {
+        "page_content":"The intersection of art and history is indeed fascinating! I love how each movement tells a story of its time. What's your favorite art movement?",
+        "user_index":75,
+        "owner_user_index":0,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":5,
+        "tweet_idx":223
+    },
+    {
+        "page_content":"The current state of global politics is quite intriguing! What are your thoughts on the recent developments?",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":224
+    },
+    {
+        "page_content":"Absolutely! The stories that art movements tell are so rich and diverse. I’m particularly drawn to the Impressionist movement for its unique perspective on light and color. What about you?",
+        "user_index":75,
+        "owner_user_index":0,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":223,
+        "tweet_idx":225
+    },
+    {
+        "page_content":"I completely agree! Traditional folk art has such a deep connection to culture and history. I find that African tribal art resonates with me the most. What about you?",
+        "user_index":75,
+        "owner_user_index":0,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":186,
+        "tweet_idx":226
+    },
+    {
+        "page_content":"I haven't read it yet, but I've heard great things about it! Do you have any other recommendations on street art? #StreetArt",
+        "user_index":88,
+        "owner_user_index":1,
+        "user_name":"TravelWithSam",
+        "topic":"street art",
+        "action":"reply",
+        "origin_tweet_idx":220,
+        "tweet_idx":227
+    },
+    {
+        "page_content":"Excited to see the innovations in AI and machine learning! What are some trends you're following? #AI #MachineLearning",
+        "user_index":56,
+        "owner_user_index":56,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":228
+    },
+    {
+        "page_content":"I love street art too! It's amazing how it can transform a city. Do you have a favorite mural you've seen recently?",
+        "user_index":88,
+        "owner_user_index":13,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":55,
+        "tweet_idx":229
+    },
+    {
+        "page_content":"Absolutely! I love street art. Some must-see spots include the Wynwood Walls in Miami and the East Side Gallery in Berlin! 🎨 #streetart",
+        "user_index":113,
+        "owner_user_index":1,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":15,
+        "tweet_idx":230
+    },
+    {
+        "page_content":"I'd love to explore more about urban culture through street art! Any recommendations for specific artists or murals? #urbanart",
+        "user_index":113,
+        "owner_user_index":14,
+        "user_name":"TravelWithTom",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":231
+    },
+    {
+        "page_content":"There's so much happening in AI and robotics right now! I'm particularly excited about advancements in autonomous systems. What are you most interested in?",
+        "user_index":111,
+        "owner_user_index":16,
+        "user_name":"TechGuru23",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":165,
+        "tweet_idx":232
+    },
+    {
+        "page_content":"AI and blockchain are indeed exciting fields! I'm keen to see how they will integrate in future applications. What specific advancements caught your eye?",
+        "user_index":111,
+        "owner_user_index":56,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":228,
+        "tweet_idx":233
+    },
+    {
+        "page_content":"I'm fascinated by the intersection of art and culture! What are some of your favorite ways to celebrate creativity? #art #culture",
+        "user_index":1,
+        "owner_user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":234
+    },
+    {
+        "page_content":"I love art history too! Do you have any specific book recommendations? #art #culture",
+        "user_index":1,
+        "owner_user_index":18,
+        "user_name":" creativefusions",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":235
+    },
+    {
+        "page_content":"Absolutely love urban art! Cities like Berlin and Melbourne have some of the best street art scenes. What are your favorites? #UrbanArt #Travel",
+        "user_index":113,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":190,
+        "tweet_idx":236
+    },
+    {
+        "page_content":"I recently enjoyed 'The Goldfinch' by Donna Tartt! It's a beautiful blend of art and culture. What about you?",
+        "user_index":114,
+        "owner_user_index":89,
+        "user_name":"BookWormSarah",
+        "topic":"books",
+        "action":"reply",
+        "origin_tweet_idx":221,
+        "tweet_idx":237
+    },
+    {
+        "page_content":"Yes, 'The Goldfinch' is a stunning read! Have you explored any other works by Donna Tartt?",
+        "user_index":114,
+        "owner_user_index":8,
+        "user_name":"BookWormSarah",
+        "topic":"literary fiction",
+        "action":"reply",
+        "origin_tweet_idx":198,
+        "tweet_idx":238
+    },
+    {
+        "page_content":"I love books that explore the intersection of art and literature! Have you read 'The Goldfinch' or 'The Artist's Way'?",
+        "user_index":114,
+        "owner_user_index":60,
+        "user_name":"BookWormSarah",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":204,
+        "tweet_idx":239
+    },
+    {
+        "page_content":"I love exploring urban culture through street art too! Some of my favorite spots are in Berlin and Melbourne. What about you?",
+        "user_index":73,
+        "owner_user_index":14,
+        "user_name":"TravelWithSam",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":240
+    },
+    {
+        "page_content":"Adventure trips are the best! I recently explored the mountains in Peru. Where did you go?",
+        "user_index":73,
+        "owner_user_index":13,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":241
+    },
+    {
+        "page_content":"I haven't read 'Ways of Seeing' yet, but I've heard great things! Any other recommendations for art-related reads?",
+        "user_index":73,
+        "owner_user_index":1,
+        "user_name":"TravelWithSam",
+        "topic":"street art",
+        "action":"reply",
+        "origin_tweet_idx":220,
+        "tweet_idx":242
+    },
+    {
+        "page_content":"Excited to try out some new recipes this week! What's your favorite healthy dish? #HealthyEating #Nutrition",
+        "user_index":32,
+        "owner_user_index":32,
+        "user_name":"HealthyEatsDaily",
+        "topic":"healthyliving",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":243
+    },
+    {
+        "page_content":"Absolutely! The advancements in natural language processing are game-changing. I'm particularly excited about its applications in customer service and content creation! #AI #NLP",
+        "user_index":111,
+        "owner_user_index":41,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":209,
+        "tweet_idx":244
+    },
+    {
+        "page_content":"I'm really intrigued by the potential of AI in personalized medicine and predictive analytics! What specific use cases do you think will emerge? #AI #MachineLearning",
+        "user_index":111,
+        "owner_user_index":7,
+        "user_name":"TechGuru23",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":222,
+        "tweet_idx":245
+    },
+    {
+        "page_content":"I'd love to help you explore urban culture through street art! Some must-visit spots include Bushwick in Brooklyn and the Wynwood Walls in Miami. What cities are you considering? #StreetArt",
+        "user_index":113,
+        "owner_user_index":14,
+        "user_name":"TravelWithTom",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":246
+    },
+    {
+        "page_content":"I love experimenting with new recipes too! What's on your list for this week? #HealthyEating",
+        "user_index":137,
+        "owner_user_index":32,
+        "user_name":"HealthyEats101",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":243,
+        "tweet_idx":247
+    },
+    {
+        "page_content":"What are your thoughts on the latest advancements in AI and how they can impact different industries? #AI #Innovation",
+        "user_index":56,
+        "owner_user_index":56,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":248
+    },
+    {
+        "page_content":"Exploring the beauty of cultural art forms can be so enriching! What's everyone else discovering lately? #artlover #cultureenthusiast",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":249
+    },
+    {
+        "page_content":"I completely agree! Discovering new art and culture is always a highlight of my travels. What has been your most memorable experience?",
+        "user_index":88,
+        "owner_user_index":18,
+        "user_name":"TravelWithSam",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":174,
+        "tweet_idx":250
+    },
+    {
+        "page_content":"I love the stories behind art movements! My favorite is Impressionism. How about you?",
+        "user_index":88,
+        "owner_user_index":0,
+        "user_name":"TravelWithSam",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":223,
+        "tweet_idx":251
+    },
+    {
+        "page_content":"Exploring local art galleries sounds amazing! Any recommendations for must-visit spots in your area? #artlover",
+        "user_index":113,
+        "owner_user_index":74,
+        "user_name":"TravelWithTom",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":252
+    },
+    {
+        "page_content":"Urban art is such a vibrant part of a city's culture! I love cities like Berlin and Melbourne for their street art. What are your favorite pieces?",
+        "user_index":113,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":190,
+        "tweet_idx":253
+    },
+    {
+        "page_content":"I'd love to explore more about urban culture through street art! Any specific cities or spots you recommend?",
+        "user_index":113,
+        "owner_user_index":14,
+        "user_name":"TravelWithTom",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":254
+    },
+    {
+        "page_content":"I completely agree! 'The Goldfinch' is a beautiful blend of art and literature. Have you read any other books that explore similar themes?",
+        "user_index":114,
+        "owner_user_index":60,
+        "user_name":"BookWormSarah",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":215,
+        "tweet_idx":255
+    },
+    {
+        "page_content":"I recommend 'The Goldfinch' by Donna Tartt for its deep exploration of art and culture. What do you think?",
+        "user_index":114,
+        "owner_user_index":8,
+        "user_name":"BookWormSarah",
+        "topic":"literary fiction",
+        "action":"reply",
+        "origin_tweet_idx":46,
+        "tweet_idx":256
+    },
+    {
+        "page_content":"I love books that explore the intersection of art and literature! Have you read 'The Goldfinch' by Donna Tartt?",
+        "user_index":114,
+        "owner_user_index":60,
+        "user_name":"BookWormSarah",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":204,
+        "tweet_idx":257
+    },
+    {
+        "page_content":"I'm currently reading 'The Nightingale' by Kristin Hannah and it's captivating! What about you?",
+        "user_index":114,
+        "owner_user_index":74,
+        "user_name":"BookWormSarah",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":258
+    },
+    {
+        "page_content":"I completely agree! The beauty of diverse cultures through art is truly inspiring. What specific cultures resonate with you the most?",
+        "user_index":75,
+        "owner_user_index":3,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":19,
+        "tweet_idx":259
+    },
+    {
+        "page_content":"Absolutely! Each art movement indeed reflects the stories of its time. My favorite is the Impressionist movement. How about you?",
+        "user_index":75,
+        "owner_user_index":0,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":223,
+        "tweet_idx":260
+    },
+    {
+        "page_content":"I completely agree! The intersection of art and history opens up so many fascinating conversations. Do you have any favorite books on the subject?",
+        "user_index":75,
+        "owner_user_index":18,
+        "user_name":"ArtisticSoul",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":261
+    },
+    {
+        "page_content":"Absolutely! The stories behind art movements are what make them so compelling. Impressionism is a personal favorite of mine too! Which artists do you admire?",
+        "user_index":75,
+        "owner_user_index":20,
+        "user_name":"ArtisticSoul",
+        "topic":"literary fiction",
+        "action":"reply",
+        "origin_tweet_idx":70,
+        "tweet_idx":262
+    },
+    {
+        "page_content":"I love discovering hidden gems too! One of my favorites is a small café in Brooklyn called 'Butler.' What's yours? #HiddenGems",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":192,
+        "tweet_idx":263
+    },
+    {
+        "page_content":"I’ve seen some incredible pieces in the Louvre! What's your favorite museum experience? #ArtLover",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":173,
+        "tweet_idx":264
+    },
+    {
+        "page_content":"I completely agree! Local galleries are a treasure trove of inspiration. Have you discovered any hidden gems lately?",
+        "user_index":138,
+        "owner_user_index":74,
+        "user_name":"TravelWithMe",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":206,
+        "tweet_idx":265
+    },
+    {
+        "page_content":"Absolutely! Folk art has such a powerful narrative. I loved seeing the vibrant folk art in Mexico during my travels. What's your favorite?",
+        "user_index":138,
+        "owner_user_index":18,
+        "user_name":"TravelWithMe",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":185,
+        "tweet_idx":266
+    },
+    {
+        "page_content":"I couldn't agree more! Cultural experiences shape our journeys. One of my favorites was a traditional dance performance in Bali.",
+        "user_index":138,
+        "owner_user_index":18,
+        "user_name":"TravelWithMe",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":174,
+        "tweet_idx":267
+    },
+    {
+        "page_content":"Every small step counts! Let's continue to work together to reduce our carbon footprint and promote sustainability. #ClimateAction #Sustainability",
+        "user_index":57,
+        "owner_user_index":57,
+        "user_name":"EcoWarriorJane",
+        "topic":"Sustainability",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":268
+    },
+    {
+        "page_content":"Absolutely! I'm always on the lookout for books that blend art and literature. Have you read 'The Goldfinch' by Donna Tartt?",
+        "user_index":39,
+        "owner_user_index":60,
+        "user_name":"BookwormTom",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":204,
+        "tweet_idx":269
+    },
+    {
+        "page_content":"Looking for literary fiction recommendations that explore the intersection of art and culture! Any favorites? #bookrecs #literaryfiction",
+        "user_index":39,
+        "owner_user_index":39,
+        "user_name":"BookwormTom",
+        "topic":"books",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":270
+    },
+    {
+        "page_content":"The current political landscape is indeed rapidly changing, and it's essential to stay informed about these developments. What are your thoughts on the implications for the economy and healthcare? #politics #analysis",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":271
+    },
+    {
+        "page_content":"Absolutely! Urban art adds so much character to a city. Berlin's street art scene is legendary! Have you visited any specific spots there?",
+        "user_index":88,
+        "owner_user_index":13,
+        "user_name":"TravelWithSam",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":236,
+        "tweet_idx":272
+    },
+    {
+        "page_content":"Cultural heritage museums are fascinating! One of my favorites is the British Museum. What's yours?",
+        "user_index":88,
+        "owner_user_index":20,
+        "user_name":"TravelWithSam",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":229,
+        "tweet_idx":273
+    },
+    {
+        "page_content":"Absolutely! 'The Goldfinch' is a fantastic read. I love how it intertwines art and literature. What other books by Donna Tartt do you recommend?",
+        "user_index":114,
+        "owner_user_index":60,
+        "user_name":"BookWormSarah",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":215,
+        "tweet_idx":274
+    },
+    {
+        "page_content":"I'm currently reading 'The Nightingale' and absolutely loving it! Any other historical fiction recommendations you have?",
+        "user_index":114,
+        "owner_user_index":60,
+        "user_name":"BookWormSarah",
+        "topic":"books",
+        "action":"reply",
+        "origin_tweet_idx":217,
+        "tweet_idx":275
+    },
+    {
+        "page_content":"I recently read 'The Goldfinch' and found it to be an incredible exploration of art and culture. What have you read?",
+        "user_index":114,
+        "owner_user_index":8,
+        "user_name":"BookWormSarah",
+        "topic":"literary fiction",
+        "action":"reply",
+        "origin_tweet_idx":46,
+        "tweet_idx":276
+    },
+    {
+        "page_content":"Exploring local art galleries is such a great way to find inspiration! I love seeing the creativity of different artists. What's your favorite gallery so far?",
+        "user_index":75,
+        "owner_user_index":74,
+        "user_name":"ArtisticSoul",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":277
+    },
+    {
+        "page_content":"I completely agree! Traditional art forms have so much depth and history. I love exploring different cultures through their art. What's your favorite traditional art form?",
+        "user_index":75,
+        "owner_user_index":3,
+        "user_name":"ArtisticSoul",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":179,
+        "tweet_idx":278
+    },
+    {
+        "page_content":"I completely agree! The evolution of art movements is a reflection of societal changes. What's your favorite movement and why?",
+        "user_index":1,
+        "owner_user_index":0,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":5,
+        "tweet_idx":279
+    },
+    {
+        "page_content":"Excited to explore more about how traditional techniques are being blended with modern themes in art! What are your thoughts on this fusion? #art #culture",
+        "user_index":1,
+        "owner_user_index":1,
+        "user_name":" creativefusions",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":280
+    },
+    {
+        "page_content":"I love discovering hidden gems in NYC's food scene! Any recommendations for off-the-beaten-path spots? #Foodie #HiddenGems",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":159,
+        "tweet_idx":281
+    },
+    {
+        "page_content":"Consistency is the key to achieving your fitness goals! What tips do you have for staying motivated? 💪 #FitnessMotivation #HealthyLiving",
+        "user_index":35,
+        "owner_user_index":35,
+        "user_name":"FitnessFanatic21",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":282
+    },
+    {
+        "page_content":"I recommend 'The Story of Art' by E.H. Gombrich. It's a classic that provides a comprehensive overview of art history. Have you read it?",
+        "user_index":89,
+        "owner_user_index":18,
+        "user_name":"BookwormLover",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":225,
+        "tweet_idx":283
+    },
+    {
+        "page_content":"Both 'The Goldfinch' and 'The Artist's Way' are great reads! I also loved 'The Secret Life of Paintings' by David Hockney. Any other favorites?",
+        "user_index":89,
+        "owner_user_index":60,
+        "user_name":"BookwormLover",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":239,
+        "tweet_idx":284
+    },
+    {
+        "page_content":"What are some of your favorite books that beautifully weave art and literature together? I'm always looking for new recommendations! #art #literature",
+        "user_index":89,
+        "owner_user_index":89,
+        "user_name":"BookwormLover",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":285
+    },
+    {
+        "page_content":"I love exploring NYC's food scene too! One of my favorite hidden gems is a little bakery in the West Village. What about you? #Foodie",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":159,
+        "tweet_idx":286
+    },
+    {
+        "page_content":"Exploring local galleries is such a great way to find inspiration! I love seeing how different artists express their creativity. What's the most memorable piece you've seen recently?",
+        "user_index":75,
+        "owner_user_index":74,
+        "user_name":"ArtisticSoul",
+        "topic":"book recommendations",
+        "action":"reply",
+        "origin_tweet_idx":201,
+        "tweet_idx":287
+    },
+    {
+        "page_content":"I absolutely love abstract art! The way it allows for personal interpretation is fascinating. What about you?",
+        "user_index":75,
+        "owner_user_index":18,
+        "user_name":"ArtisticSoul",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":219,
+        "tweet_idx":288
+    },
+    {
+        "page_content":"I love discovering hidden gems too! Do you have a favorite dish from that bakery? #Foodie",
+        "user_index":43,
+        "owner_user_index":16,
+        "user_name":"FoodieExplorer",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":286,
+        "tweet_idx":289
+    },
+    {
+        "page_content":"Loving the discussions around art and culture lately! What are some of your favorite cultural experiences? Let's share and inspire each other! #artlover #cultureenthusiast",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":290
+    },
+    {
+        "page_content":"Adventure trips are the best! I love exploring new destinations. What's your favorite adventure spot? #AdventureSeeker",
+        "user_index":73,
+        "owner_user_index":13,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":291
+    },
+    {
+        "page_content":"Absolutely! Cultural experiences are what make travel so enriching. What's your most memorable cultural experience?",
+        "user_index":73,
+        "owner_user_index":18,
+        "user_name":"TravelWithSam",
+        "topic":"politics",
+        "action":"reply",
+        "origin_tweet_idx":250,
+        "tweet_idx":292
+    },
+    {
+        "page_content":"The ethics of AI decision-making are crucial as we advance in technology. It's essential to prioritize transparency and accountability. What specific ethical concerns do you think we should focus on?",
+        "user_index":136,
+        "owner_user_index":14,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":57,
+        "tweet_idx":293
+    },
+    {
+        "page_content":"The intersection of AI and machine learning is fascinating! I'm particularly excited about AI applications in healthcare and education. What about you?",
+        "user_index":136,
+        "owner_user_index":21,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":164,
+        "tweet_idx":294
+    },
+    {
+        "page_content":"Excited to explore more about the fusion of traditional and modern art! What's everyone's favorite art form? #art #culture",
+        "user_index":0,
+        "owner_user_index":0,
+        "user_name":" shinebrightart",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":295
+    },
+    {
+        "page_content":"Looking forward to discussing the implications of recent political developments on our economy and healthcare. #politics #healthcare #economy",
+        "user_index":18,
+        "owner_user_index":18,
+        "user_name":"politico_insider",
+        "topic":"politics",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":296
+    },
+    {
+        "page_content":"I'm looking for more books that beautifully weave art and literature together! Any favorites? #art #lit",
+        "user_index":139,
+        "owner_user_index":139,
+        "user_name":"BookishBard",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":297
+    },
+    {
+        "page_content":"I'm really excited about the potential of AI in healthcare! What applications are you most interested in discussing?",
+        "user_index":111,
+        "owner_user_index":41,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":209,
+        "tweet_idx":298
+    },
+    {
+        "page_content":"I'm eager to see how AI and machine learning will evolve. The future looks promising! What specific innovations do you think will emerge?",
+        "user_index":111,
+        "owner_user_index":21,
+        "user_name":"TechGuru23",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":180,
+        "tweet_idx":299
+    },
+    {
+        "page_content":"L'Artusi is a fantastic choice! Have you tried their ricotta gnocchi? It's heavenly! #HiddenGems",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":192,
+        "tweet_idx":300
+    },
+    {
+        "page_content":"Just discovered a hidden gem in the mountains! Can't wait to share the stunning views and tips with you all! #TravelBlogger #HiddenGems",
+        "user_index":88,
+        "owner_user_index":88,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":301
+    },
+    {
+        "page_content":"I've seen some amazing innovations in AI recently, particularly in natural language processing! What about you?",
+        "user_index":191,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":191,
+        "tweet_idx":302
+    },
+    {
+        "page_content":"Excited to see how AI will enhance learning experiences in education! What are your thoughts on this topic? #AI #EdTech",
+        "user_index":191,
+        "owner_user_index":191,
+        "user_name":"TechGuru99",
+        "topic":null,
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":303
+    },
+    {
+        "page_content":"I'm currently exploring books that blend art and literature. Any recommendations? #art #lit",
+        "user_index":194,
+        "owner_user_index":194,
+        "user_name":"BookWormJane",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":304
+    },
+    {
+        "page_content":"I love discovering hidden gems too! One of my favorites is a small café in Brooklyn called 'Butler.' What's yours? #HiddenGems",
+        "user_index":88,
+        "owner_user_index":16,
+        "user_name":"TravelWithSam",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":263,
+        "tweet_idx":305
+    },
+    {
+        "page_content":"Just visited an incredible hidden gem in the mountains! Can't wait to share the stunning views and tips with all of you! #TravelBlogger #HiddenGems",
+        "user_index":88,
+        "owner_user_index":88,
+        "user_name":"TravelWithSam",
+        "topic":"adventure travel",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":306
+    },
+    {
+        "page_content":"Consistency is key! I love mixing up my workouts to keep things interesting. What’s your go-to routine? 💪",
+        "user_index":208,
+        "owner_user_index":5,
+        "user_name":"FitnessFanatic_21",
+        "topic":"fitness",
+        "action":"reply",
+        "origin_tweet_idx":181,
+        "tweet_idx":307
+    },
+    {
+        "page_content":"I love trying new healthy recipes too! What's your favorite dish to make? #HealthyEating",
+        "user_index":140,
+        "owner_user_index":32,
+        "user_name":"FitnessFanatic",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":247,
+        "tweet_idx":308
+    },
+    {
+        "page_content":"I love exploring NYC's food scene too! Have you tried any local food markets? #NYCFoodie",
+        "user_index":195,
+        "owner_user_index":0,
+        "user_name":"CulinaryExplorer",
+        "topic":"arts & culture",
+        "action":"reply",
+        "origin_tweet_idx":200,
+        "tweet_idx":309
+    },
+    {
+        "page_content":"I have a few healthy recipes in mind! How about you? #HealthyEating",
+        "user_index":195,
+        "owner_user_index":32,
+        "user_name":"CulinaryExplorer",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":247,
+        "tweet_idx":310
+    },
+    {
+        "page_content":"Adventure trips are the best! I recently explored some stunning mountain trails. Where did you go for your adventure? #AdventureSeeker",
+        "user_index":113,
+        "owner_user_index":13,
+        "user_name":"TravelWithTom",
+        "topic":"adventure travel",
+        "action":"reply",
+        "origin_tweet_idx":171,
+        "tweet_idx":311
+    },
+    {
+        "page_content":"I'm diving into the world of books that intertwine art and literature. Any recommendations? #art #lit",
+        "user_index":139,
+        "owner_user_index":139,
+        "user_name":"BookishBard",
+        "topic":"arts & culture",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":312
+    },
+    {
+        "page_content":"I'm also excited about the future of AI and machine learning! I think advancements in natural language processing and ethical AI will be significant. What do you think?",
+        "user_index":206,
+        "owner_user_index":21,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":299,
+        "tweet_idx":313
+    },
+    {
+        "page_content":"I believe AI can greatly enhance personalized learning experiences, making education more accessible. What specific applications do you find most promising?",
+        "user_index":206,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":210,
+        "tweet_idx":314
+    },
+    {
+        "page_content":"Excited to share my fitness journey and tips! Let's motivate each other to stay healthy and active! 💪 #FitnessJourney #HealthyLiving",
+        "user_index":193,
+        "owner_user_index":193,
+        "user_name":"FitnessFanatic",
+        "topic":"fitness",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":315
+    },
+    {
+        "page_content":"That quinoa salad sounds delicious! I love meal prepping healthy recipes. What's your favorite ingredient to add?",
+        "user_index":208,
+        "owner_user_index":5,
+        "user_name":"FitnessFanatic_21",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":157,
+        "tweet_idx":316
+    },
+    {
+        "page_content":"I have a few healthy recipes in mind too! Excited to share them soon! What are you planning to make? #HealthyEating",
+        "user_index":137,
+        "owner_user_index":32,
+        "user_name":"HealthyEats101",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":310,
+        "tweet_idx":317
+    },
+    {
+        "page_content":"How is #DeepLearning transforming the field of computer vision? Excited to hear your thoughts! #AI #MachineLearning",
+        "user_index":191,
+        "owner_user_index":191,
+        "user_name":"TechGuru99",
+        "topic":"AI and Machine Learning",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":318
+    },
+    {
+        "page_content":"Absolutely! The advancements in natural language processing are truly groundbreaking. What specific innovations have caught your eye?",
+        "user_index":206,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":302,
+        "tweet_idx":319
+    },
+    {
+        "page_content":"I agree! The evolution of AI and machine learning will definitely bring exciting innovations. I'm particularly interested in advancements in healthcare applications.",
+        "user_index":206,
+        "owner_user_index":21,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":299,
+        "tweet_idx":320
+    },
+    {
+        "page_content":"I'm really intrigued by how AI advancements are reshaping industries! Healthcare and education seem to be leading the way. What specific impacts do you foresee?",
+        "user_index":111,
+        "owner_user_index":56,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":248,
+        "tweet_idx":321
+    },
+    {
+        "page_content":"AI's role in cybersecurity is indeed fascinating! I believe developments in threat detection and response are particularly promising. What specific advancements have caught your eye?",
+        "user_index":111,
+        "owner_user_index":16,
+        "user_name":"TechGuru23",
+        "topic":"food",
+        "action":"reply",
+        "origin_tweet_idx":187,
+        "tweet_idx":322
+    },
+    {
+        "page_content":"Absolutely! Consistency is key! I always emphasize finding a routine that fits your lifestyle. What's your go-to workout? 💪",
+        "user_index":140,
+        "owner_user_index":5,
+        "user_name":"FitnessFanatic",
+        "topic":"fitness",
+        "action":"reply",
+        "origin_tweet_idx":181,
+        "tweet_idx":323
+    },
+    {
+        "page_content":"I'm also excited about AI in healthcare! The potential for improving patient outcomes is huge. What specific applications do you think will be most impactful?",
+        "user_index":206,
+        "owner_user_index":41,
+        "user_name":"TechGuru99",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":298,
+        "tweet_idx":324
+    },
+    {
+        "page_content":"Absolutely! The innovations in AI and machine learning are fascinating. I think advancements in natural language processing will be game-changers.",
+        "user_index":206,
+        "owner_user_index":21,
+        "user_name":"TechGuru99",
+        "topic":"AI and machine learning",
+        "action":"reply",
+        "origin_tweet_idx":180,
+        "tweet_idx":325
+    },
+    {
+        "page_content":"I love healthy dishes! One of my favorites is a zesty quinoa salad with lots of veggies. What's your go-to healthy recipe?",
+        "user_index":43,
+        "owner_user_index":32,
+        "user_name":"FoodieExplorer",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":243,
+        "tweet_idx":326
+    },
+    {
+        "page_content":"That quinoa salad sounds delicious! I love adding chickpeas for extra protein. Do you have any other healthy recipes to share?",
+        "user_index":43,
+        "owner_user_index":12,
+        "user_name":"FoodieExplorer",
+        "topic":"book review",
+        "action":"reply",
+        "origin_tweet_idx":160,
+        "tweet_idx":327
+    },
+    {
+        "page_content":"I have a few healthy recipes planned for this week! How about you? #HealthyEating",
+        "user_index":137,
+        "owner_user_index":32,
+        "user_name":"HealthyEats101",
+        "topic":"healthyliving",
+        "action":"reply",
+        "origin_tweet_idx":247,
+        "tweet_idx":328
+    },
+    {
+        "page_content":"I've seen some incredible AI innovations lately too! The advancements in natural language processing are particularly fascinating. What are your favorites?",
+        "user_index":111,
+        "owner_user_index":41,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"reply",
+        "origin_tweet_idx":191,
+        "tweet_idx":329
+    },
+    {
+        "page_content":"Excited to see how AI is being integrated into various industries! What innovations are you most looking forward to? #AI #Innovation",
+        "user_index":111,
+        "owner_user_index":111,
+        "user_name":"TechGuru23",
+        "topic":"AI",
+        "action":"tweet",
+        "origin_tweet_idx":-1,
+        "tweet_idx":330
+    }
+]

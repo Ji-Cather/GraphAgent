@@ -12,6 +12,6 @@ LLMGraph/llms/api.json
 test
 chromedriver
 logs
-LLMGraph/tasks
+
 runs
 netcraft_gnn/*
