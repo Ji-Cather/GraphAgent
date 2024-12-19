@@ -3,24 +3,19 @@
         "model_type": "openai_chat",
         "config_name": "default",
         "model_name": "gpt-4o-mini",
-        "api_key": "sk-tD9wQGVxZdnJpXi68e15A0140dF94dB5A0D43fFc10A554B7",
+        "api_key": "api",
         "generate_args": {
             "temperature": 0.5
-        },
-        "client_args":{
-            "base_url":"https://aigc456.top/v1"
         }
     },
     {
         "model_type": "openai_chat",
         "config_name": "gpt-4o-mini",
         "model_name": "gpt-4o-mini",
-        "api_key": "sk-tD9wQGVxZdnJpXi68e15A0140dF94dB5A0D43fFc10A554B7",
+        "api_key": "api",
         "generate_args": {
             "temperature": 0.5
-        },
-        "client_args":{
-            "base_url":"https://aigc456.top/v1"
         }
+       
     }
 ]
