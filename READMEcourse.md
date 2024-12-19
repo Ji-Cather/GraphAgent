@@ -20,8 +20,10 @@ Before we begin, please set your api key in "LLMGraph\llms\default_model_configs
 pip install agentscope\[distributed\] v0.0.4 from https://github.com/modelscope/agentscope/
 ```cmd
     git clone https://github.com/modelscope/agentscope/
-    
-    ```
+    git reset --hard 1c993f9
+    # From source
+    pip install -e .[distribute]
+```
 
 Then create the experiment, and install the required packages:
     ```
