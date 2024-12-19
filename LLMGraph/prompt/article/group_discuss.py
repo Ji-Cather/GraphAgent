@@ -1,15 +1,15 @@
 from LLMGraph.message import Message
-from LLMGraph.prompt.article import cora_prompt_default,cora_prompt_registry
+from LLMGraph.prompt.article import article_prompt_default,article_prompt_registry
 
 from LLMGraph.prompt.base import BaseChatPromptTemplate
     
     
-@cora_prompt_registry.register("group_discuss")
+@article_prompt_registry.register("group_discuss")
 class GroupDiscussPromptTemplate(BaseChatPromptTemplate):
     
     def __init__(self,**kwargs):
         template = kwargs.pop("template",
-                             cora_prompt_default.get("group_discuss_template",""))
+                             article_prompt_default.get("group_discuss_template",""))
 
         input_variables = kwargs.pop("input_variables",
                     ["character_1",
@@ -25,12 +25,12 @@ class GroupDiscussPromptTemplate(BaseChatPromptTemplate):
                          **kwargs)
     
 
-@cora_prompt_registry.register("choose_researcher")
+@article_prompt_registry.register("choose_researcher")
 class ChooseResearcherPromptTemplate(BaseChatPromptTemplate):
     
     def __init__(self,**kwargs):
         template = kwargs.pop("template",
-                             cora_prompt_default.get("choose_researcher_template",""))
+                             article_prompt_default.get("choose_researcher_template",""))
 
         input_variables = kwargs.pop("input_variables",
                     ["role_description",
@@ -44,12 +44,12 @@ class ChooseResearcherPromptTemplate(BaseChatPromptTemplate):
                          input_variables=input_variables,
                          **kwargs)
         
-@cora_prompt_registry.register("get_idea")
+@article_prompt_registry.register("get_idea")
 class GetIdeaPromptTemplate(BaseChatPromptTemplate):
     
     def __init__(self,**kwargs):
         template = kwargs.pop("template",
-                             cora_prompt_default.get("get_idea",""))
+                             article_prompt_default.get("get_idea",""))
 
         input_variables = kwargs.pop("input_variables",
                     ["role_description",

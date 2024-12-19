@@ -1,15 +1,15 @@
 from LLMGraph.message import Message
-from LLMGraph.prompt.article import cora_prompt_default,cora_prompt_registry
+from LLMGraph.prompt.article import article_prompt_default,article_prompt_registry
 
 from LLMGraph.prompt.base import BaseChatPromptTemplate
     
     
-@cora_prompt_registry.register("choose_reason")
+@article_prompt_registry.register("choose_reason")
 class ChooseReasonPromptTemplate(BaseChatPromptTemplate):
     
     def __init__(self,**kwargs):
         template = kwargs.pop("template",
-                             cora_prompt_default.get("choose_reason",""))
+                             article_prompt_default.get("choose_reason",""))
 
         input_variables = kwargs.pop("input_variables",
                     ["role_description",

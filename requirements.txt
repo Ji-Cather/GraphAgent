@@ -8,3 +8,5 @@ causalinference
 dowhy
 causalnex
 community
+sentence-transformers
+# agentscope[distribute]

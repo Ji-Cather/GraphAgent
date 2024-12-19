@@ -1,31 +1,26 @@
 [
     {
         "model_type": "openai_chat",
-        "config_name": "gpt-4",
-        "model_name": "gpt-4-turbo-preview",
-        "api_key": "api",
+        "config_name": "default",
+        "model_name": "gpt-4o-mini",
+        "api_key": "sk-tD9wQGVxZdnJpXi68e15A0140dF94dB5A0D43fFc10A554B7",
         "generate_args": {
             "temperature": 0.5
+        },
+        "client_args":{
+            "base_url":"https://aigc456.top/v1"
         }
     },
     {
         "model_type": "openai_chat",
-        "config_name": "gpt-3.5-turbo-0125",
-        "model_name": "gpt-3.5-turbo-0125",
-        "api_key": "api",
+        "config_name": "gpt-4o-mini",
+        "model_name": "gpt-4o-mini",
+        "api_key": "sk-tD9wQGVxZdnJpXi68e15A0140dF94dB5A0D43fFc10A554B7",
         "generate_args": {
-            "max_tokens": 2000,
-            "temperature": 0.8
-        }
-    },
-    {
-        "model_type": "openai_chat",
-        "config_name": "gpt-4-turbo-preview",
-        "model_name": "gpt-4-turbo-preview",
-        "api_key": "api",
-        "generate_args": {
-            "max_tokens": 1000,
-            "temperature": 0.8
+            "temperature": 0.5
+        },
+        "client_args":{
+            "base_url":"https://aigc456.top/v1"
         }
     }
 ]

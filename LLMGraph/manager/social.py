@@ -318,7 +318,7 @@ Your friend include:
         # llm = ChatOpenAI(model="gpt-3.5-turbo-16k-0613",
         #                  temperature=0.7,
         #                  max_tokens=2000)
-        llm = load_model_by_config_name("vllm")
+        llm = load_model_by_config_name("default")
         profiles = {}
         
         if self.last_added_time == date.min:

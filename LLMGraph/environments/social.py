@@ -312,7 +312,7 @@ class SocialEnvironment(BaseEnvironment):
         if num_added == 0 and len(self.cur_agents)==0:
             agent_profiles_df_list =[]
 
-            max_iter = 10 # social_member_size / threshold
+            max_iter = 1 # social_member_size / threshold
             for i in range(max_iter):
                 agent_profiles_cur = self.call_manager_agent_func(
                     "add_and_return_user_profiles",
@@ -345,12 +345,14 @@ class SocialEnvironment(BaseEnvironment):
                         "num_added":add_num_per_round
                     }
                 ).content
+                if len(agent_profiles_) ==0:break
                 agent_profiles_df = pd.DataFrame.from_dict(agent_profiles_)
                 added_num += agent_profiles_df.shape[0]
                 agent_profiles_dfs.append(agent_profiles_df)
                 if added_num > num_added:
                     break
-            
+            if len(agent_profiles_dfs)==0:
+                return
             agent_profiles = pd.concat(agent_profiles_dfs)
 
         self.call_manager_agent_func(

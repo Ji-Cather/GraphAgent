@@ -41,10 +41,11 @@
             // "--config","fast_vllm",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--save"] 
-            "args": ["--task","cora",
-            "--config","fast_vllm",
-            "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-            "--save"] 
+            // "args": ["--task","cora",
+            // "--config","fast_vllm",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+            
             // "args": ["--task","citeseer",
             // "--config","fast_qwen2",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
@@ -102,10 +103,10 @@
             // "--config","filter_4",
             // // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--build"] 
-            // "args": ["--task","tweets",
-            //         "--config","filter_2item",
-            //         "--launcher_save_path","LLMGraph/llms/launcher_filter_1.json",
-            //         "--build"]
+            "args": ["--task","tweets",
+                    "--config","small",
+                    "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+                    "--build"]
             // "args": ["--task","tweets",
             //         "--config","llama_test_7000_p0.0025_hubFalse",
             //         "--build"]

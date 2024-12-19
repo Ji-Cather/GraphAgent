@@ -1,6 +1,7 @@
 # GraphAgent
 LLM-based Agent Framework for Large-Scale Dynamic Graph Generation.
 
+
 ## GraphAgent Framework
 Before we begin, please set your api key in "LLMGraph\llms\default_model_configs.json", and format it like:
 ```json
@@ -15,6 +16,9 @@ Before we begin, please set your api key in "LLMGraph\llms\default_model_configs
         }
 }]
 ```
+
+Install agentscope v0.0.4 from https://github.com/modelscope/agentscope/
+
 
 Then create the experiment, and install the required packages:
     ```
@@ -49,3 +53,7 @@ visualization/social_network.mp4
 
 ### experiments
 LLMGraph/experiments
+
+<video width="640" height="480" controls>
+  <source src="LLMGraph/experiments" type="video/mp4">
+</video>
