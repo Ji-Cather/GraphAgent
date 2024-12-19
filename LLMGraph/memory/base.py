@@ -11,6 +11,9 @@ from . import memory_registry
 class BaseMemory(BaseModel):
     name :str # 标记是谁的记忆
     id:str= None# 标记是谁的记忆
+    class Config:
+        arbitrary_types_allowed = True
+
     def add_message(self, messages: List[Message]) -> None:
         pass
 

@@ -151,14 +151,7 @@ class LogRound(BaseModel):
         # Calculate Gini coefficient and Lorenz curve coordinates
         gini, x, y = self.calculate_gini(utility_matrix["choose_u"])
         import matplotlib.pyplot as plt
-from matplotlib import font_manager as fm 
-font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
-font_prop = fm.FontProperties(fname=font_path)
-fm.fontManager.addfont(font_path)
 
-# 设置全局字体
-plt.rcParams['font.family'] = font_prop.get_name()
-plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
         # Plot the Lorenz curve
         plt.figure(figsize=(6, 6))
         plt.plot(x, y, marker='o', linestyle='-', color='b')

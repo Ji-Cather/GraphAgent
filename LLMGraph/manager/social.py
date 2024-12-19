@@ -723,17 +723,7 @@ Here's the list of people you followed:
         ## plot fig
         # data_dir = os.path.join(data_dir,f"agent_plans_{cur_time}.pdf")
         import matplotlib.pyplot as plt
-        from matplotlib import font_manager as fm 
-        font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
-        font_prop = fm.FontProperties(fname=font_path)
-        fm.fontManager.addfont(font_path)
-
-        # 设置全局字体
-        plt.rcParams['font.family'] = font_prop.get_name()
-        plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
-        # # 准备数据
-        # days = list(agent_plans_map.keys())
-        # plan_lengths = [len(plans) for plans in agent_plans_map.values()]
+        
 
         # # 绘制折线图
         # plt.figure(figsize=(10, 5))  # 可以调整图像的大小

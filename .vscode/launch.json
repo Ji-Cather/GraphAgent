@@ -181,7 +181,7 @@
             // "args": ["--task", "tweets",
             // "--config", "filter_all_k5"]
             "args": ["--task", "tweets",
-            "--config", "llama_test_1e6"] 
+            "--config", "small"] 
             // "args": ["--task", "tweets",
             // "--config", "llama_test_7000_p0.0025"]
             // "args": ["--task", "tweets",
