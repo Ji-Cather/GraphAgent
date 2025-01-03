@@ -17,6 +17,12 @@ Before we begin, please set your api key in "LLMGraph\llms\default_model_configs
 }\]
 ```
 
+create a virtual environment for LLMGraph
+```cmd
+    conda create --name LLMGraph python=3.9
+    conda activate LLMGraph
+```
+
 pip install agentscope\[distributed\] v0.0.4 from https://github.com/modelscope/agentscope/
 ```cmd
     git clone https://github.com/modelscope/agentscope/
@@ -42,8 +48,6 @@ Then create the experiment, and install the required packages:
     python evaluate/social/main.py
     ```
 
-### build from input
-python main.py --user_input "I want to build a citation network"
 
 ### an illustration visualization of social network generation
 visualization/social_network.mp4
