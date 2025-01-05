@@ -71,10 +71,10 @@ Then create the experiment, and install the required packages:
 
 ### An Illustration Vedio of Tweet Networks
 visualization/social_network.mp4
+<video width="640" height="480" controls>
+  <source src="LLMGraph/experiments" type="video/mp4">
+</video>
 
 ### Experiments
 LLMGraph/experiments
 
-<video width="640" height="480" controls>
-  <source src="LLMGraph/experiments" type="video/mp4">
-</video>](README.md)
