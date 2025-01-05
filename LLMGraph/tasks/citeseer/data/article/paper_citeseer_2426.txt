@@ -1,0 +1,1 @@
+ICrafter: A Service Framework for Ubiquitous Computing Environments In this paper, we propose ICrafter, a framework for services  and their user interfaces in a class of ubiquitous computing environments.

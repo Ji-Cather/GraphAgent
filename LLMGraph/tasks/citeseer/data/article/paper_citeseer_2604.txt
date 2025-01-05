@@ -1,0 +1,1 @@
+A Multi-Agent Architecture for Distributed Corporate Memories This paper presents an approach to design a  multi-agent system managing a corporate  memory in the form of a distributed semantic  web and describes the resulting architecture.

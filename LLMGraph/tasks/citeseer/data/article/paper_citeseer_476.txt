@@ -1,0 +1,1 @@
+A Proposal for an Agent Architecture for Proactive Persistent Non Player Characters In the past, games development has been driven by the need to achieve more realistic graphics.

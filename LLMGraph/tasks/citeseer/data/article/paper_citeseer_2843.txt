@@ -1,0 +1,1 @@
+Security in the Ajanta Mobile Agent System This paper describes the security architecture of Ajanta

@@ -1,0 +1,1 @@
+Topic-Driven Crawlers: Machine Learning Issues Topic driven crawlers are increasingly seen as a way to address the scalability limitations of universal  search engines, by distributing the crawling process across users, queries, or even client computers.

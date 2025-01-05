@@ -1,0 +1,1 @@
+Mining Semi-Structured Data by Path Expressions A new data model for ltering semi-structured texts is presented.

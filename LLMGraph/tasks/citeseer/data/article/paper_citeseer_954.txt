@@ -1,0 +1,1 @@
+Broadcasting Consistent Data to Mobile Clients with Local Cache Although data broadcast has been shown to be an efficient method for disseminating data items in a mobile computing system with large number of clients, the issue on how to ensure currency and consistency of the data items has not been examined adequately.

@@ -1,0 +1,1 @@
+Proposal Id: P480 Proposal for MPEG-7 Image Description Scheme Name: this document, although any specific DDL selected by MPEG-7 can be used to serve the same purpose as well. We will demonstrate that new features can be easily accommodated using the hierarchical structures and entity relation structures.

@@ -1,0 +1,1 @@
+Identifying and Handling Structural Incompleteness for Validation of Probabilistic Knowledge-Bases The PESKI (Probabilities, Expert Systems, Knowledge,  and Inference) system attempts to address some  of the problems in expert system design through the  use of the Bayesian Knowledge Base (BKB) representation.

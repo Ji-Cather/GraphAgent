@@ -1,0 +1,1 @@
+Efficient Atomic Cluster Optimization Using A Hybrid Extended Compact Genetic Algorithm With Seeded Population A recent study (Sastry & Xiao, 2001) proposed a highly reliable cluster optimization algorithm

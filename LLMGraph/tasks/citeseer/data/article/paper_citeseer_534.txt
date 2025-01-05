@@ -1,0 +1,1 @@
+Spatio-temporal representation and reasoning based on RCC-8 this paper is to introduce a hierarchy of languages intended for qualitative spatio-temporal representation and reasoning, provide these languages with topological temporal semantics, construct effective reasoning algorithms, and estimate their computational complexity.

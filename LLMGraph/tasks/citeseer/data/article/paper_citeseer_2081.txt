@@ -1,0 +1,1 @@
+Nonmonotonic Reasoning: Towards Efficient Calculi and Implementations

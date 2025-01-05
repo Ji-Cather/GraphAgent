@@ -128,6 +128,3 @@ if __name__ == "__main__":
     
    
     G_generated = load_graph(model_root,"movielens")
-    calculate_movie_matrix(G_generated,save_dir=save_root)
-
-    

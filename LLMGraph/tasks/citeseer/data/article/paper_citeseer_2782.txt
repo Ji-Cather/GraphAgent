@@ -1,0 +1,1 @@
+Towards Combining Fuzzy and Logic Programming Techniques Many problems from AI have been successfully solved using fuzzy techniques. On the other hand, there are many other AI problems, in which logic programming (LP) techniques have been very useful. Since we have two successful techniques, why not combine them?

@@ -1,0 +1,1 @@
+Towards Agent-Oriented Information Systems This paper reviews several relevant agent concepts developed in the intelligent agents and multiagent systems area, and makes suggestions how to extend current IS technology on the basis of these concepts. Since it presents work in progress, the 3

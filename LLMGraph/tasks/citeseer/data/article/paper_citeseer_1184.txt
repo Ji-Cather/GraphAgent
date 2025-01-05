@@ -1,0 +1,1 @@
+Efficiently Ordering Query Plans for Data Integration interface to a multitude of data sources. Given a user query formulated in this interface, the system translates it into a set of query plans. Each plan is a query formulated over the data sources, and specifies a way to access sources and combine data to answer the user query.

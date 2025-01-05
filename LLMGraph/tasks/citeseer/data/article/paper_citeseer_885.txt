@@ -1,0 +1,1 @@
+Which Search Engine is best at finding Online Services? We report results for an independent, blind evaluation of the performance of 11 commercial search engines on 106 online service queries and on 54 topic relevance queries. We found a strong correlation between performance on the two types of query and significant differences between engines.

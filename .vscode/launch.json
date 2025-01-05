@@ -80,9 +80,11 @@
             // "--build"]
 
             // movielens config
-            // "args": ["--task","movielens",
-            //         "--config","test_movie_up",
-            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            "args": ["--task","citeseer",
+                    "--config","small",
+                    "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+                    "--build"
+                ]
             //         "--save"] 
             // "args": ["--task","movielens",
             // "--config","filter_1",
@@ -103,10 +105,10 @@
             // "--config","filter_4",
             // // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--build"] 
-            "args": ["--task","tweets",
-                    "--config","small",
-                    "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-                    "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","small",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //         "--build"]
             // "args": ["--task","tweets",
             //         "--config","llama_test_7000_p0.0025_hubFalse",
             //         "--build"]

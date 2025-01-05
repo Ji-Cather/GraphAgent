@@ -1,0 +1,1 @@
+Algebraic Models for Contextual Nets We extend the algebraic approach of Meseguer and Montanari from ordinary place/transition Petri nets to contextual nets, covering both the collective and the individual token philosophy uniformly along the two interpretations of net behaviors.

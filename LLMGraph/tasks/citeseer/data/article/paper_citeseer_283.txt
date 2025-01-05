@@ -1,0 +1,1 @@
+The Cub-e, a Novel Virtual 3D Display Device We have designed, and are in the process of building, a visualisation device,  the Cub-e. The Cub-e consists of six TFT screens, arranged in a perspex cube,  with a StrongARM processor and batteries inside. It is a multipurpose device  with applications including teleconferencing, interaction with virtual worlds, and  games.  1

@@ -1,0 +1,1 @@
+Deductive Database Languages: Problems and Solutions this paper, we discuss these problems from four different aspects: complex values, object orientation, higher-orderness, and updates. In each case, we examine four typical languages that address the corresponding issues.

@@ -1,0 +1,1 @@
+A Framework for Norm-Based Inter-Agent Dependence A significant class of agent architectures designed for operation in a multi-agent world choose their next actions or plans based on a limited analysis

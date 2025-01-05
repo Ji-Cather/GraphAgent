@@ -1,0 +1,1 @@
+Linearly Bounded Reformulations of Conjunctive Databases (Extended Abstract) Database reformulation is the process of rewriting the data  and rules of a deductive database in a functionally equivalent manner.

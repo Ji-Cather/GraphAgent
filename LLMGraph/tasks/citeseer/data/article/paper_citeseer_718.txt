@@ -1,0 +1,1 @@
+Real-Time Error in Location Modeling for Ubiquitous Computing No matter which technologies or techniques a ubiquitous location system  uses, its measurements will have some amount of quantifiable error.

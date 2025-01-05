@@ -1,0 +1,1 @@
+Implementation of a Linear Tabling Mechanism Delaying-based tabling mechanisms, such as the one adopted in XSB, are nonlinear  in the sense that the computation state of delayed calls has to be preserved.

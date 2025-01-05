@@ -1,0 +1,1 @@
+An Autonomous Page Ranking Method for Metasearch Engines this paper, the topics are derived from the user's query; the reputation of each result page on the query topic is computed, and the value used to rank the result pages across all participating search engines, without biasing the ranking towards any of the sources

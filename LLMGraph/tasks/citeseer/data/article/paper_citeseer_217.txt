@@ -1,0 +1,1 @@
+Exploration of Perceptual Computing for Smart-Its The future success of ubiquitous computing depends to a big part on how well applications can adapt to their environment and act accordingly. This thesis has set itself the goal of exploring perceptual computing for Smart-Its, which is one such ubiquitous computing vision.

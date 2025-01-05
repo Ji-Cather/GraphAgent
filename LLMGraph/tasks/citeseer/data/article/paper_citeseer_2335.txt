@@ -1,0 +1,1 @@
+Rank Aggregation Revisited The rank aggregation problem is to combine many different rank orderings on the same set of candidates,  or alternatives, in order to obtain a "better" ordering. Rank aggregation has been studied extensively  in the context of social choice theory, where several "voting paradoxes" have been discovered. The problem

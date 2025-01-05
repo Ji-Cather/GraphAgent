@@ -1,0 +1,1 @@
+AI at IBM Research IBM has played an active role in AI research since the field's inception more than 50 years ago. In a trend that reflects the increasing demand for applications that behave intelligently, IBM today carries out most AI research in an interdisciplinary fashion by combining AI techniques with other computing techniques to solve difficult technical problems.  1

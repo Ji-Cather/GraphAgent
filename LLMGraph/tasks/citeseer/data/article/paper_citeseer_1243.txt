@@ -1,0 +1,1 @@
+Neural Networks for Speech Processing this article. Currently (1998), successful use of NNs for speech processing is mainly limited to

@@ -1,0 +1,1 @@
+Multiagent Systems Engineering: A Methodology And Language for Designing Agent Systems This paper overviews MaSE and provides a high-level introduction to one critical component used within MaSE, the Agent Modeling Language. Details on the Agent Definition Language and detailed agent design are left for a future paper.

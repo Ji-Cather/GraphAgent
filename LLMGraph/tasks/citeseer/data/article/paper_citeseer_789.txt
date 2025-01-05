@@ -1,0 +1,1 @@
+Standardizing Agent Communication An Agent Communication Language (ACL) is a collection of  speech-act-like message types, with agreed-upon semantics, which facilitate  the knowledge and information exchange between software agents.

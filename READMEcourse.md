@@ -37,15 +37,35 @@ Then create the experiment, and install the required packages:
     ```
 
 ### build social network
+```cmd
+    export PYTHONPATH=./
+```
 
 - To start building social network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
     ```cmd
-    export PYTHONPATH=./
     python start_launchers.py
     python main.py --task tweets --config "small" --build # build from synthhetic tweet data
     
-    # evaluation social networks
+    # follow/action/friend networks
     python evaluate/social/main.py
+    ```
+
+- To start building movie rating network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
+    ```cmd
+    python start_launchers.py
+    python main.py --task movielens --config "small" --build # build from synthhetic tweet data
+    
+    # movie rating/user projection networks
+    python evaluate/movie/main.py
+    ```
+
+- To start building citation network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
+    ```cmd
+    python start_launchers.py
+    python main.py --task movielens --config "small" --build # build from synthhetic tweet data
+    
+    # citation networks and etc.
+    python evaluate/article/main.py
     ```
 
 

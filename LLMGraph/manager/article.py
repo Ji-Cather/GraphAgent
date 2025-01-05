@@ -124,8 +124,14 @@ class ArticleManager(BaseManager):
                   ):
         
         retriever_kwargs = copy.deepcopy(retriever_kwargs)
-        article_meta_path = os.path.join(os.path.dirname(config_path),article_meta_path)
-        author_path = os.path.join(os.path.dirname(config_path),author_path)
+        try:
+            article_meta_path_join = os.path.join(os.path.dirname(config_path),article_meta_path)
+            author_path_join = os.path.join(os.path.dirname(config_path),author_path)
+            assert os.path.exists(article_meta_path_join) and os.path.exists(author_path_join)
+        except:
+            article_meta_path_join = os.path.join(task_path,article_meta_path)
+            author_path_join =  os.path.join(task_path,author_path)
+
         article_dir = os.path.join(task_path,article_dir)
         if "llm_agent" in article_dir:
             dataset = "llm_agent"
@@ -135,10 +141,10 @@ class ArticleManager(BaseManager):
             dataset = "cora"
         else:raise ValueError("unknown dataset: {}".format(article_dir))
 
-        article_meta_data = readinfo(article_meta_path)
-        author_data = readinfo(author_path)
+        article_meta_data = readinfo(article_meta_path_join)
+        author_data = readinfo(author_path_join)
         
-        countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+        countrys = readinfo("evaluate/article/country.json")
         
         assert os.path.exists(article_dir),"no such file path: {}".format(article_dir)
         generated_article_dir = os.path.join(os.path.dirname(config_path),

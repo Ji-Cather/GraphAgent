@@ -1,0 +1,1 @@
+Collaborative Maintenance this paper we examine a classical AI problem (knowledge maintenance) and propose an innovative solution (collaborative maintenance) that has been inspired by the recommendation technique of

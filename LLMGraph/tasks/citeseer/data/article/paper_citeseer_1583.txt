@@ -1,0 +1,1 @@
+Automatic translation of PARADIGM models into PLTL-based Software systems have evolved from monolythic programs to systems constructed from parallel, cooperative components, as can be currently found in objectoriented applications. Although powerfull, these cooperative systems are also more di#cult to verify.

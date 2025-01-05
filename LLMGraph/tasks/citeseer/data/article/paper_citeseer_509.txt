@@ -1,0 +1,1 @@
+A Multiagent Architecture For Fuzzy Modeling In this paper a hybrid learning system that combines different fuzzy modeling techniques  is being investigated. In order to implement the different methods, we propose  the use of intelligent agents, which collaborate by means of a multiagent architecture.

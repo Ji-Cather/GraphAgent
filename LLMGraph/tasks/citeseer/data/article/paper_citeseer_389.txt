@@ -1,0 +1,1 @@
+A Formal Approach to Detecting Security Flaws in Object-Oriented Databases This paper adopts the method-based authorization model and assumes the following database management policies. Let (m, (c 1 ,c 2 , ...,c n )) be in an authorization for a user u.

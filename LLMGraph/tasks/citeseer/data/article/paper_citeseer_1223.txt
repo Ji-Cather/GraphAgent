@@ -1,0 +1,1 @@
+Automated Servicing of Agents Agents need to be able to adapt to changes in their environment. One way to achieve this, is to service agents when needed. A separate servicing facility, an agent factory, is capable of automatically modifying agents. This paper discusses the feasibility of automated servicing.

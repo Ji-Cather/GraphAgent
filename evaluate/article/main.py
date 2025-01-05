@@ -274,7 +274,7 @@ def visualize_article(
     #     weight_sum = sum([attr['count'] for (_, _, attr) in in_edges])
     #     weighted_in_degree[node] = weight_sum
     # plot_gini(weighted_in_degree,save_dir=save_dir,data_type="author")
-    # countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    # countrys = readinfo("evaluate/article/country.json")
     # countrys = countrys["core"] + countrys["periphery"][:10]
     # weighted_in_degree = {c:0 for c in countrys}
     # weighted_in_degree = {}
@@ -354,7 +354,7 @@ def visualize_article(
 
 def build_er_article_meta_graph(article_graph:nx.DiGraph):
     import random
-    countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    countrys = readinfo("evaluate/article/country.json")
     countrys_list = []
     for v in countrys.values():
         countrys_list.extend(v)
@@ -385,7 +385,7 @@ def build_ba_article_meta_graph(article_meta_data:dict,
                                 G:nx.DiGraph,
                                 type:str):
     # use all_countrys
-    countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    countrys = readinfo("evaluate/article/country.json")
     if type =="country_all":
         countrys_list = []
         for v in countrys.values():
@@ -467,7 +467,7 @@ def get_countrys_list(article_meta_data,
                       map_index:dict,
                       type:str
                       ):
-    countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    countrys = readinfo("evaluate/article/country.json")
     if type =="country_all":
         countrys_list = []
         for v in countrys.values():

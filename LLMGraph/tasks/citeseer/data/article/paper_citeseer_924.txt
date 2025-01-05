@@ -1,0 +1,1 @@
+Adaptive and Intelligent Technologies for Web-based Education The paper provides a review of adaptive and intelligent technologies in a context of Web-based distance education. We analyze what kind of technologies are available right now, how easy they can be implemented on the Web, and what is the place of these technologies in large-scale Web-based education.

@@ -1,0 +1,1 @@
+Top-Down Induction Of First Order Logical Decision Trees this paper. For instance, the Progol system (Muggleton, 1995) has recently been extended with caching and other efficiency improvements (Cussens, 1997). Another direction of work is the use of sampling techniques, see e.g. (Srinivasan, 1998; Sebag, 1998).  168 CHAPTER 7. SCALING UP Tilde

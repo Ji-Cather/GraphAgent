@@ -1,0 +1,1 @@
+Economic Value of EWA Lite: A Functional Theory of Learning in Games This paper describes a theory of learning in decisions and games called EWA Lite, with only one parameter. EWA Lite predicts the time path of individual behavior in any normal-form game (given initial conditions) including new games in which behavior has never been observed.

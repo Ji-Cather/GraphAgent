@@ -1,0 +1,1 @@
+Minimal Distance Neural Methods A general framework for minimal distance  methods is presented. Radial Basis Functions (RBFs) and Multilayer Perceptrons (MLPs) neural networks are included in this framework as special cases. New versions of minimal distance methods are formulated. A few of them have been tested on a real-world datasets obtaining very encouraging results.

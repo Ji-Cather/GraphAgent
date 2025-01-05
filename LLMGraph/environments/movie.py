@@ -90,7 +90,7 @@ class MovieEnvironment(BaseEnvironment):
         
         manager_agent = MovieManagerAgent(
             name = "movie_manager",
-            model_config_name="vllm",
+            model_config_name="default",
             movie_data_dir = movie_data_dir,
             link_movie_path=link_movie_path,
             generated_data_dir=generated_data_dir,

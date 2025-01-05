@@ -1,0 +1,1 @@
+An Agent Infrastructure to Build and Evaluate Multi-Agent Systems: The Java Agent Framework and Multi-Agent System Simulator . In this paper, we describe our agent framework and address

@@ -63,8 +63,7 @@ if __name__ == "__main__":
     
     args = {**vars(args)}
     import os
-    # os.environ["OPENAI_API_BASE"] = "https://api2.aigcbest.top/v1"
-    os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
+
     agentscope.init(
         project="llmgraph",
         name="main",

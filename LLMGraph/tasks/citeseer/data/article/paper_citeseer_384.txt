@@ -1,0 +1,1 @@
+The State of the Art in Distributed and Dependable Computing This report is dedicated to the memory of Henrique Fonseca

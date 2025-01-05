@@ -1,0 +1,1 @@
+Verbal and Nonverbal Discourse Planning this paper we first describe our enriched discourse generator explaining the 2 sets of rules (trigger and regulation) we have added. We also review the di#erent types of gaze communicative acts. Finally we present the variables defining the context and how they modify the computation of the display of the communicative acts.

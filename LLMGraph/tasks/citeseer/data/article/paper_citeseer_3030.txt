@@ -1,0 +1,1 @@
+Desires and Defaults: A Framework for Planning with Inferred Goals This paper develops a formalism designed to integrate reasoning about desires with planning. The resulting logic, BDP, is capable of modeling a wide range of common-sense practical arguments, and can serve as a more general and flexible model for agent architectures.

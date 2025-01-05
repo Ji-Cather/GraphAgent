@@ -1,0 +1,1 @@
+Tabling for Non-monotonic Programming this paper we describe tabling as it is implemented in the XSB system

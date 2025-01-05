@@ -1,0 +1,1 @@
+Contextual Deontic Logic: Normative Agents, Violations and Independence this paper we discuss when and how to use deontic logic in multi agent systems

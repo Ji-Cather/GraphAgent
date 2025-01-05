@@ -1,0 +1,1 @@
+On the Non-Linear Optimization of Projective Motion Using Minimal Parameters I address the problem of optimizing projective motion over a minimal  set of parameters. Most of the existing works overparameterize the problem.

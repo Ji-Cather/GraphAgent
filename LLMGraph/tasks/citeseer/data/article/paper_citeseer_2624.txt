@@ -1,0 +1,1 @@
+Multiagent Architecture for D-Sifter -- A modern approach to flexible information filtering in dynamic environments

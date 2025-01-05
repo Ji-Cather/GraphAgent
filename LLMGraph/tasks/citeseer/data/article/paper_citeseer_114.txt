@@ -1,0 +1,1 @@
+A Semiotic Communication Model for Interface Design This research wants to contribute to the creation of a semiotic framework for interface design. Using the Jakobson's communication model to analyse the HCI approach to interface development, we explain how some central factors of communication are not enough considered by designers.

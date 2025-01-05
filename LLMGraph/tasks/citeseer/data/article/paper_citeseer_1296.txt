@@ -1,0 +1,1 @@
+Visual Ranking of Link Structures (Extended Abstract) Methods for ranking World Wide Web resources according to their position in the link structure of the Web are receiving considerable attention, because they provide the first effective means for search engines to cope with the explosive growth and diversification of the Web.

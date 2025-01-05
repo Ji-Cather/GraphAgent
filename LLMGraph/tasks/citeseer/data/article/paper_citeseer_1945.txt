@@ -1,0 +1,1 @@
+InterBase-KB: Integrating a Knowledge Base System with a Multidatabase System for Data Warehousing This paper describes the integration of a multidatabase system and a knowledge-base system to support

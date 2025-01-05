@@ -1,0 +1,1 @@
+Toward Team-Oriented Programming The promise of agent-based systems is leading towards the development  of autonomous, heterogeneous agents, designed by a variety of research/industrial  groups and distributed over a variety of platforms and environments.

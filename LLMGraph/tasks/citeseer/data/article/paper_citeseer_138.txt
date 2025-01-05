@@ -1,0 +1,1 @@
+A Flexible, Interoperable Framework for Active Spaces this paper we describe the requirements faced by such a system and propose an integrated architecture meeting these requirements. The paper focuses on a representation of Active Spaces using standard Naming and Trading mechanisms and on an object-oriented framework for managing heterogeneous devices.

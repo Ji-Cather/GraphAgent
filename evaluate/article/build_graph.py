@@ -21,7 +21,7 @@ def build_country_citation_graph(article_meta_data:dict,
     """
     DG = nx.MultiDiGraph()
 
-    countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    countrys = readinfo("evaluate/article/country.json")
     countrys_list = []
     for v in countrys.values():
         for v_ in v:
@@ -620,7 +620,7 @@ def update_citation_graph(DG:nx.DiGraph,
         DG (nx.DiGraph): _description_
         article_meta_data (dict): _description_
     """
-    countrys = readinfo("LLMGraph/tasks/citeseer/data/country.json")
+    countrys = readinfo("evaluate/article/country.json")
     countrys_list = []
     for v in countrys.values():
         for v_ in v:

@@ -1,0 +1,1 @@
+Distributed Safety Controllers for Web Services We show how to use high-level synchronization constraints, written in a version of monadic second-order logic on finite strings, to synthesize safety controllers for interactive web services. We improve on the naïve runtime model to avoid state-space explosions and to increase the flow capacities of services.

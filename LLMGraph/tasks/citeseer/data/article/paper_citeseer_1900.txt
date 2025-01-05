@@ -1,0 +1,1 @@
+What Do We Want From a Wearable User Interface? This document outlines the author's ultimate goal and suggests one technology that can be exploited by applications writers to make them fit neatly into future application integration frameworks.

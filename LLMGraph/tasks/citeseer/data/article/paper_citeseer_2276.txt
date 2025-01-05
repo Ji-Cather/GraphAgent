@@ -1,0 +1,1 @@
+Using the Resources Model in Virtual Environment Design this paper we take a step back from the formal specification of VEs to investigate where requirements and design information are located within these environments and how it can be structured and analysed. More specifically, we are interested in considering VEs in terms of distributed cognition (DC) [5, 7, 14, 20].

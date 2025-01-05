@@ -1,0 +1,1 @@
+Data-Driven Generation of Decision Trees for Motif-Based Assignment of Protein Sequences to Functional Families This paper describes an approach to data-driven discovery of sequence motif-based models in the form of decision trees for assigning

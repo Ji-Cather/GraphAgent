@@ -1,0 +1,1 @@
+AutoDoc: A Search and Navigation Tool for Web-Based Program Documentation We present a search and navigation tool for use with automatically generated program documentation, which builds trails in the information space. Three user interfaces are suggested, which show the web pages in context, and hence better explain the structure of the code.

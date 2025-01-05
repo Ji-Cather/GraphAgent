@@ -1,0 +1,1 @@
+Hermes - A Notification Service for Digital Libraries The high publication rate of scholarly material makes searching and browsing an inconvenient way to keep oneself up-todate. Instead of being the active part in information access, researchers want to be notified whenever a new paper in one's research area is published.

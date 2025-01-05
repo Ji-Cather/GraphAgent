@@ -1,0 +1,1 @@
+Cooperative Plan Selection Through Trust Cooperation plays a fundamental role in multi-agent systems in which  individual agents must interact for the overall system to function effectively.

@@ -1,0 +1,1 @@
+Fuzzy Argumentation and Extended Logic Programming We define a fuzzy version of extended logic programming under well-founded semantics with explicit negation. We develop a fuzzy fixpoint argumentation semantics and an efficient, top-down, goal-directed proof procedure. We show that the procedure is sound and complete with respect to the argumentation semantics.

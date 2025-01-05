@@ -1,0 +1,1 @@
+Evaluating Look-to-Talk: A Gaze-Aware Interface in a Collaborative Environment We present “look-to-talk”, a gaze-aware interface for directing a spoken utterance to a software agent in a multiuser collaborative environment. Through a prototype and a Wizard-of-Oz (WOz) experiment, we show that &quot;look-totalk” is indeed a natural alternative to speech and other paradigms.

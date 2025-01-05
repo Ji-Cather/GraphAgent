@@ -1,0 +1,1 @@
+Second-Order Networks for Wall-Building Agents This paper describes robust neurocontrollers for groups of agents that perform construction tasks. They enable agents to balance multiple goals, perform sequences of actions and survive while building walls, corridors, intersections, and briar patches.

@@ -1,0 +1,1 @@
+AT Humboldt in RoboCup-99 The paper describes the architecture and the scientific goals of the virtual soccer team "AT Humboldt 99", which is the successor of vice champion "AT Humboldt 98" from RoboCup-98 in Paris and world champion "AT Humboldt 97" from RoboCup-97 in Nagoya. Scientific goals are the development of agent-oriented techniques and learning methods.

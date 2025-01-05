@@ -1,0 +1,1 @@
+Mining Knowledge in Geographical Data this article, a short overview is provided to summarize recent studies on spatial data mining, including spatial data mining techniques, their strengths and weaknesses, how and when to apply them, and what are the challenges yet to be faced.

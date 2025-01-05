@@ -1,0 +1,1 @@
+XML Query Languages: Experiences and Exemplars This paper identifies essential features of an XML query language by examining four existing query languages: XML-QL, YA T L , Lorel, and XQL. The first three languages come from the database community and possess striking similarities. The fourth comes from the document community and lacks some key functionality of the other three.

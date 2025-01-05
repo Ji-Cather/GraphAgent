@@ -1,0 +1,1 @@
+Genre Classification and Domain Transfer for Information Filtering The World Wide Web is a vast repository of information, but the sheer volume makes it difficult to identify useful documents. We identify document genre is an important factor in retrieving useful documents and focus on the novel document genre dimension of subjectivity.

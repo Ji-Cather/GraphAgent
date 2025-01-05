@@ -1,0 +1,1 @@
+Improving Collaborative Filtering with Multimedia Indexing Techniques to create User-Adapting Web Sites The Internet is evolving from a static collection of hypertext, to a rich assortment of dynamic services and products targeted at millions of Internet users. For most sites it is a crucial matter to keep a close tie between the users and the site.

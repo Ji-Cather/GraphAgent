@@ -1,0 +1,1 @@
+LivingLab: A white paper The LivingLab is a planned research infrastructure that is pivotal for user-system interaction research in the next decade. This article presents the concept and outlines a research programme that will be served by this facility. These future plans are motivated by a vision of future developments concerning interaction with intelligent environments.

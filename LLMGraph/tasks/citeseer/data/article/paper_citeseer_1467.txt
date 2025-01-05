@@ -1,0 +1,1 @@
+Speeding up Relational Reinforcement Learning Through the Use of an Incremental First Order Decision Tree Learner Relational reinforcement learning (RRL) is a learning technique  that combines standard reinforcement learning with inductive logic  programming to enable the learning system to exploit structural knowledge  about the application domain.

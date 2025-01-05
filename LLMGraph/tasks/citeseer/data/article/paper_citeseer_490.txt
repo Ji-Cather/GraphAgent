@@ -1,0 +1,1 @@
+DB-Prism: Integrated Data Warehouses and Knowledge Networks for Bank Controlling DB-Prism is an integrated data warehouse system

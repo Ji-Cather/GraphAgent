@@ -1,0 +1,1 @@
+Ontologies Description and Applications The word "ontology" has gained a good popularity within the AI  community. Ontology is usually viewed as a high-level description consisting  of concepts that organize the upper parts of the knowledge base.

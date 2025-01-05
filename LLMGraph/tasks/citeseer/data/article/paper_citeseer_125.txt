@@ -1,0 +1,1 @@
+Nearest Neighbor Queries in a Mobile Environment Nearest neighbor queries have received much interest in recent  years due to their increased importance in advanced database applications. However, past work
