@@ -1,4 +1,4 @@
-[# GraphAgent
+# GraphAgent
 LLM-based Agent Framework for Large-Scale Dynamic Graph Generation.
 
 
