@@ -47,7 +47,7 @@ environment:
   agent:
     type: movie_agent
     llm:
-      config_name: vllm
+      config_name: llama3
       max_tokens: 1000
       temperature: 0.8
 

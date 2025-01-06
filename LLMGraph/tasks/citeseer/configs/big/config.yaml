@@ -1,48 +1,73 @@
-environment:
-  agent:
-    llm:
-      config_name: gpt-4o-mini
-    social_memory:
-      reflection: false
-      summary_threshold: 10
-      type: social_memory
-    type: article_agent
-    write_memory:
-      type: rational_memory
+
+use_agent_config: False
+
+environment:  
+  env_type: article
+  
+  # max_paper_num: 100
+
+  # article_write_configs:
+  #   citations: 10
+  #   author_num: 5
+  #   communication_num: 4
+    
+  # time_configs:
+  #   cur_time: 2023-05-01
+  #   end_time: 2024-12-01
+  #   round_time_delta: 10 
+  #   article_num_per_delta: 5
+
+  #   author_time_delta: 30 
+  #   author_num_per_delta: 5
+
+  max_paper_num: 10000
+
   article_write_configs:
-    author_num: 5
+    use_graph_deg: True
     citations: 10
+    author_num: 5
     communication_num: 2
     max_refine_round: 1
-    use_graph_deg: true
-  env_type: article
-  managers:
-    article:
-      article_dir: data/article
-      article_meta_path: data/article_meta_info.pt
-      author_path: data/author.pt
-      control_profile:
-        hub_rate: 0.1
-      experiment:
-      - shuffle
-      generated_article_dir: data/generated_article
-      model_config_name: gpt-4o-mini
-      retriever_kwargs:
-        search_kwargs:
-          k: 20
-          score_cite: true
-        type: graph_vector_retriever
-      tool_kwargs:
-        filter_keys:
-        - big_name
-        - topic
-        - write_topic
-  max_paper_num: 10000
+    
   time_configs:
-    article_num_per_delta: 50
-    author_num_per_delta: 30
-    author_time_delta: 30
     cur_time: 2004-01-01
     end_time: 2011-01-01
     round_time_delta: 5
-use_agent_config: false
+    article_num_per_delta: 50
+
+    author_time_delta: 30 
+    author_num_per_delta: 30
+
+  managers:
+  
+    article:
+      model_config_name: llama3
+      article_meta_path: data/article_meta_info.pt
+      author_path: data/author.pt
+      article_dir: data/article
+      generated_article_dir: data/generated_article
+      experiment: ["shuffle"]
+      
+      control_profile:
+        hub_rate: 0.1
+      tool_kwargs:
+        filter_keys: ["big_name","topic", "write_topic"]
+      retriever_kwargs: 
+        type: graph_vector_retriever
+        search_kwargs:
+          k: 20
+          score_cite: True
+
+  agent:
+    type: article_agent
+    llm:
+      config_name: llama3
+    
+    social_memory:
+      type: social_memory
+      reflection: false
+      summary_threshold: 10
+
+    write_memory:
+      type: rational_memory
+
