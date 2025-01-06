@@ -4,8 +4,8 @@ python main.py --task movielens --config "big" --build
 python main.py --task tweets --config "big" --build
 
 # shrinking diameter
-python main.py --task tweets --config "big" --build
-python main.py --task tweets --config "big_hubFalse" --build
+python main.py --task tweets --config "mid_hub" --build
+python main.py --task tweets --config "mid_hubFalse" --build
 
 
 # baselines:
