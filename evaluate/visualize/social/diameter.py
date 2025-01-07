@@ -55,12 +55,3 @@ def plot_shrinking_diameter(matrix_dir:str,
     plt.savefig(save_path)
     plt.clf()
 
-root = "LLMGraph/tasks/tweets/configs/llama_test_7000_p0.0025_hubFalse/evaluate"
-files = os.listdir(root)
-for file in files:
-    file_path = os.path.join(root, file)
-    df = pd.read_csv(file_path)
-
-plot_shrinking_diameter("LLMGraph/tasks/tweets/configs/llama_test_7000_p0.0025_hubFalse/evaluate",
-                        "evaluate/visualize/for_paper",
-                        "tweets_nhub")

@@ -54,3 +54,4 @@ environment:
       type: movie_memory
 
 
+use_agent_config: false

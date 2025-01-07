@@ -12,7 +12,7 @@ from agentscope.message import Msg
 
 def get_arg_config(args):
     
-    llm = load_model_by_config_name("gpt-3.5-turbo-0125")
+    llm = load_model_by_config_name("default")
     template = """
 Here's three kind of human activitys:
 
@@ -24,13 +24,16 @@ Here's three kind of human activitys:
 
 Now here's some information about the network generation task:
 {instruction}
+
+Now respond the simulation scenrio you should be simulating. which should be an interger from 1 to 3 (article writing, movie reviewing, online socialization).
+Respond only the number:
 """
     prompt = template.format(instruction = args["user_input"])
     prompt_msg = llm.format(Msg("user",prompt,"user"))
     response = llm(prompt_msg)
     content = response.text
     import re
-    int_match = re.search(r'\d+', str)
+    int_match = re.search(r'\d+', content)
     simulation_number = int(int_match.group())
     simulation_task_map = {
         1:"citeseer",
@@ -42,8 +45,9 @@ Now here's some information about the network generation task:
     except:
         print("Invalid simulation for input")
         exit()
-    args["config"] = "agent_config"
+    args["config"] = "user"
     args["build"] = True
+    print("task: {task}, config: {config}".format(task=  args["task"], config=  args["config"]))
     return args
 
 def load_memory(memory_config: Dict,
@@ -105,6 +109,7 @@ def update_env_config(env_config,
         if env_type == "article":
             env_config["article_write_configs"]["min_citations"] = agent_config["min_citations"]
             env_config["article_write_configs"]["max_citations"] = agent_config["max_citations"]
+            env_config["article_write_configs"]["use_graph_deg"] = False
             start_time = env_config["time_configs"]["cur_time"]
             simulation_time = timedelta(days=agent_config["time"])
             end_time = start_time + simulation_time

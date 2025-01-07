@@ -60,13 +60,13 @@ class Executor():
         use_agent_config = task_config.pop("use_agent_config",False)
         if use_agent_config:
             env_type = env_config["env_type"]
-            control_agent = ControlAgent(env_type,"vllm")
+            control_agent = ControlAgent(env_type,"default")
             user_agent = UserAgent()
-            instruction = "you need to provide the some instruction about the graph you want to generate"
-            print(instruction)
-            requirement = user_agent()
+            # instruction = "you need to provide the some instruction about the graph you want to generate"
+            # print(instruction)
+            # requirement = user_agent()
             kwargs = {
-                "requirement": requirement.content,
+                "requirement": args["user_input"] + "\n",
                 "graph_type": env_type
             }
             control_msg = Msg("user",

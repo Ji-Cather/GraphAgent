@@ -4,22 +4,6 @@ use_agent_config: False
 environment:  
   env_type: article
   
-  # max_paper_num: 100
-
-  # article_write_configs:
-  #   citations: 10
-  #   author_num: 5
-  #   communication_num: 4
-    
-  # time_configs:
-  #   cur_time: 2023-05-01
-  #   end_time: 2024-12-01
-  #   round_time_delta: 10 
-  #   article_num_per_delta: 5
-
-  #   author_time_delta: 30 
-  #   author_num_per_delta: 5
-
   max_paper_num: 10000
 
   article_write_configs:

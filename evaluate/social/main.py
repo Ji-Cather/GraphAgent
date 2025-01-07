@@ -361,26 +361,14 @@ def save_front_end_data(data_root):
 
     
 
-def plt_sn_attrs(graph_lists,
-                 sn_root):
+def plt_sn_attrs(sn_root):
     ## 这里添加plt shrinking diameter ；pk、k；prefrentianl attachment的图
 
     """shrinking diameter"""
     matrix_path = os.path.join(sn_root, "matrix","diameter_matrix.csv")
-    # if not os.path.exists(matrix_path):
-        # graph_generator_ = copy.deepcopy(graph_generator)
-    # get_sn_graph_matrix(graph_lists, sn_root)
     matrix = pd.read_csv( matrix_path)
-    # matrix.plot(x="date", y=["follower_diameter","friend_diameter"])
-    # plt.savefig(os.path.join(sn_root, "matrix","diameter_matrix.pdf"))
     plt_save_dir = os.path.join(sn_root, "plt")
     plot_shrinking_diameter(matrix, plt_save_dir, "follower")
-
-    """pk,k"""
-    # DG = graph_lists[-1][0]
-    # plot_figures(DG, plt_save_dir, "follower")
-    
-    # calculate_matrix(DG, os.path.join(sn_root, "matrix"), "follower")
     
 
 def calculate_social_matrix(graph_lists:list,

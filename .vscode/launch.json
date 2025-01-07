@@ -54,10 +54,10 @@
             // "--config","search_shuffle_base_vllm_2engine",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--build"] 
-            // "args": ["--task","citeseer",
-            //     "--config","test_config",
-            //     "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-            // "--save"] 
+            "args": ["--task","citeseer",
+                "--config","small",
+                "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            "--build"] 
             // "args": ["--task","citeseer",
             // "--config","fast_qwen2",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
@@ -80,11 +80,13 @@
             // "--build"]
 
             // movielens config
-            "args": ["--task","citeseer",
-                    "--config","small",
-                    "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-                    "--build"
-                ]
+            // "args": [
+            //         // "--task","citeseer",
+            //         // "--config","user",
+            //         "--user_input", "\"I want to simulate authors interaction with papers. I want to generate a highly-clustered citation network with high average degree, with many well-known authors.\"",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //         "--build"
+            //     ]
             //         "--save"] 
             // "args": ["--task","movielens",
             // "--config","filter_1",

@@ -81,12 +81,6 @@ Content: {page_content}""")
         if self.article_manager.online_retriever is not None:
             
             citations = article_write_configs["citations"]
-            # article_write_configs.update({
-            #     "min_citations_db":int(avg_deg-std_deg),
-            #     "max_citations_db":int(avg_deg+std_deg),
-            #     "min_citations_online":citations - int(avg_deg+std_deg),
-            #     "max_citations_online":citations - int(avg_deg-std_deg),
-            # })
             article_write_configs.update({
                 "min_citations_db":citations,
                 "max_citations_db":citations+10,

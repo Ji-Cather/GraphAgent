@@ -78,3 +78,13 @@ visualization/social_network.mp4
 ### Experiments
 LLMGraph/experiments
 
+### Build networks from user input only
+Setting up a simulation environment from a prompt can be an efficient and straightforward way to get started, you can simply run:
+```cmd
+python main.py --user_input "I want to simulate authors interaction with papers. I want to generate a highly-clustered citation network with high average degree, with many well-known authors."  --build
+
+python main.py --user_input "I want to simulate users interaction with movies. I want to generate a highly-clustered movie rating network with high average degree."  --build
+
+python main.py --user_input "I want to simulate users interaction in tweet patform. I want to generate a highly-clustered online social networks  with high average degree."  --build
+
+```

@@ -22,3 +22,31 @@ class ArticleControlParser(AgentOutputParser):
             return {"fail":True}
         
         return {"return_values":{"configs":configs}}
+    
+@control_output_parser_registry.register("movie")
+class MovieControlParser(AgentOutputParser):
+
+    def parse(self, llm_output: str):
+        configs = {}
+        
+        try:
+            configs = find_and_load_json(llm_output.strip(),
+                                        "dict")
+        except Exception as e:
+            return {"fail":True}
+        
+        return {"return_values":{"configs":configs}}
+
+@control_output_parser_registry.register("social")
+class SocialControlParser(AgentOutputParser):
+
+    def parse(self, llm_output: str):
+        configs = {}
+        
+        try:
+            configs = find_and_load_json(llm_output.strip(),
+                                        "dict")
+        except Exception as e:
+            return {"fail":True}
+        
+        return {"return_values":{"configs":configs}}

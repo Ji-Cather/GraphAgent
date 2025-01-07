@@ -40,3 +40,4 @@ environment:
     memory:
       type: action_memory
 
+use_agent_config: false

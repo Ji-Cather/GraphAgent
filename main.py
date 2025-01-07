@@ -12,7 +12,7 @@ import agentscope
 
 parser.add_argument('--config', 
                     type=str, 
-                    default="test_config", 
+                    default="small", 
                     help='The config llm graph builder.')  # 添加参数
 
 parser.add_argument('--task', 
