@@ -62,7 +62,7 @@ Then create the experiment, and install the required packages:
 - To start building citation network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
     ```cmd
     python start_launchers.py
-    python main.py --task movielens --config "small" --build # build from synthhetic tweet data
+    python main.py --task citeseer --config "small" --build # build from synthhetic tweet data
     
     # citation networks and etc.
     python evaluate/article/main.py
