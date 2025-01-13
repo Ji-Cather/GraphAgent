@@ -3,9 +3,14 @@ import networkx as nx
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import font_manager as fm 
+font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
+font_prop = fm.FontProperties(fname=font_path)
+fm.fontManager.addfont(font_path)
 
-
-
+# 设置全局字体
+plt.rcParams['font.family'] = font_prop.get_name()
+plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
 import os
 
 def pdf(data, xmin=None, xmax=None, linear_bins=False, **kwargs):
@@ -83,8 +88,7 @@ def calculate_power_law(G:nx.DiGraph,
                                  'exponential',
                                  ]
     # degree_types = ["all", "in", "out"] if isinstance(G, nx.DiGraph) else ["all"]
-    # compare_distributions = []
-    degree_types = ["all"]
+    degree_types = ["in"]
 
     power_law_dfs = {}
     for degree_type in degree_types:
@@ -121,7 +125,8 @@ def calculate_macro_properties(G:nx.Graph,
                                 xmin:int = 3,
                                 plt_flag:bool = False,
                                degree_type="all",
-                               compare_distributions = ['lognormal',
+                               compare_distributions = [
+                                   'lognormal',
                                  'exponential',
                                  'stretched_exponential',
                                  'lognormal_positive',
@@ -145,7 +150,7 @@ def calculate_macro_properties(G:nx.Graph,
     from scipy.stats import kstest
     if isinstance(G, nx.DiGraph):
         if degree_type == "in":
-            degree_list = dict(G.in_degree()).values()
+            degree_list = [G.in_degree(n) for n in G.nodes()]
         elif degree_type == "out":
             degree_list = dict(G.out_degree()).values()
         else:
@@ -154,7 +159,7 @@ def calculate_macro_properties(G:nx.Graph,
     elif isinstance(G, nx.Graph):
         degree_list = [G.degree(n) for n in G.nodes()]
     
-    degree_list = sorted(degree_list,reverse=True)
+    # degree_list = sorted(degree_list,reverse=True)
     R_list, p_value_LL_list =[], []
     KS_list = []
     
@@ -163,15 +168,24 @@ def calculate_macro_properties(G:nx.Graph,
         # results = powerlaw.Fit(list(degree_list), discrete=True,
         #                        fit_method="KS")
         import matplotlib.pyplot as plt
+        from matplotlib import font_manager as fm 
+        font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
+        font_prop = fm.FontProperties(fname=font_path)
+        fm.fontManager.addfont(font_path)
 
-
+        # 设置全局字体
+        plt.rcParams['font.family'] = font_prop.get_name()
+        plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
         if xmin==0:
             xmin = None
+        # xmin = int(0.05*max(degree_list))
+        
         results = powerlaw.Fit(list(degree_list), 
-                               discrete=True,
-                                # fit_method="KS",
-                                xmin=xmin
-                                )
+                                discrete=True,
+                                sigma_threshold = .1,
+                                #     fit_method="KS",
+                                    # xmin=xmin,
+                                    )
         alpha = results.power_law.alpha
         xmin = results.power_law.xmin
         sigma = results.power_law.sigma

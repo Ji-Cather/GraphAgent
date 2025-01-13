@@ -15,24 +15,13 @@ def calculate_directed_graph_matrix(
                       graph_generated,
                       graph_name:str,
                       type="article",
-                      graph_true = None, 
                       calculate_matrix = [
-                          "mmd",
                           "base_info",
                           "control",
                           "community",
                       ]) -> pd.DataFrame:
     
     dfs = []
-    if "mmd" in calculate_matrix:
-        df = calculate_mmd_matrix(graph_true, 
-                                graph_generated,
-                                graph_name,
-                                [
-                        "degree",
-                        "clustering",
-                        "eigenvalue"])
-        dfs.append(df)
 
     if "community" in calculate_matrix:
         try:
@@ -42,13 +31,14 @@ def calculate_directed_graph_matrix(
         except:pass
     
     if "control" in calculate_matrix:
-        if isinstance(graph_generated, nx.DiGraph):
-            graph_reverse = graph_generated.reverse()
-        else:
-            graph_reverse = graph_generated
-        df = calculate_control_matrix(graph_reverse,
-                                      graph_name)
-        dfs.append(df)
+        pass # to be done
+        # if isinstance(graph_generated, nx.DiGraph):
+        #     graph_reverse = graph_generated.reverse()
+        # else:
+        #     graph_reverse = graph_generated
+        # df = calculate_control_matrix(graph_reverse,
+        #                               graph_name)
+        # dfs.append(df)
 
     if "base_info" in calculate_matrix:
         df = calculate_DG_base_indicators(graph_generated,

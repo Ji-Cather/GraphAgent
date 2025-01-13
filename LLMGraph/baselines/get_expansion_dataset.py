@@ -7,7 +7,7 @@ graph_generator = (
             generate_citation_graphs,
             
         )
-key = "citation"
+key = "llmcitationciteseer"
 data_path = Path("./data")
 
 train_size = 160

@@ -336,49 +336,59 @@ def build_graphs(article_meta_data:dict,
 
 
 
-def generate_citation_graphs(num_graphs,
-                             min_size, 
-                             max_size, 
-                             dataset = 'train', #
-                             seed=0):
-
-    train_n = 2000
-    val_n = 840
-    graph_path = "data/netcraft/citation/vllm/raw/article_meta_info.pt"
-    G = build_citation_graph(readinfo(graph_path))
-    nodes = list(G.nodes())
-    n = len(nodes)
-    if dataset == "train":
-        G = G.subgraph(nodes[:train_n])
-    elif dataset == "val":
-        G = G.subgraph(nodes[train_n:train_n+val_n])
-        
-    else: # 预测后续graph生长
-        graph_size_gen = 1000
-        graph_gt = build_citation_graph(readinfo("LLMGraph\tasks\citeseer\data\article_meta_info.pt"))
-        graph_gts = []
-        graph_gt = nx.convert_node_labels_to_integers(graph_gt)
-        graph_gt = nx.Graph(graph_gt)
-        
-        for idx in range(1, 20):
+def generate_citation():
+    graph_generator = (
+                gg.data.generate_citation_graphs,
+                # gg.data.generate_friend_graphs,
+                # gg.data.generate_action_graphs,
+                # gg.data.generate_follow_graphs
+                # gg.data.generate_author_citation_graphs
+            )[0]
+    key = "citation"
+    
+    train_size = 160
+    val_size = 32
+    test_size = 20
+    min_size = 64
+    max_size = 512
+    
+    # graph_path = "data/netcraft/citation/cora/raw/article_meta_info.pt"
+    graph_path = "graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/citeseer/raw/article_meta_info_abstract.pt"
+    train = graph_generator(
+                num_graphs=train_size,
+                min_size=min_size,
+                max_size=max_size,
+                dataset="train",
+                graph_path= graph_path,
+                seed=0,
+            )
+    train = list(filter(lambda G:len(G.subgraph(max(nx.connected_components(G), key=len)).nodes())> 2, train))
             
-            graph_gt_sub = graph_gt.subgraph(list(graph_gt.nodes())[-graph_size_gen-idx:-idx])
-            graph_gts.append(graph_gt_sub)
-        return graph_gts
-        
-    # 随机选择3个节点
-    graphs = []
-    rng = np.random.default_rng(seed)
-    max_size = max_size if max_size !=-1 else len(G.nodes())
-    for i in range(num_graphs):
-        n = rng.integers(min_size, max_size, endpoint=True)
-        if dataset != "train":
-            n = 700
-            max_size = len(G.nodes())
-        # 随机选择起始索引
-        start_index = random.randint(0, max_size - n)
-        random_nodes = list(G.nodes())[start_index:start_index+n]
-        H = G.subgraph(random_nodes)
-        H = nx.Graph(H)
-        graphs.append(H)
-    return graphs
+    validation = graph_generator(
+        num_graphs=val_size,
+        min_size=min_size,
+        max_size=max_size,
+        dataset="val",
+        graph_path= graph_path,
+        seed=1,
+    )
+    test = graph_generator(
+        num_graphs=test_size,
+        min_size=min_size,
+        max_size=max_size,
+        dataset="test",
+        graph_path= graph_path,
+        seed=2,
+    )
+    dataset = {
+        "train": train,
+        "val": validation,
+        "test": test,
+    }
+
+    # from scipy.sparse import coo_array, csr_array, eye
+    # adjs = [nx.to_scipy_sparse_array(G, dtype=np.float64) for G in train]
+    # adj_len = [csr_array(adj, dtype=np.float64).shape[0] for adj
+    #         in adjs]
+    with open(data_path / f"llm{key}citeseer.pkl", "wb") as f:
+        pickle.dump(dataset, f)
