@@ -4,6 +4,7 @@ import json
 import re
 import numpy as np
 import torch
+import pickle
 import random
 
 def readinfo(data_dir):
@@ -334,16 +335,44 @@ def build_graphs(article_meta_data:dict,
 
     return graphs
 
+def generate_citation_graphs(num_graphs,
+                             min_size, 
+                             max_size, 
+                             dataset = 'train', #
+                             graph_path = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/citeseer/raw/article_meta_info_abstract.pt",
+                             seed=0):
 
+    
+
+    G = build_citation_graph(readinfo(graph_path))
+    n = len(list(G.nodes()))
+    if dataset == "train" or dataset == "val":
+        G = G
+    else: # 预测后续graph生长
+        # G = G.subgraph(nodes[-2000:])
+        Gs = []
+        for _ in range(1,1+num_graphs):
+            graph_gt_sub = nx.Graph(G.subgraph(list(G.nodes())[-1000-_:-_]))
+            Gs.append(graph_gt_sub)
+        return Gs
+        
+    # 随机选择3个节点
+    graphs = []
+    rng = np.random.default_rng(seed)
+    max_size = max_size if max_size !=-1 else len(G.nodes())
+    for i in range(num_graphs):
+        n = rng.integers(min_size, max_size, endpoint=True)
+        # 随机选择起始索引
+        start_index = random.randint(0, max_size - n)
+        random_nodes = list(G.nodes())[start_index:start_index+n]
+        H = G.subgraph(random_nodes)
+        H = nx.Graph(H)
+        graphs.append(H)
+    return graphs
 
 def generate_citation():
-    graph_generator = (
-                gg.data.generate_citation_graphs,
-                # gg.data.generate_friend_graphs,
-                # gg.data.generate_action_graphs,
-                # gg.data.generate_follow_graphs
-                # gg.data.generate_author_citation_graphs
-            )[0]
+    graph_generator = generate_citation_graphs
+
     key = "citation"
     
     train_size = 160
@@ -352,8 +381,7 @@ def generate_citation():
     min_size = 64
     max_size = 512
     
-    # graph_path = "data/netcraft/citation/cora/raw/article_meta_info.pt"
-    graph_path = "graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/citeseer/raw/article_meta_info_abstract.pt"
+    graph_path = "LLMGraph/tasks/citeseer/data/article_meta_info.pt"
     train = graph_generator(
                 num_graphs=train_size,
                 min_size=min_size,
@@ -386,9 +414,7 @@ def generate_citation():
         "test": test,
     }
 
-    # from scipy.sparse import coo_array, csr_array, eye
-    # adjs = [nx.to_scipy_sparse_array(G, dtype=np.float64) for G in train]
-    # adj_len = [csr_array(adj, dtype=np.float64).shape[0] for adj
-    #         in adjs]
+    # data_path = Path(".data")
+    data_path = "LLMGraph/baselines/baseline_checkpoints"
     with open(data_path / f"llm{key}citeseer.pkl", "wb") as f:
         pickle.dump(dataset, f)
