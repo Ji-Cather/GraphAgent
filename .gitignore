@@ -15,3 +15,8 @@ logs
 
 runs
 netcraft_gnn/*
+
+# extending GitHub's file size limit of 100.00 MB
+LLMGraph/tasks/tweets/configs/llama_test_1e6/*
+LLMGraph/tasks/citeseer/configs/fast_vllm/*
+LLMGraph/tasks/movielens/configs/test_movie_up/*

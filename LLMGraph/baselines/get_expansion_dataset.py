@@ -46,10 +46,10 @@ dataset = {
     "test": test,
 }
 
-from scipy.sparse import coo_array, csr_array, eye
-adjs = [nx.to_scipy_sparse_array(G, dtype=np.float64) for G in train]
-adj_len = [csr_array(adj, dtype=np.float64).shape[0] for adj
-           in adjs]
+# from scipy.sparse import coo_array, csr_array, eye
+# adjs = [nx.to_scipy_sparse_array(G, dtype=np.float64) for G in train]
+# adj_len = [csr_array(adj, dtype=np.float64).shape[0] for adj
+#            in adjs]
 # save the dataset
 # with open(data_path / "llmcitation.pkl", "wb") as f:
 #     pickle.dump(dataset, f)
