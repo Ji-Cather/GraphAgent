@@ -1,0 +1,5 @@
+LLMGraph/tasks
+# LLMGraph/tasks/citeseer/data filter=lfs diff=lfs merge=lfs -text
+# LLMGraph/tasks/movielens/data filter=lfs diff=lfs merge=lfs -text
+# LLMGraph/tasks/tweets/data filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text

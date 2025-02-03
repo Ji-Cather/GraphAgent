@@ -1,0 +1,56 @@
+environment:
+  
+  env_type: movie
+
+  time_configs:
+    start_time: 1997-01-01
+    cur_time: 1997-12-01
+    end_time: 1999-09-20
+    movie_time_delta: 4 # 以月为单位
+    watcher_time_delta: 1 # 以月为单位
+    watcher_add: True
+    watcher_num: -1 # -1 表示所有
+
+  movie_rate_configs:
+    min_rate_all: 100
+
+  managers:
+    movie:
+      link_movie_path: data/ml-processed_small_test/ml-25m-links.csv
+      # movie_data_dir: data/ml-processed
+      movie_data_dir: data/ml-processed_small_test
+      ratings_data_name: ratings_top10.npy
+      generated_data_dir: data/generated_data
+
+      control_profile:
+        hub_rate: 0.0
+
+      tool_kwargs:
+        filter_keys: [
+          "watched_movie_ids",
+          "interested_genres"
+        ]
+  
+      retriever_kwargs:
+        type: graph_vector_retriever
+        search_kwargs:
+          k: 10
+      html_tool_kwargs:
+        upper_token: 500
+        url_keys:
+          - imdbId_url
+          - tmdbId_url
+        llm_kdb_summary: False
+        llm_url_summary: False
+
+  agent:
+    type: movie_agent
+    llm:
+      config_name: gpt-4o-mini
+      max_tokens: 1000
+      temperature: 0.8
+
+    memory:
+      type: movie_memory
+
+use_agent_config: true

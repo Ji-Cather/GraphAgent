@@ -1,0 +1,329 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "llm_agent_1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            
+            // article config
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config_testrpc",
+            //     "--build"] 
+            
+            // "args": ["--task","llm_agent_1",
+            //         "--config","search_shuffle_anonymous_gemini-1.5-flash",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //     "--build"] 
+            // "args": ["--task","llm_agent_1",
+            //         "--config","search_base",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //     "--build"] 
+            // "args": ["--task","llm_agent_1",
+            //     "--config","search_noshuffle_cite",
+            //     "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
+            // "args": ["--task","llm_agent_3",
+            //     "--config","search_shuffle_base_gpt4-mini",
+            //     "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
+            // "args": ["--task","llm_agent_1",
+            //     "--config","search_shuffle_base_nosocial_qwen2",
+            //     "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
+            // "args": ["--task","cora",
+            // "--config","fast_vllm",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+            // "args": ["--task","cora",
+            // "--config","fast_vllm",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+            
+            // "args": ["--task","citeseer",
+            // "--config","fast_qwen2",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+            // "args": ["--task","llm_agent_1",
+            // "--config","search_shuffle_base_vllm_2engine",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
+            "args": ["--task","citeseer",
+                "--config","fast_vllm_445_test",
+                "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            "--build"] 
+            // "args": ["--task","citeseer",
+            // "--config","fast_qwen2",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+        //     "args":["--task","llm_agent_retry",
+        //     "--config","search_shuffle_base_gpt3.5",
+        //     // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+        //     "--build"
+        // ]
+            // "args": ["--task","llm_agent_1",
+            //         "--config","filter_2",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_filter_1.json",
+            //     "--build"] 
+           
+            // "args": ["--task","llm_agent_1",
+            //         "--config","rpc24",
+            //     "--build"] 
+            // "args": ["--task","llm_agent_1",
+            // "--config","llama_test_rpc20",
+            // "--build"]
+
+            // movielens config
+            // "args": [
+            //         // "--task","citeseer",
+            //         // "--config","user",
+            //         "--user_input", "\"I want to simulate authors interaction with papers. I want to generate a highly-clustered citation network with high average degree, with many well-known authors.\"",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //         "--build"
+            //     ]
+            //         "--save"] 
+            // "args": ["--task","movielens",
+            // "--config","filter_1",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--save"] 
+            // "args": ["--task","movielens",
+            //         "--config","llama_test_base",
+            //     "--build"] 
+            // "args": ["--task","movielens",
+            //         "--config","llama_test_rpc_agent40_rpc16",
+            //     "--build"] 
+            // "args": ["--task","movielens",
+            //         "--config","test_movie_up",
+            //     "--save"] 
+
+            // social config
+            // "args": ["--task","tweets",
+            // "--config","filter_4",
+            // // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
+            // "args": ["--task","tweets",
+            //         "--config","small",
+            //         "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_7000_p0.0025_hubFalse",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            // "--config","llama_test",
+            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_1e6",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_large",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","llama_test",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_1000",
+            //         "--build"]
+            // "args": ["--task","tweets",
+            // "--config","llama_test",
+            // "--build",
+            // "--launcher_save_path",
+            // "LLMGraph/llms/launcher_info_none.json"
+            // ]
+                    
+            
+        },
+        {
+            "name": "movie_evaluate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "evaluate/movie/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+            // article config
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config",
+            //     "--build"] 
+            // "python": "${command:python.interpreterPath}",
+            // "args": ["--task","movielens",
+            //         "--config","filter_all_k5",]
+            "args": ["--task","movielens",
+                    "--config","test_movie_up",]
+        },
+        {
+            "name": "social_evaluate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "evaluate/social/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+
+
+            "python": "${command:python.interpreterPath}",
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_rpc40_rpc24",] 
+            // "args": ["--task","tweets",
+            //         "--config","llama_test_large"]
+            // "args": ["--task","tweets",
+            // "--config","llama_test_2000"]
+            // "args": ["--task", "tweets",
+            // "--config", "llama_test_7000_p0.0025_hubFalse"]
+            // "args": ["--task", "tweets",
+            // "--config", "filter_all_k5"]
+            "args": ["--task", "tweets",
+            "--config", "small"] 
+            // "args": ["--task", "tweets",
+            // "--config", "llama_test_7000_p0.0025"]
+            // "args": ["--task", "tweets",
+            // "--config", "llama_test_rpc40_rpc24"]
+            // "args": ["--task", "tweets",
+            // "--config", "llama_test_7000_p0.0025_hubFalse"]
+            
+            // "args": ["--task","tweets",
+            // "--config","llama_test",] 
+        },
+        {
+            "name": "article_evaluate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "evaluate/article/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+            // article config
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config",
+            //     "--build"] 
+            "python": "${command:python.interpreterPath}",
+            // "args": ["--task","llm_agent_1",
+            // "--config","search_shuffle_base_gpt3.5"] ,
+            // "args": ["--task","llm_agent_1",
+            // "--config","search_shuffle_no_country_gpt3.5"] ,
+            // "args": ["--task","llm_agent_1",
+            // "--config","nosearch_shuffle_base_gpt3.5"] ,
+            // "args": ["--task","llm_agent_1",
+            // "--config","search_shuffle_anonymous_gpt3.5"] ,
+            // "args":["--task","llm_agent_2",
+            // "--config","search_shuffle_base_gpt4-mini"]
+            // "args":["--task","llm_agent_3",
+            // "--config","search_shuffle_base_qwen2"]
+            // "args":["--task","llm_agent_3",
+            // "--config","search_shuffle_base_gpt4-mini"]
+            // "args":["--task","llm_agent_1",
+            // "--config","search_shuffle_base_gpt3.5"]
+            // "args":["--task","llm_agent_1",
+            // "--config","search_shuffle_base_vllm"]
+            // "args":["--task","cora",
+            // "--config","gt"]
+            // "args":["--task","citeseer",
+            //         "--config","10000_full_vllm"]
+            // "args":["--task","llm_agent_1",
+            // "--config","search_shuffle_base_gpt4-mini"]
+            "args":["--task","llm_agent_1",
+            "--config","search_shuffle_base_gpt3.5"],
+            // "args":["--task","cora",
+            // "--config","gt_large",
+            // "--xmin","0"]
+            
+            // "args": ["--task","llm_agent_1",
+            // "--config","gt"] ,           
+            // "args":["--task","citeseer",
+            // "--config","fast_gpt3.5"]
+            //  "args":["--task","citeseer",
+            // "--config","fast_gpt4-mini"]
+            // "args":["--task","llm_agent_1",
+            // "--config","search_shuffle_base_gpt3.5_reason"]
+            // "args":["--task","citeseer",
+            // "--config","fast_gpt3.5"]
+            // "args": ["--task","llm_agent_1",
+            //         "--config","llama_test_rpc20",] 
+            // "args": ["--task","llm_agent_1",
+            // "--config", "test_config_5_article_1500",] 
+            // "args": ["--task","llm_agent_1",
+            // "--config", "llama_test_rpc20",] 
+            // "args": ["--task","llm_agent_1",
+            // "--config", "no_big_name",] 
+            // "args": ["--task","llm_agent_1",
+            // "--config", "search_shuffle_noauthor_gpt3.5",]    
+            // "args": ["--task","llm_agent_1",
+            // "--config", "search_shuffle_base_noauthorcite_gpt3.5",]  
+            // "args": ["--task","citeseer",
+            // "--config","fast_gpt3.5",]  
+            // "args": ["--task","citeseer",
+            // "--config", "test_config",]  
+           
+            // "args": ["--task","citeseer",
+            //         "--config","fast_gpt3.5",
+            //         ] 
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config_5_article_cite_score",] 
+                    
+        },
+        {
+            "name": "test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+            // article config
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config",
+            //     "--build"] 
+            "python": "${command:python.interpreterPath}",
+           
+                    
+        },
+        {
+            "name": "inference_graph_article",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "evaluate/article/inference_df_graph.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+            "python": "${command:python.interpreterPath}",
+            // "args": [
+            //     "--task","llm_agent_1",
+            // "--config", "search_shuffle_base_gpt3.5",
+            // // "--config", "search_shuffle_base_vllm",
+            // "--evaluate_bn"]   
+            "args": [
+                "--task","llm_agent_1",
+            // "--config", "search_shuffle_base_gpt4-mini",
+            // "--config", "search_shuffle_base_vllm",
+            "--config", "search_shuffle_base_gpt3.5_reason",
+            "--evaluate_bn"]     
+            // "args": [
+            //     "--task","llm_agent_3",
+            // // "--config", "search_shuffle_base_gpt4-mini",
+            // "--config", "search_shuffle_base_gpt4-mini",
+            // // "--config", "search_shuffle_base_gpt3.5_reason",
+            // "--evaluate_bn"]                
+        },
+    ]
+}

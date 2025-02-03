@@ -1,0 +1,48 @@
+[
+    {
+        "model_type": "openai_chat",
+        "config_name": "default",
+        "model_name": "llama3-70B",
+        "api_key": "api_key",
+        "client_args": {
+            "base_url": "vllm_server"
+        },
+        "generate_args": {
+            "temperature": 0.9,
+            "max_tokens": 2000
+        }
+    },
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-4o-mini",
+        "model_name": "gpt-4o-mini",
+        "api_key": "api_key",
+        "generate_args": {
+            "max_tokens": 2000,
+            "temperature": 0.8
+        }
+    },
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-3.5-turbo-0125",
+        "model_name": "gpt-3.5-turbo-0125",
+        "api_key": "api_key",
+        "generate_args": {
+            "max_tokens": 2000,
+            "temperature": 0.8
+        }
+    },
+    {
+        "config_name": "llama3-70B",
+        "model_type": "openai_chat",
+        "model_name": "llama3-70B",
+        "api_key": "vllm_api_key",
+        "client_args": {
+            "base_url": "vllm_server"
+        },
+        "generate_args": {
+            "temperature": 0.9,
+            "max_tokens": 2000
+        }
+    }
+]

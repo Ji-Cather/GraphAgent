@@ -1,0 +1,59 @@
+
+use_agent_config: False
+
+environment:  
+  env_type: article
+  save_encoded_features: -1
+  max_paper_num: 1200
+  
+  article_write_configs:
+    use_graph_deg: False
+    citations: 2
+    author_num: 5
+    communication_num: 2
+    max_refine_round: 1
+    
+  time_configs:
+    # cur_time: 2022-05-01
+    cur_time: 2004-01-01
+    # end_time: 2026-12-01
+    end_time: 2011-01-01
+    round_time_delta: 5
+    article_num_per_delta: 50
+
+    author_time_delta: 30 
+    author_num_per_delta: 30
+
+  managers:
+  
+    article:
+      model_config_name: gpt-3.5-turbo-0125
+      article_meta_path: data/article_meta_info.pt
+      author_path: data/author.pt
+      article_dir: data/article
+      generated_article_dir: data/generated_article
+      experiment: ["shuffle"]
+      
+      control_profile:
+        hub_rate: 0.1
+      tool_kwargs:
+        filter_keys: ["big_name","topic", "write_topic"]
+      retriever_kwargs: 
+        type: graph_vector_retriever
+        search_kwargs:
+          k: 20
+          score_cite: True
+
+  agent:
+    type: article_agent
+    llm:
+      config_name: gpt-3.5-turbo-0125
+    
+    social_memory:
+      type: social_memory
+      reflection: false
+      summary_threshold: 10
+
+    write_memory:
+      type: rational_memory
+
