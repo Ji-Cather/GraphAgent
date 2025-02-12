@@ -26,6 +26,5 @@ def writeinfo(data_dir,info):
     elif file_type == "json":
         with open(data_dir,'w',encoding = 'utf-8') as f:
             json.dump(info, f, indent=4,separators=(',', ':'),ensure_ascii=False)
-        print("write info to {}".format(data_dir))
     else:
         raise ValueError("file type not supported")

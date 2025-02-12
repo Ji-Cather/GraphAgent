@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from typing import Dict, List
+from typing import Dict, List, Any
 
 from pydantic import BaseModel, Field
 
@@ -10,7 +10,7 @@ from . import memory_registry
 @memory_registry.register("base")
 class BaseMemory(BaseModel):
     name :str # 标记是谁的记忆
-    id:str= None# 标记是谁的记忆
+    id:Any = None# 标记是谁的记忆
     class Config:
         arbitrary_types_allowed = True
 

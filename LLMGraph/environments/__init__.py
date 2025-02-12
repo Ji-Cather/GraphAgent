@@ -5,3 +5,4 @@ from .base import BaseEnvironment
 from .article import ArticleEnvironment
 from .movie import MovieEnvironment
 from .social import SocialEnvironment
+from .general import GeneralEnvironment

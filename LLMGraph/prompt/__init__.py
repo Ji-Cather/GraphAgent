@@ -1,5 +1,5 @@
-MODEL = 'llama' # 设置prompt版本
-
+from LLMGraph import MODEL
 from . import article
 from . import social
 from . import movie
+from . import general

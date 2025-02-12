@@ -93,10 +93,10 @@ class Executor():
                     
         
         while not self.environment.is_done():
+            self.environment._update_simulation_round()
             self.environment.step()
             self.save()
             
-        self.save()
         return self.ex_idx
 
     

@@ -6,10 +6,12 @@ from LLMGraph.wrapper.agent_group import GroupDiscussAgent
 from LLMGraph.agent.article import ArticleAgent, ArticleManagerAgent
 from LLMGraph.agent.movie import MovieAgent, MovieManagerAgent
 from LLMGraph.agent.social import SocialAgent,SocialManagerAgent
+from LLMGraph.agent.general import GeneralAgent, GeneralManagerAgent
 
 from LLMGraph.wrapper import (ArticleAgentWrapper,
                               MovieAgentWrapper,
-                              SocialAgentWrapper)
+                              SocialAgentWrapper,
+                              GeneralAgentWrapper)
 from LLMGraph.utils.io import writeinfo
 import random
 import multiprocessing
@@ -65,7 +67,10 @@ def main(args):
                             MovieAgentWrapper,
                             SocialManagerAgent,
                             SocialAgent,
-                            SocialAgentWrapper],
+                            SocialAgentWrapper,
+                            GeneralAgent,
+                            GeneralManagerAgent,
+                            GeneralAgentWrapper],
             local_mode=False,
         )
         launchers.append(launcher)
