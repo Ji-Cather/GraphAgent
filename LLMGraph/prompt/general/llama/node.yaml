@@ -1,0 +1,35 @@
+sephora_product: &sephora_product |-
+  Product ID: {node_id}
+  Product Name: {product_name}
+  Brand Name: {brand_name}
+  Product Reviews: {reviews}
+  Primary Category: {primary_category}
+  Secondary Category: {secondary_category}
+  Tertiary Category: {tertiary_category}
+  
+sephora_author: &sephora_author |-
+  Author ID: {node_id}
+  Skin Tone: {skin_tone}
+  Eye Color: {eye_color}
+  Skin Type: {skin_type}
+  Hair Color: {hair_color}
+  Total Feedback Count: {total_feedback_count}
+  Total Neg Feedback Count: {total_neg_feedback_count}
+  Total Pos Feedback Count: {total_pos_feedback_count}
+
+
+dianping_business: &dianping_business |-
+  Place Name: {NAME}
+  Place CITY: {CITY}
+  Place Address: {ADDRESS}
+  Place Score: {SCORE}
+  Place Share: {SHARE}
+  Place Description: {DESC}
+  Place Style: {STYLE}
+  Place Cost: {COST}
+
+dianping_user: &dianping_user |-
+  User ID: {node_id}
+  User Num Reviews: {num_review}
+  User Avg Rate: {avg_rate}
+  User Top 3 City: {top3_city}

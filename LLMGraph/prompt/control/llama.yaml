@@ -1,0 +1,153 @@
+
+article_control_template: &article_control_template |-
+  Below is an explanation of citation network structure parameters:
+
+  Main factors influencing the degree of the network:
+    citations: The minimum number of citations per citation node (5-20)
+
+
+  Factors affecting the rate of increase or decrease in network nodes:
+    time: The evolution time of the network, measured in days
+    author_time_delta: The time interval for adding new authors to the network, measured in days
+    article_time_delta: The time interval for adding new articles to the network, measured in days
+    article_num_per_delta: The number of articles added to the network per time interval
+    author_num_per_delta: The number of authors added to the network per time interval
+
+  Parameters affecting the clustering coefficient:
+    filter_keys_num: The number of keywords filtered when searching for citations (0-3)
+  
+  Parameters for aggregating nodes within the network:
+    hub_rate: The proportion of highly-cited authors (0-0.5)
+
+  Here are some examples of citation networks:
+    1.  Characteristics: High cluster coefficient, high degree of citations, rapid increase in network nodes, a few highly-cited authors
+        Parameters:
+        {{
+          "min_citations": 10,
+          "max_citations": 20,
+          "time": 100,
+          "author_time_delta": 10,
+          "article_time_delta": 10,
+          "author_num_per_delta": 20,
+          "article_num_per_delta": 20,
+          "filter_keys_num": 3,
+          "hub_rate": 0.1
+        }}
+    
+     2.   Characteristics: Low cluster coefficient, low degree of citations, slow increase in network nodes, many highly-cited authors
+          Parameters:
+          {{
+          "min_citations": 5,
+          "max_citations": 10,
+          "time": 100,
+          "author_time_delta": 30,
+          "article_time_delta": 30,
+          "author_num_per_delta": 60,
+          "article_num_per_delta": 60,
+          "filter_keys_num": 1,
+          "hub_rate": 0.3
+          }}
+
+  The current requirement for network characteristics is:
+    {requirement}
+
+  Now please provide the parameters for a citation network according to the requirements 
+  return a dict which can be parsed by json.loads:
+    {agent_scratchpad}
+
+
+movie_control_template: &movie_control_template |-
+  Below is an explanation of movie rating network structure parameters:
+
+  Main factors influencing the degree of the network:
+    k: The number of movies recommended to users
+
+  Factors affecting the rate of increase or decrease in network nodes:
+    time: The evolution time of the network, measured in days
+    watcher_num: The number of watchers in the network
+
+  Parameters affecting the clustering coefficient:
+    filter_keys_num: The number of keywords filtered when searching for movies (0-2)
+  
+
+  Here are some examples of movie rating networks:
+    1.  Characteristics: High average degree network with 100 watchers, high cluster coefficient 
+        Parameters:
+        {{
+          "k": 10,
+          "watcher_num": 100,
+          "time": 100,
+          "filter_keys_num": 3
+        }}
+    
+     2.   Characteristics: Low average degree network with 200 watchers, low cluster coefficient
+          Parameters:
+          {{
+          "k": 5,
+          "watcher_num": 200,
+          "time": 100,
+          "filter_keys_num": 1
+          }}
+
+  The current requirement for network characteristics is:
+    {requirement}
+
+  Now please provide the parameters for a movie rating network according to the requirements 
+  return a dict which can be parsed by json.loads:
+    {agent_scratchpad}
+
+social_control_template: &social_control_template |-
+  Below is an explanation of online social network structure parameters:
+
+  Main factors influencing the degree of the network:
+    k: The number of tweets recommended to users
+  
+  Factors affecting the rate of increase or decrease in network nodes:
+    time: The evolution time of the network, measured in days
+    social_time_delta: The interval time of unit social activities in the social network, measured in days
+    people_add_delta: The interval time for increasing or decreasing the number of people in the social network, measured in days
+    max_people: The maximum number of people in the social network
+    add_people_rate: The proportion of people added to the social network per day (0-0.1)
+    delete_people_rate: The proportion of people deleted from the social network per day (0-0.1)
+  
+  Parameters affecting the clustering coefficient:
+    filter_keys_num: The number of keywords filtered when searching for tweets (0-4)
+  
+  Parameters for aggregating nodes within the network:
+    hub_rate: The proportion of gathering nodes (0-0.5)
+
+  Here are some examples of online social networks:
+    1.  Characteristics: High average degree network with at most 300 people, high cluster coefficient, the network is growing in size.
+        Parameters:
+        {{
+          "k": 20,
+          "time": 30,
+          "max_people":300,
+          "social_time_delta": 1,
+          "people_add_delta": 1,
+          "add_people_rate": 0.1,
+          "delete_people_rate": 0.03,
+          "filter_keys_num": 4,
+          "hub_rate":0.2
+        }}
+    
+     2.   Characteristics: Low average degree network with at most 100 people, the network is diminishing.
+          Parameters:
+          {{
+          "k": 5,
+          "time": 30,
+          "max_people":100,
+          "social_time_delta": 1,
+          "people_add_delta": 1,
+          "add_people_rate": 0.02,
+          "delete_people_rate": 0.1,
+          "filter_keys_num": 1,
+          "hub_rate":0.1
+          }}
+
+  The current requirement for online social network characteristics is:
+    {requirement}
+
+  Now please provide the parameters for a online social network according to the requirements 
+  return a dict which can be parsed by json.loads:
+    {agent_scratchpad}

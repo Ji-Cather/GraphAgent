@@ -1,0 +1,148 @@
+group_discuss_template: &group_discuss_template |-
+  Character 1: {character_1}
+  Character 2: {character_2}
+
+  Here's the research content you're going to discuss with other researchers:
+  {research_content}
+
+  Past Context: {past_context}
+
+  Current Context: {cur_context}
+
+  Extend or generate the current context of the dicussion process: 
+  {agent_scratchpad}
+  
+choose_researcher_template: &choose_researcher_template |-
+  {role_description}
+
+  You hope to discuss with some researchers to determine the content of the next study. 
+  {research_topic}
+
+  The researchers you know include:
+  {researcher}
+
+  here's your discussion with other researchers: 
+  {past_context}
+
+  Now choose a researcher to continue the discussion, respond one name:
+  {agent_scratchpad}
+
+choose_reason: &choose_reason |-
+  {role_description}
+  
+  Here's your memory of past socialization with other researchers:
+  {memory}
+
+  You have discussed your researched these papers during your wrting process. 
+  Here's the information about the papers you searched for wrting process:
+  {searched_papers}
+
+  However, you didn't use all of these papers. Instead, you cited some papers from this paper list.
+  Here's the information about the papers you cited:
+  {citation_articles}
+
+  You have finished writing paper, the paper is:
+  {paper_content}
+
+  You shoulde choose several sections to use your citation, the sections of paper include:
+  1. Introduction
+  2. Related work
+  3. Method
+  4. Experiment
+
+  You should choose one or some of the following reasons for choosing your citations:
+  {citation_reasons}
+
+
+  You should give reasons for choosing your citations, repeat for {num_citation} citations.
+  And you should respond a list for all the citations
+  [
+      "index": (integer, the index of the citation),
+      "reason":(a list of reason indexs (integer), you can choose more than one, sort by importance), 
+      "section": (a list of indexs of paper sections (integer), you can choose more than one),
+      "importance": (score from 0-10)
+      ... (This repeats for all the citations)
+  ]
+  
+  Now respond, return the list only:
+  {agent_scratchpad}
+
+
+get_idea: &get_idea |-
+  {role_description}
+
+  You hope to discuss with some researchers to determine the content of the next study. 
+  {research_idea}
+
+  The researchers you know include:
+  {researcher}
+
+  Here's your discussion with other researchers:
+  {past_context}
+
+  You should respond in this format:
+  Thought: (your view on the paper theme)
+  Idea: (The theme of your next paper, be concise and specific)
+  Keywords: (The keywords for your next paper)
+  Abstract: (The main content of the paper you want to write)
+  Finish: (Bool value, True means you have finished idea generation, False means you want to further refine research idea)
+
+
+  Respond:
+  {agent_scratchpad}
+
+get_author: &get_author |-
+  I would like you to return a series of author's personal information, with the constraints for each attribute as follows:
+  (1) Name: Author's name
+  (2) Expertises: The author's areas of expertise can be selected from the following areas:{expertises_list}
+
+  Please generate {author_num} different authors in JSON format as follows:
+  [{{
+  "name":"",
+  "expertises":""
+  }},
+  ...,
+  {{
+  "name":"",
+  "expertises":""
+  }}]
+
+  Now please generate:
+
+write_article: &write_article |-
+  {role_description}
+
+  You have discussed your research with other researchers. Other researchers include:
+  {researcher}
+
+  Your discussion are listed as follows: 
+  {past_context}
+
+  A papar should include the following attributes: 
+    title: The title should be concise yet descriptive, providing a clear indication of the paper's topic and scope. This can be different from your topic, It is relatively accurate and clear.
+    keywords: These are specific terms or phrases that encapsulate the core topics of your paper. Keywords make your paper searchable within academic databases and help readers quickly understand the paper's focus areas.
+    abstract: The abstract is a brief summary of your research paper. It should provide an overview of the research question, methodology, results, and conclusions. 
+    citations: A list of the paper names you want to cite.
+
+
+  The version of your paper now: 
+  {current_paper}
+
+  {searched_info}
+
+  {write_memory}
+
+        
+  - If you want to generate a version of paper, your paper should cite {min_citations} to {max_citations} papers, 
+  you can decide the number according to your needs. 
+  And you should respond in this json format, which can be loaded by json.loads:
+  
+  title: (The title of your paper, be concise and specific)
+  keywords: (The keywords for your next paper)
+  abstract: (The topic content of the paper you want to write)
+  citations: (List; The list of the paper names you want to cite. This should include all the titles of the papers you cite. You should include the papers you have searched.)
+    
+  Respond only the paper or action at one time!
+         
+  Now respond:
+  {agent_scratchpad}

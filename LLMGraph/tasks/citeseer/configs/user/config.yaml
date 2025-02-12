@@ -1,0 +1,48 @@
+environment:
+  agent:
+    llm:
+      config_name: gpt-4o-mini
+    social_memory:
+      reflection: false
+      summary_threshold: 10
+      type: social_memory
+    type: article_agent
+    write_memory:
+      type: rational_memory
+  article_write_configs:
+    author_num: 5
+    citations: 10
+    communication_num: 2
+    max_refine_round: 1
+    use_graph_deg: true
+  env_type: article
+  managers:
+    article:
+      article_dir: data/article
+      article_meta_path: data/article_meta_info.pt
+      author_path: data/author.pt
+      control_profile:
+        hub_rate: 0.1
+      experiment:
+      - shuffle
+      generated_article_dir: data/generated_article
+      model_config_name: gpt-4o-mini
+      retriever_kwargs:
+        search_kwargs:
+          k: 20
+          score_cite: true
+        type: graph_vector_retriever
+      tool_kwargs:
+        filter_keys:
+        - big_name
+        - topic
+        - write_topic
+  max_paper_num: 100
+  time_configs:
+    article_num_per_delta: 50
+    author_num_per_delta: 30
+    author_time_delta: 30
+    cur_time: 2004-01-01
+    end_time: 2011-01-01
+    round_time_delta: 5
+use_agent_config: true

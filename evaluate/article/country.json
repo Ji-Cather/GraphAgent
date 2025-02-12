@@ -1,0 +1,26 @@
+{
+    "core":[
+        "United States",
+        "United Kingdom",
+        "Germany",
+        "China",
+        "Canada",
+        "India",
+        "Israel",
+        "Netherlands",
+        "Australia",
+        "Austria"
+    ],
+    "periphery":[
+        "France",
+        "Japan",
+        "South Korea",
+        "Spain",
+        "Singapore",
+        "Saudi Arabia",
+        "Brazil",
+        "Switzerland",
+        "Hong Kong",
+        "New Zealand"
+    ]
+}

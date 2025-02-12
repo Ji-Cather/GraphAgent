@@ -1,0 +1,61 @@
+forum_action: &forum_action |-
+  {role_description}
+
+  Here's your memory:
+  {memory}
+
+  {twitter_data}
+
+  {friend_data}
+
+  You can perform [Retweet/Reply/Tweet] action on these tweets. Additionally, you can follow the bloggers of these tweets:
+
+  Retweet: Retweet the tweet
+  Reply: Reply to the tweet
+  Tweet: Send a tweet
+
+  If you wish to perform any of the above actions on the tweets, you can perform any number of operations on these tweets. 
+
+  Please respond to me in the following format, which can be load by json.loads:
+  [
+    {{
+    "tweet_index": (If you choose to reply or retweet a certain tweet, you should give the tweet index here; if you send a tweet, return None),
+      "action": (Your Action),
+      "input": (If you choose to reply to this tweet, give your reply content here;If you choose to send a tweet, give your content here; else, return ""),
+    "topic":(the topic of this tweet),
+      "follow": (Whether to follow the blogger:True/False),
+      "mention": (a list of Friend indexs, You can mention your friends if you want to; if you don\'t want to follow anyone, return [])
+    }}
+  ]
+
+  Now Respond, only return the tweets you are interested in:
+  {agent_scratchpad}
+
+
+
+search_forum: &search_forum |-
+  {role_description}
+
+  You are now brousing infos on twitter, you can search for some tweets now.
+
+  Here's your memory on twitter: 
+  {memory}
+
+  use your tool to search for some tweets!
+  {agent_scratchpad}
+
+
+choose_topic: &choose_topic |-
+  {role_description}
+
+  Here's your memory:
+  {memory}
+
+  {twitter_topic}
+
+  You can choose some topics you are interested in from these topics, give a list of indexs for the topics you are interested in.
+  Respond in this format:
+  [(topic index, integer)]
+
+  Now respond:
+  {agent_scratchpad}

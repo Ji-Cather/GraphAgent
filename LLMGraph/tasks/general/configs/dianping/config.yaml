@@ -1,0 +1,44 @@
+
+use_agent_config: False
+
+environment:  
+  env_type: general
+    
+  time_configs:
+    start_edge: 1000
+    edge_delta: 50
+    end_edge: 5000
+    update_method: edge
+
+  managers:
+  
+    general:
+      model_config_name: llama3
+      dataset_name: dianping
+      embedding_model_name: all-MiniLM-L6-v2
+      general_memory_config:
+        reflect_memory: False
+        memory_retrieval_method: random_walk
+        memory_retrieval_params:
+          walk_length: 3
+          num_walks: 10
+        memory_context_length: 1000
+      graph_structure: 
+        node: ["dianping_user", "dianping_business"]
+        edge: ["dianping_review"]
+        item_nodes: ["dianping_business"]
+        actor_nodes: ["dianping_user"]
+
+      retriever_kwargs: 
+        type: graph_general_vector_retriever
+        search_kwargs:
+          k: 20
+          
+
+  agent:
+    type: general_agent
+    llm:
+      config_name: llama3
+    long_memory:
+      type: general_memory
+

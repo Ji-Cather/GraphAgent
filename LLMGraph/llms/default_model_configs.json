@@ -1,0 +1,46 @@
+[
+    {
+        "model_type": "openai_chat",
+        "config_name": "default",
+        "model_name": "gpt-4o-mini",
+        "api_key": "api",
+        "generate_args": {
+            "temperature": 0.8
+        }
+    },
+    {
+        "model_type": "openai_chat",
+        "config_name": "gpt-4o-mini",
+        "model_name": "gpt-4o-mini",
+        "api_key": "api",
+        "generate_args": {
+            "temperature": 0.8
+        }
+    },
+    {
+        "config_name": "llama3",
+        "model_type": "openai_chat",
+        "model_name": "llama3-70B",
+        "api_key": "dail2024_llama3_70b!@#",
+        "client_args": {
+            "base_url": "http://8.130.78.202:8083/v1"
+        },
+        "generate_args": {
+            "temperature": 0.9,
+            "max_tokens": 2000
+        }
+    },
+    {
+        "config_name": "llama3",
+        "model_type": "openai_chat",
+        "model_name": "llama3-70B",
+        "api_key": "dail2024_llama3_70b!@#",
+        "client_args": {
+            "base_url": "http://8.130.78.202:8083/v1"
+        },
+        "generate_args": {
+            "temperature": 0.9,
+            "max_tokens": 2000
+        }
+    }
+]
