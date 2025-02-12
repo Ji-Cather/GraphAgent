@@ -191,11 +191,11 @@ class ArticleEnvironment(BaseEnvironment):
             
             
             research_content = research_content.content
-            # research_content = self.call_agent_func(agent_first_author, 
-            #                                          "choose_reason",
-            #                                         kwargs={"research_content":research_content,
-            #                                                 "cur_time_str":self.time_configs["cur_time"].strftime("%Y-%m-%d")})
-            # research_content = research_content.content
+            research_content = self.call_agent_func(agent_first_author, 
+                                                     "choose_reason",
+                                                    kwargs={"research_content":research_content,
+                                                            "cur_time_str":self.time_configs["cur_time"].strftime("%Y-%m-%d")})
+            research_content = research_content.content
             
             
             

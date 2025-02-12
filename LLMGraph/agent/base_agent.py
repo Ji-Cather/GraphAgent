@@ -169,7 +169,6 @@ class BaseGraphAgent(AgentBase):
                 else:
                     return Msg("user",content=f"FAIL TO PARSE",role = "user",fail =True)
             except Exception as e:
-                print(e)
                 return Msg("user",content=f"FAIL TO PARSE",role = "user",fail =True)
             
         return Msg("user",content=f"FAIL TO PARSE",role = "user",fail =True)

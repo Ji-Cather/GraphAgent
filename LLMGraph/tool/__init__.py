@@ -11,3 +11,4 @@ from .online_db import create_article_online_retriever_tool
 from .movie import create_get_movie_html_tool,create_movie_retriever_tool
 from .forum import create_forum_retriever_tool
 from .tool_warpper import GraphServiceFactory
+from .general_items import create_general_retriever_tool

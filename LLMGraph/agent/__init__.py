@@ -7,3 +7,4 @@ from .article import ArticleAgent,ArticleManagerAgent
 # from .movie_agent import MovieAgent
 from .social import SocialAgent,SocialManagerAgent
 from .tool_agent import ToolAgent
+from .general import GeneralAgent

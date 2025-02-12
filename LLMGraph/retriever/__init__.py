@@ -4,3 +4,4 @@ retriever_registry = Registry(name="RetrieverRegistry")
 from .docs import GraphVectorRetriever
 from .arxiv import GraphArxivRetriever
 from .google_scholar import GraphGoogleScholarRetriever
+from .general_docs import GraphGeneralVectorRetriever

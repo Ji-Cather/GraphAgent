@@ -116,10 +116,10 @@ class GroupDiscussAgent(AgentBase):
                         kwargs={"research_content":research_content}).content
         
         
-        # research_content = self.call_agent_func(agent_first_author, 
-        #                                             "choose_reason",
-        #                                         kwargs={"research_content":research_content,
-        #                                                 "cur_time_str":cur_time_str}).content
+        research_content = self.call_agent_func(agent_first_author, 
+                                                    "choose_reason",
+                                                kwargs={"research_content":research_content,
+                                                        "cur_time_str":cur_time_str}).content
         if research_content.get("topic") is not None:
             self.call_agent_func(agent_first_author,
                                  "update_interested_topics",

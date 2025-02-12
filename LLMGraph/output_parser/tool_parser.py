@@ -18,12 +18,12 @@ class ToolParser(AgentOutputParser):
         """Parse an AI message potentially containing tool_calls."""
         res = raw_output
         if isinstance(res,str) or (isinstance(res,dict) and len(res.get("function",[]))==0):
-            if isinstance(res,dict):
-                llm_output = res.get("speak","")
-            else:
-                llm_output = raw_output
-            llm_output += "\n"
-            return{"return_values":{"output": llm_output}}
+            try:
+                output_json = find_and_load_json(res, "dict")
+                json_filed = {"return_values": output_json}
+                return json_filed
+            except Exception as e:
+                return {"fail":True}
             
         
         actions: List = []

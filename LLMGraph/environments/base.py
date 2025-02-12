@@ -17,7 +17,8 @@ class BaseEnvironment(BaseModel):
     to_dist: bool = False
     launcher_args:list = []
     manager_agent: AgentBase
-    
+    simulation_round:int = 0
+
     class Config:
         arbitrary_types_allowed = True
         
@@ -57,3 +58,6 @@ class BaseEnvironment(BaseModel):
 
     def step(self):
         pass
+    
+    def _update_simulation_round(self):
+        self.simulation_round+=1

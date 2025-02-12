@@ -4,6 +4,21 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+    
+        
+        {
+            "name": "general_environment",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,            
+            // article config
+            "args": ["--task","general",
+                    "--config","dianping",
+                    "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+                "--build"] 
+        },
         {
             "name": "llm_agent_1",
             "type": "debugpy",
@@ -55,7 +70,7 @@
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--build"] 
             "args": ["--task","citeseer",
-                "--config","fast_vllm_445_test",
+                "--config","small",
                 "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             "--build"] 
             // "args": ["--task","citeseer",
@@ -195,6 +210,21 @@
             
             // "args": ["--task","tweets",
             // "--config","llama_test",] 
+        },
+        {
+            "name": "general_evaluate",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "evaluate/general/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}",
+            "env":{
+                "PYTHONPATH":"${workspaceFolder}",
+            },
+            "python": "${command:python.interpreterPath}",
+            "args": ["--task", "general",
+                    "--config", "sephora"] 
         },
         {
             "name": "article_evaluate",

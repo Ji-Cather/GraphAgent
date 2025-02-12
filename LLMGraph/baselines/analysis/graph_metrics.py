@@ -126,4 +126,3 @@ if __name__ == "__main__":
 	cluster_coefs = get_clustering_coefficients(graphs)
 	spectra = get_spectra(graphs)
 	orbit_counts = get_orbit_counts(graphs)
-	print(orbit_counts)

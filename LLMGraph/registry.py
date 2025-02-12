@@ -17,12 +17,12 @@ class Registry(BaseModel):
 
         return decorator
 
-    def build(self, type: str, **kwargs):
+    def build(self, type: str, *args, **kwargs):
         if type not in self.entries:
             raise ValueError(
                 f'{type} is not registered. Please register with the .register("{type}") method provided in {self.name} registry'
             )
-        return self.entries[type](**kwargs)
+        return self.entries[type](*args, **kwargs)
     
     def load_data(self,type: str, ** kwargs):
         if type not in self.entries:

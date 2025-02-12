@@ -91,7 +91,7 @@ class ManagerAgent(AgentBase):
 
 
     def update_tools(self,tools:dict = {}):
-        self.tools = tools
+        self.tools.update(tools)
    
     def prepare_funcs_prompt(self):
         """Convert function descriptions from json schema format to
