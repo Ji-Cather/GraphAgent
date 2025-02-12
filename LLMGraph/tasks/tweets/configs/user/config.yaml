@@ -1,0 +1,46 @@
+environment:
+  
+  env_type: social
+
+
+  time_configs:
+    start_time: 2024-04-12
+    cur_time: 2024-04-12
+    end_time: 2024-12-31
+    social_time_delta: 1
+    people_add_delta: 1
+
+  social_configs:
+    max_people: 100
+    add_people_rate: 0.25
+    delete_people_rate: 0.25
+
+  managers:
+   
+  
+    
+    social:
+      social_data_dir: data/systhetic_chop
+      data_name: twitter_large_chop-20
+      generated_data_dir: data/generated
+      retriever_kwargs:
+        type: graph_vector_retriever
+        search_kwargs:
+          k: 20
+
+      control_profile:
+        hub_rate: 0.2
+
+      tool_kwargs:
+        filter_keys: ["follow", "big_name", "topic"]
+        hub_connect: True
+
+
+  agent:
+    type: social_agent
+    llm:
+      config_name: gpt-4o-mini
+    memory:
+      type: action_memory
+
+use_agent_config: true

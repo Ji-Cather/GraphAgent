@@ -1,0 +1,25 @@
+
+sephora_review: &sephora_review |-
+  Rating: {rating}
+  Is Recommended: {is_recommended}
+  Helpfulness: {helpfulness}
+  Total Feedback Count: {total_feedback_count}
+  Total Neg Feedback Count: {total_neg_feedback_count}
+  Total Pos Feedback Count: {total_pos_feedback_count}
+  Review Title: {review_title}
+  Review Text: {review_text}
+  
+
+dianping_review: &dianping_review |-
+  Rate: {rate}
+  Flavor: {flavor}
+  Environment: {environment}
+  Service: {service}
+  Cost: {cost}
+  Stage: {stage}
+  Waiting: {waiting}
+  Content: {content}
+  Dishes: {dishes}
+  Atmosphere: {atmosphere}
+  Special: {special}
+  City: {CITY}

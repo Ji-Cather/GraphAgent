@@ -1,0 +1,16 @@
+powerlaw==1.5
+community==1.0.0b1
+arxiv==2.1.2
+networkx==3.2.1
+pandas==1.3.5
+causalinference==0.1.3
+dowhy==0.11.1
+causalnex==0.12.1
+sentence-transformers==2.6.1
+# agentscope[distribute]
+torch==2.2.2
+pydantic==1.10.8
+langchain-community==0.0.31
+scikit-learn
+tqdm
+huggingface-hub 

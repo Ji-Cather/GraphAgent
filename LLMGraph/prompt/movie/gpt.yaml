@@ -1,0 +1,82 @@
+choose_genre:  &choose_genre |-
+  
+  {role_description}
+  
+  Here's your memory of rating movies: 
+  {memory}
+  
+  {movie_description}
+  
+  - If you made up your choice, respond in this format:
+  Thought: (Your views on these movie genres)
+  Action: Choose
+  Action Input: (A list of movie genres)
+  
+  - If you chose none of them, respond in this format:
+  Thought: (Your views on these movie genres)
+  Action: Giveup
+  Action Input: I choose none of these options.
+  
+
+  Respond:
+  {agent_scratchpad}
+
+
+rate_movie:  &rate_movie |-
+  
+  {role_description}
+  
+  Here's your memory of rating movies: 
+  {memory}
+
+
+  And you have rated these movies, so you may avoid giving repeated ratings:
+  {watched_movie_names}
+
+
+  {movie_description}
+
+
+  You are interested in these movie genres:
+  {interested_genres}
+
+  
+  You should give your rating scores to at least {min_rate} movies, at most {max_rate} movies. 
+  You should give a rating score of this movie, from 0 to 5; just make a rating score based on your personal preference or other reasons.
+  And you should respond in this format, return a list of your movie ratings:
+  [
+    {{
+      "movie": (Movie_name), 
+      "thought": (Your reason for making this rating score, you gice this score based on personal preference or other reasons),
+      "rating":(rating_score)
+    }}
+    ...
+    (repeat this for at least {min_rate} movies, at most {max_rate} movies, try to rate as much movies as possible!)
+  ]
+
+  Respond:
+  {agent_scratchpad}
+
+watch_plan: &watch_plan |-
+  {role_description}.
+
+  You need to make a plan to {task}
+  
+  Respond in this format, give me only one list:
+  [( (number of movies watched online), (number of movies watched in the cinema))] 
+  
+  Now Respond:
+  {agent_scratchpad}
+
+watch_movie_batch: &watch_movie_batch |-
+  {role_description}.
+  
+  Here's some information about the available movies:
+  {movie_description}
+  
+  Here's your memory of rating movies: 
+  {memory}
+  
+  {instruction}
+
+  {agent_scratchpad}

@@ -1,0 +1,12 @@
+LLMGraph/tasks/general/data/*
+LLMGraph/tasks/general/configs/*/generated_data/*
+LLMGraph/tasks/tweets/data/*
+LLMGraph/tasks/tweets/configs/*/generated_data/*
+LLMGraph/tasks/movielens/data/*
+LLMGraph/tasks/movielens/configs/*/generated_data/*
+LLMGraph/tasks/citeseer/data/*
+LLMGraph/tasks/citeseer/configs/*/data/*
+runs
+**/__pycache__/*
+*.pyc
+test.py

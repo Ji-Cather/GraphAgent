@@ -1,0 +1,159 @@
+forum_action: &forum_action |-
+  {role_description}
+
+  Here's your memory:
+  {memory}
+
+  {twitter_data}
+
+  {friend_data}
+
+  You can perform [Retweet/Reply/Tweet] action on these tweets. Additionally, you can follow the bloggers of these tweets:
+
+  Retweet: Retweet the tweet
+  Reply: Reply to the tweet
+  Tweet: Send a tweet
+
+  If you wish to perform any of the above actions on the tweets, you can perform any number of different actions on these tweets. 
+  Currently you have followed 1 persons, the majority of follower numbers are around 10-100 people, with an average of around 30.
+  On average, the action frequency of retweeting, replying, and tweeting is :
+  Retweet: 0.8 (80%, 8/10)
+  Reply: 0.1 (10%, 1/10)
+  Tweet: 0.1 (10%, 1/10)  
+
+  {forum_action_hint}
+  You can choose not to exeucute certain kind of action to ensure the action frequency stays steady.
+  So Think before you act!
+  
+  Please respond to me in the following format, which can be load by json.loads:
+  [
+    {{
+    "tweet_index": (If you choose to reply or retweet a certain tweet, you should give the tweet index here; if you send a tweet, return None),
+      "action": (Your Action),
+      "input": (If you choose to reply to this tweet, give your reply content here;If you choose to send a tweet, give your content here; else, return ""),
+      "topic":(the topic of this tweet),
+      "follow": (Whether to follow the blogger:True/False),
+      "mention": (a list of Friend indexs, You can mention your friends if you want to; if you don\'t want to follow anyone, return [])
+    }}
+  ]
+
+  Now Respond, only return the tweets you are interested in:
+  {agent_scratchpad}
+
+forum_action_bigname: &forum_action_bigname |-
+  {role_description}
+
+  Here's your memory:
+  {memory}
+
+  {twitter_data}
+
+  {friend_data}
+
+  You can perform [Retweet/Reply/Tweet] action on these tweets. Additionally, you can follow the bloggers of these tweets.
+  Therefore, you may [Retweet/Reply/Tweet], but you seldom follow others, currently you have followed {num_followers} persons. 
+  Currently you have followed {num_followers} persons, the majority of follower numbers are around 10-100 people, with an average of around 30.
+  On average, the action frequency of retweeting, replying, and tweeting is :
+  Retweet: 0.8 (80%, 8/10)
+  Reply: 0.1 (10%, 1/10)
+  Tweet: 0.1 (10%, 1/10)
+
+  {forum_action_hint}
+  You can choose not to exeucte certain kind of action to ensure the action frequency stays steady.
+
+  Since you are an internet celebrity, you seldom follow other unimportant people. 
+  And you may choose to Retweet/Reply/Tweet, but you seldom follow others.
+  You should send more tweets so as to increase your social media influence!
+  So think before you act!
+
+  Please respond to me in the following format, which can be load by json.loads:
+  [
+    {{
+    "tweet_index": (If you choose to reply or retweet a certain tweet, you should give the tweet index here; if you send a tweet, return None),
+      "action": (Your Action),
+      "input": (If you choose to reply to this tweet, give your reply content here;If you choose to send a tweet, give your content here; else, return ""),
+      "topic":(the topic of this tweet),
+      "follow": (Whether to follow the blogger:True/False),
+      "mention": (a list of Friend indexs, You can mention your friends if you want to; if you don\'t want to follow anyone, return [])
+    }}
+  ]
+
+  Now Respond, only return the tweets you are interested in:
+  {agent_scratchpad}
+
+
+search_forum: &search_forum |-
+  {role_description}
+
+  You are now brousing infos on twitter, you can search for some tweets now.
+
+
+  {memory}
+
+  {searched_info}
+
+  use your tool to search for some tweets!
+  {agent_scratchpad}
+
+
+choose_topic: &choose_topic |-
+  {role_description}
+
+  Here's your memory:
+  {memory}
+
+  {twitter_topic}
+
+  You can choose some topics you are interested in from these topics, give a list of indexs for the topics you are interested in.
+  Respond in this format:
+  [(topic index, integer)]
+
+  Now respond:
+  {agent_scratchpad}
+
+forum_action_plan_week: &forum_action_plan_week |-
+  {role_description}
+  You can perform three types of actions on Twitter: tweet, retweet, and reply.
+
+  The proportion of logging in to Twitter every week and the corresponding proportion are
+  Format as "days": "proportion"
+  {{
+  "2": 0.306,
+  "4": 0.208,
+  "5": 0.106,
+  "7": 0.380
+  }}
+
+  {action_history}
+
+  {respond_instruction}
+  {{
+  "tweet": (float, proportion of times you want to tweet),
+  "retweet": (float, proportion of times you want to retweet),
+  "reply": (float, proportion of times you want to reply to other tweets),
+  "log_in_days":(int, number of days you log in to twitter a week)
+  }}
+
+  Now respond:
+
+
+forum_action_plan_month: &forum_action_plan_month |-
+  {role_description}
+  You can perform three types of actions on Twitter: tweet, retweet, and reply.
+
+  You have four choices for forum logging rate, you can log in to twitter,
+  40% people log in to twitter every day, 20% people log in to twitter twice a day, 
+  30% people log in to twitter every three days, 
+  and 10% people log in to twitter every four days.
+
+  {action_history}
+
+  {respond_instruction}
+  {{
+  "tweet": (float, proportion of times you want to tweet),
+  "retweet": (float, proportion of times you want to retweet),
+  "reply": (float, proportion of times you want to reply to other tweets),
+  "log_in_days":(int, number of days for log in interval to twitter)
+  }}
+
+  Now respond:
