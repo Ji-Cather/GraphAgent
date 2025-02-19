@@ -28,7 +28,7 @@ environment:
   managers:
   
     article:
-      model_config_name: gpt-3.5-turbo-0125
+      model_config_name: vllm
       article_meta_path: data/article_meta_info.pt
       author_path: data/author.pt
       article_dir: data/article
@@ -48,7 +48,7 @@ environment:
   agent:
     type: article_agent
     llm:
-      config_name: gpt-3.5-turbo-0125
+      config_name: vllm
     
     social_memory:
       type: social_memory
