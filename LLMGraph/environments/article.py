@@ -443,8 +443,11 @@ class ArticleEnvironment(BaseEnvironment):
             article_number = self.time_configs["article_num_per_delta"],
             author_number = article_write_configs["author_num"])
         
-        # if article_write_configs["author_num"] >1:
-        #     self.communication()
+
+        # 如果作者数量大于1，则进行通信; 
+        # 这部分对于网络的影响是 写作论文主题是否新颖（产生论文的数量）
+        if article_write_configs["author_num"] >1:
+            self.communication()
         
         # 接下来是写论文的过程
         self.write()

@@ -5,7 +5,7 @@ environment:
   env_type: general
     
   time_configs:
-    start_edge: 1000
+    start_edge: 100
     edge_delta: 50
     end_edge: 5000
     update_method: edge

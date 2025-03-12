@@ -1,7 +1,7 @@
 [
     {
+        "config_name": "default", 
         "model_type": "openai_chat",
-        "config_name": "default",
         "model_name": "gpt-4o-mini",
         "api_key": "api",
         "generate_args": {
@@ -18,25 +18,21 @@
         }
     },
     {
-        "config_name": "llama3",
+        "config_name": "gpt-3.5-turbo-0125",
         "model_type": "openai_chat",
-        "model_name": "llama3-70B",
-        "api_key": "dail2024_llama3_70b!@#",
-        "client_args": {
-            "base_url": "http://8.130.78.202:8083/v1"
-        },
+        "model_name": "gpt-3.5-turbo-0125",
+        "api_key": "api",
         "generate_args": {
-            "temperature": 0.9,
-            "max_tokens": 2000
+            "temperature": 0.8
         }
     },
     {
         "config_name": "llama3",
         "model_type": "openai_chat",
         "model_name": "llama3-70B",
-        "api_key": "dail2024_llama3_70b!@#",
+        "api_key": "vllm_api",
         "client_args": {
-            "base_url": "http://8.130.78.202:8083/v1"
+            "base_url": "vllm_server_url"
         },
         "generate_args": {
             "temperature": 0.9,

@@ -63,7 +63,6 @@ if __name__ == "__main__":
     
     args = {**vars(args)}
     import os
-
     agentscope.init(
         project="llmgraph",
         name="main",

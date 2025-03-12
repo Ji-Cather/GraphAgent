@@ -65,7 +65,7 @@ class SocialManager(BaseManager):
     big_name_list:list = []
     
     # debug 
-    transitive_agent_log = [] # 记录每一轮的agent增减ids
+    transitive_agent_log:list = [] # 记录每一轮的agent增减ids
     
     class Config:
         arbitrary_types_allowed = True

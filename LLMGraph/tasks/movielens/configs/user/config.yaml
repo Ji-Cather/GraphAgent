@@ -16,7 +16,7 @@ environment:
 
   managers:
     movie:
-      link_movie_path: data/ml-processed_small_test/ml-25m-links.csv
+      link_movie_path: data/ml-25m/links.csv
       # movie_data_dir: data/ml-processed
       movie_data_dir: data/ml-processed_small_test
       ratings_data_name: ratings_top10.npy

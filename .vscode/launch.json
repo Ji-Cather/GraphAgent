@@ -56,10 +56,10 @@
             // "--config","fast_vllm",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--save"] 
-            // "args": ["--task","cora",
-            // "--config","fast_vllm",
-            // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-            // "--save"] 
+            "args": ["--task","movielens",
+            "--config","small",
+            "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            "--build"] 
             
             // "args": ["--task","citeseer",
             // "--config","fast_qwen2",
@@ -69,10 +69,10 @@
             // "--config","search_shuffle_base_vllm_2engine",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
             // "--build"] 
-            "args": ["--task","citeseer",
-                "--config","small",
-                "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
-            "--build"] 
+            // "args": ["--task","citeseer",
+            //     "--config","small",
+            //     "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
+            // "--build"] 
             // "args": ["--task","citeseer",
             // "--config","fast_qwen2",
             // "--launcher_save_path","LLMGraph/llms/launcher_info_none.json",
@@ -224,7 +224,10 @@
             },
             "python": "${command:python.interpreterPath}",
             "args": ["--task", "general",
-                    "--config", "sephora"] 
+                    "--config", "sephora",
+                    // "--eval_graph",
+                    "--eval_character",
+                ] 
         },
         {
             "name": "article_evaluate",
@@ -318,9 +321,9 @@
                 "PYTHONPATH":"${workspaceFolder}",
             },
             // article config
-            // "args": ["--task","llm_agent_1",
-            //         "--config","test_config",
-            //     "--build"] 
+            "args": ["--task","llm_agent_1",
+                    "--config","test_config",
+                "--build"] ,
             "python": "${command:python.interpreterPath}",
            
                     

@@ -1,3 +1,6 @@
+
+# start the 
+
 # large graph generation
 python main.py --task citeseer --config "big" --build 
 python main.py --task movielens --config "big" --build 

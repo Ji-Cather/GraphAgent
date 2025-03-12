@@ -23,8 +23,8 @@ def sigmoid(x):
 from tqdm import tqdm
 def generated_random_graphs(N_gen, graph_name,N_GT):    
     graph_path_map = {
-        "llmcitationcora":"/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/cora/raw/article_meta_info.pt",
-        "llmcitationciteseer":"/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/citeseer/raw/article_meta_info.pt"
+        "llmcitationcora":"cora/data/article_meta_info.pt",
+        "llmcitationciteseer":"citeseer/data/article_meta_info.pt"
     }
     if graph_name not in graph_path_map.keys():return {}
     ers = []
@@ -171,88 +171,6 @@ def add_gem_col(df):
     df.loc["GT"] = df_gt
     df.loc["GT","gem"] = np.nan
     return df
-
-
-# tobedone
-# def eval_tweet_graphs(model, checkpoint_dir, key):
-#     # model = "bwr_graphrnn"
-#     # checkpoint_dir = "bwr_graphrnn"
-
-#     # model = "ppgn_oneshot"
-#     # checkpoint_dir ="outputs/2024-09-15/13-44-00/test"
-
-#     df_save_root = "graph_gen_df"
-#     model_dir_map = {
-#         "bwr_graphrnn": "bwr_graphrnn/pred_llmcitation.pt",
-#         "ppgn":"/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/outputs/2024-09-14/21-47-38/test/step_1000_700.pt",
-        
-#     }
-    
-
-#     pred_model_graphs = {}
-#     for model, path in model_dir_map.items():
-#         try:
-#             eval_file = th.load(path)
-#         except Exception as e:
-#             continue
-#         pred_model_graphs[model] = eval_file["pred_graphs"][0] # 
-    
-#     train_p = 0.4
-#     val_p = 0.3
-#     graph_path = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/vllm/raw/article_meta_info.pt"
-
-#     G = build_citation_graph(readinfo(graph_path))
-#     nodes = list(G.nodes())
-#     n = len(nodes)
-
-#     df_path = os.path.join(df_save_root,f"generated_eval_{model}.csv")
-#     if os.path.exists(df_path):
-#         df = pd.read_csv(df_path,index_col =0)
-#     else:
-#         df = pd.DataFrame()
-#     xmin = 0
-#     graph_gt = build_citation_graph(readinfo("/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/seed/raw/article_meta_info.pt"))
-#     # graph_gt = graph_gt.subgraph(nodes[2000:2700])
-#     graph_gt = nx.Graph(graph_gt)
-#     df.loc["GT","k"] = len(graph_gt.nodes())/len(graph_gt.edges())
-#     df.loc["GT","cc"] = nx.average_clustering(graph_gt)
-#     partition = community_louvain.best_partition(graph_gt)
-#     # 计算这种划分的modularity
-#     modularity = community_louvain.modularity(partition, graph_gt)
-#     df.loc["GT","modularity"] = modularity
-#     graph_gt = nx.convert_node_labels_to_integers(graph_gt)
-    
-#     G2 = G.subgraph(nodes[int(n*(train_p+val_p)):int(n*(train_p+val_p))+graph_size])
-#     pred_model_graphs["generated"] = G2
-#     for model_name, graph in pred_model_graphs.items():
-#             graph = nx.Graph(graph)
-#             graph = nx.convert_node_labels_to_integers(graph)
-#             degree_list = [graph.degree(n) for n in graph.nodes()]
-#             results = powerlaw.Fit(list(degree_list), 
-#                                     discrete=True,
-#                                         # fit_method="KS",
-#                                         xmin=xmin
-#                                         )
-#             alpha = results.power_law.alpha
-#             xmin = results.power_law.xmin
-#             sigma = results.power_law.sigma
-#             D = results.power_law.D
-#             partition = community_louvain.best_partition(graph)
-#             # 计算这种划分的modularity
-#             modularity = community_louvain.modularity(partition, graph)
-
-#             df.loc[model_name,f"D"] = D
-#             df.loc[model_name,f"alpha"] = alpha
-#             df.loc[model_name,f"k"] = len(graph.edges())/len(graph.nodes())
-#             df.loc[model_name,f"cc"] = nx.average_clustering(graph)
-#             df.loc[model_name,f"modularity"] = modularity
-#             out = evaluate_sampled_graphs([graph],[graph_gt])
-#             for k,v in out.items():
-#                 df.loc[model_name, f"{k}"] = v
-#     os.makedirs(df_save_root,exist_ok=True)
-#     df.to_csv(df_path)
-
-
 
 
 

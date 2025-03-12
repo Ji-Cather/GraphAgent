@@ -26,8 +26,9 @@ or use default: "LLMGraph/baselines/baseline_checkpoints/llmcitationciteseer.pkl
 ```
 
 
-<!-- # macro evaluation
-result checkpoints
+# macro evaluation
+For result checkpoints. please refer to "https://modelscope.cn/datasets/cather111/GAG_data"
+
 "LLMGraph/tasks/citeseer/configs/fast_vllm"
 "LLMGraph/tasks/movielens/configs/test_movie_up"
-"LLMGraph/tasks/tweets/configs/llama_test_1e6" -->
+"LLMGraph/tasks/tweets/configs/llama_test_1e6"

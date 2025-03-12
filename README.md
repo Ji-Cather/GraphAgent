@@ -11,6 +11,10 @@ Moreover, GraphAgent can be easily adjusted for social science research. Researc
 
 ## GraphAgent Framework
 Before we begin, please set your api key in "LLMGraph\llms\default_model_configs.json", and format it like:
+
+You must prepare prepare api key for model config name you want to build agents with in the config.yaml file.
+And You should also prepare api key for config_name == "default".
+
 ```json
 \[
     // GPT api key
@@ -61,15 +65,33 @@ Then create the experiment, and install the required packages:
     pip install -i "requirements.txt"
     ```
 
+### Data preparation
+please refer to https://modelscope.cn/datasets/cather111/GAG_data
+
+for downloading the data, you can run:
+```
+git clone https://oauth2:RxG7vLWFP_NbDhmB9kXG@www.modelscope.cn/datasets/cather111/GAG_data.git
+```
+
+
 ### Build Network Demo
 ```cmd
     export PYTHONPATH=./
+    
+    # use llama prompt templates
+    export MODEL=llama
+
+    # Or, use gpt prompt templates
+    export MODEL=gpt
 ```
+
+#### Run Simulation Experiments with a Single Port
+
+This is the default method for running simulation experiments and is particularly well-suited for debugging purpose, but relatively slow.
 
 - To start building social network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
     ```cmd
-    python start_launchers.py
-    python main.py --task tweets --config "small" --build # build from synthetic tweet data
+    python main.py --task tweets --config "small" --build --launcher_save_path "LLMGraph/llms/launcher_info_none.json" # build from synthetic tweet data
     
     # follow/action/friend networks
     python evaluate/social/main.py
@@ -77,8 +99,7 @@ Then create the experiment, and install the required packages:
 
 - To start building movie rating network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
     ```cmd
-    python start_launchers.py
-    python main.py --task movielens --config "small" --build # build from synthetic tweet data
+    python main.py --task movielens --config "small" --build --launcher_save_path "LLMGraph/llms/launcher_info_none.json" # build from synthetic tweet data
     
     # movie rating/user projection networks
     python evaluate/movie/main.py
@@ -86,12 +107,25 @@ Then create the experiment, and install the required packages:
 
 - To start building citation network in LLMGraph, you should first specify the dir of data and the config name, and then simply run by
     ```cmd
-    python start_launchers.py
-    python main.py --task citeseer --config "small" --build # build from synthetic tweet data
+    python main.py --task citeseer --config "small" --build --launcher_save_path "LLMGraph/llms/launcher_info_none.json"  # build from synthetic tweet data
     
     # citation networks and etc.
     python evaluate/article/main.py
     ```
+
+
+#### Run Simulation Experiments in Parallel
+
+- First start launcher in one terminal
+    ```cmd
+    python start_launchers.py --launcher_save_path "LLMGraph/llms/launcher_info.json"
+    ```
+
+- Then run the following commands in another terminal
+    ```cmd
+    python main.py --task tweets --config "small" --build --launcher_save_path "LLMGraph/llms/launcher_info.json"  # build from synthetic tweet data
+    ```
+
 
 
 ### An Illustration Vedio of Tweet Networks
@@ -101,6 +135,7 @@ visualization/social_network.mp4
 </video>
 
 ### Experiments
+To run the experiments with parallel ports, refer to:
 LLMGraph/experiments
 
 ### Build networks from user input only
@@ -113,3 +148,6 @@ python main.py --user_input "I want to simulate users interaction with movies. I
 python main.py --user_input "I want to simulate users interaction in tweet patform. I want to generate a highly-clustered online social networks  with high average degree."  --build
 
 ```
+
+## To-Do
+We're planning to adapt this framework to more text-attributed graph generation tasks in more general scenarios. 🚀 Please stay tuned! 🔍

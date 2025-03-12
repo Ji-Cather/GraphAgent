@@ -339,7 +339,7 @@ def generate_citation_graphs(num_graphs,
                              min_size, 
                              max_size, 
                              dataset = 'train', #
-                             graph_path = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/citation/citeseer/raw/article_meta_info_abstract.pt",
+                             graph_path = "LLMGraph/tasks/citeseer/data/article_meta_info_abstract.pt",
                              seed=0):
 
     
