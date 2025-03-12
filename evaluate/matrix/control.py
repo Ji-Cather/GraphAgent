@@ -172,7 +172,7 @@ if __name__ =="__main__":
             nse,
             nc_deg,
             "article_graph",
-            save_dir="/mnt2/jijiarui/LLM4Graph")
+            save_dir="LLMGraph/experiments/")
     
     # 参数：节点总数和每个新节点的出边数
     # n = 100

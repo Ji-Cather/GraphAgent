@@ -184,8 +184,6 @@ class MovieManager(BaseManager):
             users_path = os.path.join(movie_data_dir,"users.npy")
             ratings_log = []
             filter_initial_train = True
-
-        
            
         movies = np.load(movie_path,allow_pickle=True)
         ratings = np.load(ratings_path,allow_pickle=True)

@@ -1,4 +1,18 @@
-LLMGraph/tasks/general/data/*
+LLMGraph/tasks/general/data/Dianping
+LLMGraph/tasks/general/data/DyTAG_processed
+LLMGraph/tasks/general/data/cache
+LLMGraph/tasks/general/data/IMDB
+LLMGraph/tasks/general/data/NYC
+LLMGraph/tasks/general/data/SAGraph_ET
+LLMGraph/tasks/general/data/SAGraph_IFS
+LLMGraph/tasks/general/data/SAGraph_RFC
+LLMGraph/tasks/general/data/SAGraph_SBS
+LLMGraph/tasks/general/data/sephora
+LLMGraph/tasks/general/data/WikiLifeTrajectory
+LLMGraph/tasks/general/data/WikiRevision
+
+
+DGB/*
 LLMGraph/tasks/general/configs/*/generated_data/*
 LLMGraph/tasks/tweets/data/*
 LLMGraph/tasks/tweets/configs/*/generated_data/*
@@ -10,3 +24,7 @@ runs
 **/__pycache__/*
 *.pyc
 test.py
+unzip.sh
+exp.sh
+*.log
+LLMGraph/utils/dataset_format_align.py

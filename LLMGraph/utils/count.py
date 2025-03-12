@@ -27,26 +27,24 @@ def select_to_last_period(s, upper_token = 4e3):
         # 如果没有找到句号，返回整个字符串
         return s
 
-def parse_prompt(prompt, upper_token=7e3):
-    if MODEL == "llama":
+def parse_prompt(prompt, upper_token=6e3):
+    if MODEL != "llama":
         return prompt
-    #     if count_prompt_len(prompt) <upper_token:
-    #         return prompt
-    #     upper_token = int(upper_token)
-    #     assert isinstance(prompt,list)
-    #     reduce_token = count_prompt_len(prompt) - upper_token
-    #     try:
-    #         # prompt = [prompt_msg.get("content","") for prompt_msg in prompt]
-    #         prompt_last = prompt[-1]
-    #         assert isinstance(prompt_last,dict)
-    #         content = prompt_last.get("content","")[-len(prompt_last)+reduce_token:]
-    #         prompt_last["content"] = select_to_last_period(content)
-    #         if len(prompt)>1:
-    #             prompt_left = prompt[:-1]
-    #             return [*prompt_left,prompt_last]
-    #         else:
-    #             return [prompt_last]
-    #     except Exception as e:
-    #         print(e)
-    #         return prompt
-    return prompt
+    
+    prompt_len = count_prompt_len(prompt)
+    if prompt_len < upper_token:
+        # print("prompt_len < upper_token", prompt_len)
+        return prompt
+    upper_token = int(upper_token)
+    assert isinstance(prompt,list)
+    reduce_token = prompt_len - upper_token
+    prompt_last = prompt[-1]
+    content = prompt_last.get("content","")[-len(prompt_last)+reduce_token:]
+    prompt_last["content"] = content
+    if len(prompt)>1:
+        prompt_left = prompt[:-1]
+        print("prompt_len > upper_token", prompt_len)
+        return [*prompt_left,prompt_last]
+    else:
+        print("prompt_len > upper_token", prompt_len)
+        return [prompt_last]

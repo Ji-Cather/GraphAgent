@@ -61,36 +61,6 @@ for idx in range(1,21):
     generated_graphs["llmcitationciteseer"].append(
     nx.Graph(G_2.subgraph(list(G_2.nodes())[prefix_graph_sub+idx:prefix_graph_sub+1000+idx])))
 
-# graph_path_2 = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/cora_subgraph/article_meta_info.pt"
-# G_2 = build_citation_graph(readinfo(graph_path_2))
-# generated_graphs["llmcitationcora"] = []
-# for idx in range(1,21):
-#     generated_graphs["llmcitationcora"].append(
-#     nx.Graph(G_2.subgraph(list(G_2.nodes())[prefix_graph_sub+idx:prefix_graph_sub+1000+idx])))
-
-
-# tweet_path = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/tweet/llmtweet_generated.pkl"
-
-# max_size = 512
-# for key, graph_generator in zip(
-#     ["friend","action","follow"],
-#     [gg.data.generate_friend_graphs,
-#     gg.data.generate_action_graphs,
-#     gg.data.generate_follow_graphs
-#     ]
-# ):
-#     test = graph_generator(
-#                 num_graphs=20,
-#                 min_size=1000,
-#                 max_size=1000,
-#                 dataset="test",
-#                 seed=2,
-#                 data_path = "/mnt/jiarui/graph_generation-main-6a992d0b151e7e9c0a23b3a351db730b4d6da666/data/netcraft/tweet/llmtweet_generated.pkl"
-#             )
-#     test_generated = list(filter(lambda G:len(G.subgraph(max(nx.connected_components(G), key=len)).nodes())> 2, test))
-#     generated_graphs[f"llm{key}"] = test_generated
-
-
 torch.save(
     generated_graphs,
     "LLMGraph/baselines/baseline_checkpoints/gag_generated.pt"

@@ -11,10 +11,11 @@ from datetime import datetime
 from LLMGraph.utils.process_time import transfer_time
 from .. import select_to_last_period
 import copy
+from typing import Any
 @movie_memory_registry.register("movie_memory")
 class MovieMemory(BaseModel):
 
-    name: str # 标记是谁的记忆
+    name: Any # 标记是谁的记忆
     
     ratings:dict = {
         

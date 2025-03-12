@@ -1,2 +1,0 @@
-,degree_mmd,cluster_mmd,spectra_mmd,degree,degree_std,cluster,cluster_std,spectra,spectra_std,modularity,modularity_std,D,D_std,alpha,alpha_std,nodes,nodes_std,valid,edges
-llama3_random_walk,0.05903250442074069,0.0,0.07797866881066606,3.6259771497294047,8.024817106288195,0.0,0.0,0.9997995590298656,0.35339671044611176,0.5817759186378778,0.0,0.09895580179555313,0.0,2.401821791708589,0.0,1663.0,0.0,1.0,3229.0

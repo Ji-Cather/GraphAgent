@@ -1,4 +1,5 @@
-MODEL = 'llama' # 设置prompt版本
+import os
+MODEL = os.environ.get("MODEL", "llama") # 设置prompt版本
 def select_to_last_period(s, upper_token = 4e3):
     upper_token = int(upper_token)
     s = s[-upper_token:]
