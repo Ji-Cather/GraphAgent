@@ -150,11 +150,12 @@ class SocialEnvironment(BaseEnvironment):
             
     def social(self,
                agent_plans_map:dict = {}):
-        """按照随机采样"""
+        """按照随机采样"""    
+        # cur_agent_ids = list(self.cur_agents.keys())
         # common_agent_ids, hot_agent_ids = self.call_manager_agent_func(
         #     "sample_cur_agents",
         #                             kwargs ={
-        #                             "cur_agent_ids":list(self.cur_agents.keys()),
+        #                             "cur_agent_ids":cur_agent_ids,
         #                             "sample_ratio":0.1,
         #                             "sample_big_name_ratio":0.3
         #                             }).content
@@ -312,7 +313,7 @@ class SocialEnvironment(BaseEnvironment):
         if num_added == 0 and len(self.cur_agents)==0:
             agent_profiles_df_list =[]
 
-            max_iter = 1 # social_member_size / threshold
+            max_iter = int((self.social_configs["max_people"] + 9999) / 10000) # social_member_size / threshold
             for i in range(max_iter):
                 agent_profiles_cur = self.call_manager_agent_func(
                     "add_and_return_user_profiles",

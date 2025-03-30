@@ -18,7 +18,7 @@ environment:
   managers:
     social:
       social_data_dir: data/systhetic
-      data_name: twitter_large_1e6
+      data_name: twitter_large_1e5
       generated_data_dir: data/generated
 
       control_profile:

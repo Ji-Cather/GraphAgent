@@ -315,9 +315,6 @@ Your friend include:
                                      num_added:int = 5) -> dict:
         cur_time = datetime.strptime(cur_time,"%Y-%m-%d").date()
         add_user_time_delta = timedelta(days=add_user_time_delta)
-        # llm = ChatOpenAI(model="gpt-3.5-turbo-16k-0613",
-        #                  temperature=0.7,
-        #                  max_tokens=2000)
         llm = load_model_by_config_name("default")
         profiles = {}
         
