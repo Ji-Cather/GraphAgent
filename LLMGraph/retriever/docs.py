@@ -17,14 +17,6 @@ def compare_article_items(item1, item2):
         return item2[1] - item1[1]
     
 
-def compare_article_items(item1, item2):
-    try:
-        if abs(item1[1]-item2[1]>0.05):
-            return item2[1] - item1[1]
-        else:
-            return 1 if item2[0].metadata["time"] > item1[0].metadata["cited"] else -1
-    except:
-        return item2[1] - item1[1]
     
 def compare_movie_items(item1, item2):
     try:
