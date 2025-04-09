@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.memory.summarize_memory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.memory.html"><font color="#ffffff">memory</font></a>.summarize_memory</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/memory/summarize_memory.py">/data/jiarui_ji/GraphAgent/LLMGraph/memory/summarize_memory.py</a></font></td></tr></table>
+    <p><tt>Base&nbsp;class&nbsp;for&nbsp;memory<br>
+&nbsp;<br>
+TODO:&nbsp;a&nbsp;abstract&nbsp;class&nbsp;for&nbsp;a&nbsp;piece&nbsp;of&nbsp;memory<br>
+TODO:&nbsp;data&nbsp;structure&nbsp;to&nbsp;organize&nbsp;multiple&nbsp;memory&nbsp;pieces&nbsp;in&nbsp;memory&nbsp;class</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="agentscope.memory.memory.html#MemoryBase">agentscope.memory.memory.MemoryBase</a>(<a href="abc.html#ABC">abc.ABC</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.memory.summarize_memory.html#SummarizeMemory">SummarizeMemory</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="SummarizeMemory">class <strong>SummarizeMemory</strong></a>(<a href="agentscope.memory.memory.html#MemoryBase">agentscope.memory.memory.MemoryBase</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#SummarizeMemory">SummarizeMemory</a>(config:&nbsp;Optional[dict]&nbsp;=&nbsp;None)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Base&nbsp;class&nbsp;for&nbsp;memory.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.memory.summarize_memory.html#SummarizeMemory">SummarizeMemory</a></dd>
+<dd><a href="agentscope.memory.memory.html#MemoryBase">agentscope.memory.memory.MemoryBase</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="SummarizeMemory-__init__"><strong>__init__</strong></a>(self, config: Optional[dict] = None) -&gt; None</dt><dd><tt><a href="agentscope.memory.memory.html#MemoryBase">MemoryBase</a>&nbsp;is&nbsp;a&nbsp;base&nbsp;class&nbsp;for&nbsp;memory&nbsp;of&nbsp;agents.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config&nbsp;(`Optional[dict]`,&nbsp;defaults&nbsp;to&nbsp;`None`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configuration&nbsp;of&nbsp;this&nbsp;memory.</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-add"><strong>add</strong></a>(self, memories: Union[list[dict], dict, NoneType]) -&gt; None</dt><dd><tt>Adding&nbsp;new&nbsp;memory&nbsp;fragment,&nbsp;depending&nbsp;on&nbsp;how&nbsp;the&nbsp;memory&nbsp;are&nbsp;stored</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-clear"><strong>clear</strong></a>(self) -&gt; None</dt><dd><tt>Clean&nbsp;memory,&nbsp;depending&nbsp;on&nbsp;how&nbsp;the&nbsp;memory&nbsp;are&nbsp;stored</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-delete"><strong>delete</strong></a>(self, index: Union[Iterable, int]) -&gt; None</dt><dd><tt>Delete&nbsp;memory&nbsp;fragment,&nbsp;depending&nbsp;on&nbsp;how&nbsp;the&nbsp;memory&nbsp;are&nbsp;stored<br>
+and&nbsp;matched</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-export"><strong>export</strong></a>(self, to_mem: bool = False, file_path: Optional[str] = None) -&gt; Optional[list]</dt><dd><tt>Export&nbsp;memory,&nbsp;depending&nbsp;on&nbsp;how&nbsp;the&nbsp;memory&nbsp;are&nbsp;stored</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-get_memory"><strong>get_memory</strong></a>(self, recent_n: Optional[int] = None, filter_func: Optional[Callable[[int, dict], bool]] = None) -&gt; list</dt><dd><tt>Return&nbsp;a&nbsp;certain&nbsp;range&nbsp;(`recent_n`&nbsp;or&nbsp;all)&nbsp;of&nbsp;memory,&nbsp;filtered&nbsp;by<br>
+`filter_func`</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-load"><strong>load</strong></a>(self, memories: Union[str, dict, list], overwrite: bool = False) -&gt; None</dt><dd><tt>Load&nbsp;memory,&nbsp;depending&nbsp;on&nbsp;how&nbsp;the&nbsp;memory&nbsp;are&nbsp;passed,&nbsp;design&nbsp;to&nbsp;load<br>
+from&nbsp;both&nbsp;file&nbsp;or&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-size"><strong>size</strong></a>(self) -&gt; int</dt><dd><tt>Returns&nbsp;the&nbsp;number&nbsp;of&nbsp;memory&nbsp;segments&nbsp;in&nbsp;memory.</tt></dd></dl>
+
+<dl><dt><a name="SummarizeMemory-update_config"><strong>update_config</strong></a>(self, config: dict) -&gt; None</dt><dd><tt>Configure&nbsp;memory&nbsp;as&nbsp;specified&nbsp;in&nbsp;config</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset({'add', 'clear', 'delete', 'export', 'get_memory', 'load', ...})</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'_version': &lt;class 'int'&gt;}</dl>
+
+<hr>
+Data descriptors inherited from <a href="agentscope.memory.memory.html#MemoryBase">agentscope.memory.memory.MemoryBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Callable</strong> = typing.Callable<br>
+<strong>Iterable</strong> = typing.Iterable<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Union</strong> = typing.Union</td></tr></table>
+</body></html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.agent.tool_agent</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.agent.html"><font color="#ffffff">agent</font></a>.tool_agent</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/agent/tool_agent.py">/data/jiarui_ji/GraphAgent/LLMGraph/agent/tool_agent.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;from&nbsp;agentscope.agents&nbsp;import&nbsp;AgentBase</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.agent.tool_agent.html#ToolAgent">ToolAgent</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ToolAgent">class <strong>ToolAgent</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ToolAgent">ToolAgent</a>(name:&nbsp;str,&nbsp;tool_func:&nbsp;Callable,&nbsp;func_desc:&nbsp;dict)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ToolAgent-__init__"><strong>__init__</strong></a>(self, name: str, tool_func: Callable, func_desc: dict) -&gt; None</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ToolAgent-describe"><strong>describe</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ToolAgent-execute_func"><strong>execute_func</strong></a>(self, index: int, arg_list, func_args: dict) -&gt; dict</dt><dd><tt>Execute&nbsp;the&nbsp;tool&nbsp;function&nbsp;and&nbsp;return&nbsp;the&nbsp;result.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;index&nbsp;(`int`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;index&nbsp;of&nbsp;the&nbsp;tool&nbsp;function.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;func_call&nbsp;(`dict`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;function&nbsp;call&nbsp;dictionary&nbsp;with&nbsp;keys&nbsp;'name'&nbsp;and&nbsp;'arguments'.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`ServiceResponse`:&nbsp;The&nbsp;execution&nbsp;results.</tt></dd></dl>
+
+<dl><dt><a name="ToolAgent-reply"><strong>reply</strong></a>(self, message: agentscope.message.Msg = None)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Callable</strong> = typing.Callable<br>
+<strong>DEFAULT_TOOL_PROMPT</strong> = '<font color="#c040c0">\n</font>The following tool functions are available in t...u should analyze the error and try to solve it.<font color="#c040c0">\n\n</font>'<br>
+<strong>FUNCTION_RESULT_PROMPT</strong> = '{index}. {function_name}:<font color="#c040c0">\n</font>    [EXECUTE STATUS]: {status}<font color="#c040c0">\n</font>    [EXECUTE RESULT]: {result}<font color="#c040c0">\n</font>'<br>
+<strong>FUNCTION_RESULT_TITLE_PROMPT</strong> = 'Execution Results:<font color="#c040c0">\n</font>'<br>
+<strong>List</strong> = typing.List<br>
+<strong>TOOL_HINT_PROMPT</strong> = '<font color="#c040c0">\n</font>Generate a response in the following format:<font color="#c040c0">\n\n</font>R...: {{"query": "what<font color="#c040c0">\'</font>s the weather today?"}}}}]<font color="#c040c0">\n</font>}}<font color="#c040c0">\n</font>'<br>
+<strong>Tuple</strong> = typing.Tuple</td></tr></table>
+</body></html>

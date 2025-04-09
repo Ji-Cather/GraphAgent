@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.loader.general</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.loader.html"><font color="#ffffff">loader</font></a>.general</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/loader/general.py">/data/jiarui_ji/GraphAgent/LLMGraph/loader/general.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="concurrent.html">concurrent</a><br>
+<a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.loader.general.html#GeneralGraph">GeneralGraph</a>
+</font></dt><dt><font face="helvetica, arial"><a href="LLMGraph.loader.general.html#GeneralLoader">GeneralLoader</a>
+</font></dt><dt><font face="helvetica, arial"><a href="LLMGraph.loader.general.html#ReferenceGraph">ReferenceGraph</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GeneralGraph">class <strong>GeneralGraph</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#GeneralGraph">GeneralGraph</a>(nodes:&nbsp;pandas.core.frame.DataFrame,&nbsp;edges:&nbsp;pandas.core.frame.DataFrame,&nbsp;add_actor_ids:&nbsp;List[dict]&nbsp;=&nbsp;[])<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GeneralGraph-__init__"><strong>__init__</strong></a>(self, nodes: pandas.core.frame.DataFrame, edges: pandas.core.frame.DataFrame, add_actor_ids: List[dict] = [])</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="GeneralGraph-update_graph"><strong>update_graph</strong></a>(self, edges: List[dict])</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GeneralLoader">class <strong>GeneralLoader</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#GeneralLoader">GeneralLoader</a>(dataset_name:&nbsp;str,&nbsp;time_configs:&nbsp;dict,&nbsp;graph_structure,&nbsp;memory_retrieval_method:&nbsp;str&nbsp;=&nbsp;'random_walk',&nbsp;memory_retrieval_params:&nbsp;dict&nbsp;=&nbsp;{},&nbsp;*args,&nbsp;**kargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GeneralLoader-__init__"><strong>__init__</strong></a>(self, dataset_name: str, time_configs: dict, graph_structure, memory_retrieval_method: str = 'random_walk', memory_retrieval_params: dict = {}, *args, **kargs)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="GeneralLoader-add_graph"><strong>add_graph</strong></a>(self, graph)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-calculate_avg_degree"><strong>calculate_avg_degree</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_active_agent_id_queue"><strong>get_active_agent_id_queue</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_active_agent_ids"><strong>get_active_agent_ids</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_actor_edge_adjs"><strong>get_actor_edge_adjs</strong></a>(self, actor_id)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_actor_texts"><strong>get_actor_texts</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_item_documents"><strong>get_item_documents</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_node_info"><strong>get_node_info</strong></a>(self, node_id)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-get_src_node_memory"><strong>get_src_node_memory</strong></a>(self, src_node_id, upper_token=4000.0)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-update_delta_graph"><strong>update_delta_graph</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-update_interactions"><strong>update_interactions</strong></a>(self, interaction_msgs)</dt></dl>
+
+<dl><dt><a name="GeneralLoader-update_prompt_templates"><strong>update_prompt_templates</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ReferenceGraph">class <strong>ReferenceGraph</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ReferenceGraph">ReferenceGraph</a>(dataset_name:&nbsp;str&nbsp;=&nbsp;'sephora',&nbsp;time_configs:&nbsp;dict&nbsp;=&nbsp;{})<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="ReferenceGraph-__init__"><strong>__init__</strong></a>(self, dataset_name: str = 'sephora', time_configs: dict = {})</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="ReferenceGraph-update_delta_graph"><strong>update_delta_graph</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ReferenceGraph-update_graph"><strong>update_graph</strong></a>(self, seed_graph: bool = False)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Sequence</strong> = typing.Sequence<br>
+<strong>Type</strong> = typing.Type<br>
+<strong>Union</strong> = typing.Union<br>
+<strong>dataset_retrieve_registry</strong> = Registry(name='DatasetRetrieveRegistry', entries...ng': &lt;function load_dianping at 0x7f0e8e956670&gt;})<br>
+<strong>general_prompt_registry</strong> = Registry(name='GeneralPromptRegistry', entries={...s 'abc.interact_dianping_actionPromptTemplate'&gt;})<br>
+<strong>manager_memory_registry</strong> = Registry(name='ManagerMemoryRegistry', entries={...: &lt;class 'LLMGraph.memory.manager_memory.KHop'&gt;})</td></tr></table>
+</body></html>

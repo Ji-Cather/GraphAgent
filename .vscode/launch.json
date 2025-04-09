@@ -321,9 +321,9 @@
                 "PYTHONPATH":"${workspaceFolder}",
             },
             // article config
-            "args": ["--task","llm_agent_1",
-                    "--config","test_config",
-                "--build"] ,
+            // "args": ["--task","llm_agent_1",
+            //         "--config","test_config",
+            //     "--build"] ,
             "python": "${command:python.interpreterPath}",
            
                     

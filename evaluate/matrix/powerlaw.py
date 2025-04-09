@@ -163,10 +163,7 @@ def calculate_macro_properties(G:nx.Graph,
         # results = powerlaw.Fit(list(degree_list), discrete=True,
         #                        fit_method="KS")
         import matplotlib.pyplot as plt
-        from matplotlib import font_manager as fm 
-        font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
-        font_prop = fm.FontProperties(fname=font_path)
-        fm.fontManager.addfont(font_path)
+
 
         # 设置全局字体
         plt.rcParams['font.family'] = font_prop.get_name()

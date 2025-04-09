@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.agent.article.article_agent</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.agent.html"><font color="#ffffff">agent</font></a>.<a href="LLMGraph.agent.article.html"><font color="#ffffff">article</font></a>.article_agent</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/agent/article/article_agent.py">/data/jiarui_ji/GraphAgent/LLMGraph/agent/article/article_agent.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;from&nbsp;LLMGraph.manager&nbsp;import&nbsp;ForumManager<br>
+#&nbsp;from&nbsp;LLMGraph.involvers&nbsp;import&nbsp;System,Tool,search_forum_topk</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.agent.base_agent.html#BaseGraphAgent">LLMGraph.agent.base_agent.BaseGraphAgent</a>(<a href="agentscope.agents.agent.html#AgentBase">agentscope.agents.agent.AgentBase</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.agent.article.article_agent.html#ArticleAgent">ArticleAgent</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ArticleAgent">class <strong>ArticleAgent</strong></a>(<a href="LLMGraph.agent.base_agent.html#BaseGraphAgent">LLMGraph.agent.base_agent.BaseGraphAgent</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ArticleAgent">ArticleAgent</a>(*args:&nbsp;'tuple',&nbsp;**kwargs:&nbsp;'dict')&nbsp;-&amp;gt;&nbsp;'Any'<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.agent.article.article_agent.html#ArticleAgent">ArticleAgent</a></dd>
+<dd><a href="LLMGraph.agent.base_agent.html#BaseGraphAgent">LLMGraph.agent.base_agent.BaseGraphAgent</a></dd>
+<dd><a href="agentscope.agents.agent.html#AgentBase">agentscope.agents.agent.AgentBase</a></dd>
+<dd><a href="agentscope.agents.operator.html#Operator">agentscope.agents.operator.Operator</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="ArticleAgent-__init__"><strong>__init__</strong></a>(self, name, infos, agent_configs, social_network: dict, **kwargs)</dt><dd><tt>Initialize&nbsp;an&nbsp;agent&nbsp;from&nbsp;the&nbsp;given&nbsp;arguments.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(`str`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;agent.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sys_prompt&nbsp;(`Optional[str]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;system&nbsp;prompt&nbsp;of&nbsp;the&nbsp;agent,&nbsp;which&nbsp;can&nbsp;be&nbsp;passed&nbsp;by&nbsp;args<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;hard-coded&nbsp;in&nbsp;the&nbsp;agent.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;model_config_name&nbsp;(`str`,&nbsp;defaults&nbsp;to&nbsp;None):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;model&nbsp;config,&nbsp;which&nbsp;is&nbsp;used&nbsp;to&nbsp;load&nbsp;model&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configuration.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use_memory&nbsp;(`bool`,&nbsp;defaults&nbsp;to&nbsp;`True`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether&nbsp;the&nbsp;agent&nbsp;has&nbsp;memory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;memory_config&nbsp;(`Optional[dict]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;of&nbsp;memory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;to_dist&nbsp;(`Optional[Union[DistConf,&nbsp;bool]]`,&nbsp;default&nbsp;to&nbsp;`False`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;configurations&nbsp;passed&nbsp;to&nbsp;:py:meth:`to_dist`&nbsp;method.&nbsp;Used&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:py:class:`_AgentMeta`,&nbsp;when&nbsp;this&nbsp;parameter&nbsp;is&nbsp;provided,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;agent&nbsp;will&nbsp;automatically&nbsp;be&nbsp;converted&nbsp;into&nbsp;its&nbsp;distributed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version.&nbsp;Below&nbsp;are&nbsp;some&nbsp;examples:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;run&nbsp;as&nbsp;a&nbsp;sub&nbsp;process<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;agent&nbsp;=&nbsp;XXXAgent(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;...&nbsp;other&nbsp;parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to_dist=True,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;connect&nbsp;to&nbsp;an&nbsp;existing&nbsp;agent&nbsp;server<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;agent&nbsp;=&nbsp;XXXAgent(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;...&nbsp;other&nbsp;parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to_dist=DistConf(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;host="&lt;ip&nbsp;of&nbsp;your&nbsp;server&gt;",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port=&lt;port&nbsp;of&nbsp;your&nbsp;server&gt;,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;other&nbsp;parameters<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See&nbsp;:doc:`Tutorial&lt;tutorial/208-distribute&gt;`&nbsp;for&nbsp;detail.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-add_social_network"><strong>add_social_network</strong></a>(self, social_network: dict)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-choose_reason"><strong>choose_reason</strong></a>(self, docs_str, role_description: str, research_content: str, cur_time_str: str)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-choose_researcher"><strong>choose_researcher</strong></a>(self, research_content, role_description)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-clear_discussion_cur"><strong>clear_discussion_cur</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-group_discuss"><strong>group_discuss</strong></a>(self, author_id, role_description_1, role_description_2, research_content)</dt><dd><tt>#&nbsp;这里加一个recent&nbsp;chat</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-idea_generation"><strong>idea_generation</strong></a>(self, role_description: str, research_content)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-observe"><strong>observe</strong></a>(self, messages: agentscope.message.Msg = None)</dt><dd><tt>Observe&nbsp;the&nbsp;input,&nbsp;store&nbsp;it&nbsp;in&nbsp;memory&nbsp;without&nbsp;response&nbsp;to&nbsp;it.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x&nbsp;(`Union[dict,&nbsp;Sequence[dict]]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;input&nbsp;message&nbsp;to&nbsp;be&nbsp;recorded&nbsp;in&nbsp;memory.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-reset_state"><strong>reset_state</strong></a>(self, mode='group_discuss')</dt></dl>
+
+<dl><dt><a name="ArticleAgent-return_interested_topics"><strong>return_interested_topics</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-update_interested_topics"><strong>update_interested_topics</strong></a>(self, topics)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-write_article"><strong>write_article</strong></a>(self, role_description: str, research_content, searched_keywords: list = [], citation_article_names: list = [], min_citations=10, max_citations=30, topics_available: list = [])</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Config</strong> = &lt;class 'LLMGraph.agent.article.article_agent.ArticleAgent.Config'&gt;</dl>
+
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'social_memory': &lt;class 'LLMGraph.memory.article.social_memory.SocialMemory'&gt;, 'write_memory': &lt;class 'LLMGraph.memory.article.rational_memory.RationalMemory'&gt;}</dl>
+
+<hr>
+Methods inherited from <a href="LLMGraph.agent.base_agent.html#BaseGraphAgent">LLMGraph.agent.base_agent.BaseGraphAgent</a>:<br>
+<dl><dt><a name="ArticleAgent-clear_short_memory"><strong>clear_short_memory</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="ArticleAgent-get_short_memory"><strong>get_short_memory</strong></a>(self) -&gt; agentscope.message.Msg</dt></dl>
+
+<dl><dt><a name="ArticleAgent-reply"><strong>reply</strong></a>(self, message: agentscope.message.Msg = None)</dt><dd><tt>对于三种message&nbsp;calling进行回复:<br>
+1.&nbsp;get_prompt&nbsp;msg(content&nbsp;=&nbsp;"get_prompt",&nbsp;func&nbsp;=&nbsp;func_name,&nbsp;kwargs&nbsp;=&nbsp;{})<br>
+2.&nbsp;call_function&nbsp;msg(content&nbsp;=&nbsp;"call_function",&nbsp;func&nbsp;=&nbsp;func_name,&nbsp;kwargs&nbsp;=&nbsp;{})<br>
+3.&nbsp;reply&nbsp;prompt:&nbsp;msg(content&nbsp;=&nbsp;"reply_prompt",&nbsp;prompt&nbsp;=&nbsp;[prompt_msgs])<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;message&nbsp;(Msg,&nbsp;optional):&nbsp;_description_.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_type_:&nbsp;_description_</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-step"><strong>step</strong></a>(self, prompt_inputs) -&gt; agentscope.message.Msg</dt></dl>
+
+<hr>
+Methods inherited from <a href="agentscope.agents.agent.html#AgentBase">agentscope.agents.agent.AgentBase</a>:<br>
+<dl><dt><a name="ArticleAgent-__call__"><strong>__call__</strong></a>(self, *args: 'Any', **kwargs: 'Any') -&gt; 'dict'</dt><dd><tt>Calling&nbsp;the&nbsp;reply&nbsp;function,&nbsp;and&nbsp;broadcast&nbsp;the&nbsp;generated<br>
+response&nbsp;to&nbsp;all&nbsp;audiences&nbsp;if&nbsp;needed.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-clear_audience"><strong>clear_audience</strong></a>(self) -&gt; 'None'</dt><dd><tt>Remove&nbsp;the&nbsp;audience&nbsp;of&nbsp;this&nbsp;agent.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-export_config"><strong>export_config</strong></a>(self) -&gt; 'dict'</dt><dd><tt>Return&nbsp;configuration&nbsp;of&nbsp;this&nbsp;agent.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;configuration&nbsp;of&nbsp;current&nbsp;agent.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-load_from_config"><strong>load_from_config</strong></a>(self, config: 'dict') -&gt; 'None'</dt><dd><tt>Load&nbsp;configuration&nbsp;for&nbsp;this&nbsp;agent.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config&nbsp;(`dict`):&nbsp;model&nbsp;configuration</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-load_memory"><strong>load_memory</strong></a>(self, memory: 'Sequence[dict]') -&gt; 'None'</dt><dd><tt>Load&nbsp;input&nbsp;memory.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-reset_audience"><strong>reset_audience</strong></a>(self, audience: 'Sequence[AgentBase]') -&gt; 'None'</dt><dd><tt>Set&nbsp;the&nbsp;audience&nbsp;of&nbsp;this&nbsp;agent,&nbsp;which&nbsp;means&nbsp;if&nbsp;this&nbsp;agent<br>
+generates&nbsp;a&nbsp;response,&nbsp;it&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;all&nbsp;audiences.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;audience&nbsp;(`Sequence[AgentBase]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;audience&nbsp;of&nbsp;this&nbsp;agent,&nbsp;which&nbsp;will&nbsp;be&nbsp;notified&nbsp;when&nbsp;this<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;agent&nbsp;generates&nbsp;a&nbsp;response&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-rm_audience"><strong>rm_audience</strong></a>(self, audience: 'Union[Sequence[AgentBase], AgentBase]') -&gt; 'None'</dt><dd><tt>Remove&nbsp;the&nbsp;given&nbsp;audience&nbsp;from&nbsp;the&nbsp;Sequence</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-speak"><strong>speak</strong></a>(self, content: 'Union[str, dict]') -&gt; 'None'</dt><dd><tt>Speak&nbsp;out&nbsp;the&nbsp;content&nbsp;generated&nbsp;by&nbsp;the&nbsp;agent.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-to_dist"><strong>to_dist</strong></a>(self, host: 'str' = 'localhost', port: 'int' = None, max_pool_size: 'int' = 8192, max_timeout_seconds: 'int' = 1800, local_mode: 'bool' = True, lazy_launch: 'bool' = True, launch_server: 'bool' = None) -&gt; 'AgentBase'</dt><dd><tt>Convert&nbsp;current&nbsp;agent&nbsp;instance&nbsp;into&nbsp;a&nbsp;distributed&nbsp;version.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;host&nbsp;(`str`,&nbsp;defaults&nbsp;to&nbsp;`"localhost"`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hostname&nbsp;of&nbsp;the&nbsp;rpc&nbsp;agent&nbsp;server.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;port&nbsp;(`int`,&nbsp;defaults&nbsp;to&nbsp;`None`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Port&nbsp;of&nbsp;the&nbsp;rpc&nbsp;agent&nbsp;server.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_pool_size&nbsp;(`int`,&nbsp;defaults&nbsp;to&nbsp;`8192`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max&nbsp;number&nbsp;of&nbsp;task&nbsp;results&nbsp;that&nbsp;the&nbsp;server&nbsp;can&nbsp;accommodate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_timeout_seconds&nbsp;(`int`,&nbsp;defaults&nbsp;to&nbsp;`1800`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timeout&nbsp;for&nbsp;task&nbsp;results.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;local_mode&nbsp;(`bool`,&nbsp;defaults&nbsp;to&nbsp;`True`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether&nbsp;the&nbsp;started&nbsp;rpc&nbsp;server&nbsp;only&nbsp;listens&nbsp;to&nbsp;local<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;requests.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lazy_launch&nbsp;(`bool`,&nbsp;defaults&nbsp;to&nbsp;`True`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only&nbsp;launch&nbsp;the&nbsp;server&nbsp;when&nbsp;the&nbsp;agent&nbsp;is&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;launch_server(`bool`,&nbsp;defaults&nbsp;to&nbsp;`None`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;field&nbsp;has&nbsp;been&nbsp;deprecated&nbsp;and&nbsp;will&nbsp;be&nbsp;removed&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;future&nbsp;releases.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`AgentBase`:&nbsp;the&nbsp;wrapped&nbsp;agent&nbsp;instance&nbsp;with&nbsp;distributed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;functionality</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="agentscope.agents.agent.html#AgentBase">agentscope.agents.agent.AgentBase</a>:<br>
+<dl><dt><a name="ArticleAgent-generate_agent_id"><strong>generate_agent_id</strong></a>() -&gt; 'str'<font color="#909090"><font face="helvetica, arial"> from <a href="agentscope.agents.agent.html#_AgentMeta">agentscope.agents.agent._AgentMeta</a></font></font></dt><dd><tt>Generate&nbsp;the&nbsp;agent_id&nbsp;of&nbsp;this&nbsp;agent&nbsp;instance</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-get_agent_class"><strong>get_agent_class</strong></a>(agent_class_name: 'str') -&gt; 'Type[AgentBase]'<font color="#909090"><font face="helvetica, arial"> from <a href="agentscope.agents.agent.html#_AgentMeta">agentscope.agents.agent._AgentMeta</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;agent&nbsp;class&nbsp;based&nbsp;on&nbsp;the&nbsp;specific&nbsp;agent&nbsp;class&nbsp;name.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;agent_class_name&nbsp;(`str`):&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;agent&nbsp;class.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Agent&nbsp;class&nbsp;name&nbsp;not&nbsp;exits.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Type[AgentBase]:&nbsp;the&nbsp;AgentBase&nbsp;sub-class.</tt></dd></dl>
+
+<dl><dt><a name="ArticleAgent-register_agent_class"><strong>register_agent_class</strong></a>(agent_class: 'Type[AgentBase]') -&gt; 'None'<font color="#909090"><font face="helvetica, arial"> from <a href="agentscope.agents.agent.html#_AgentMeta">agentscope.agents.agent._AgentMeta</a></font></font></dt><dd><tt>Register&nbsp;the&nbsp;agent&nbsp;class&nbsp;into&nbsp;the&nbsp;registry.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;agent_class&nbsp;(Type[AgentBase]):&nbsp;the&nbsp;agent&nbsp;class&nbsp;to&nbsp;be&nbsp;registered.</tt></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="agentscope.agents.agent.html#AgentBase">agentscope.agents.agent.AgentBase</a>:<br>
+<dl><dt><strong>agent_id</strong></dt>
+<dd><tt>The&nbsp;unique&nbsp;id&nbsp;of&nbsp;this&nbsp;agent.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;agent_id</tt></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="agentscope.agents.operator.html#Operator">agentscope.agents.operator.Operator</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Dict</strong> = typing.Dict<br>
+<strong>List</strong> = typing.List<br>
+<strong>MODEL</strong> = 'llama'<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Sequence</strong> = typing.Sequence<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>Union</strong> = typing.Union<br>
+<strong>agent_registry</strong> = Registry(name='AgentRegistry', entries={'article...raph.agent.general.general_agent.GeneralAgent'&gt;})<br>
+<strong>article_memory_registry</strong> = Registry(name='ArticleMemoryRegistry', entries={...memory.article.rational_memory.RationalMemory'&gt;})<br>
+<strong>article_output_parser_registry</strong> = Registry(name='ArticleOutputParserRegistry', ent...rser.article.choose_reason.ChooseReasonParser'&gt;})<br>
+<strong>article_prompt_registry</strong> = Registry(name='ArticlePromptRegistry', entries={...icle.write_article.WriteArticlePromptTemplate'&gt;})</td></tr></table>
+</body></html>

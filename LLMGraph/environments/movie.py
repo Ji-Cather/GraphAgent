@@ -19,17 +19,16 @@ from agentscope.agents.rpc_agent import RpcAgentServerLauncher,RpcAgent
 @EnvironmentRegistry.register("movie")
 class MovieEnvironment(BaseEnvironment):
     """
-    A environment implementing the logic of conversation.
+    电影评论模拟环境
     
-    Args:
-        agents: tenant_manager
-        rule: Rule for the environment
-        max_turns: Maximum number of turns
-        cnt_turn: Current turn number
-        last_messages: Messages from last turn
-        rule_params: Variables set by the rule
+    属性:
+        cur_agents (dict): 存储所有代理的字典。
+        agent_configs (dict): 存储代理的配置。
+        movie_rate_configs (dict): 电影评分配置，包括观看计划和最少评分数量。
+        time_configs (dict): 时间相关配置，包括开始时间、当前时间、结束时间、电影时间增量、观察者时间增量和观察者添加标志。
+        cur_rate (int): 当前评分数量。
+        movie_agents (dict): 存储所有电影代理的字典，暂时未使用。
     """
-
     cur_agents:dict = {} # 存储所有agent
     
     agent_configs:dict = {} # 存储agent的config
@@ -37,7 +36,7 @@ class MovieEnvironment(BaseEnvironment):
     movie_rate_configs:dict = {
         "watch_plan":"SYSTEM",
         "min_rate_all": 200 ,# 总体最少做多少个评价
-        }
+    }
     
     time_configs:dict ={
         "start_time": datetime.strptime("1997-01-01", '%Y-%m-%d'),
@@ -48,7 +47,6 @@ class MovieEnvironment(BaseEnvironment):
         "watcher_add": False, # 所有时间点都是 n个watcher进行rate
         # 如果是true,则按照watcher_time_delta分批进入
     }
-    
     
     cur_rate:int = 0
     

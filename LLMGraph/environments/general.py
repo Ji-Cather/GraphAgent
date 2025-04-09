@@ -24,7 +24,14 @@ START_EDGE = 0
 @EnvironmentRegistry.register("general")
 class GeneralEnvironment(BaseEnvironment):
     """
-    A environment implementing the logic of conversation.
+    TBD: 该环境实现了对所有social environment的抽象模拟,开发中。
+
+    属性:
+        created_agents (dict): 存储创建的代理。
+        active_agent_ids (list): 当前活动代理的ID列表，按照队列顺序可重复。
+        agent_configs (dict): 存储代理的配置。
+        save_encoded_features (bool): 是否保存编码后的特征以供GNN评估。
+        time_configs (dict): 时间相关的配置，包括开始时间、当前时间、时间增量等。
     """
     created_agents:dict = {}
     active_agent_ids:list = [] # 可重复，按照queue的顺序来，每次interact one step

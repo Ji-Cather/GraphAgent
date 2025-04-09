@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.tool.docs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.tool.html"><font color="#ffffff">tool</font></a>.docs</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/tool/docs.py">/data/jiarui_ji/GraphAgent/LLMGraph/tool/docs.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="functools.html">functools</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>(<a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.tool.docs.html#ArticleInfoInput">ArticleInfoInput</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ArticleInfoInput">class <strong>ArticleInfoInput</strong></a>(<a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ArticleInfoInput">ArticleInfoInput</a>(*,&nbsp;title:&nbsp;str,&nbsp;keyword:&nbsp;str,&nbsp;abstract:&nbsp;str,&nbsp;citation:&nbsp;str)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+Input&nbsp;to&nbsp;the&nbsp;retriever.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.tool.docs.html#ArticleInfoInput">ArticleInfoInput</a></dd>
+<dd><a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a></dd>
+<dd><a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="ArticleInfoInput-__json_encoder__"><strong>__json_encoder__</strong></a> = pydantic_encoder(obj: Any) -&gt; Any</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'abstract': &lt;class 'str'&gt;, 'citation': &lt;class 'str'&gt;, 'keyword': &lt;class 'str'&gt;, 'title': &lt;class 'str'&gt;}</dl>
+
+<dl><dt><strong>__class_vars__</strong> = set()</dl>
+
+<dl><dt><strong>__config__</strong> = &lt;class 'pydantic.v1.config.Config'&gt;</dl>
+
+<dl><dt><strong>__custom_root_type__</strong> = False</dl>
+
+<dl><dt><strong>__exclude_fields__</strong> = None</dl>
+
+<dl><dt><strong>__fields__</strong> = {'abstract': ModelField(name='abstract', type=str, required=True), 'citation': ModelField(name='citation', type=str, required=True), 'keyword': ModelField(name='keyword', type=str, required=True), 'title': ModelField(name='title', type=str, required=True)}</dl>
+
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__include_fields__</strong> = None</dl>
+
+<dl><dt><strong>__post_root_validators__</strong> = []</dl>
+
+<dl><dt><strong>__pre_root_validators__</strong> = []</dl>
+
+<dl><dt><strong>__private_attributes__</strong> = {}</dl>
+
+<dl><dt><strong>__schema_cache__</strong> = {}</dl>
+
+<dl><dt><strong>__signature__</strong> = &lt;Signature (*, title: str, keyword: str, abstract: str, citation: str) -&gt; None&gt;</dl>
+
+<dl><dt><strong>__validators__</strong> = {}</dl>
+
+<hr>
+Methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="ArticleInfoInput-__eq__"><strong>__eq__</strong></a>(self, other: Any) -&gt; bool</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__getstate__"><strong>__getstate__</strong></a>(self) -&gt; 'DictAny'</dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-__init__"><strong>__init__</strong></a>(__pydantic_self__, **data: Any) -&gt; None</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;model&nbsp;by&nbsp;parsing&nbsp;and&nbsp;validating&nbsp;input&nbsp;data&nbsp;from&nbsp;keyword&nbsp;arguments.<br>
+&nbsp;<br>
+Raises&nbsp;ValidationError&nbsp;if&nbsp;the&nbsp;input&nbsp;data&nbsp;cannot&nbsp;be&nbsp;parsed&nbsp;to&nbsp;form&nbsp;a&nbsp;valid&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__iter__"><strong>__iter__</strong></a>(self) -&gt; 'TupleGenerator'</dt><dd><tt>so&nbsp;`<a href="#ArticleInfoInput-dict">dict</a>(model)`&nbsp;works</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__repr_args__"><strong>__repr_args__</strong></a>(self) -&gt; 'ReprArgs'</dt><dd><tt>Returns&nbsp;the&nbsp;attributes&nbsp;to&nbsp;show&nbsp;in&nbsp;__str__,&nbsp;__repr__,&nbsp;and&nbsp;__pretty__&nbsp;this&nbsp;is&nbsp;generally&nbsp;overridden.<br>
+&nbsp;<br>
+Can&nbsp;either&nbsp;return:<br>
+*&nbsp;name&nbsp;-&nbsp;value&nbsp;pairs,&nbsp;e.g.:&nbsp;`[('foo_name',&nbsp;'foo'),&nbsp;('bar_name',&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`<br>
+*&nbsp;or,&nbsp;just&nbsp;values,&nbsp;e.g.:&nbsp;`[(None,&nbsp;'foo'),&nbsp;(None,&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__setstate__"><strong>__setstate__</strong></a>(self, state: 'DictAny') -&gt; None</dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-copy"><strong>copy</strong></a>(self: 'Model', *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, update: Optional[ForwardRef('DictStrAny')] = None, deep: bool = False) -&gt; 'Model'</dt><dd><tt>Duplicate&nbsp;a&nbsp;model,&nbsp;optionally&nbsp;choose&nbsp;which&nbsp;fields&nbsp;to&nbsp;include,&nbsp;exclude&nbsp;and&nbsp;change.<br>
+&nbsp;<br>
+:param&nbsp;include:&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;new&nbsp;model<br>
+:param&nbsp;exclude:&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;new&nbsp;model,&nbsp;as&nbsp;with&nbsp;values&nbsp;this&nbsp;takes&nbsp;precedence&nbsp;over&nbsp;include<br>
+:param&nbsp;update:&nbsp;values&nbsp;to&nbsp;change/add&nbsp;in&nbsp;the&nbsp;new&nbsp;model.&nbsp;Note:&nbsp;the&nbsp;data&nbsp;is&nbsp;not&nbsp;validated&nbsp;before&nbsp;creating<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;new&nbsp;model:&nbsp;you&nbsp;should&nbsp;trust&nbsp;this&nbsp;data<br>
+:param&nbsp;deep:&nbsp;set&nbsp;to&nbsp;`True`&nbsp;to&nbsp;make&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model<br>
+:return:&nbsp;new&nbsp;model&nbsp;instance</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-dict"><strong>dict</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False) -&gt; 'DictStrAny'</dt><dd><tt>Generate&nbsp;a&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;optionally&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;or&nbsp;exclude.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-json"><strong>json</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False, encoder: Optional[Callable[[Any], Any]] = None, models_as_dict: bool = True, **dumps_kwargs: Any) -&gt; str</dt><dd><tt>Generate&nbsp;a&nbsp;JSON&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;`include`&nbsp;and&nbsp;`exclude`&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`<a href="#ArticleInfoInput-dict">dict</a>()`.<br>
+&nbsp;<br>
+`encoder`&nbsp;is&nbsp;an&nbsp;optional&nbsp;function&nbsp;to&nbsp;supply&nbsp;as&nbsp;`default`&nbsp;to&nbsp;json.dumps(),&nbsp;other&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`json.dumps()`.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="ArticleInfoInput-__get_validators__"><strong>__get_validators__</strong></a>() -&gt; 'CallableGenerator'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-__try_update_forward_refs__"><strong>__try_update_forward_refs__</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Same&nbsp;as&nbsp;update_forward_refs&nbsp;but&nbsp;will&nbsp;not&nbsp;raise&nbsp;exception<br>
+when&nbsp;forward&nbsp;references&nbsp;are&nbsp;not&nbsp;defined.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-construct"><strong>construct</strong></a>(_fields_set: Optional[ForwardRef('SetStr')] = None, **values: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;model&nbsp;setting&nbsp;__dict__&nbsp;and&nbsp;__fields_set__&nbsp;from&nbsp;trusted&nbsp;or&nbsp;pre-validated&nbsp;data.<br>
+Default&nbsp;values&nbsp;are&nbsp;respected,&nbsp;but&nbsp;no&nbsp;other&nbsp;validation&nbsp;is&nbsp;performed.<br>
+Behaves&nbsp;as&nbsp;if&nbsp;`Config.extra&nbsp;=&nbsp;'allow'`&nbsp;was&nbsp;set&nbsp;since&nbsp;it&nbsp;adds&nbsp;all&nbsp;passed&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-from_orm"><strong>from_orm</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-parse_file"><strong>parse_file</strong></a>(path: Union[str, pathlib.Path], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-parse_obj"><strong>parse_obj</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-parse_raw"><strong>parse_raw</strong></a>(b: Union[str, bytes], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-schema"><strong>schema</strong></a>(by_alias: bool = True, ref_template: str = '#/definitions/{model}') -&gt; 'DictStrAny'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-schema_json"><strong>schema_json</strong></a>(*, by_alias: bool = True, ref_template: str = '#/definitions/{model}', **dumps_kwargs: Any) -&gt; str<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-update_forward_refs"><strong>update_forward_refs</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Try&nbsp;to&nbsp;update&nbsp;ForwardRefs&nbsp;on&nbsp;fields&nbsp;based&nbsp;on&nbsp;this&nbsp;Model,&nbsp;globalns&nbsp;and&nbsp;localns.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-validate"><strong>validate</strong></a>(value: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__fields_set__</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><strong>Config</strong> = &lt;class 'pydantic.v1.config.BaseConfig'&gt;</dl>
+
+<hr>
+Methods inherited from <a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a>:<br>
+<dl><dt><a name="ArticleInfoInput-__pretty__"><strong>__pretty__</strong></a>(self, fmt: Callable[[Any], Any], **kwargs: Any) -&gt; Generator[Any, NoneType, NoneType]</dt><dd><tt>Used&nbsp;by&nbsp;devtools&nbsp;(<a href="https://python-devtools.helpmanual.io/">https://python-devtools.helpmanual.io/</a>)&nbsp;to&nbsp;provide&nbsp;a&nbsp;human&nbsp;readable&nbsp;representations&nbsp;of&nbsp;objects</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__repr_name__"><strong>__repr_name__</strong></a>(self) -&gt; str</dt><dd><tt>Name&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class,&nbsp;used&nbsp;in&nbsp;__repr__.</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__repr_str__"><strong>__repr_str__</strong></a>(self, join_str: str) -&gt; str</dt></dl>
+
+<dl><dt><a name="ArticleInfoInput-__rich_repr__"><strong>__rich_repr__</strong></a>(self) -&gt; 'RichReprResult'</dt><dd><tt>Get&nbsp;fields&nbsp;for&nbsp;Rich&nbsp;library</tt></dd></dl>
+
+<dl><dt><a name="ArticleInfoInput-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_article_retriever_tool"><strong>create_article_retriever_tool</strong></a>(retriever: langchain_core.retrievers.BaseRetriever, name: str, description: str, article_meta_data: dict, author_data: dict, *, experiment: list = [], document_prompt: Optional[langchain_core.prompts.base.BasePromptTemplate] = None, document_separator: str = '\n\n', filter_keys: list = ['topic', 'big_name', 'write_topic'], max_search: int = 5, big_name_list: list = [], interested_topics: List[str] = [], research_topic: str = '')</dt><dd><tt>Create&nbsp;a&nbsp;tool&nbsp;to&nbsp;do&nbsp;retrieval&nbsp;of&nbsp;documents.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;retriever:&nbsp;The&nbsp;retriever&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;retrieval<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;The&nbsp;name&nbsp;for&nbsp;the&nbsp;tool.&nbsp;This&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;language&nbsp;model,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;so&nbsp;should&nbsp;be&nbsp;unique&nbsp;and&nbsp;somewhat&nbsp;descriptive.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;description:&nbsp;The&nbsp;description&nbsp;for&nbsp;the&nbsp;tool.&nbsp;This&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;language<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model,&nbsp;so&nbsp;should&nbsp;be&nbsp;descriptive.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Tool&nbsp;class&nbsp;to&nbsp;pass&nbsp;to&nbsp;an&nbsp;agent</tt></dd></dl>
+ <dl><dt><a name="-format_document"><strong>format_document</strong></a>(doc: langchain_core.documents.base.Document, article_meta_data: dict, author_data: dict, prompt: langchain_core.prompts.base.BasePromptTemplate[str], experiment: list = []) -&gt; str</dt><dd><tt>Format&nbsp;a&nbsp;document&nbsp;into&nbsp;a&nbsp;string&nbsp;based&nbsp;on&nbsp;a&nbsp;prompt&nbsp;template.<br>
+&nbsp;<br>
+First,&nbsp;this&nbsp;pulls&nbsp;information&nbsp;from&nbsp;the&nbsp;document&nbsp;from&nbsp;two&nbsp;sources:<br>
+&nbsp;<br>
+1.&nbsp;`page_content`:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;takes&nbsp;the&nbsp;information&nbsp;from&nbsp;the&nbsp;`document.page_content`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;assigns&nbsp;it&nbsp;to&nbsp;a&nbsp;variable&nbsp;named&nbsp;`page_content`.<br>
+2.&nbsp;metadata:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;takes&nbsp;information&nbsp;from&nbsp;`document.metadata`&nbsp;and&nbsp;assigns<br>
+&nbsp;&nbsp;&nbsp;&nbsp;it&nbsp;to&nbsp;variables&nbsp;of&nbsp;the&nbsp;same&nbsp;name.<br>
+&nbsp;<br>
+Those&nbsp;variables&nbsp;are&nbsp;then&nbsp;passed&nbsp;into&nbsp;the&nbsp;`prompt`&nbsp;to&nbsp;produce&nbsp;a&nbsp;formatted&nbsp;string.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;doc:&nbsp;Document,&nbsp;the&nbsp;page_content&nbsp;and&nbsp;metadata&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;create<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;final&nbsp;string.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prompt:&nbsp;BasePromptTemplate,&nbsp;will&nbsp;be&nbsp;used&nbsp;to&nbsp;format&nbsp;the&nbsp;page_content<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;metadata&nbsp;into&nbsp;the&nbsp;final&nbsp;string.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;string&nbsp;of&nbsp;the&nbsp;document&nbsp;formatted.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.documents&nbsp;import&nbsp;Document<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.prompts&nbsp;import&nbsp;PromptTemplate<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doc&nbsp;=&nbsp;Document(page_content="This&nbsp;is&nbsp;a&nbsp;joke",&nbsp;metadata={"page":&nbsp;"1"})<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prompt&nbsp;=&nbsp;PromptTemplate.from_template("Page&nbsp;{page}:&nbsp;{page_content}")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#-format_document">format_document</a>(doc,&nbsp;prompt)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&gt;&nbsp;"Page&nbsp;1:&nbsp;This&nbsp;is&nbsp;a&nbsp;joke"</tt></dd></dl>
+ <dl><dt><a name="-generate_compare_function_big_name"><strong>generate_compare_function_big_name</strong></a>(big_name_list)</dt></dl>
+ <dl><dt><a name="-generate_compare_function_cite"><strong>generate_compare_function_cite</strong></a>()</dt></dl>
+ <dl><dt><a name="-generate_compare_function_topic"><strong>generate_compare_function_topic</strong></a>(interested_topic)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Type</strong> = typing.Type</td></tr></table>
+</body></html>

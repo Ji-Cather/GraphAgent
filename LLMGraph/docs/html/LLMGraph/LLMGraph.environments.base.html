@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.environments.base</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.environments.html"><font color="#ffffff">environments</font></a>.base</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/environments/base.py">/data/jiarui_ji/GraphAgent/LLMGraph/environments/base.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>(<a href="builtins.html#object">builtins.object</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.environments.base.html#BaseEnvironment">BaseEnvironment</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="BaseEnvironment">class <strong>BaseEnvironment</strong></a>(<a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#BaseEnvironment">BaseEnvironment</a>(*,&nbsp;to_dist:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;launcher_args:&nbsp;list&nbsp;=&nbsp;[],&nbsp;manager_agent:&nbsp;agentscope.agents.agent.AgentBase,&nbsp;simulation_round:&nbsp;int&nbsp;=&nbsp;0)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+基础环境类，负责管理代理和模拟过程。<br>
+&nbsp;<br>
+属性:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;to_dist&nbsp;(bool):&nbsp;是否启动rpc并行任务的标志。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;launcher_args&nbsp;(list):&nbsp;启动器参数列表。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;manager_agent&nbsp;(AgentBase):&nbsp;管理agent的实例。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;simulation_round&nbsp;(int):&nbsp;当前模拟轮次。<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.environments.base.html#BaseEnvironment">BaseEnvironment</a></dd>
+<dd><a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="BaseEnvironment-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;model&nbsp;by&nbsp;parsing&nbsp;and&nbsp;validating&nbsp;input&nbsp;data&nbsp;from&nbsp;keyword&nbsp;arguments.<br>
+&nbsp;<br>
+Raises&nbsp;[`ValidationError`][pydantic_core.ValidationError]&nbsp;if&nbsp;the&nbsp;input&nbsp;data&nbsp;cannot&nbsp;be<br>
+validated&nbsp;to&nbsp;form&nbsp;a&nbsp;valid&nbsp;model.<br>
+&nbsp;<br>
+`self`&nbsp;is&nbsp;explicitly&nbsp;positional-only&nbsp;to&nbsp;allow&nbsp;`self`&nbsp;as&nbsp;a&nbsp;field&nbsp;name.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-call_agent_func"><strong>call_agent_func</strong></a>(self, agent: LLMGraph.wrapper.base.BaseAgentWrapper, func_name: str, kwargs: dict = {}) -&gt; agentscope.message.Msg</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-call_manager_agent_func"><strong>call_manager_agent_func</strong></a>(self, func_name: str, kwargs: dict = {}) -&gt; agentscope.message.Msg</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-initialize"><strong>initialize</strong></a>(self)</dt><dd><tt>#&nbsp;functions&nbsp;to&nbsp;be&nbsp;defined</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-step"><strong>step</strong></a>(self)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Config</strong> = &lt;class 'LLMGraph.environments.base.BaseEnvironment.Config'&gt;</dl>
+
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'launcher_args': &lt;class 'list'&gt;, 'manager_agent': &lt;class 'agentscope.agents.agent.AgentBase'&gt;, 'simulation_round': &lt;class 'int'&gt;, 'to_dist': &lt;class 'bool'&gt;}</dl>
+
+<dl><dt><strong>__class_vars__</strong> = set()</dl>
+
+<dl><dt><strong>__private_attributes__</strong> = {}</dl>
+
+<dl><dt><strong>__pydantic_complete__</strong> = True</dl>
+
+<dl><dt><strong>__pydantic_computed_fields__</strong> = {}</dl>
+
+<dl><dt><strong>__pydantic_core_schema__</strong> = {'cls': &lt;class 'LLMGraph.environments.base.BaseEnvironment'&gt;, 'config': {'title': 'BaseEnvironment'}, 'custom_init': True, 'metadata': {'pydantic_js_functions': [&lt;bound method BaseModel.__get_pydantic_json_sche...ss 'LLMGraph.environments.base.BaseEnvironment'&gt;&gt;]}, 'ref': 'LLMGraph.environments.base.BaseEnvironment:172244016', 'root_model': False, 'schema': {'computed_fields': [], 'fields': {'launcher_args': {'metadata': {}, 'schema': {'default': [], 'schema': {'items_schema': {...}, 'type': 'list'}, 'type': 'default'}, 'type': 'model-field'}, 'manager_agent': {'metadata': {}, 'schema': {'cls': &lt;class 'agentscope.agents.agent.AgentBase'&gt;, 'type': 'is-instance'}, 'type': 'model-field'}, 'simulation_round': {'metadata': {}, 'schema': {'default': 0, 'schema': {'type': 'int'}, 'type': 'default'}, 'type': 'model-field'}, 'to_dist': {'metadata': {}, 'schema': {'default': False, 'schema': {'type': 'bool'}, 'type': 'default'}, 'type': 'model-field'}}, 'model_name': 'BaseEnvironment', 'type': 'model-fields'}, 'type': 'model'}</dl>
+
+<dl><dt><strong>__pydantic_custom_init__</strong> = True</dl>
+
+<dl><dt><strong>__pydantic_decorators__</strong> = DecoratorInfos(validators={}, field_validators={...zers={}, model_validators={}, computed_fields={})</dl>
+
+<dl><dt><strong>__pydantic_fields__</strong> = {'launcher_args': FieldInfo(annotation=list, required=False, default=[]), 'manager_agent': FieldInfo(annotation=AgentBase, required=True), 'simulation_round': FieldInfo(annotation=int, required=False, default=0), 'to_dist': FieldInfo(annotation=bool, required=False, default=False)}</dl>
+
+<dl><dt><strong>__pydantic_generic_metadata__</strong> = {'args': (), 'origin': None, 'parameters': ()}</dl>
+
+<dl><dt><strong>__pydantic_parent_namespace__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_post_init__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_serializer__</strong> = SchemaSerializer(serializer=Model(
+    ModelSeri...ame: "BaseEnvironment",
+    },
+), definitions=[])</dl>
+
+<dl><dt><strong>__pydantic_validator__</strong> = SchemaValidator(title="BaseEnvironment", validat...t",
+    },
+), definitions=[], cache_strings=True)</dl>
+
+<dl><dt><strong>__signature__</strong> = &lt;Signature (*, to_dist: bool = False, launcher_a...nt.AgentBase, simulation_round: int = 0) -&gt; None&gt;</dl>
+
+<dl><dt><strong>model_config</strong> = {'arbitrary_types_allowed': True}</dl>
+
+<hr>
+Methods inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><a name="BaseEnvironment-__copy__"><strong>__copy__</strong></a>(self) -&gt; 'Self'</dt><dd><tt>Returns&nbsp;a&nbsp;shallow&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__deepcopy__"><strong>__deepcopy__</strong></a>(self, memo: 'dict[int, Any] | None' = None) -&gt; 'Self'</dt><dd><tt>Returns&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__delattr__"><strong>__delattr__</strong></a>(self, item: 'str') -&gt; 'Any'</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__eq__"><strong>__eq__</strong></a>(self, other: 'Any') -&gt; 'bool'</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__getattr__"><strong>__getattr__</strong></a>(self, item: 'str') -&gt; 'Any'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__getstate__"><strong>__getstate__</strong></a>(self) -&gt; 'dict[Any, Any]'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__iter__"><strong>__iter__</strong></a>(self) -&gt; 'TupleGenerator'</dt><dd><tt>So&nbsp;`<a href="#BaseEnvironment-dict">dict</a>(model)`&nbsp;works.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__pretty__"><strong>__pretty__</strong></a>(self, fmt: 'typing.Callable[[Any], Any]', **kwargs: 'Any') -&gt; 'typing.Generator[Any, None, None]'</dt><dd><tt>Used&nbsp;by&nbsp;devtools&nbsp;(<a href="https://python-devtools.helpmanual.io/">https://python-devtools.helpmanual.io/</a>)&nbsp;to&nbsp;pretty&nbsp;print&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__replace__"><strong>__replace__</strong></a>(self, **changes: 'Any') -&gt; 'Self'</dt><dd><tt>#&nbsp;Because&nbsp;we&nbsp;make&nbsp;use&nbsp;of&nbsp;`@dataclass_transform()`,&nbsp;`__replace__`&nbsp;is&nbsp;already&nbsp;synthesized&nbsp;by<br>
+#&nbsp;type&nbsp;checkers,&nbsp;so&nbsp;we&nbsp;define&nbsp;the&nbsp;implementation&nbsp;in&nbsp;this&nbsp;`if&nbsp;not&nbsp;TYPE_CHECKING:`&nbsp;block:</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__repr__"><strong>__repr__</strong></a>(self) -&gt; 'str'</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__repr_args__"><strong>__repr_args__</strong></a>(self) -&gt; '_repr.ReprArgs'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__repr_name__"><strong>__repr_name__</strong></a>(self) -&gt; 'str'</dt><dd><tt>Name&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class,&nbsp;used&nbsp;in&nbsp;__repr__.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__repr_recursion__"><strong>__repr_recursion__</strong></a>(self, object: 'Any') -&gt; 'str'</dt><dd><tt>Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;a&nbsp;recursive&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__repr_str__"><strong>__repr_str__</strong></a>(self, join_str: 'str') -&gt; 'str'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__rich_repr__"><strong>__rich_repr__</strong></a>(self) -&gt; 'RichReprResult'</dt><dd><tt>Used&nbsp;by&nbsp;Rich&nbsp;(<a href="https://rich.readthedocs.io/en/stable/pretty.html">https://rich.readthedocs.io/en/stable/pretty.html</a>)&nbsp;to&nbsp;pretty&nbsp;print&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__setattr__"><strong>__setattr__</strong></a>(self, name: 'str', value: 'Any') -&gt; 'None'</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__setstate__"><strong>__setstate__</strong></a>(self, state: 'dict[Any, Any]') -&gt; 'None'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__str__"><strong>__str__</strong></a>(self) -&gt; 'str'</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-copy"><strong>copy</strong></a>(self, *, include: 'AbstractSetIntStr | MappingIntStrAny | None' = None, exclude: 'AbstractSetIntStr | MappingIntStrAny | None' = None, update: 'Dict[str, Any] | None' = None, deep: 'bool' = False) -&gt; 'Self'</dt><dd><tt>Returns&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+!!!&nbsp;warning&nbsp;"Deprecated"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;method&nbsp;is&nbsp;now&nbsp;deprecated;&nbsp;use&nbsp;`model_copy`&nbsp;instead.<br>
+&nbsp;<br>
+If&nbsp;you&nbsp;need&nbsp;`include`&nbsp;or&nbsp;`exclude`,&nbsp;use:<br>
+&nbsp;<br>
+```python&nbsp;{test="skip"&nbsp;lint="skip"}<br>
+data&nbsp;=&nbsp;self.<a href="#BaseEnvironment-model_dump">model_dump</a>(include=include,&nbsp;exclude=exclude,&nbsp;round_trip=True)<br>
+data&nbsp;=&nbsp;{**data,&nbsp;**(update&nbsp;or&nbsp;{})}<br>
+copied&nbsp;=&nbsp;self.<a href="#BaseEnvironment-model_validate">model_validate</a>(data)<br>
+```<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;Optional&nbsp;set&nbsp;or&nbsp;mapping&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;Optional&nbsp;set&nbsp;or&nbsp;mapping&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;update:&nbsp;Optional&nbsp;dictionary&nbsp;of&nbsp;field-value&nbsp;pairs&nbsp;to&nbsp;override&nbsp;field&nbsp;values&nbsp;in&nbsp;the&nbsp;copied&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deep:&nbsp;If&nbsp;True,&nbsp;the&nbsp;values&nbsp;of&nbsp;fields&nbsp;that&nbsp;are&nbsp;Pydantic&nbsp;models&nbsp;will&nbsp;be&nbsp;deep-copied.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;copy&nbsp;of&nbsp;the&nbsp;model&nbsp;with&nbsp;included,&nbsp;excluded&nbsp;and&nbsp;updated&nbsp;fields&nbsp;as&nbsp;specified.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-dict"><strong>dict</strong></a>(self, *, include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, by_alias: 'bool' = False, exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False) -&gt; 'Dict[str, Any]'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-json"><strong>json</strong></a>(self, *, include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, by_alias: 'bool' = False, exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, encoder: 'Callable[[Any], Any] | None' = PydanticUndefined, models_as_dict: 'bool' = PydanticUndefined, **dumps_kwargs: 'Any') -&gt; 'str'</dt></dl>
+
+<dl><dt><a name="BaseEnvironment-model_copy"><strong>model_copy</strong></a>(self, *, update: 'Mapping[str, Any] | None' = None, deep: 'bool' = False) -&gt; 'Self'</dt><dd><tt>Usage&nbsp;docs:&nbsp;<a href="https://docs.pydantic.dev/2.10/concepts/serialization/#model_copy">https://docs.pydantic.dev/2.10/concepts/serialization/#model_copy</a><br>
+&nbsp;<br>
+Returns&nbsp;a&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;update:&nbsp;Values&nbsp;to&nbsp;change/add&nbsp;in&nbsp;the&nbsp;new&nbsp;model.&nbsp;Note:&nbsp;the&nbsp;data&nbsp;is&nbsp;not&nbsp;validated<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;before&nbsp;creating&nbsp;the&nbsp;new&nbsp;model.&nbsp;You&nbsp;should&nbsp;trust&nbsp;this&nbsp;data.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;deep:&nbsp;Set&nbsp;to&nbsp;`True`&nbsp;to&nbsp;make&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;New&nbsp;model&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_dump"><strong>model_dump</strong></a>(self, *, mode: "Literal['json', 'python'] | str" = 'python', include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, context: 'Any | None' = None, by_alias: 'bool' = False, exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, round_trip: 'bool' = False, warnings: "bool | Literal['none', 'warn', 'error']" = True, serialize_as_any: 'bool' = False) -&gt; 'dict[str, Any]'</dt><dd><tt>Usage&nbsp;docs:&nbsp;<a href="https://docs.pydantic.dev/2.10/concepts/serialization/#modelmodel_dump">https://docs.pydantic.dev/2.10/concepts/serialization/#modelmodel_dump</a><br>
+&nbsp;<br>
+Generate&nbsp;a&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;optionally&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;or&nbsp;exclude.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mode:&nbsp;The&nbsp;mode&nbsp;in&nbsp;which&nbsp;`to_python`&nbsp;should&nbsp;run.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;mode&nbsp;is&nbsp;'json',&nbsp;the&nbsp;output&nbsp;will&nbsp;only&nbsp;contain&nbsp;JSON&nbsp;serializable&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;mode&nbsp;is&nbsp;'python',&nbsp;the&nbsp;output&nbsp;may&nbsp;contain&nbsp;non-JSON-serializable&nbsp;Python&nbsp;objects.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;A&nbsp;set&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;A&nbsp;set&nbsp;of&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;the&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;serializer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;the&nbsp;field's&nbsp;alias&nbsp;in&nbsp;the&nbsp;dictionary&nbsp;key&nbsp;if&nbsp;defined.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_unset:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;not&nbsp;been&nbsp;explicitly&nbsp;set.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_defaults:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;are&nbsp;set&nbsp;to&nbsp;their&nbsp;default&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_none:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;a&nbsp;value&nbsp;of&nbsp;`None`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;round_trip:&nbsp;If&nbsp;True,&nbsp;dumped&nbsp;values&nbsp;should&nbsp;be&nbsp;valid&nbsp;as&nbsp;input&nbsp;for&nbsp;non-idempotent&nbsp;types&nbsp;such&nbsp;as&nbsp;Json[T].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;warnings:&nbsp;How&nbsp;to&nbsp;handle&nbsp;serialization&nbsp;errors.&nbsp;False/"none"&nbsp;ignores&nbsp;them,&nbsp;True/"warn"&nbsp;logs&nbsp;errors,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"error"&nbsp;raises&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serialize_as_any:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;fields&nbsp;with&nbsp;duck-typing&nbsp;serialization&nbsp;behavior.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_dump_json"><strong>model_dump_json</strong></a>(self, *, indent: 'int | None' = None, include: 'IncEx | None' = None, exclude: 'IncEx | None' = None, context: 'Any | None' = None, by_alias: 'bool' = False, exclude_unset: 'bool' = False, exclude_defaults: 'bool' = False, exclude_none: 'bool' = False, round_trip: 'bool' = False, warnings: "bool | Literal['none', 'warn', 'error']" = True, serialize_as_any: 'bool' = False) -&gt; 'str'</dt><dd><tt>Usage&nbsp;docs:&nbsp;<a href="https://docs.pydantic.dev/2.10/concepts/serialization/#modelmodel_dump_json">https://docs.pydantic.dev/2.10/concepts/serialization/#modelmodel_dump_json</a><br>
+&nbsp;<br>
+Generates&nbsp;a&nbsp;JSON&nbsp;representation&nbsp;of&nbsp;the&nbsp;model&nbsp;using&nbsp;Pydantic's&nbsp;`to_json`&nbsp;method.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;indent:&nbsp;Indentation&nbsp;to&nbsp;use&nbsp;in&nbsp;the&nbsp;JSON&nbsp;output.&nbsp;If&nbsp;None&nbsp;is&nbsp;passed,&nbsp;the&nbsp;output&nbsp;will&nbsp;be&nbsp;compact.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;Field(s)&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;JSON&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;Field(s)&nbsp;to&nbsp;exclude&nbsp;from&nbsp;the&nbsp;JSON&nbsp;output.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;serializer.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;using&nbsp;field&nbsp;aliases.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_unset:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;not&nbsp;been&nbsp;explicitly&nbsp;set.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_defaults:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;are&nbsp;set&nbsp;to&nbsp;their&nbsp;default&nbsp;value.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_none:&nbsp;Whether&nbsp;to&nbsp;exclude&nbsp;fields&nbsp;that&nbsp;have&nbsp;a&nbsp;value&nbsp;of&nbsp;`None`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;round_trip:&nbsp;If&nbsp;True,&nbsp;dumped&nbsp;values&nbsp;should&nbsp;be&nbsp;valid&nbsp;as&nbsp;input&nbsp;for&nbsp;non-idempotent&nbsp;types&nbsp;such&nbsp;as&nbsp;Json[T].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;warnings:&nbsp;How&nbsp;to&nbsp;handle&nbsp;serialization&nbsp;errors.&nbsp;False/"none"&nbsp;ignores&nbsp;them,&nbsp;True/"warn"&nbsp;logs&nbsp;errors,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"error"&nbsp;raises&nbsp;a&nbsp;[`PydanticSerializationError`][pydantic_core.PydanticSerializationError].<br>
+&nbsp;&nbsp;&nbsp;&nbsp;serialize_as_any:&nbsp;Whether&nbsp;to&nbsp;serialize&nbsp;fields&nbsp;with&nbsp;duck-typing&nbsp;serialization&nbsp;behavior.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_post_init"><strong>model_post_init</strong></a>(self, _BaseModel__context: 'Any') -&gt; 'None'</dt><dd><tt>Override&nbsp;this&nbsp;method&nbsp;to&nbsp;perform&nbsp;additional&nbsp;initialization&nbsp;after&nbsp;`__init__`&nbsp;and&nbsp;`model_construct`.<br>
+This&nbsp;is&nbsp;useful&nbsp;if&nbsp;you&nbsp;want&nbsp;to&nbsp;do&nbsp;some&nbsp;validation&nbsp;that&nbsp;requires&nbsp;the&nbsp;entire&nbsp;model&nbsp;to&nbsp;be&nbsp;initialized.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><a name="BaseEnvironment-__class_getitem__"><strong>__class_getitem__</strong></a>(typevar_values: 'type[Any] | tuple[type[Any], ...]') -&gt; 'type[BaseModel] | _forward_ref.PydanticRecursiveRef'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-__get_pydantic_core_schema__"><strong>__get_pydantic_core_schema__</strong></a>(source: 'type[BaseModel]', handler: 'GetCoreSchemaHandler', /) -&gt; 'CoreSchema'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Hook&nbsp;into&nbsp;generating&nbsp;the&nbsp;model's&nbsp;CoreSchema.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;source:&nbsp;The&nbsp;class&nbsp;we&nbsp;are&nbsp;generating&nbsp;a&nbsp;schema&nbsp;for.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;will&nbsp;generally&nbsp;be&nbsp;the&nbsp;same&nbsp;as&nbsp;the&nbsp;`cls`&nbsp;argument&nbsp;if&nbsp;this&nbsp;is&nbsp;a&nbsp;classmethod.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;handler:&nbsp;A&nbsp;callable&nbsp;that&nbsp;calls&nbsp;into&nbsp;Pydantic's&nbsp;internal&nbsp;CoreSchema&nbsp;generation&nbsp;logic.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;`pydantic-core`&nbsp;`CoreSchema`.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__get_pydantic_json_schema__"><strong>__get_pydantic_json_schema__</strong></a>(core_schema: 'CoreSchema', handler: 'GetJsonSchemaHandler', /) -&gt; 'JsonSchemaValue'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Hook&nbsp;into&nbsp;generating&nbsp;the&nbsp;model's&nbsp;JSON&nbsp;schema.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;core_schema:&nbsp;A&nbsp;`pydantic-core`&nbsp;CoreSchema.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;can&nbsp;ignore&nbsp;this&nbsp;argument&nbsp;and&nbsp;call&nbsp;the&nbsp;handler&nbsp;with&nbsp;a&nbsp;new&nbsp;CoreSchema,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrap&nbsp;this&nbsp;CoreSchema&nbsp;(`{'type':&nbsp;'nullable',&nbsp;'schema':&nbsp;current_schema}`),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or&nbsp;just&nbsp;call&nbsp;the&nbsp;handler&nbsp;with&nbsp;the&nbsp;original&nbsp;schema.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;handler:&nbsp;Call&nbsp;into&nbsp;Pydantic's&nbsp;internal&nbsp;JSON&nbsp;schema&nbsp;generation.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;will&nbsp;raise&nbsp;a&nbsp;`pydantic.errors.PydanticInvalidForJsonSchema`&nbsp;if&nbsp;JSON&nbsp;schema<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generation&nbsp;fails.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since&nbsp;this&nbsp;gets&nbsp;called&nbsp;by&nbsp;`<a href="pydantic.main.html#BaseModel">BaseModel</a>.model_json_schema`&nbsp;you&nbsp;can&nbsp;override&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`schema_generator`&nbsp;argument&nbsp;to&nbsp;that&nbsp;function&nbsp;to&nbsp;change&nbsp;JSON&nbsp;schema&nbsp;generation&nbsp;globally<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;a&nbsp;type.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;JSON&nbsp;schema,&nbsp;as&nbsp;a&nbsp;Python&nbsp;object.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-__pydantic_init_subclass__"><strong>__pydantic_init_subclass__</strong></a>(**kwargs: 'Any') -&gt; 'None'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>This&nbsp;is&nbsp;intended&nbsp;to&nbsp;behave&nbsp;just&nbsp;like&nbsp;`__init_subclass__`,&nbsp;but&nbsp;is&nbsp;called&nbsp;by&nbsp;`ModelMetaclass`<br>
+only&nbsp;after&nbsp;the&nbsp;class&nbsp;is&nbsp;actually&nbsp;fully&nbsp;initialized.&nbsp;In&nbsp;particular,&nbsp;attributes&nbsp;like&nbsp;`model_fields`&nbsp;will<br>
+be&nbsp;present&nbsp;when&nbsp;this&nbsp;is&nbsp;called.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;necessary&nbsp;because&nbsp;`__init_subclass__`&nbsp;will&nbsp;always&nbsp;be&nbsp;called&nbsp;by&nbsp;`type.__new__`,<br>
+and&nbsp;it&nbsp;would&nbsp;require&nbsp;a&nbsp;prohibitively&nbsp;large&nbsp;refactor&nbsp;to&nbsp;the&nbsp;`ModelMetaclass`&nbsp;to&nbsp;ensure&nbsp;that<br>
+`type.__new__`&nbsp;was&nbsp;called&nbsp;in&nbsp;such&nbsp;a&nbsp;manner&nbsp;that&nbsp;the&nbsp;class&nbsp;would&nbsp;already&nbsp;be&nbsp;sufficiently&nbsp;initialized.<br>
+&nbsp;<br>
+This&nbsp;will&nbsp;receive&nbsp;the&nbsp;same&nbsp;`kwargs`&nbsp;that&nbsp;would&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;standard&nbsp;`__init_subclass__`,&nbsp;namely,<br>
+any&nbsp;kwargs&nbsp;passed&nbsp;to&nbsp;the&nbsp;class&nbsp;definition&nbsp;that&nbsp;aren't&nbsp;used&nbsp;internally&nbsp;by&nbsp;pydantic.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs:&nbsp;Any&nbsp;keyword&nbsp;arguments&nbsp;passed&nbsp;to&nbsp;the&nbsp;class&nbsp;definition&nbsp;that&nbsp;aren't&nbsp;used&nbsp;internally<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by&nbsp;pydantic.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-construct"><strong>construct</strong></a>(_fields_set: 'set[str] | None' = None, **values: 'Any') -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-from_orm"><strong>from_orm</strong></a>(obj: 'Any') -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-model_construct"><strong>model_construct</strong></a>(_fields_set: 'set[str] | None' = None, **values: 'Any') -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;instance&nbsp;of&nbsp;the&nbsp;`Model`&nbsp;class&nbsp;with&nbsp;validated&nbsp;data.<br>
+&nbsp;<br>
+Creates&nbsp;a&nbsp;new&nbsp;model&nbsp;setting&nbsp;`__dict__`&nbsp;and&nbsp;`__pydantic_fields_set__`&nbsp;from&nbsp;trusted&nbsp;or&nbsp;pre-validated&nbsp;data.<br>
+Default&nbsp;values&nbsp;are&nbsp;respected,&nbsp;but&nbsp;no&nbsp;other&nbsp;validation&nbsp;is&nbsp;performed.<br>
+&nbsp;<br>
+!!!&nbsp;note<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`<a href="#BaseEnvironment-model_construct">model_construct</a>()`&nbsp;generally&nbsp;respects&nbsp;the&nbsp;`model_config.extra`&nbsp;setting&nbsp;on&nbsp;the&nbsp;provided&nbsp;model.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;That&nbsp;is,&nbsp;if&nbsp;`model_config.extra&nbsp;==&nbsp;'allow'`,&nbsp;then&nbsp;all&nbsp;extra&nbsp;passed&nbsp;values&nbsp;are&nbsp;added&nbsp;to&nbsp;the&nbsp;model&nbsp;instance's&nbsp;`__dict__`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;`__pydantic_extra__`&nbsp;fields.&nbsp;If&nbsp;`model_config.extra&nbsp;==&nbsp;'ignore'`&nbsp;(the&nbsp;default),&nbsp;then&nbsp;all&nbsp;extra&nbsp;passed&nbsp;values&nbsp;are&nbsp;ignored.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Because&nbsp;no&nbsp;validation&nbsp;is&nbsp;performed&nbsp;with&nbsp;a&nbsp;call&nbsp;to&nbsp;`<a href="#BaseEnvironment-model_construct">model_construct</a>()`,&nbsp;having&nbsp;`model_config.extra&nbsp;==&nbsp;'forbid'`&nbsp;does&nbsp;not&nbsp;result&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;an&nbsp;error&nbsp;if&nbsp;extra&nbsp;values&nbsp;are&nbsp;passed,&nbsp;but&nbsp;they&nbsp;will&nbsp;be&nbsp;ignored.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_fields_set:&nbsp;A&nbsp;set&nbsp;of&nbsp;field&nbsp;names&nbsp;that&nbsp;were&nbsp;originally&nbsp;explicitly&nbsp;set&nbsp;during&nbsp;instantiation.&nbsp;If&nbsp;provided,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this&nbsp;is&nbsp;directly&nbsp;used&nbsp;for&nbsp;the&nbsp;[`model_fields_set`][pydantic.<a href="pydantic.main.html#BaseModel">BaseModel</a>.model_fields_set]&nbsp;attribute.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise,&nbsp;the&nbsp;field&nbsp;names&nbsp;from&nbsp;the&nbsp;`values`&nbsp;argument&nbsp;will&nbsp;be&nbsp;used.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;values:&nbsp;Trusted&nbsp;or&nbsp;pre-validated&nbsp;data&nbsp;dictionary.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;instance&nbsp;of&nbsp;the&nbsp;`Model`&nbsp;class&nbsp;with&nbsp;validated&nbsp;data.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_json_schema"><strong>model_json_schema</strong></a>(by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}', schema_generator: 'type[GenerateJsonSchema]' = &lt;class 'pydantic.json_schema.GenerateJsonSchema'&gt;, mode: 'JsonSchemaMode' = 'validation') -&gt; 'dict[str, Any]'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Generates&nbsp;a&nbsp;JSON&nbsp;schema&nbsp;for&nbsp;a&nbsp;model&nbsp;class.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;by_alias:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;attribute&nbsp;aliases&nbsp;or&nbsp;not.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ref_template:&nbsp;The&nbsp;reference&nbsp;template.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;schema_generator:&nbsp;To&nbsp;override&nbsp;the&nbsp;logic&nbsp;used&nbsp;to&nbsp;generate&nbsp;the&nbsp;JSON&nbsp;schema,&nbsp;as&nbsp;a&nbsp;subclass&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`GenerateJsonSchema`&nbsp;with&nbsp;your&nbsp;desired&nbsp;modifications<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mode:&nbsp;The&nbsp;mode&nbsp;in&nbsp;which&nbsp;to&nbsp;generate&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;JSON&nbsp;schema&nbsp;for&nbsp;the&nbsp;given&nbsp;model&nbsp;class.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_parametrized_name"><strong>model_parametrized_name</strong></a>(params: 'tuple[type[Any], ...]') -&gt; 'str'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Compute&nbsp;the&nbsp;class&nbsp;name&nbsp;for&nbsp;parametrizations&nbsp;of&nbsp;generic&nbsp;classes.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;can&nbsp;be&nbsp;overridden&nbsp;to&nbsp;achieve&nbsp;a&nbsp;custom&nbsp;naming&nbsp;scheme&nbsp;for&nbsp;generic&nbsp;BaseModels.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;params:&nbsp;Tuple&nbsp;of&nbsp;types&nbsp;of&nbsp;the&nbsp;class.&nbsp;Given&nbsp;a&nbsp;generic&nbsp;class<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`Model`&nbsp;with&nbsp;2&nbsp;type&nbsp;variables&nbsp;and&nbsp;a&nbsp;concrete&nbsp;model&nbsp;`Model[str,&nbsp;int]`,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;value&nbsp;`(str,&nbsp;int)`&nbsp;would&nbsp;be&nbsp;passed&nbsp;to&nbsp;`params`.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;representing&nbsp;the&nbsp;new&nbsp;class&nbsp;where&nbsp;`params`&nbsp;are&nbsp;passed&nbsp;to&nbsp;`cls`&nbsp;as&nbsp;type&nbsp;variables.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;TypeError:&nbsp;Raised&nbsp;when&nbsp;trying&nbsp;to&nbsp;generate&nbsp;concrete&nbsp;names&nbsp;for&nbsp;non-generic&nbsp;models.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_rebuild"><strong>model_rebuild</strong></a>(*, force: 'bool' = False, raise_errors: 'bool' = True, _parent_namespace_depth: 'int' = 2, _types_namespace: 'MappingNamespace | None' = None) -&gt; 'bool | None'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Try&nbsp;to&nbsp;rebuild&nbsp;the&nbsp;pydantic-core&nbsp;schema&nbsp;for&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+This&nbsp;may&nbsp;be&nbsp;necessary&nbsp;when&nbsp;one&nbsp;of&nbsp;the&nbsp;annotations&nbsp;is&nbsp;a&nbsp;ForwardRef&nbsp;which&nbsp;could&nbsp;not&nbsp;be&nbsp;resolved&nbsp;during<br>
+the&nbsp;initial&nbsp;attempt&nbsp;to&nbsp;build&nbsp;the&nbsp;schema,&nbsp;and&nbsp;automatic&nbsp;rebuilding&nbsp;fails.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;force:&nbsp;Whether&nbsp;to&nbsp;force&nbsp;the&nbsp;rebuilding&nbsp;of&nbsp;the&nbsp;model&nbsp;schema,&nbsp;defaults&nbsp;to&nbsp;`False`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;raise_errors:&nbsp;Whether&nbsp;to&nbsp;raise&nbsp;errors,&nbsp;defaults&nbsp;to&nbsp;`True`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_parent_namespace_depth:&nbsp;The&nbsp;depth&nbsp;level&nbsp;of&nbsp;the&nbsp;parent&nbsp;namespace,&nbsp;defaults&nbsp;to&nbsp;2.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_types_namespace:&nbsp;The&nbsp;types&nbsp;namespace,&nbsp;defaults&nbsp;to&nbsp;`None`.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Returns&nbsp;`None`&nbsp;if&nbsp;the&nbsp;schema&nbsp;is&nbsp;already&nbsp;"complete"&nbsp;and&nbsp;rebuilding&nbsp;was&nbsp;not&nbsp;required.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;rebuilding&nbsp;_was_&nbsp;required,&nbsp;returns&nbsp;`True`&nbsp;if&nbsp;rebuilding&nbsp;was&nbsp;successful,&nbsp;otherwise&nbsp;`False`.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_validate"><strong>model_validate</strong></a>(obj: 'Any', *, strict: 'bool | None' = None, from_attributes: 'bool | None' = None, context: 'Any | None' = None) -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Validate&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;instance.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;obj:&nbsp;The&nbsp;object&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from_attributes:&nbsp;Whether&nbsp;to&nbsp;extract&nbsp;data&nbsp;from&nbsp;object&nbsp;attributes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Additional&nbsp;context&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValidationError:&nbsp;If&nbsp;the&nbsp;object&nbsp;could&nbsp;not&nbsp;be&nbsp;validated.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;model&nbsp;instance.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_validate_json"><strong>model_validate_json</strong></a>(json_data: 'str | bytes | bytearray', *, strict: 'bool | None' = None, context: 'Any | None' = None) -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Usage&nbsp;docs:&nbsp;<a href="https://docs.pydantic.dev/2.10/concepts/json/#json-parsing">https://docs.pydantic.dev/2.10/concepts/json/#json-parsing</a><br>
+&nbsp;<br>
+Validate&nbsp;the&nbsp;given&nbsp;JSON&nbsp;data&nbsp;against&nbsp;the&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;json_data:&nbsp;The&nbsp;JSON&nbsp;data&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Extra&nbsp;variables&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValidationError:&nbsp;If&nbsp;`json_data`&nbsp;is&nbsp;not&nbsp;a&nbsp;JSON&nbsp;string&nbsp;or&nbsp;the&nbsp;object&nbsp;could&nbsp;not&nbsp;be&nbsp;validated.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-model_validate_strings"><strong>model_validate_strings</strong></a>(obj: 'Any', *, strict: 'bool | None' = None, context: 'Any | None' = None) -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt><dd><tt>Validate&nbsp;the&nbsp;given&nbsp;object&nbsp;with&nbsp;string&nbsp;data&nbsp;against&nbsp;the&nbsp;Pydantic&nbsp;model.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;obj:&nbsp;The&nbsp;object&nbsp;containing&nbsp;string&nbsp;data&nbsp;to&nbsp;validate.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;strict:&nbsp;Whether&nbsp;to&nbsp;enforce&nbsp;types&nbsp;strictly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;context:&nbsp;Extra&nbsp;variables&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;validator.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;validated&nbsp;Pydantic&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="BaseEnvironment-parse_file"><strong>parse_file</strong></a>(path: 'str | Path', *, content_type: 'str | None' = None, encoding: 'str' = 'utf8', proto: 'DeprecatedParseProtocol | None' = None, allow_pickle: 'bool' = False) -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-parse_obj"><strong>parse_obj</strong></a>(obj: 'Any') -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-parse_raw"><strong>parse_raw</strong></a>(b: 'str | bytes', *, content_type: 'str | None' = None, encoding: 'str' = 'utf8', proto: 'DeprecatedParseProtocol | None' = None, allow_pickle: 'bool' = False) -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-schema"><strong>schema</strong></a>(by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}') -&gt; 'Dict[str, Any]'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-schema_json"><strong>schema_json</strong></a>(*, by_alias: 'bool' = True, ref_template: 'str' = '#/$defs/{model}', **dumps_kwargs: 'Any') -&gt; 'str'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-update_forward_refs"><strong>update_forward_refs</strong></a>(**localns: 'Any') -&gt; 'None'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="BaseEnvironment-validate"><strong>validate</strong></a>(value: 'Any') -&gt; 'Self'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic._internal._model_construction.html#ModelMetaclass">pydantic._internal._model_construction.ModelMetaclass</a></font></font></dt></dl>
+
+<hr>
+Readonly properties inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__fields_set__</strong></dt>
+</dl>
+<dl><dt><strong>model_computed_fields</strong></dt>
+<dd><tt>Get&nbsp;metadata&nbsp;about&nbsp;the&nbsp;computed&nbsp;fields&nbsp;defined&nbsp;on&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+Deprecation&nbsp;warning:&nbsp;you&nbsp;should&nbsp;be&nbsp;getting&nbsp;this&nbsp;information&nbsp;from&nbsp;the&nbsp;model&nbsp;class,&nbsp;not&nbsp;from&nbsp;an&nbsp;instance.<br>
+In&nbsp;V3,&nbsp;this&nbsp;property&nbsp;will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;`BaseModel`&nbsp;class.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;mapping&nbsp;of&nbsp;computed&nbsp;field&nbsp;names&nbsp;to&nbsp;[`ComputedFieldInfo`][pydantic.fields.ComputedFieldInfo]&nbsp;objects.</tt></dd>
+</dl>
+<dl><dt><strong>model_extra</strong></dt>
+<dd><tt>Get&nbsp;extra&nbsp;fields&nbsp;set&nbsp;during&nbsp;validation.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;dictionary&nbsp;of&nbsp;extra&nbsp;fields,&nbsp;or&nbsp;`None`&nbsp;if&nbsp;`config.extra`&nbsp;is&nbsp;not&nbsp;set&nbsp;to&nbsp;`"allow"`.</tt></dd>
+</dl>
+<dl><dt><strong>model_fields</strong></dt>
+<dd><tt>Get&nbsp;metadata&nbsp;about&nbsp;the&nbsp;fields&nbsp;defined&nbsp;on&nbsp;the&nbsp;model.<br>
+&nbsp;<br>
+Deprecation&nbsp;warning:&nbsp;you&nbsp;should&nbsp;be&nbsp;getting&nbsp;this&nbsp;information&nbsp;from&nbsp;the&nbsp;model&nbsp;class,&nbsp;not&nbsp;from&nbsp;an&nbsp;instance.<br>
+In&nbsp;V3,&nbsp;this&nbsp;property&nbsp;will&nbsp;be&nbsp;removed&nbsp;from&nbsp;the&nbsp;`BaseModel`&nbsp;class.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;mapping&nbsp;of&nbsp;field&nbsp;names&nbsp;to&nbsp;[`FieldInfo`][pydantic.fields.FieldInfo]&nbsp;objects.</tt></dd>
+</dl>
+<dl><dt><strong>model_fields_set</strong></dt>
+<dd><tt>Returns&nbsp;the&nbsp;set&nbsp;of&nbsp;fields&nbsp;that&nbsp;have&nbsp;been&nbsp;explicitly&nbsp;set&nbsp;on&nbsp;this&nbsp;model&nbsp;instance.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;set&nbsp;of&nbsp;strings&nbsp;representing&nbsp;the&nbsp;fields&nbsp;that&nbsp;have&nbsp;been&nbsp;set,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.e.&nbsp;that&nbsp;were&nbsp;not&nbsp;filled&nbsp;from&nbsp;defaults.</tt></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__pydantic_extra__</strong></dt>
+</dl>
+<dl><dt><strong>__pydantic_fields_set__</strong></dt>
+</dl>
+<dl><dt><strong>__pydantic_private__</strong></dt>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="pydantic.main.html#BaseModel">pydantic.main.BaseModel</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__pydantic_root_model__</strong> = False</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Dict</strong> = typing.Dict<br>
+<strong>EnvironmentRegistry</strong> = Registry(name='EnvironmentRegistry', entries={'b...Graph.environments.general.GeneralEnvironment'&gt;})<br>
+<strong>List</strong> = typing.List</td></tr></table>
+</body></html>

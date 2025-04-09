@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.executor</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.executor</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/executor.py">/data/jiarui_ji/GraphAgent/LLMGraph/executor.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="logging.html">logging</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.executor.html#Executor">Executor</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Executor">class <strong>Executor</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Executor">Executor</a>(environment,&nbsp;ex_idx:&nbsp;str)<br>
+&nbsp;<br>
+Executor类负责管理和执行LLMGraph的任务。<br>
+&nbsp;<br>
+属性:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;environment:&nbsp;任务执行的环境。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ex_idx&nbsp;(str):&nbsp;实验的索引，用于标识不同的实验。<br>
+&nbsp;<br>
+方法:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Executor-__init__">__init__</a>(environment,&nbsp;ex_idx):&nbsp;初始化Executor实例，设置环境和实验索引。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Executor-from_task">from_task</a>(args):&nbsp;根据任务名称构建LLMGraph，并加载相应的配置。<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Executor-__init__"><strong>__init__</strong></a>(self, environment, ex_idx: str)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Executor-eval"><strong>eval</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Executor-reset"><strong>reset</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Executor-run"><strong>run</strong></a>(self)</dt><dd><tt>Run&nbsp;the&nbsp;environment&nbsp;from&nbsp;scratch&nbsp;until&nbsp;it&nbsp;is&nbsp;done.</tt></dd></dl>
+
+<dl><dt><a name="Executor-save"><strong>save</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Executor-test"><strong>test</strong></a>(self)</dt></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Executor-from_task"><strong>from_task</strong></a>(args: dict)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Build&nbsp;an&nbsp;LLMGraph&nbsp;from&nbsp;a&nbsp;task&nbsp;name.<br>
+The&nbsp;task&nbsp;name&nbsp;should&nbsp;correspond&nbsp;to&nbsp;a&nbsp;directory&nbsp;in&nbsp;`tasks`&nbsp;directory.<br>
+Then&nbsp;this&nbsp;method&nbsp;will&nbsp;load&nbsp;the&nbsp;configuration&nbsp;from&nbsp;the&nbsp;yaml&nbsp;file&nbsp;in&nbsp;that&nbsp;directory.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>openai_logger</strong> = &lt;Logger openai (WARNING)&gt;</td></tr></table>
+</body></html>

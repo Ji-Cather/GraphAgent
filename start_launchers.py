@@ -50,6 +50,17 @@ def setup_server(server_launcher:RpcAgentServerLauncher) -> None:
 
 
 def main(args):
+    """
+    启动多个RPC代理服务器的主函数。
+
+    参数:
+        args (Namespace): 命令行参数，包括启动器数量、是否分布式、保存路径和主机列表。
+
+    功能:
+        1. 根据提供的主机列表和启动器数量，创建多个RpcAgentServerLauncher实例。
+        2. 将每个启动器的主机和端口信息保存到指定的文件路径。
+        3. 启动多个进程，每个进程运行一个RPC服务器，并等待所有进程结束。
+    """
     launcher_args = []
     launchers = []
     for i in range(args.launcher_num):

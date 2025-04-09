@@ -14,10 +14,22 @@ from LLMGraph.wrapper import BaseAgentWrapper
 
 @EnvironmentRegistry.register("base")
 class BaseEnvironment(BaseModel):
+    """
+    基础环境类，负责管理代理和模拟过程。
+
+    属性:
+        to_dist (bool): 是否启动rpc并行任务的标志。
+        launcher_args (list): 启动器参数列表。
+        manager_agent (AgentBase): 管理agent的实例。
+        simulation_round (int): 当前模拟轮次。
+    """
+    
     to_dist: bool = False
     launcher_args:list = []
     manager_agent: AgentBase
     simulation_round:int = 0
+    
+    
 
     class Config:
         arbitrary_types_allowed = True

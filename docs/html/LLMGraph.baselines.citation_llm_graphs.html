@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.baselines.citation_llm_graphs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.baselines.html"><font color="#ffffff">baselines</font></a>.citation_llm_graphs</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/baselines/citation_llm_graphs.py">/data/jiarui_ji/GraphAgent/LLMGraph/baselines/citation_llm_graphs.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="networkx.html">networkx</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pickle.html">pickle</a><br>
+<a href="random.html">random</a><br>
+</td><td width="25%" valign=top><a href="re.html">re</a><br>
+<a href="torch.html">torch</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-build_author_citation_graph"><strong>build_author_citation_graph</strong></a>(article_meta_data: dict, author_info: dict)</dt><dd><tt>构建作者citation&nbsp;network<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;article_graph&nbsp;(nx.DiGraph):&nbsp;_description_<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nx.DiGraph:&nbsp;_description_</tt></dd></dl>
+ <dl><dt><a name="-build_bibliographic_coupling_network"><strong>build_bibliographic_coupling_network</strong></a>(citation_network: networkx.classes.digraph.DiGraph)</dt></dl>
+ <dl><dt><a name="-build_citation_graph"><strong>build_citation_graph</strong></a>(article_meta_data: dict = {})</dt></dl>
+ <dl><dt><a name="-build_co_authorship_network"><strong>build_co_authorship_network</strong></a>(article_meta_data: dict = {}, author_info: dict = {})</dt></dl>
+ <dl><dt><a name="-build_co_citation_graph"><strong>build_co_citation_graph</strong></a>(citation_network: networkx.classes.digraph.DiGraph)</dt></dl>
+ <dl><dt><a name="-build_country_citation_graph"><strong>build_country_citation_graph</strong></a>(article_meta_data: dict, author_info: dict, article_graph: networkx.classes.digraph.DiGraph) -&gt; networkx.classes.digraph.DiGraph</dt><dd><tt>构建国家citation&nbsp;network<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;article_graph&nbsp;(nx.DiGraph):&nbsp;_description_<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nx.DiGraph:&nbsp;_description_</tt></dd></dl>
+ <dl><dt><a name="-build_graphs"><strong>build_graphs</strong></a>(article_meta_data: dict, author_info: dict, article_num=None, graph_types: list = ['article_citation', 'bibliographic_coupling', 'co_citation', 'author_citation', 'country_citation', 'co_authorship'])</dt></dl>
+ <dl><dt><a name="-generate_citation"><strong>generate_citation</strong></a>()</dt></dl>
+ <dl><dt><a name="-generate_citation_graphs"><strong>generate_citation_graphs</strong></a>(num_graphs, min_size, max_size, dataset='train', graph_path='LLMGraph/tasks/citeseer/data/article_meta_info_abstract.pt', seed=0)</dt></dl>
+ <dl><dt><a name="-readinfo"><strong>readinfo</strong></a>(data_dir)</dt></dl>
+ <dl><dt><a name="-transfer_multidi_to_di"><strong>transfer_multidi_to_di</strong></a>(multi_digraph: networkx.classes.multidigraph.MultiDiGraph)</dt></dl>
+ <dl><dt><a name="-update_citation_graph"><strong>update_citation_graph</strong></a>(DG: networkx.classes.digraph.DiGraph, article_meta_data: dict, author_info: dict)</dt><dd><tt>增加citation&nbsp;network&nbsp;国家attribute<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;DG&nbsp;(nx.DiGraph):&nbsp;_description_<br>
+&nbsp;&nbsp;&nbsp;&nbsp;article_meta_data&nbsp;(dict):&nbsp;_description_</tt></dd></dl>
+</td></tr></table>
+</body></html>

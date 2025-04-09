@@ -1,0 +1,1068 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.retriever.google_scholar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.retriever.html"><font color="#ffffff">retriever</font></a>.google_scholar</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/retriever/google_scholar.py">/data/jiarui_ji/GraphAgent/LLMGraph/retriever/google_scholar.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="langchain_community.retrievers.arxiv.html#ArxivRetriever">langchain_community.retrievers.arxiv.ArxivRetriever</a>(<a href="langchain_core.retrievers.html#BaseRetriever">langchain_core.retrievers.BaseRetriever</a>, <a href="langchain_community.utilities.arxiv.html#ArxivAPIWrapper">langchain_community.utilities.arxiv.ArxivAPIWrapper</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.retriever.google_scholar.html#GraphGoogleScholarRetriever">GraphGoogleScholarRetriever</a>
+</font></dt></dl>
+</dd>
+<dt><font face="helvetica, arial"><a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>(<a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.retriever.google_scholar.html#GoogleScholarAPIWrapper">GoogleScholarAPIWrapper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GoogleScholarAPIWrapper">class <strong>GoogleScholarAPIWrapper</strong></a>(<a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#GoogleScholarAPIWrapper">GoogleScholarAPIWrapper</a>(*,&nbsp;top_k_results:&nbsp;int&nbsp;=&nbsp;10,&nbsp;hl:&nbsp;str&nbsp;=&nbsp;'en',&nbsp;lr:&nbsp;str&nbsp;=&nbsp;'lang_en',&nbsp;serp_api_key:&nbsp;Optional[str]&nbsp;=&nbsp;None)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.retriever.google_scholar.html#GoogleScholarAPIWrapper">GoogleScholarAPIWrapper</a></dd>
+<dd><a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a></dd>
+<dd><a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-run"><strong>run</strong></a>(self, query: str) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Run&nbsp;query&nbsp;through&nbsp;GoogleSearchScholar&nbsp;and&nbsp;parse&nbsp;result</tt></dd></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-validate_environment"><strong>validate_environment</strong></a>(values: Dict) -&gt; Dict<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Validate&nbsp;that&nbsp;api&nbsp;key&nbsp;and&nbsp;python&nbsp;package&nbsp;exists&nbsp;in&nbsp;environment.</tt></dd></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-__json_encoder__"><strong>__json_encoder__</strong></a> = pydantic_encoder(obj: Any) -&gt; Any</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>Config</strong> = &lt;class 'LLMGraph.retriever.google_scholar.GoogleScholarAPIWrapper.Config'&gt;<dd><tt>Configuration&nbsp;for&nbsp;this&nbsp;pydantic&nbsp;object.</tt></dl>
+
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'hl': &lt;class 'str'&gt;, 'lr': &lt;class 'str'&gt;, 'serp_api_key': typing.Optional[str], 'top_k_results': &lt;class 'int'&gt;}</dl>
+
+<dl><dt><strong>__class_vars__</strong> = set()</dl>
+
+<dl><dt><strong>__config__</strong> = &lt;class 'pydantic.v1.config.Config'&gt;</dl>
+
+<dl><dt><strong>__custom_root_type__</strong> = False</dl>
+
+<dl><dt><strong>__exclude_fields__</strong> = None</dl>
+
+<dl><dt><strong>__fields__</strong> = {'hl': ModelField(name='hl', type=str, required=False, default='en'), 'lr': ModelField(name='lr', type=str, required=False, default='lang_en'), 'serp_api_key': ModelField(name='serp_api_key', type=Optional[str], required=False, default=None), 'top_k_results': ModelField(name='top_k_results', type=int, required=False, default=10)}</dl>
+
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__include_fields__</strong> = None</dl>
+
+<dl><dt><strong>__post_root_validators__</strong> = [(False, &lt;function GoogleScholarAPIWrapper.validate_environment&gt;)]</dl>
+
+<dl><dt><strong>__pre_root_validators__</strong> = []</dl>
+
+<dl><dt><strong>__private_attributes__</strong> = {}</dl>
+
+<dl><dt><strong>__schema_cache__</strong> = {}</dl>
+
+<dl><dt><strong>__signature__</strong> = &lt;Signature (*, top_k_results: int = 10, hl: str ...en', serp_api_key: Optional[str] = None) -&gt; None&gt;</dl>
+
+<dl><dt><strong>__validators__</strong> = {}</dl>
+
+<hr>
+Methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-__eq__"><strong>__eq__</strong></a>(self, other: Any) -&gt; bool</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__getstate__"><strong>__getstate__</strong></a>(self) -&gt; 'DictAny'</dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__init__"><strong>__init__</strong></a>(__pydantic_self__, **data: Any) -&gt; None</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;model&nbsp;by&nbsp;parsing&nbsp;and&nbsp;validating&nbsp;input&nbsp;data&nbsp;from&nbsp;keyword&nbsp;arguments.<br>
+&nbsp;<br>
+Raises&nbsp;ValidationError&nbsp;if&nbsp;the&nbsp;input&nbsp;data&nbsp;cannot&nbsp;be&nbsp;parsed&nbsp;to&nbsp;form&nbsp;a&nbsp;valid&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__iter__"><strong>__iter__</strong></a>(self) -&gt; 'TupleGenerator'</dt><dd><tt>so&nbsp;`<a href="#GoogleScholarAPIWrapper-dict">dict</a>(model)`&nbsp;works</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__repr_args__"><strong>__repr_args__</strong></a>(self) -&gt; 'ReprArgs'</dt><dd><tt>Returns&nbsp;the&nbsp;attributes&nbsp;to&nbsp;show&nbsp;in&nbsp;__str__,&nbsp;__repr__,&nbsp;and&nbsp;__pretty__&nbsp;this&nbsp;is&nbsp;generally&nbsp;overridden.<br>
+&nbsp;<br>
+Can&nbsp;either&nbsp;return:<br>
+*&nbsp;name&nbsp;-&nbsp;value&nbsp;pairs,&nbsp;e.g.:&nbsp;`[('foo_name',&nbsp;'foo'),&nbsp;('bar_name',&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`<br>
+*&nbsp;or,&nbsp;just&nbsp;values,&nbsp;e.g.:&nbsp;`[(None,&nbsp;'foo'),&nbsp;(None,&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__setstate__"><strong>__setstate__</strong></a>(self, state: 'DictAny') -&gt; None</dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-copy"><strong>copy</strong></a>(self: 'Model', *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, update: Optional[ForwardRef('DictStrAny')] = None, deep: bool = False) -&gt; 'Model'</dt><dd><tt>Duplicate&nbsp;a&nbsp;model,&nbsp;optionally&nbsp;choose&nbsp;which&nbsp;fields&nbsp;to&nbsp;include,&nbsp;exclude&nbsp;and&nbsp;change.<br>
+&nbsp;<br>
+:param&nbsp;include:&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;new&nbsp;model<br>
+:param&nbsp;exclude:&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;new&nbsp;model,&nbsp;as&nbsp;with&nbsp;values&nbsp;this&nbsp;takes&nbsp;precedence&nbsp;over&nbsp;include<br>
+:param&nbsp;update:&nbsp;values&nbsp;to&nbsp;change/add&nbsp;in&nbsp;the&nbsp;new&nbsp;model.&nbsp;Note:&nbsp;the&nbsp;data&nbsp;is&nbsp;not&nbsp;validated&nbsp;before&nbsp;creating<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;new&nbsp;model:&nbsp;you&nbsp;should&nbsp;trust&nbsp;this&nbsp;data<br>
+:param&nbsp;deep:&nbsp;set&nbsp;to&nbsp;`True`&nbsp;to&nbsp;make&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model<br>
+:return:&nbsp;new&nbsp;model&nbsp;instance</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-dict"><strong>dict</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False) -&gt; 'DictStrAny'</dt><dd><tt>Generate&nbsp;a&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;optionally&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;or&nbsp;exclude.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-json"><strong>json</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False, encoder: Optional[Callable[[Any], Any]] = None, models_as_dict: bool = True, **dumps_kwargs: Any) -&gt; str</dt><dd><tt>Generate&nbsp;a&nbsp;JSON&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;`include`&nbsp;and&nbsp;`exclude`&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`<a href="#GoogleScholarAPIWrapper-dict">dict</a>()`.<br>
+&nbsp;<br>
+`encoder`&nbsp;is&nbsp;an&nbsp;optional&nbsp;function&nbsp;to&nbsp;supply&nbsp;as&nbsp;`default`&nbsp;to&nbsp;json.dumps(),&nbsp;other&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`json.dumps()`.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-__get_validators__"><strong>__get_validators__</strong></a>() -&gt; 'CallableGenerator'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__try_update_forward_refs__"><strong>__try_update_forward_refs__</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Same&nbsp;as&nbsp;update_forward_refs&nbsp;but&nbsp;will&nbsp;not&nbsp;raise&nbsp;exception<br>
+when&nbsp;forward&nbsp;references&nbsp;are&nbsp;not&nbsp;defined.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-construct"><strong>construct</strong></a>(_fields_set: Optional[ForwardRef('SetStr')] = None, **values: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;model&nbsp;setting&nbsp;__dict__&nbsp;and&nbsp;__fields_set__&nbsp;from&nbsp;trusted&nbsp;or&nbsp;pre-validated&nbsp;data.<br>
+Default&nbsp;values&nbsp;are&nbsp;respected,&nbsp;but&nbsp;no&nbsp;other&nbsp;validation&nbsp;is&nbsp;performed.<br>
+Behaves&nbsp;as&nbsp;if&nbsp;`Config.extra&nbsp;=&nbsp;'allow'`&nbsp;was&nbsp;set&nbsp;since&nbsp;it&nbsp;adds&nbsp;all&nbsp;passed&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-from_orm"><strong>from_orm</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-parse_file"><strong>parse_file</strong></a>(path: Union[str, pathlib.Path], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-parse_obj"><strong>parse_obj</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-parse_raw"><strong>parse_raw</strong></a>(b: Union[str, bytes], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-schema"><strong>schema</strong></a>(by_alias: bool = True, ref_template: str = '#/definitions/{model}') -&gt; 'DictStrAny'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-schema_json"><strong>schema_json</strong></a>(*, by_alias: bool = True, ref_template: str = '#/definitions/{model}', **dumps_kwargs: Any) -&gt; str<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-update_forward_refs"><strong>update_forward_refs</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Try&nbsp;to&nbsp;update&nbsp;ForwardRefs&nbsp;on&nbsp;fields&nbsp;based&nbsp;on&nbsp;this&nbsp;Model,&nbsp;globalns&nbsp;and&nbsp;localns.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-validate"><strong>validate</strong></a>(value: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__fields_set__</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a>:<br>
+<dl><dt><a name="GoogleScholarAPIWrapper-__pretty__"><strong>__pretty__</strong></a>(self, fmt: Callable[[Any], Any], **kwargs: Any) -&gt; Generator[Any, NoneType, NoneType]</dt><dd><tt>Used&nbsp;by&nbsp;devtools&nbsp;(<a href="https://python-devtools.helpmanual.io/">https://python-devtools.helpmanual.io/</a>)&nbsp;to&nbsp;provide&nbsp;a&nbsp;human&nbsp;readable&nbsp;representations&nbsp;of&nbsp;objects</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__repr_name__"><strong>__repr_name__</strong></a>(self) -&gt; str</dt><dd><tt>Name&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class,&nbsp;used&nbsp;in&nbsp;__repr__.</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__repr_str__"><strong>__repr_str__</strong></a>(self, join_str: str) -&gt; str</dt></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__rich_repr__"><strong>__rich_repr__</strong></a>(self) -&gt; 'RichReprResult'</dt><dd><tt>Get&nbsp;fields&nbsp;for&nbsp;Rich&nbsp;library</tt></dd></dl>
+
+<dl><dt><a name="GoogleScholarAPIWrapper-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GraphGoogleScholarRetriever">class <strong>GraphGoogleScholarRetriever</strong></a>(<a href="langchain_community.retrievers.arxiv.html#ArxivRetriever">langchain_community.retrievers.arxiv.ArxivRetriever</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#GraphGoogleScholarRetriever">GraphGoogleScholarRetriever</a>(*,&nbsp;arxiv_search:&nbsp;Any&nbsp;=&nbsp;None,&nbsp;arxiv_exceptions:&nbsp;Any&nbsp;=&nbsp;None,&nbsp;top_k_results:&nbsp;int&nbsp;=&nbsp;3,&nbsp;ARXIV_MAX_QUERY_LENGTH:&nbsp;int&nbsp;=&nbsp;300,&nbsp;load_max_docs:&nbsp;int&nbsp;=&nbsp;100,&nbsp;load_all_available_meta:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;doc_content_chars_max:&nbsp;Optional[int]&nbsp;=&nbsp;4000,&nbsp;name:&nbsp;Optional[str]&nbsp;=&nbsp;None,&nbsp;tags:&nbsp;Optional[List[str]]&nbsp;=&nbsp;None,&nbsp;metadata:&nbsp;Optional[Dict[str,&nbsp;Any]]&nbsp;=&nbsp;None,&nbsp;get_full_documents:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;api_wrapper:&nbsp;LLMGraph.retriever.google_scholar.<a href="#GoogleScholarAPIWrapper">GoogleScholarAPIWrapper</a>,&nbsp;graph_vector_retriever:&nbsp;LLMGraph.retriever.docs.GraphVectorRetriever)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.retriever.google_scholar.html#GraphGoogleScholarRetriever">GraphGoogleScholarRetriever</a></dd>
+<dd><a href="langchain_community.retrievers.arxiv.html#ArxivRetriever">langchain_community.retrievers.arxiv.ArxivRetriever</a></dd>
+<dd><a href="langchain_core.retrievers.html#BaseRetriever">langchain_core.retrievers.BaseRetriever</a></dd>
+<dd><a href="langchain_core.runnables.base.html#RunnableSerializable">langchain_core.runnables.base.RunnableSerializable</a></dd>
+<dd><a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a></dd>
+<dd><a href="langchain_community.utilities.arxiv.html#ArxivAPIWrapper">langchain_community.utilities.arxiv.ArxivAPIWrapper</a></dd>
+<dd><a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a></dd>
+<dd><a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a></dd>
+<dd><a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a></dd>
+<dd><a href="typing.html#Generic">typing.Generic</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-from_db"><strong>from_db</strong></a>(vectorstore: langchain_core.vectorstores.VectorStore, graph_vector_kargs: dict, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<hr>
+Static methods defined here:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__json_encoder__"><strong>__json_encoder__</strong></a> = pydantic_encoder(obj: Any) -&gt; Any</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<dl><dt><strong>__annotations__</strong> = {'api_wrapper': &lt;class 'LLMGraph.retriever.google_scholar.GoogleScholarAPIWrapper'&gt;, 'graph_vector_retriever': &lt;class 'LLMGraph.retriever.docs.GraphVectorRetriever'&gt;}</dl>
+
+<dl><dt><strong>__class_vars__</strong> = set()</dl>
+
+<dl><dt><strong>__config__</strong> = &lt;class 'pydantic.v1.config.Config'&gt;</dl>
+
+<dl><dt><strong>__custom_root_type__</strong> = False</dl>
+
+<dl><dt><strong>__exclude_fields__</strong> = None</dl>
+
+<dl><dt><strong>__fields__</strong> = {'ARXIV_MAX_QUERY_LENGTH': ModelField(name='ARXIV_MAX_QUERY_LENGTH', type=int, required=False, default=300), 'api_wrapper': ModelField(name='api_wrapper', type=GoogleScholarAPIWrapper, required=True), 'arxiv_exceptions': ModelField(name='arxiv_exceptions', type=Optional[Any], required=False, default=None), 'arxiv_search': ModelField(name='arxiv_search', type=Optional[Any], required=False, default=None), 'doc_content_chars_max': ModelField(name='doc_content_chars_max', type=Optional[int], required=False, default=4000), 'get_full_documents': ModelField(name='get_full_documents', type=bool, required=False, default=False), 'graph_vector_retriever': ModelField(name='graph_vector_retriever', type=GraphVectorRetriever, required=True), 'load_all_available_meta': ModelField(name='load_all_available_meta', type=bool, required=False, default=False), 'load_max_docs': ModelField(name='load_max_docs', type=int, required=False, default=100), 'metadata': ModelField(name='metadata', type=Optional[Mapping[str, Any]], required=False, default=None), ...}</dl>
+
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+<dl><dt><strong>__include_fields__</strong> = None</dl>
+
+<dl><dt><strong>__parameters__</strong> = ()</dl>
+
+<dl><dt><strong>__post_root_validators__</strong> = [(False, &lt;function ArxivAPIWrapper.validate_environment&gt;)]</dl>
+
+<dl><dt><strong>__pre_root_validators__</strong> = []</dl>
+
+<dl><dt><strong>__private_attributes__</strong> = {'_lc_kwargs': ModelPrivateAttr(default=PydanticUndefined, default_factory=&lt;class 'dict'&gt;)}</dl>
+
+<dl><dt><strong>__schema_cache__</strong> = {}</dl>
+
+<dl><dt><strong>__signature__</strong> = &lt;Signature (*, arxiv_search: Any = None, arxiv_e...aph.retriever.docs.GraphVectorRetriever) -&gt; None&gt;</dl>
+
+<dl><dt><strong>__validators__</strong> = {}</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.retrievers.html#BaseRetriever">langchain_core.retrievers.BaseRetriever</a>:<br>
+<dl><dt>async <a name="GraphGoogleScholarRetriever-aget_relevant_documents"><strong>aget_relevant_documents</strong></a>(self, query: 'str', *, callbacks: 'Callbacks' = None, tags: 'Optional[List[str]]' = None, metadata: 'Optional[Dict[str, Any]]' = None, run_name: 'Optional[str]' = None, **kwargs: 'Any') -&gt; 'List[Document]'</dt><dd><tt>Asynchronously&nbsp;get&nbsp;documents&nbsp;relevant&nbsp;to&nbsp;a&nbsp;query.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;string&nbsp;to&nbsp;find&nbsp;relevant&nbsp;documents&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callbacks:&nbsp;Callback&nbsp;manager&nbsp;or&nbsp;list&nbsp;of&nbsp;callbacks<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tags:&nbsp;Optional&nbsp;list&nbsp;of&nbsp;tags&nbsp;associated&nbsp;with&nbsp;the&nbsp;retriever.&nbsp;Defaults&nbsp;to&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These&nbsp;tags&nbsp;will&nbsp;be&nbsp;associated&nbsp;with&nbsp;each&nbsp;call&nbsp;to&nbsp;this&nbsp;retriever,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;handlers&nbsp;defined&nbsp;in&nbsp;`callbacks`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;metadata:&nbsp;Optional&nbsp;metadata&nbsp;associated&nbsp;with&nbsp;the&nbsp;retriever.&nbsp;Defaults&nbsp;to&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;metadata&nbsp;will&nbsp;be&nbsp;associated&nbsp;with&nbsp;each&nbsp;call&nbsp;to&nbsp;this&nbsp;retriever,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;handlers&nbsp;defined&nbsp;in&nbsp;`callbacks`.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;of&nbsp;relevant&nbsp;documents</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-ainvoke"><strong>ainvoke</strong></a>(self, input: 'str', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Any') -&gt; 'List[Document]'</dt><dd><tt>Default&nbsp;implementation&nbsp;of&nbsp;ainvoke,&nbsp;calls&nbsp;invoke&nbsp;from&nbsp;a&nbsp;thread.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;allows&nbsp;usage&nbsp;of&nbsp;async&nbsp;code&nbsp;even&nbsp;if<br>
+the&nbsp;runnable&nbsp;did&nbsp;not&nbsp;implement&nbsp;a&nbsp;native&nbsp;async&nbsp;version&nbsp;of&nbsp;invoke.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;run&nbsp;asynchronously.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_relevant_documents"><strong>get_relevant_documents</strong></a>(self, query: 'str', *, callbacks: 'Callbacks' = None, tags: 'Optional[List[str]]' = None, metadata: 'Optional[Dict[str, Any]]' = None, run_name: 'Optional[str]' = None, **kwargs: 'Any') -&gt; 'List[Document]'</dt><dd><tt>Retrieve&nbsp;documents&nbsp;relevant&nbsp;to&nbsp;a&nbsp;query.<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;string&nbsp;to&nbsp;find&nbsp;relevant&nbsp;documents&nbsp;for<br>
+&nbsp;&nbsp;&nbsp;&nbsp;callbacks:&nbsp;Callback&nbsp;manager&nbsp;or&nbsp;list&nbsp;of&nbsp;callbacks<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tags:&nbsp;Optional&nbsp;list&nbsp;of&nbsp;tags&nbsp;associated&nbsp;with&nbsp;the&nbsp;retriever.&nbsp;Defaults&nbsp;to&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These&nbsp;tags&nbsp;will&nbsp;be&nbsp;associated&nbsp;with&nbsp;each&nbsp;call&nbsp;to&nbsp;this&nbsp;retriever,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;handlers&nbsp;defined&nbsp;in&nbsp;`callbacks`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;metadata:&nbsp;Optional&nbsp;metadata&nbsp;associated&nbsp;with&nbsp;the&nbsp;retriever.&nbsp;Defaults&nbsp;to&nbsp;None<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;metadata&nbsp;will&nbsp;be&nbsp;associated&nbsp;with&nbsp;each&nbsp;call&nbsp;to&nbsp;this&nbsp;retriever,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;passed&nbsp;as&nbsp;arguments&nbsp;to&nbsp;the&nbsp;handlers&nbsp;defined&nbsp;in&nbsp;`callbacks`.<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;of&nbsp;relevant&nbsp;documents</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-invoke"><strong>invoke</strong></a>(self, input: 'str', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Any') -&gt; 'List[Document]'</dt><dd><tt>Transform&nbsp;a&nbsp;single&nbsp;input&nbsp;into&nbsp;an&nbsp;output.&nbsp;Override&nbsp;to&nbsp;implement.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;invoking&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;config&nbsp;supports&nbsp;standard&nbsp;keys&nbsp;like&nbsp;'tags',&nbsp;'metadata'&nbsp;for&nbsp;tracing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;purposes,&nbsp;'max_concurrency'&nbsp;for&nbsp;controlling&nbsp;how&nbsp;much&nbsp;work&nbsp;to&nbsp;do<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;in&nbsp;parallel,&nbsp;and&nbsp;other&nbsp;keys.&nbsp;Please&nbsp;refer&nbsp;to&nbsp;the&nbsp;RunnableConfig<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;more&nbsp;details.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;output&nbsp;of&nbsp;the&nbsp;runnable.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="langchain_core.retrievers.html#BaseRetriever">langchain_core.retrievers.BaseRetriever</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__init_subclass__"><strong>__init_subclass__</strong></a>(**kwargs: 'Any') -&gt; 'None'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>This&nbsp;method&nbsp;is&nbsp;called&nbsp;when&nbsp;a&nbsp;class&nbsp;is&nbsp;subclassed.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;does&nbsp;nothing.&nbsp;It&nbsp;may&nbsp;be<br>
+overridden&nbsp;to&nbsp;extend&nbsp;subclasses.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="langchain_core.retrievers.html#BaseRetriever">langchain_core.retrievers.BaseRetriever</a>:<br>
+<dl><dt><strong>Config</strong> = &lt;class 'langchain_core.retrievers.BaseRetriever.Config'&gt;<dd><tt>Configuration&nbsp;for&nbsp;this&nbsp;pydantic&nbsp;object.</tt></dl>
+
+<dl><dt><strong>__orig_bases__</strong> = (langchain_core.runnables.base.RunnableSerializab...ing.List[langchain_core.documents.base.Document]], &lt;class 'abc.ABC'&gt;)</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.runnables.base.html#RunnableSerializable">langchain_core.runnables.base.RunnableSerializable</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-configurable_alternatives"><strong>configurable_alternatives</strong></a>(self, which: 'ConfigurableField', *, default_key: 'str' = 'default', prefix_keys: 'bool' = False, **kwargs: 'Union[Runnable[Input, Output], Callable[[], Runnable[Input, Output]]]') -&gt; 'RunnableSerializable[Input, Output]'</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-configurable_fields"><strong>configurable_fields</strong></a>(self, **kwargs: 'AnyConfigurableField') -&gt; 'RunnableSerializable[Input, Output]'</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-to_json"><strong>to_json</strong></a>(self) -&gt; 'Union[SerializedConstructor, SerializedNotImplemented]'</dt><dd><tt>Serialize&nbsp;the&nbsp;runnable&nbsp;to&nbsp;JSON.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="langchain_core.runnables.base.html#RunnableSerializable">langchain_core.runnables.base.RunnableSerializable</a>:<br>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__init__"><strong>__init__</strong></a>(self, **kwargs: Any) -&gt; None</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;model&nbsp;by&nbsp;parsing&nbsp;and&nbsp;validating&nbsp;input&nbsp;data&nbsp;from&nbsp;keyword&nbsp;arguments.<br>
+&nbsp;<br>
+Raises&nbsp;ValidationError&nbsp;if&nbsp;the&nbsp;input&nbsp;data&nbsp;cannot&nbsp;be&nbsp;parsed&nbsp;to&nbsp;form&nbsp;a&nbsp;valid&nbsp;model.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__repr_args__"><strong>__repr_args__</strong></a>(self) -&gt; Any</dt><dd><tt>Returns&nbsp;the&nbsp;attributes&nbsp;to&nbsp;show&nbsp;in&nbsp;__str__,&nbsp;__repr__,&nbsp;and&nbsp;__pretty__&nbsp;this&nbsp;is&nbsp;generally&nbsp;overridden.<br>
+&nbsp;<br>
+Can&nbsp;either&nbsp;return:<br>
+*&nbsp;name&nbsp;-&nbsp;value&nbsp;pairs,&nbsp;e.g.:&nbsp;`[('foo_name',&nbsp;'foo'),&nbsp;('bar_name',&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`<br>
+*&nbsp;or,&nbsp;just&nbsp;values,&nbsp;e.g.:&nbsp;`[(None,&nbsp;'foo'),&nbsp;(None,&nbsp;['b',&nbsp;'a',&nbsp;'r'])]`</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-to_json_not_implemented"><strong>to_json_not_implemented</strong></a>(self) -&gt; langchain_core.load.serializable.SerializedNotImplemented</dt></dl>
+
+<hr>
+Class methods inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-get_lc_namespace"><strong>get_lc_namespace</strong></a>() -&gt; List[str]<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Get&nbsp;the&nbsp;namespace&nbsp;of&nbsp;the&nbsp;langchain&nbsp;object.<br>
+&nbsp;<br>
+For&nbsp;example,&nbsp;if&nbsp;the&nbsp;class&nbsp;is&nbsp;`langchain.llms.openai.OpenAI`,&nbsp;then&nbsp;the<br>
+namespace&nbsp;is&nbsp;["langchain",&nbsp;"llms",&nbsp;"openai"]</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-is_lc_serializable"><strong>is_lc_serializable</strong></a>() -&gt; bool<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Is&nbsp;this&nbsp;class&nbsp;serializable?</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-lc_id"><strong>lc_id</strong></a>() -&gt; List[str]<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>A&nbsp;unique&nbsp;identifier&nbsp;for&nbsp;this&nbsp;class&nbsp;for&nbsp;serialization&nbsp;purposes.<br>
+&nbsp;<br>
+The&nbsp;unique&nbsp;identifier&nbsp;is&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;that&nbsp;describes&nbsp;the&nbsp;path<br>
+to&nbsp;the&nbsp;object.</tt></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="langchain_core.load.serializable.html#Serializable">langchain_core.load.serializable.Serializable</a>:<br>
+<dl><dt><strong>lc_attributes</strong></dt>
+<dd><tt>List&nbsp;of&nbsp;attribute&nbsp;names&nbsp;that&nbsp;should&nbsp;be&nbsp;included&nbsp;in&nbsp;the&nbsp;serialized&nbsp;kwargs.<br>
+&nbsp;<br>
+These&nbsp;attributes&nbsp;must&nbsp;be&nbsp;accepted&nbsp;by&nbsp;the&nbsp;constructor.</tt></dd>
+</dl>
+<dl><dt><strong>lc_secrets</strong></dt>
+<dd><tt>A&nbsp;map&nbsp;of&nbsp;constructor&nbsp;argument&nbsp;names&nbsp;to&nbsp;secret&nbsp;ids.<br>
+&nbsp;<br>
+For&nbsp;example,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{"openai_api_key":&nbsp;"OPENAI_API_KEY"}</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="langchain_community.utilities.arxiv.html#ArxivAPIWrapper">langchain_community.utilities.arxiv.ArxivAPIWrapper</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-get_summaries_as_docs"><strong>get_summaries_as_docs</strong></a>(self, query: str) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Performs&nbsp;an&nbsp;arxiv&nbsp;search&nbsp;and&nbsp;returns&nbsp;list&nbsp;of<br>
+documents,&nbsp;with&nbsp;summaries&nbsp;as&nbsp;the&nbsp;content.<br>
+&nbsp;<br>
+If&nbsp;an&nbsp;error&nbsp;occurs&nbsp;or&nbsp;no&nbsp;documents&nbsp;found,&nbsp;error&nbsp;text<br>
+is&nbsp;returned&nbsp;instead.&nbsp;Wrapper&nbsp;for<br>
+<a href="https://lukasschwab.me/arxiv.py/index.html#Search">https://lukasschwab.me/arxiv.py/index.html#Search</a><br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;a&nbsp;plaintext&nbsp;search&nbsp;query</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-is_arxiv_identifier"><strong>is_arxiv_identifier</strong></a>(self, query: str) -&gt; bool</dt><dd><tt>Check&nbsp;if&nbsp;a&nbsp;query&nbsp;is&nbsp;an&nbsp;arxiv&nbsp;identifier.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-lazy_load"><strong>lazy_load</strong></a>(self, query: str) -&gt; Iterator[langchain_core.documents.base.Document]</dt><dd><tt>Run&nbsp;Arxiv&nbsp;search&nbsp;and&nbsp;get&nbsp;the&nbsp;article&nbsp;texts&nbsp;plus&nbsp;the&nbsp;article&nbsp;meta&nbsp;information.<br>
+See&nbsp;<a href="https://lukasschwab.me/arxiv.py/index.html#Search">https://lukasschwab.me/arxiv.py/index.html#Search</a><br>
+&nbsp;<br>
+Returns:&nbsp;documents&nbsp;with&nbsp;the&nbsp;document.page_content&nbsp;in&nbsp;text&nbsp;format<br>
+&nbsp;<br>
+Performs&nbsp;an&nbsp;arxiv&nbsp;search,&nbsp;downloads&nbsp;the&nbsp;top&nbsp;k&nbsp;results&nbsp;as&nbsp;PDFs,&nbsp;loads<br>
+them&nbsp;as&nbsp;Documents,&nbsp;and&nbsp;returns&nbsp;them.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;a&nbsp;plaintext&nbsp;search&nbsp;query</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-load"><strong>load</strong></a>(self, query: str) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Run&nbsp;Arxiv&nbsp;search&nbsp;and&nbsp;get&nbsp;the&nbsp;article&nbsp;texts&nbsp;plus&nbsp;the&nbsp;article&nbsp;meta&nbsp;information.<br>
+See&nbsp;<a href="https://lukasschwab.me/arxiv.py/index.html#Search">https://lukasschwab.me/arxiv.py/index.html#Search</a><br>
+&nbsp;<br>
+Returns:&nbsp;a&nbsp;list&nbsp;of&nbsp;documents&nbsp;with&nbsp;the&nbsp;document.page_content&nbsp;in&nbsp;text&nbsp;format<br>
+&nbsp;<br>
+Performs&nbsp;an&nbsp;arxiv&nbsp;search,&nbsp;downloads&nbsp;the&nbsp;top&nbsp;k&nbsp;results&nbsp;as&nbsp;PDFs,&nbsp;loads<br>
+them&nbsp;as&nbsp;Documents,&nbsp;and&nbsp;returns&nbsp;them&nbsp;in&nbsp;a&nbsp;List.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;a&nbsp;plaintext&nbsp;search&nbsp;query</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-run"><strong>run</strong></a>(self, query: str) -&gt; str</dt><dd><tt>Performs&nbsp;an&nbsp;arxiv&nbsp;search&nbsp;and&nbsp;A&nbsp;single&nbsp;string<br>
+with&nbsp;the&nbsp;publish&nbsp;date,&nbsp;title,&nbsp;authors,&nbsp;and&nbsp;summary<br>
+for&nbsp;each&nbsp;article&nbsp;separated&nbsp;by&nbsp;two&nbsp;newlines.<br>
+&nbsp;<br>
+If&nbsp;an&nbsp;error&nbsp;occurs&nbsp;or&nbsp;no&nbsp;documents&nbsp;found,&nbsp;error&nbsp;text<br>
+is&nbsp;returned&nbsp;instead.&nbsp;Wrapper&nbsp;for<br>
+<a href="https://lukasschwab.me/arxiv.py/index.html#Search">https://lukasschwab.me/arxiv.py/index.html#Search</a><br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;query:&nbsp;a&nbsp;plaintext&nbsp;search&nbsp;query</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="langchain_community.utilities.arxiv.html#ArxivAPIWrapper">langchain_community.utilities.arxiv.ArxivAPIWrapper</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-validate_environment"><strong>validate_environment</strong></a>(values: Dict) -&gt; Dict<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Validate&nbsp;that&nbsp;the&nbsp;python&nbsp;package&nbsp;exists&nbsp;in&nbsp;environment.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__eq__"><strong>__eq__</strong></a>(self, other: Any) -&gt; bool</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__getstate__"><strong>__getstate__</strong></a>(self) -&gt; 'DictAny'</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__iter__"><strong>__iter__</strong></a>(self) -&gt; 'TupleGenerator'</dt><dd><tt>so&nbsp;`<a href="#GraphGoogleScholarRetriever-dict">dict</a>(model)`&nbsp;works</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__setattr__"><strong>__setattr__</strong></a>(self, name, value)</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__setstate__"><strong>__setstate__</strong></a>(self, state: 'DictAny') -&gt; None</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-copy"><strong>copy</strong></a>(self: 'Model', *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, update: Optional[ForwardRef('DictStrAny')] = None, deep: bool = False) -&gt; 'Model'</dt><dd><tt>Duplicate&nbsp;a&nbsp;model,&nbsp;optionally&nbsp;choose&nbsp;which&nbsp;fields&nbsp;to&nbsp;include,&nbsp;exclude&nbsp;and&nbsp;change.<br>
+&nbsp;<br>
+:param&nbsp;include:&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;new&nbsp;model<br>
+:param&nbsp;exclude:&nbsp;fields&nbsp;to&nbsp;exclude&nbsp;from&nbsp;new&nbsp;model,&nbsp;as&nbsp;with&nbsp;values&nbsp;this&nbsp;takes&nbsp;precedence&nbsp;over&nbsp;include<br>
+:param&nbsp;update:&nbsp;values&nbsp;to&nbsp;change/add&nbsp;in&nbsp;the&nbsp;new&nbsp;model.&nbsp;Note:&nbsp;the&nbsp;data&nbsp;is&nbsp;not&nbsp;validated&nbsp;before&nbsp;creating<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;new&nbsp;model:&nbsp;you&nbsp;should&nbsp;trust&nbsp;this&nbsp;data<br>
+:param&nbsp;deep:&nbsp;set&nbsp;to&nbsp;`True`&nbsp;to&nbsp;make&nbsp;a&nbsp;deep&nbsp;copy&nbsp;of&nbsp;the&nbsp;model<br>
+:return:&nbsp;new&nbsp;model&nbsp;instance</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-dict"><strong>dict</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False) -&gt; 'DictStrAny'</dt><dd><tt>Generate&nbsp;a&nbsp;dictionary&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;optionally&nbsp;specifying&nbsp;which&nbsp;fields&nbsp;to&nbsp;include&nbsp;or&nbsp;exclude.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-json"><strong>json</strong></a>(self, *, include: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, exclude: Union[ForwardRef('AbstractSetIntStr'), ForwardRef('MappingIntStrAny'), NoneType] = None, by_alias: bool = False, skip_defaults: Optional[bool] = None, exclude_unset: bool = False, exclude_defaults: bool = False, exclude_none: bool = False, encoder: Optional[Callable[[Any], Any]] = None, models_as_dict: bool = True, **dumps_kwargs: Any) -&gt; str</dt><dd><tt>Generate&nbsp;a&nbsp;JSON&nbsp;representation&nbsp;of&nbsp;the&nbsp;model,&nbsp;`include`&nbsp;and&nbsp;`exclude`&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`<a href="#GraphGoogleScholarRetriever-dict">dict</a>()`.<br>
+&nbsp;<br>
+`encoder`&nbsp;is&nbsp;an&nbsp;optional&nbsp;function&nbsp;to&nbsp;supply&nbsp;as&nbsp;`default`&nbsp;to&nbsp;json.dumps(),&nbsp;other&nbsp;arguments&nbsp;as&nbsp;per&nbsp;`json.dumps()`.</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__get_validators__"><strong>__get_validators__</strong></a>() -&gt; 'CallableGenerator'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__try_update_forward_refs__"><strong>__try_update_forward_refs__</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Same&nbsp;as&nbsp;update_forward_refs&nbsp;but&nbsp;will&nbsp;not&nbsp;raise&nbsp;exception<br>
+when&nbsp;forward&nbsp;references&nbsp;are&nbsp;not&nbsp;defined.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-construct"><strong>construct</strong></a>(_fields_set: Optional[ForwardRef('SetStr')] = None, **values: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;model&nbsp;setting&nbsp;__dict__&nbsp;and&nbsp;__fields_set__&nbsp;from&nbsp;trusted&nbsp;or&nbsp;pre-validated&nbsp;data.<br>
+Default&nbsp;values&nbsp;are&nbsp;respected,&nbsp;but&nbsp;no&nbsp;other&nbsp;validation&nbsp;is&nbsp;performed.<br>
+Behaves&nbsp;as&nbsp;if&nbsp;`Config.extra&nbsp;=&nbsp;'allow'`&nbsp;was&nbsp;set&nbsp;since&nbsp;it&nbsp;adds&nbsp;all&nbsp;passed&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-from_orm"><strong>from_orm</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-parse_file"><strong>parse_file</strong></a>(path: Union[str, pathlib.Path], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-parse_obj"><strong>parse_obj</strong></a>(obj: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-parse_raw"><strong>parse_raw</strong></a>(b: Union[str, bytes], *, content_type: str = None, encoding: str = 'utf8', proto: pydantic.v1.parse.Protocol = None, allow_pickle: bool = False) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-schema"><strong>schema</strong></a>(by_alias: bool = True, ref_template: str = '#/definitions/{model}') -&gt; 'DictStrAny'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-schema_json"><strong>schema_json</strong></a>(*, by_alias: bool = True, ref_template: str = '#/definitions/{model}', **dumps_kwargs: Any) -&gt; str<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-update_forward_refs"><strong>update_forward_refs</strong></a>(**localns: Any) -&gt; None<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt><dd><tt>Try&nbsp;to&nbsp;update&nbsp;ForwardRefs&nbsp;on&nbsp;fields&nbsp;based&nbsp;on&nbsp;this&nbsp;Model,&nbsp;globalns&nbsp;and&nbsp;localns.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-validate"><strong>validate</strong></a>(value: Any) -&gt; 'Model'<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+<hr>
+Data descriptors inherited from <a href="pydantic.v1.main.html#BaseModel">pydantic.v1.main.BaseModel</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__fields_set__</strong></dt>
+</dl>
+<hr>
+Methods inherited from <a href="pydantic.v1.utils.html#Representation">pydantic.v1.utils.Representation</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__pretty__"><strong>__pretty__</strong></a>(self, fmt: Callable[[Any], Any], **kwargs: Any) -&gt; Generator[Any, NoneType, NoneType]</dt><dd><tt>Used&nbsp;by&nbsp;devtools&nbsp;(<a href="https://python-devtools.helpmanual.io/">https://python-devtools.helpmanual.io/</a>)&nbsp;to&nbsp;provide&nbsp;a&nbsp;human&nbsp;readable&nbsp;representations&nbsp;of&nbsp;objects</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__repr__"><strong>__repr__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__repr_name__"><strong>__repr_name__</strong></a>(self) -&gt; str</dt><dd><tt>Name&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class,&nbsp;used&nbsp;in&nbsp;__repr__.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__repr_str__"><strong>__repr_str__</strong></a>(self, join_str: str) -&gt; str</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__rich_repr__"><strong>__rich_repr__</strong></a>(self) -&gt; 'RichReprResult'</dt><dd><tt>Get&nbsp;fields&nbsp;for&nbsp;Rich&nbsp;library</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__str__"><strong>__str__</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__or__"><strong>__or__</strong></a>(self, other: 'Union[Runnable[Any, Other], Callable[[Any], Other], Callable[[Iterator[Any]], Iterator[Other]], Mapping[str, Union[Runnable[Any, Other], Callable[[Any], Other], Any]]]') -&gt; 'RunnableSerializable[Input, Other]'</dt><dd><tt>Compose&nbsp;this&nbsp;runnable&nbsp;with&nbsp;another&nbsp;object&nbsp;to&nbsp;create&nbsp;a&nbsp;RunnableSequence.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-__ror__"><strong>__ror__</strong></a>(self, other: 'Union[Runnable[Other, Any], Callable[[Other], Any], Callable[[Iterator[Other]], Iterator[Any]], Mapping[str, Union[Runnable[Other, Any], Callable[[Other], Any], Any]]]') -&gt; 'RunnableSerializable[Other, Output]'</dt><dd><tt>Compose&nbsp;this&nbsp;runnable&nbsp;with&nbsp;another&nbsp;object&nbsp;to&nbsp;create&nbsp;a&nbsp;RunnableSequence.</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-abatch"><strong>abatch</strong></a>(self, inputs: 'List[Input]', config: 'Optional[Union[RunnableConfig, List[RunnableConfig]]]' = None, *, return_exceptions: 'bool' = False, **kwargs: 'Optional[Any]') -&gt; 'List[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;runs&nbsp;ainvoke&nbsp;in&nbsp;parallel&nbsp;using&nbsp;asyncio.gather.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;batch&nbsp;works&nbsp;well&nbsp;for&nbsp;IO&nbsp;bound&nbsp;runnables.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;batch&nbsp;more&nbsp;efficiently;<br>
+e.g.,&nbsp;if&nbsp;the&nbsp;underlying&nbsp;runnable&nbsp;uses&nbsp;an&nbsp;API&nbsp;which&nbsp;supports&nbsp;a&nbsp;batch&nbsp;mode.</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-abatch_as_completed"><strong>abatch_as_completed</strong></a>(self, inputs: 'List[Input]', config: 'Optional[Union[RunnableConfig, List[RunnableConfig]]]' = None, *, return_exceptions: 'bool' = False, **kwargs: 'Optional[Any]') -&gt; 'AsyncIterator[Tuple[int, Union[Output, Exception]]]'</dt><dd><tt>Run&nbsp;ainvoke&nbsp;in&nbsp;parallel&nbsp;on&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs,<br>
+yielding&nbsp;results&nbsp;as&nbsp;they&nbsp;complete.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-assign"><strong>assign</strong></a>(self, **kwargs: 'Union[Runnable[Dict[str, Any], Any], Callable[[Dict[str, Any]], Any], Mapping[str, Union[Runnable[Dict[str, Any], Any], Callable[[Dict[str, Any]], Any]]]]') -&gt; 'RunnableSerializable[Any, Any]'</dt><dd><tt>Assigns&nbsp;new&nbsp;fields&nbsp;to&nbsp;the&nbsp;dict&nbsp;output&nbsp;of&nbsp;this&nbsp;runnable.<br>
+Returns&nbsp;a&nbsp;new&nbsp;runnable.<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_community.llms.fake&nbsp;import&nbsp;FakeStreamingListLLM<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.output_parsers&nbsp;import&nbsp;StrOutputParser<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.prompts&nbsp;import&nbsp;SystemMessagePromptTemplate<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;Runnable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;operator&nbsp;import&nbsp;itemgetter<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prompt&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SystemMessagePromptTemplate.from_template("You&nbsp;are&nbsp;a&nbsp;nice&nbsp;assistant.")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;"{question}"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;llm&nbsp;=&nbsp;FakeStreamingListLLM(responses=["foo-lish"])<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain:&nbsp;Runnable&nbsp;=&nbsp;prompt&nbsp;|&nbsp;llm&nbsp;|&nbsp;{"str":&nbsp;StrOutputParser()}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain_with_assign&nbsp;=&nbsp;chain.<a href="#GraphGoogleScholarRetriever-assign">assign</a>(hello=itemgetter("str")&nbsp;|&nbsp;llm)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(chain_with_assign.input_schema.<a href="#GraphGoogleScholarRetriever-schema">schema</a>())<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;{'title':&nbsp;'PromptInput',&nbsp;'type':&nbsp;'object',&nbsp;'properties':<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{'question':&nbsp;{'title':&nbsp;'Question',&nbsp;'type':&nbsp;'string'}}}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(chain_with_assign.output_schema.<a href="#GraphGoogleScholarRetriever-schema">schema</a>())&nbsp;#<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{'title':&nbsp;'RunnableSequenceOutput',&nbsp;'type':&nbsp;'object',&nbsp;'properties':<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{'str':&nbsp;{'title':&nbsp;'Str',<br>
+&nbsp;&nbsp;&nbsp;&nbsp;'type':&nbsp;'string'},&nbsp;'hello':&nbsp;{'title':&nbsp;'Hello',&nbsp;'type':&nbsp;'string'}}}</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-astream"><strong>astream</strong></a>(self, input: 'Input', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Optional[Any]') -&gt; 'AsyncIterator[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;of&nbsp;astream,&nbsp;which&nbsp;calls&nbsp;ainvoke.<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;support&nbsp;streaming&nbsp;output.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-astream_events"><strong>astream_events</strong></a>(self, input: 'Any', config: 'Optional[RunnableConfig]' = None, *, version: "Literal['v1']", include_names: 'Optional[Sequence[str]]' = None, include_types: 'Optional[Sequence[str]]' = None, include_tags: 'Optional[Sequence[str]]' = None, exclude_names: 'Optional[Sequence[str]]' = None, exclude_types: 'Optional[Sequence[str]]' = None, exclude_tags: 'Optional[Sequence[str]]' = None, **kwargs: 'Any') -&gt; 'AsyncIterator[StreamEvent]'</dt><dd><tt>[*Beta*]&nbsp;Generate&nbsp;a&nbsp;stream&nbsp;of&nbsp;events.<br>
+&nbsp;<br>
+Use&nbsp;to&nbsp;create&nbsp;an&nbsp;iterator&nbsp;over&nbsp;StreamEvents&nbsp;that&nbsp;provide&nbsp;real-time&nbsp;information<br>
+about&nbsp;the&nbsp;progress&nbsp;of&nbsp;the&nbsp;runnable,&nbsp;including&nbsp;StreamEvents&nbsp;from&nbsp;intermediate<br>
+results.<br>
+&nbsp;<br>
+A&nbsp;StreamEvent&nbsp;is&nbsp;a&nbsp;dictionary&nbsp;with&nbsp;the&nbsp;following&nbsp;schema:<br>
+&nbsp;<br>
+-&nbsp;``event``:&nbsp;**str**&nbsp;-&nbsp;Event&nbsp;names&nbsp;are&nbsp;of&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;format:&nbsp;on_[runnable_type]_(start|stream|end).<br>
+-&nbsp;``name``:&nbsp;**str**&nbsp;-&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;runnable&nbsp;that&nbsp;generated&nbsp;the&nbsp;event.<br>
+-&nbsp;``run_id``:&nbsp;**str**&nbsp;-&nbsp;randomly&nbsp;generated&nbsp;ID&nbsp;associated&nbsp;with&nbsp;the&nbsp;given&nbsp;execution&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;runnable&nbsp;that&nbsp;emitted&nbsp;the&nbsp;event.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;child&nbsp;runnable&nbsp;that&nbsp;gets&nbsp;invoked&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;execution&nbsp;of&nbsp;a<br>
+&nbsp;&nbsp;&nbsp;&nbsp;parent&nbsp;runnable&nbsp;is&nbsp;assigned&nbsp;its&nbsp;own&nbsp;unique&nbsp;ID.<br>
+-&nbsp;``tags``:&nbsp;**Optional[List[str]]**&nbsp;-&nbsp;The&nbsp;tags&nbsp;of&nbsp;the&nbsp;runnable&nbsp;that&nbsp;generated<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;event.<br>
+-&nbsp;``metadata``:&nbsp;**Optional[Dict[str,&nbsp;Any]]**&nbsp;-&nbsp;The&nbsp;metadata&nbsp;of&nbsp;the&nbsp;runnable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;that&nbsp;generated&nbsp;the&nbsp;event.<br>
+-&nbsp;``data``:&nbsp;**Dict[str,&nbsp;Any]**<br>
+&nbsp;<br>
+&nbsp;<br>
+Below&nbsp;is&nbsp;a&nbsp;table&nbsp;that&nbsp;illustrates&nbsp;some&nbsp;evens&nbsp;that&nbsp;might&nbsp;be&nbsp;emitted&nbsp;by&nbsp;various<br>
+chains.&nbsp;Metadata&nbsp;fields&nbsp;have&nbsp;been&nbsp;omitted&nbsp;from&nbsp;the&nbsp;table&nbsp;for&nbsp;brevity.<br>
+Chain&nbsp;definitions&nbsp;have&nbsp;been&nbsp;included&nbsp;after&nbsp;the&nbsp;table.<br>
+&nbsp;<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;event&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;chunk&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;input&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;output&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++======================+==================+=================================+===============================================+=================================================+<br>
+|&nbsp;on_chat_model_start&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"messages":&nbsp;[[SystemMessage,&nbsp;HumanMessage]]}&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_chat_model_stream&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;AIMessageChunk(content="hello")&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_chat_model_end&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"messages":&nbsp;[[SystemMessage,&nbsp;HumanMessage]]}&nbsp;|&nbsp;{"generations":&nbsp;[...],&nbsp;"llm_output":&nbsp;None,&nbsp;...}&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_llm_start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{'input':&nbsp;'hello'}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_llm_stream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;'Hello'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_llm_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[model&nbsp;name]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;'Hello&nbsp;human!'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_chain_start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_chain_stream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;"hello&nbsp;world!,&nbsp;goodbye&nbsp;world!"&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_chain_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;format_docs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[Document(...)]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;"hello&nbsp;world!,&nbsp;goodbye&nbsp;world!"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_tool_start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;some_tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"x":&nbsp;1,&nbsp;"y":&nbsp;"2"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_tool_stream&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;some_tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"x":&nbsp;1,&nbsp;"y":&nbsp;"2"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_tool_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;some_tool&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"x":&nbsp;1,&nbsp;"y":&nbsp;"2"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_retriever_start&nbsp;&nbsp;&nbsp;|&nbsp;[retriever&nbsp;name]&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"query":&nbsp;"hello"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_retriever_chunk&nbsp;&nbsp;&nbsp;|&nbsp;[retriever&nbsp;name]&nbsp;|&nbsp;{documents:&nbsp;[...]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_retriever_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[retriever&nbsp;name]&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"query":&nbsp;"hello"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{documents:&nbsp;[...]}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_prompt_start&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[template_name]&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"question":&nbsp;"hello"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+|&nbsp;on_prompt_end&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;[template_name]&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;{"question":&nbsp;"hello"}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;ChatPromptValue(messages:&nbsp;[SystemMessage,&nbsp;...])&nbsp;|<br>
++----------------------+------------------+---------------------------------+-----------------------------------------------+-------------------------------------------------+<br>
+&nbsp;<br>
+Here&nbsp;are&nbsp;declarations&nbsp;associated&nbsp;with&nbsp;the&nbsp;events&nbsp;shown&nbsp;above:<br>
+&nbsp;<br>
+`format_docs`:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;format_docs(docs:&nbsp;List[Document])&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''Format&nbsp;the&nbsp;docs.'''<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;",&nbsp;".join([doc.page_content&nbsp;for&nbsp;doc&nbsp;in&nbsp;docs])<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;format_docs&nbsp;=&nbsp;RunnableLambda(format_docs)<br>
+&nbsp;<br>
+`some_tool`:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;@tool<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;some_tool(x:&nbsp;int,&nbsp;y:&nbsp;str)&nbsp;-&gt;&nbsp;dict:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''Some_tool.'''<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;{"x":&nbsp;x,&nbsp;"y":&nbsp;y}<br>
+&nbsp;<br>
+`prompt`:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;template&nbsp;=&nbsp;ChatPromptTemplate.from_messages(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[("system",&nbsp;"You&nbsp;are&nbsp;Cat&nbsp;Agent&nbsp;007"),&nbsp;("human",&nbsp;"{question}")]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#GraphGoogleScholarRetriever-with_config">with_config</a>({"run_name":&nbsp;"my_template",&nbsp;"tags":&nbsp;["my_template"]})<br>
+&nbsp;<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;async&nbsp;def&nbsp;reverse(s:&nbsp;str)&nbsp;-&gt;&nbsp;str:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;s[::-1]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableLambda(func=reverse)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;events&nbsp;=&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;event&nbsp;async&nbsp;for&nbsp;event&nbsp;in&nbsp;chain.<a href="#GraphGoogleScholarRetriever-astream_events">astream_events</a>("hello",&nbsp;version="v1")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;will&nbsp;produce&nbsp;the&nbsp;following&nbsp;events&nbsp;(run_id&nbsp;has&nbsp;been&nbsp;omitted&nbsp;for&nbsp;brevity):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"input":&nbsp;"hello"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_start",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"chunk":&nbsp;"olleh"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_stream",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"data":&nbsp;{"output":&nbsp;"olleh"},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"event":&nbsp;"on_chain_end",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadata":&nbsp;{},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name":&nbsp;"reverse",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags":&nbsp;[],<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;]<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;version:&nbsp;The&nbsp;version&nbsp;of&nbsp;the&nbsp;schema&nbsp;to&nbsp;use.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Currently&nbsp;only&nbsp;version&nbsp;1&nbsp;is&nbsp;available.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No&nbsp;default&nbsp;will&nbsp;be&nbsp;assigned&nbsp;until&nbsp;the&nbsp;API&nbsp;is&nbsp;stabilized.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_names:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_types:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_tags:&nbsp;Only&nbsp;include&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_names:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_types:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_tags:&nbsp;Exclude&nbsp;events&nbsp;from&nbsp;runnables&nbsp;with&nbsp;matching&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs:&nbsp;Additional&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These&nbsp;will&nbsp;be&nbsp;passed&nbsp;to&nbsp;astream_log&nbsp;as&nbsp;this&nbsp;implementation<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;astream_events&nbsp;is&nbsp;built&nbsp;on&nbsp;top&nbsp;of&nbsp;astream_log.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;An&nbsp;async&nbsp;stream&nbsp;of&nbsp;StreamEvents.<br>
+&nbsp;<br>
+Notes<br>
+-----<br>
+..&nbsp;beta::<br>
+&nbsp;&nbsp;&nbsp;This&nbsp;API&nbsp;is&nbsp;in&nbsp;beta&nbsp;and&nbsp;may&nbsp;change&nbsp;in&nbsp;the&nbsp;future.</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-astream_log"><strong>astream_log</strong></a>(self, input: 'Any', config: 'Optional[RunnableConfig]' = None, *, diff: 'bool' = True, with_streamed_output_list: 'bool' = True, include_names: 'Optional[Sequence[str]]' = None, include_types: 'Optional[Sequence[str]]' = None, include_tags: 'Optional[Sequence[str]]' = None, exclude_names: 'Optional[Sequence[str]]' = None, exclude_types: 'Optional[Sequence[str]]' = None, exclude_tags: 'Optional[Sequence[str]]' = None, **kwargs: 'Any') -&gt; 'Union[AsyncIterator[RunLogPatch], AsyncIterator[RunLog]]'</dt><dd><tt>Stream&nbsp;all&nbsp;output&nbsp;from&nbsp;a&nbsp;runnable,&nbsp;as&nbsp;reported&nbsp;to&nbsp;the&nbsp;callback&nbsp;system.<br>
+This&nbsp;includes&nbsp;all&nbsp;inner&nbsp;runs&nbsp;of&nbsp;LLMs,&nbsp;Retrievers,&nbsp;Tools,&nbsp;etc.<br>
+&nbsp;<br>
+Output&nbsp;is&nbsp;streamed&nbsp;as&nbsp;Log&nbsp;objects,&nbsp;which&nbsp;include&nbsp;a&nbsp;list&nbsp;of<br>
+jsonpatch&nbsp;ops&nbsp;that&nbsp;describe&nbsp;how&nbsp;the&nbsp;state&nbsp;of&nbsp;the&nbsp;run&nbsp;has&nbsp;changed&nbsp;in&nbsp;each<br>
+step,&nbsp;and&nbsp;the&nbsp;final&nbsp;state&nbsp;of&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+The&nbsp;jsonpatch&nbsp;ops&nbsp;can&nbsp;be&nbsp;applied&nbsp;in&nbsp;order&nbsp;to&nbsp;construct&nbsp;state.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;input:&nbsp;The&nbsp;input&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;The&nbsp;config&nbsp;to&nbsp;use&nbsp;for&nbsp;the&nbsp;runnable.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;diff:&nbsp;Whether&nbsp;to&nbsp;yield&nbsp;diffs&nbsp;between&nbsp;each&nbsp;step,&nbsp;or&nbsp;the&nbsp;current&nbsp;state.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;with_streamed_output_list:&nbsp;Whether&nbsp;to&nbsp;yield&nbsp;the&nbsp;streamed_output&nbsp;list.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_names:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_types:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include_tags:&nbsp;Only&nbsp;include&nbsp;logs&nbsp;with&nbsp;these&nbsp;tags.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_names:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;names.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_types:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;types.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude_tags:&nbsp;Exclude&nbsp;logs&nbsp;with&nbsp;these&nbsp;tags.</tt></dd></dl>
+
+<dl><dt>async <a name="GraphGoogleScholarRetriever-atransform"><strong>atransform</strong></a>(self, input: 'AsyncIterator[Input]', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Optional[Any]') -&gt; 'AsyncIterator[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;of&nbsp;atransform,&nbsp;which&nbsp;buffers&nbsp;input&nbsp;and&nbsp;calls&nbsp;astream.<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;start&nbsp;producing&nbsp;output&nbsp;while<br>
+input&nbsp;is&nbsp;still&nbsp;being&nbsp;generated.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-batch"><strong>batch</strong></a>(self, inputs: 'List[Input]', config: 'Optional[Union[RunnableConfig, List[RunnableConfig]]]' = None, *, return_exceptions: 'bool' = False, **kwargs: 'Optional[Any]') -&gt; 'List[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;runs&nbsp;invoke&nbsp;in&nbsp;parallel&nbsp;using&nbsp;a&nbsp;thread&nbsp;pool&nbsp;executor.<br>
+&nbsp;<br>
+The&nbsp;default&nbsp;implementation&nbsp;of&nbsp;batch&nbsp;works&nbsp;well&nbsp;for&nbsp;IO&nbsp;bound&nbsp;runnables.<br>
+&nbsp;<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;batch&nbsp;more&nbsp;efficiently;<br>
+e.g.,&nbsp;if&nbsp;the&nbsp;underlying&nbsp;runnable&nbsp;uses&nbsp;an&nbsp;API&nbsp;which&nbsp;supports&nbsp;a&nbsp;batch&nbsp;mode.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-batch_as_completed"><strong>batch_as_completed</strong></a>(self, inputs: 'List[Input]', config: 'Optional[Union[RunnableConfig, List[RunnableConfig]]]' = None, *, return_exceptions: 'bool' = False, **kwargs: 'Optional[Any]') -&gt; 'Iterator[Tuple[int, Union[Output, Exception]]]'</dt><dd><tt>Run&nbsp;invoke&nbsp;in&nbsp;parallel&nbsp;on&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs,<br>
+yielding&nbsp;results&nbsp;as&nbsp;they&nbsp;complete.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-bind"><strong>bind</strong></a>(self, **kwargs: 'Any') -&gt; 'Runnable[Input, Output]'</dt><dd><tt>Bind&nbsp;arguments&nbsp;to&nbsp;a&nbsp;Runnable,&nbsp;returning&nbsp;a&nbsp;new&nbsp;Runnable.<br>
+&nbsp;<br>
+Useful&nbsp;when&nbsp;a&nbsp;runnable&nbsp;in&nbsp;a&nbsp;chain&nbsp;requires&nbsp;an&nbsp;argument&nbsp;that&nbsp;is&nbsp;not<br>
+in&nbsp;the&nbsp;output&nbsp;of&nbsp;the&nbsp;previous&nbsp;runnable&nbsp;or&nbsp;included&nbsp;in&nbsp;the&nbsp;user&nbsp;input.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_community.chat_models&nbsp;import&nbsp;ChatOllama<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.output_parsers&nbsp;import&nbsp;StrOutputParser<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;llm&nbsp;=&nbsp;ChatOllama(model='llama2')<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Without&nbsp;bind.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;llm<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;StrOutputParser()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("Repeat&nbsp;quoted&nbsp;words&nbsp;exactly:&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Output&nbsp;is&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;With&nbsp;bind.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;llm.<a href="#GraphGoogleScholarRetriever-bind">bind</a>(stop=["three"])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;StrOutputParser()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("Repeat&nbsp;quoted&nbsp;words&nbsp;exactly:&nbsp;'One&nbsp;two&nbsp;three&nbsp;four&nbsp;five.'")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Output&nbsp;is&nbsp;'One&nbsp;two'</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-config_schema"><strong>config_schema</strong></a>(self, *, include: 'Optional[Sequence[str]]' = None) -&gt; 'Type[BaseModel]'</dt><dd><tt>The&nbsp;type&nbsp;of&nbsp;config&nbsp;this&nbsp;runnable&nbsp;accepts&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.<br>
+&nbsp;<br>
+To&nbsp;mark&nbsp;a&nbsp;field&nbsp;as&nbsp;configurable,&nbsp;see&nbsp;the&nbsp;`configurable_fields`<br>
+and&nbsp;`configurable_alternatives`&nbsp;methods.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;include:&nbsp;A&nbsp;list&nbsp;of&nbsp;fields&nbsp;to&nbsp;include&nbsp;in&nbsp;the&nbsp;config&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;config.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_graph"><strong>get_graph</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'Graph'</dt><dd><tt>Return&nbsp;a&nbsp;graph&nbsp;representation&nbsp;of&nbsp;this&nbsp;runnable.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_input_schema"><strong>get_input_schema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'Type[BaseModel]'</dt><dd><tt>Get&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;input&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;<br>
+Runnables&nbsp;that&nbsp;leverage&nbsp;the&nbsp;configurable_fields&nbsp;and&nbsp;configurable_alternatives<br>
+methods&nbsp;will&nbsp;have&nbsp;a&nbsp;dynamic&nbsp;input&nbsp;schema&nbsp;that&nbsp;depends&nbsp;on&nbsp;which<br>
+configuration&nbsp;the&nbsp;runnable&nbsp;is&nbsp;invoked&nbsp;with.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;allows&nbsp;to&nbsp;get&nbsp;an&nbsp;input&nbsp;schema&nbsp;for&nbsp;a&nbsp;specific&nbsp;configuration.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;input.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_name"><strong>get_name</strong></a>(self, suffix: 'Optional[str]' = None, *, name: 'Optional[str]' = None) -&gt; 'str'</dt><dd><tt>Get&nbsp;the&nbsp;name&nbsp;of&nbsp;the&nbsp;runnable.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_output_schema"><strong>get_output_schema</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'Type[BaseModel]'</dt><dd><tt>Get&nbsp;a&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;output&nbsp;to&nbsp;the&nbsp;runnable.<br>
+&nbsp;<br>
+Runnables&nbsp;that&nbsp;leverage&nbsp;the&nbsp;configurable_fields&nbsp;and&nbsp;configurable_alternatives<br>
+methods&nbsp;will&nbsp;have&nbsp;a&nbsp;dynamic&nbsp;output&nbsp;schema&nbsp;that&nbsp;depends&nbsp;on&nbsp;which<br>
+configuration&nbsp;the&nbsp;runnable&nbsp;is&nbsp;invoked&nbsp;with.<br>
+&nbsp;<br>
+This&nbsp;method&nbsp;allows&nbsp;to&nbsp;get&nbsp;an&nbsp;output&nbsp;schema&nbsp;for&nbsp;a&nbsp;specific&nbsp;configuration.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;config:&nbsp;A&nbsp;config&nbsp;to&nbsp;use&nbsp;when&nbsp;generating&nbsp;the&nbsp;schema.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;pydantic&nbsp;model&nbsp;that&nbsp;can&nbsp;be&nbsp;used&nbsp;to&nbsp;validate&nbsp;output.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-get_prompts"><strong>get_prompts</strong></a>(self, config: 'Optional[RunnableConfig]' = None) -&gt; 'List[BasePromptTemplate]'</dt></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-map"><strong>map</strong></a>(self) -&gt; 'Runnable[List[Input], List[Output]]'</dt><dd><tt>Return&nbsp;a&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;maps&nbsp;a&nbsp;list&nbsp;of&nbsp;inputs&nbsp;to&nbsp;a&nbsp;list&nbsp;of&nbsp;outputs,<br>
+by&nbsp;calling&nbsp;<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>()&nbsp;with&nbsp;each&nbsp;input.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_lambda(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(_lambda)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(runnable.<a href="#GraphGoogleScholarRetriever-map">map</a>().<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>([1,&nbsp;2,&nbsp;3]))&nbsp;#&nbsp;[2,&nbsp;3,&nbsp;4]</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-pick"><strong>pick</strong></a>(self, keys: 'Union[str, List[str]]') -&gt; 'RunnableSerializable[Any, Any]'</dt><dd><tt>Pick&nbsp;keys&nbsp;from&nbsp;the&nbsp;dict&nbsp;output&nbsp;of&nbsp;this&nbsp;runnable.<br>
+&nbsp;<br>
+Pick&nbsp;single&nbsp;key:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;json<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;RunnableMap<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_str&nbsp;=&nbsp;RunnableLambda(str)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_json&nbsp;=&nbsp;RunnableLambda(json.loads)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableMap(str=as_str,&nbsp;json=as_json)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"str":&nbsp;"[1,&nbsp;2,&nbsp;3]",&nbsp;"json":&nbsp;[1,&nbsp;2,&nbsp;3]}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_only_chain&nbsp;=&nbsp;chain.<a href="#GraphGoogleScholarRetriever-pick">pick</a>("json")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_only_chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;[1,&nbsp;2,&nbsp;3]<br>
+&nbsp;<br>
+Pick&nbsp;list&nbsp;of&nbsp;keys:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Any<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;json<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda,&nbsp;RunnableMap<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_str&nbsp;=&nbsp;RunnableLambda(str)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;as_json&nbsp;=&nbsp;RunnableLambda(json.loads)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;as_bytes(x:&nbsp;Any)&nbsp;-&gt;&nbsp;bytes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;bytes(x,&nbsp;"utf-8")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain&nbsp;=&nbsp;RunnableMap(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str=as_str,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json=as_json,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bytes=RunnableLambda(as_bytes)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"str":&nbsp;"[1,&nbsp;2,&nbsp;3]",&nbsp;"json":&nbsp;[1,&nbsp;2,&nbsp;3],&nbsp;"bytes":&nbsp;b"[1,&nbsp;2,&nbsp;3]"}<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_and_bytes_chain&nbsp;=&nbsp;chain.<a href="#GraphGoogleScholarRetriever-pick">pick</a>(["json",&nbsp;"bytes"])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;json_and_bytes_chain.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>("[1,&nbsp;2,&nbsp;3]")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;{"json":&nbsp;[1,&nbsp;2,&nbsp;3],&nbsp;"bytes":&nbsp;b"[1,&nbsp;2,&nbsp;3]"}</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-pipe"><strong>pipe</strong></a>(self, *others: 'Union[Runnable[Any, Other], Callable[[Any], Other]]', name: 'Optional[str]' = None) -&gt; 'RunnableSerializable[Input, Other]'</dt><dd><tt>Compose&nbsp;this&nbsp;Runnable&nbsp;with&nbsp;Runnable-like&nbsp;objects&nbsp;to&nbsp;make&nbsp;a&nbsp;RunnableSequence.<br>
+&nbsp;<br>
+Equivalent&nbsp;to&nbsp;`RunnableSequence(self,&nbsp;*others)`&nbsp;or&nbsp;`self&nbsp;|&nbsp;others[0]&nbsp;|&nbsp;...`<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;add_one(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;+&nbsp;1<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;mul_two(x:&nbsp;int)&nbsp;-&gt;&nbsp;int:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;x&nbsp;*&nbsp;2<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable_1&nbsp;=&nbsp;RunnableLambda(add_one)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable_2&nbsp;=&nbsp;RunnableLambda(mul_two)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence&nbsp;=&nbsp;runnable_1.<a href="#GraphGoogleScholarRetriever-pipe">pipe</a>(runnable_2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Or&nbsp;equivalently:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;sequence&nbsp;=&nbsp;runnable_1&nbsp;|&nbsp;runnable_2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;sequence&nbsp;=&nbsp;RunnableSequence(first=runnable_1,&nbsp;last=runnable_2)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence.<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;sequence.<a href="#GraphGoogleScholarRetriever-ainvoke">ainvoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;4<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sequence.<a href="#GraphGoogleScholarRetriever-batch">batch</a>([1,&nbsp;2,&nbsp;3])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;await&nbsp;sequence.<a href="#GraphGoogleScholarRetriever-abatch">abatch</a>([1,&nbsp;2,&nbsp;3])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;-&gt;&nbsp;[4,&nbsp;6,&nbsp;8]</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-stream"><strong>stream</strong></a>(self, input: 'Input', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Optional[Any]') -&gt; 'Iterator[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;of&nbsp;stream,&nbsp;which&nbsp;calls&nbsp;invoke.<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;support&nbsp;streaming&nbsp;output.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-transform"><strong>transform</strong></a>(self, input: 'Iterator[Input]', config: 'Optional[RunnableConfig]' = None, **kwargs: 'Optional[Any]') -&gt; 'Iterator[Output]'</dt><dd><tt>Default&nbsp;implementation&nbsp;of&nbsp;transform,&nbsp;which&nbsp;buffers&nbsp;input&nbsp;and&nbsp;then&nbsp;calls&nbsp;stream.<br>
+Subclasses&nbsp;should&nbsp;override&nbsp;this&nbsp;method&nbsp;if&nbsp;they&nbsp;can&nbsp;start&nbsp;producing&nbsp;output&nbsp;while<br>
+input&nbsp;is&nbsp;still&nbsp;being&nbsp;generated.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-with_config"><strong>with_config</strong></a>(self, config: 'Optional[RunnableConfig]' = None, **kwargs: 'Any') -&gt; 'Runnable[Input, Output]'</dt><dd><tt>Bind&nbsp;config&nbsp;to&nbsp;a&nbsp;Runnable,&nbsp;returning&nbsp;a&nbsp;new&nbsp;Runnable.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-with_fallbacks"><strong>with_fallbacks</strong></a>(self, fallbacks: 'Sequence[Runnable[Input, Output]]', *, exceptions_to_handle: 'Tuple[Type[BaseException], ...]' = (&lt;class 'Exception'&gt;,), exception_key: 'Optional[str]' = None) -&gt; 'RunnableWithFallbacksT[Input, Output]'</dt><dd><tt>Add&nbsp;fallbacks&nbsp;to&nbsp;a&nbsp;runnable,&nbsp;returning&nbsp;a&nbsp;new&nbsp;Runnable.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;typing&nbsp;import&nbsp;Iterator<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableGenerator<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_generate_immediate_error(input:&nbsp;Iterator)&nbsp;-&gt;&nbsp;Iterator[str]:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;ValueError()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;""<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_generate(input:&nbsp;Iterator)&nbsp;-&gt;&nbsp;Iterator[str]:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield&nbsp;from&nbsp;"foo&nbsp;bar"<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableGenerator(_generate_immediate_error).<a href="#GraphGoogleScholarRetriever-with_fallbacks">with_fallbacks</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[RunnableGenerator(_generate)]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(''.join(runnable.<a href="#GraphGoogleScholarRetriever-stream">stream</a>({})))&nbsp;#foo&nbsp;bar<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallbacks:&nbsp;A&nbsp;sequence&nbsp;of&nbsp;runnables&nbsp;to&nbsp;try&nbsp;if&nbsp;the&nbsp;original&nbsp;runnable&nbsp;fails.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exceptions_to_handle:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;exception&nbsp;types&nbsp;to&nbsp;handle.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exception_key:&nbsp;If&nbsp;string&nbsp;is&nbsp;specified&nbsp;then&nbsp;handled&nbsp;exceptions&nbsp;will&nbsp;be&nbsp;passed<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;fallbacks&nbsp;as&nbsp;part&nbsp;of&nbsp;the&nbsp;input&nbsp;under&nbsp;the&nbsp;specified&nbsp;key.&nbsp;If&nbsp;None,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;exceptions&nbsp;will&nbsp;not&nbsp;be&nbsp;passed&nbsp;to&nbsp;fallbacks.&nbsp;If&nbsp;used,&nbsp;the&nbsp;base&nbsp;runnable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;its&nbsp;fallbacks&nbsp;must&nbsp;accept&nbsp;a&nbsp;dictionary&nbsp;as&nbsp;input.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;will&nbsp;try&nbsp;the&nbsp;original&nbsp;runnable,&nbsp;and&nbsp;then&nbsp;each<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fallback&nbsp;in&nbsp;order,&nbsp;upon&nbsp;failures.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-with_listeners"><strong>with_listeners</strong></a>(self, *, on_start: 'Optional[Listener]' = None, on_end: 'Optional[Listener]' = None, on_error: 'Optional[Listener]' = None) -&gt; 'Runnable[Input, Output]'</dt><dd><tt>Bind&nbsp;lifecycle&nbsp;listeners&nbsp;to&nbsp;a&nbsp;Runnable,&nbsp;returning&nbsp;a&nbsp;new&nbsp;Runnable.<br>
+&nbsp;<br>
+on_start:&nbsp;Called&nbsp;before&nbsp;the&nbsp;runnable&nbsp;starts&nbsp;running,&nbsp;with&nbsp;the&nbsp;Run&nbsp;object.<br>
+on_end:&nbsp;Called&nbsp;after&nbsp;the&nbsp;runnable&nbsp;finishes&nbsp;running,&nbsp;with&nbsp;the&nbsp;Run&nbsp;object.<br>
+on_error:&nbsp;Called&nbsp;if&nbsp;the&nbsp;runnable&nbsp;throws&nbsp;an&nbsp;error,&nbsp;with&nbsp;the&nbsp;Run&nbsp;object.<br>
+&nbsp;<br>
+The&nbsp;Run&nbsp;object&nbsp;contains&nbsp;information&nbsp;about&nbsp;the&nbsp;run,&nbsp;including&nbsp;its&nbsp;id,<br>
+type,&nbsp;input,&nbsp;output,&nbsp;error,&nbsp;start_time,&nbsp;end_time,&nbsp;and&nbsp;any&nbsp;tags&nbsp;or&nbsp;metadata<br>
+added&nbsp;to&nbsp;the&nbsp;run.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;&nbsp;&nbsp;&nbsp;import&nbsp;time<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;test_runnable(time_to_sleep&nbsp;:&nbsp;int):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;time.sleep(time_to_sleep)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;fn_start(run_obj&nbsp;:&nbsp;Runnable):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("start_time:",&nbsp;run_obj.start_time)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;fn_end(run_obj&nbsp;:&nbsp;Runnable):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("end_time:",&nbsp;run_obj.end_time)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;RunnableLambda(test_runnable).<a href="#GraphGoogleScholarRetriever-with_listeners">with_listeners</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_start=fn_start,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;on_end=fn_end<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>(2)</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-with_retry"><strong>with_retry</strong></a>(self, *, retry_if_exception_type: 'Tuple[Type[BaseException], ...]' = (&lt;class 'Exception'&gt;,), wait_exponential_jitter: 'bool' = True, stop_after_attempt: 'int' = 3) -&gt; 'Runnable[Input, Output]'</dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;retries&nbsp;the&nbsp;original&nbsp;runnable&nbsp;on&nbsp;exceptions.<br>
+&nbsp;<br>
+Example:<br>
+&nbsp;<br>
+..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_core.runnables&nbsp;import&nbsp;RunnableLambda<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;count&nbsp;=&nbsp;0<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def&nbsp;_lambda(x:&nbsp;int)&nbsp;-&gt;&nbsp;None:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;global&nbsp;count<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count&nbsp;=&nbsp;count&nbsp;+&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;x&nbsp;==&nbsp;1:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;raise&nbsp;ValueError("x&nbsp;is&nbsp;1")<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;runnable&nbsp;=&nbsp;RunnableLambda(_lambda)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;try:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runnable.<a href="#GraphGoogleScholarRetriever-with_retry">with_retry</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stop_after_attempt=2,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;retry_if_exception_type=(ValueError,),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;).<a href="#GraphGoogleScholarRetriever-invoke">invoke</a>(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;except&nbsp;ValueError:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;assert&nbsp;(count&nbsp;==&nbsp;2)<br>
+&nbsp;<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;retry_if_exception_type:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;exception&nbsp;types&nbsp;to&nbsp;retry&nbsp;on<br>
+&nbsp;&nbsp;&nbsp;&nbsp;wait_exponential_jitter:&nbsp;Whether&nbsp;to&nbsp;add&nbsp;jitter&nbsp;to&nbsp;the&nbsp;wait&nbsp;time<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;between&nbsp;retries<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stop_after_attempt:&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;attempts&nbsp;to&nbsp;make&nbsp;before&nbsp;giving&nbsp;up<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;new&nbsp;Runnable&nbsp;that&nbsp;retries&nbsp;the&nbsp;original&nbsp;runnable&nbsp;on&nbsp;exceptions.</tt></dd></dl>
+
+<dl><dt><a name="GraphGoogleScholarRetriever-with_types"><strong>with_types</strong></a>(self, *, input_type: 'Optional[Type[Input]]' = None, output_type: 'Optional[Type[Output]]' = None) -&gt; 'Runnable[Input, Output]'</dt><dd><tt>Bind&nbsp;input&nbsp;and&nbsp;output&nbsp;types&nbsp;to&nbsp;a&nbsp;Runnable,&nbsp;returning&nbsp;a&nbsp;new&nbsp;Runnable.</tt></dd></dl>
+
+<hr>
+Readonly properties inherited from <a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a>:<br>
+<dl><dt><strong>InputType</strong></dt>
+<dd><tt>The&nbsp;type&nbsp;of&nbsp;input&nbsp;this&nbsp;runnable&nbsp;accepts&nbsp;specified&nbsp;as&nbsp;a&nbsp;type&nbsp;annotation.</tt></dd>
+</dl>
+<dl><dt><strong>OutputType</strong></dt>
+<dd><tt>The&nbsp;type&nbsp;of&nbsp;output&nbsp;this&nbsp;runnable&nbsp;produces&nbsp;specified&nbsp;as&nbsp;a&nbsp;type&nbsp;annotation.</tt></dd>
+</dl>
+<dl><dt><strong>config_specs</strong></dt>
+<dd><tt>List&nbsp;configurable&nbsp;fields&nbsp;for&nbsp;this&nbsp;runnable.</tt></dd>
+</dl>
+<dl><dt><strong>input_schema</strong></dt>
+<dd><tt>The&nbsp;type&nbsp;of&nbsp;input&nbsp;this&nbsp;runnable&nbsp;accepts&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.</tt></dd>
+</dl>
+<dl><dt><strong>output_schema</strong></dt>
+<dd><tt>The&nbsp;type&nbsp;of&nbsp;output&nbsp;this&nbsp;runnable&nbsp;produces&nbsp;specified&nbsp;as&nbsp;a&nbsp;pydantic&nbsp;model.</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="langchain_core.runnables.base.html#Runnable">langchain_core.runnables.base.Runnable</a>:<br>
+<dl><dt><strong>name</strong> = None</dl>
+
+<hr>
+Class methods inherited from <a href="typing.html#Generic">typing.Generic</a>:<br>
+<dl><dt><a name="GraphGoogleScholarRetriever-__class_getitem__"><strong>__class_getitem__</strong></a>(params)<font color="#909090"><font face="helvetica, arial"> from <a href="pydantic.v1.main.html#ModelMetaclass">pydantic.v1.main.ModelMetaclass</a></font></font></dt></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cmp_to_key"><strong>cmp_to_key</strong></a>(...)</dt><dd><tt>Convert&nbsp;a&nbsp;cmp=&nbsp;function&nbsp;into&nbsp;a&nbsp;key=&nbsp;function.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Callable</strong> = typing.Callable<br>
+<strong>ClassVar</strong> = typing.ClassVar<br>
+<strong>Collection</strong> = typing.Collection<br>
+<strong>Dict</strong> = typing.Dict<br>
+<strong>Iterable</strong> = typing.Iterable<br>
+<strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>Type</strong> = typing.Type<br>
+<strong>retriever_registry</strong> = Registry(name='RetrieverRegistry', entries={'gra...ever.general_docs.GraphGeneralVectorRetriever'&gt;})</td></tr></table>
+</body></html>

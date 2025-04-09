@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.message</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.message</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/message.py">/data/jiarui_ji/GraphAgent/LLMGraph/message.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="agentscope.message.html#Msg">agentscope.message.Msg</a>(<a href="agentscope.message.html#MessageBase">agentscope.message.MessageBase</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.message.html#Message">Message</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Message">class <strong>Message</strong></a>(<a href="agentscope.message.html#Msg">agentscope.message.Msg</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Message">Message</a>(message_type:&nbsp;str&nbsp;=&nbsp;'',&nbsp;receivers:&nbsp;list&nbsp;=&nbsp;[],&nbsp;output_keys:&nbsp;List[str]&nbsp;=&nbsp;[],&nbsp;importance_rate:&nbsp;float&nbsp;=&nbsp;0,&nbsp;relation_rate:&nbsp;float&nbsp;=&nbsp;0,&nbsp;tool_response:&nbsp;list&nbsp;=&nbsp;[],&nbsp;conver_num:&nbsp;int&nbsp;=&nbsp;0,&nbsp;continue_dialogue:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;**kwargs)&nbsp;-&amp;gt;&nbsp;None<br>
+&nbsp;<br>
+#&nbsp;这里导致prompt&nbsp;template返回类型有问题<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.message.html#Message">Message</a></dd>
+<dd><a href="agentscope.message.html#Msg">agentscope.message.Msg</a></dd>
+<dd><a href="agentscope.message.html#MessageBase">agentscope.message.MessageBase</a></dd>
+<dd><a href="builtins.html#dict">builtins.dict</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Message-__init__"><strong>__init__</strong></a>(self, message_type: str = '', receivers: list = [], output_keys: List[str] = [], importance_rate: float = 0, relation_rate: float = 0, tool_response: list = [], conver_num: int = 0, continue_dialogue: bool = True, **kwargs) -&gt; None</dt><dd><tt>Initialize&nbsp;the&nbsp;message&nbsp;object<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;(`str`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;name&nbsp;of&nbsp;who&nbsp;send&nbsp;the&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;content&nbsp;(`Any`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;content&nbsp;of&nbsp;the&nbsp;message.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;role&nbsp;(`Literal["system",&nbsp;"user",&nbsp;"assistant"]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used&nbsp;to&nbsp;identify&nbsp;the&nbsp;source&nbsp;of&nbsp;the&nbsp;message,&nbsp;e.g.&nbsp;the&nbsp;system<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;information,&nbsp;the&nbsp;user&nbsp;input,&nbsp;or&nbsp;the&nbsp;model&nbsp;response.&nbsp;This<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argument&nbsp;is&nbsp;used&nbsp;to&nbsp;accommodate&nbsp;most&nbsp;Chat&nbsp;API&nbsp;formats.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;url&nbsp;(`Optional[Union[list[str],&nbsp;str]]`,&nbsp;defaults&nbsp;to&nbsp;`None`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;url&nbsp;to&nbsp;file,&nbsp;image,&nbsp;video,&nbsp;audio&nbsp;or&nbsp;website.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;timestamp&nbsp;(`Optional[str]`,&nbsp;defaults&nbsp;to&nbsp;`None`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;timestamp&nbsp;of&nbsp;the&nbsp;message,&nbsp;if&nbsp;None,&nbsp;it&nbsp;will&nbsp;be&nbsp;set&nbsp;to<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current&nbsp;time.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**kwargs&nbsp;(`Any`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other&nbsp;attributes&nbsp;of&nbsp;the&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="Message-__str__"><strong>__str__</strong></a>(self)</dt><dd><tt>Return&nbsp;str(self).</tt></dd></dl>
+
+<dl><dt><a name="Message-sort_rate"><strong>sort_rate</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Message-type"><strong>type</strong></a>(self) -&gt; str</dt><dd><tt>Type&nbsp;of&nbsp;the&nbsp;message,&nbsp;used&nbsp;for&nbsp;serialization.</tt></dd></dl>
+
+<dl><dt><a name="Message-update_attr"><strong>update_attr</strong></a>(self, **kwargs)</dt></dl>
+
+<hr>
+Class methods defined here:<br>
+<dl><dt><a name="Message-from_msg"><strong>from_msg</strong></a>(msg: agentscope.message.Msg, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt></dl>
+
+<hr>
+Methods inherited from <a href="agentscope.message.html#Msg">agentscope.message.Msg</a>:<br>
+<dl><dt><a name="Message-serialize"><strong>serialize</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;the&nbsp;serialized&nbsp;message.</tt></dd></dl>
+
+<dl><dt><a name="Message-to_str"><strong>to_str</strong></a>(self) -&gt; str</dt><dd><tt>Return&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;the&nbsp;message</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="agentscope.message.html#MessageBase">agentscope.message.MessageBase</a>:<br>
+<dl><dt><a name="Message-__delattr__"><strong>__delattr__</strong></a>(self, key: Any) -&gt; None</dt><dd><tt>Implement&nbsp;delattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Message-__getattr__"><strong>__getattr__</strong></a>(self, key: Any) -&gt; Any</dt></dl>
+
+<dl><dt><a name="Message-__setattr__"><strong>__setattr__</strong></a>(self, key: Any, value: Any) -&gt; None</dt><dd><tt>Implement&nbsp;setattr(self,&nbsp;name,&nbsp;value).</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="agentscope.message.html#MessageBase">agentscope.message.MessageBase</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Methods inherited from <a href="builtins.html#dict">builtins.dict</a>:<br>
+<dl><dt><a name="Message-__contains__"><strong>__contains__</strong></a>(self, key, /)</dt><dd><tt>True&nbsp;if&nbsp;the&nbsp;dictionary&nbsp;has&nbsp;the&nbsp;specified&nbsp;key,&nbsp;else&nbsp;False.</tt></dd></dl>
+
+<dl><dt><a name="Message-__delitem__"><strong>__delitem__</strong></a>(self, key, /)</dt><dd><tt>Delete&nbsp;self[key].</tt></dd></dl>
+
+<dl><dt><a name="Message-__eq__"><strong>__eq__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self==value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__ge__"><strong>__ge__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;=value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__getattribute__"><strong>__getattribute__</strong></a>(self, name, /)</dt><dd><tt>Return&nbsp;getattr(self,&nbsp;name).</tt></dd></dl>
+
+<dl><dt><a name="Message-__getitem__"><strong>__getitem__</strong></a>(...)</dt><dd><tt>x.<a href="#Message-__getitem__">__getitem__</a>(y)&nbsp;&lt;==&gt;&nbsp;x[y]</tt></dd></dl>
+
+<dl><dt><a name="Message-__gt__"><strong>__gt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&gt;value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__ior__"><strong>__ior__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self|=value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__iter__"><strong>__iter__</strong></a>(self, /)</dt><dd><tt>Implement&nbsp;iter(self).</tt></dd></dl>
+
+<dl><dt><a name="Message-__le__"><strong>__le__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;=value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__len__"><strong>__len__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;len(self).</tt></dd></dl>
+
+<dl><dt><a name="Message-__lt__"><strong>__lt__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self&lt;value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__ne__"><strong>__ne__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self!=value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__or__"><strong>__or__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;self|value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__repr__"><strong>__repr__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Message-__reversed__"><strong>__reversed__</strong></a>(self, /)</dt><dd><tt>Return&nbsp;a&nbsp;reverse&nbsp;iterator&nbsp;over&nbsp;the&nbsp;dict&nbsp;keys.</tt></dd></dl>
+
+<dl><dt><a name="Message-__ror__"><strong>__ror__</strong></a>(self, value, /)</dt><dd><tt>Return&nbsp;value|self.</tt></dd></dl>
+
+<dl><dt><a name="Message-__setitem__"><strong>__setitem__</strong></a>(self, key, value, /)</dt><dd><tt>Set&nbsp;self[key]&nbsp;to&nbsp;value.</tt></dd></dl>
+
+<dl><dt><a name="Message-__sizeof__"><strong>__sizeof__</strong></a>(...)</dt><dd><tt>D.<a href="#Message-__sizeof__">__sizeof__</a>()&nbsp;-&gt;&nbsp;size&nbsp;of&nbsp;D&nbsp;in&nbsp;memory,&nbsp;in&nbsp;bytes</tt></dd></dl>
+
+<dl><dt><a name="Message-clear"><strong>clear</strong></a>(...)</dt><dd><tt>D.<a href="#Message-clear">clear</a>()&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Remove&nbsp;all&nbsp;items&nbsp;from&nbsp;D.</tt></dd></dl>
+
+<dl><dt><a name="Message-copy"><strong>copy</strong></a>(...)</dt><dd><tt>D.<a href="#Message-copy">copy</a>()&nbsp;-&gt;&nbsp;a&nbsp;shallow&nbsp;copy&nbsp;of&nbsp;D</tt></dd></dl>
+
+<dl><dt><a name="Message-get"><strong>get</strong></a>(self, key, default=None, /)</dt><dd><tt>Return&nbsp;the&nbsp;value&nbsp;for&nbsp;key&nbsp;if&nbsp;key&nbsp;is&nbsp;in&nbsp;the&nbsp;dictionary,&nbsp;else&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="Message-items"><strong>items</strong></a>(...)</dt><dd><tt>D.<a href="#Message-items">items</a>()&nbsp;-&gt;&nbsp;a&nbsp;set-like&nbsp;object&nbsp;providing&nbsp;a&nbsp;view&nbsp;on&nbsp;D's&nbsp;items</tt></dd></dl>
+
+<dl><dt><a name="Message-keys"><strong>keys</strong></a>(...)</dt><dd><tt>D.<a href="#Message-keys">keys</a>()&nbsp;-&gt;&nbsp;a&nbsp;set-like&nbsp;object&nbsp;providing&nbsp;a&nbsp;view&nbsp;on&nbsp;D's&nbsp;keys</tt></dd></dl>
+
+<dl><dt><a name="Message-pop"><strong>pop</strong></a>(...)</dt><dd><tt>D.<a href="#Message-pop">pop</a>(k[,d])&nbsp;-&gt;&nbsp;v,&nbsp;remove&nbsp;specified&nbsp;key&nbsp;and&nbsp;return&nbsp;the&nbsp;corresponding&nbsp;value.<br>
+&nbsp;<br>
+If&nbsp;key&nbsp;is&nbsp;not&nbsp;found,&nbsp;default&nbsp;is&nbsp;returned&nbsp;if&nbsp;given,&nbsp;otherwise&nbsp;KeyError&nbsp;is&nbsp;raised</tt></dd></dl>
+
+<dl><dt><a name="Message-popitem"><strong>popitem</strong></a>(self, /)</dt><dd><tt>Remove&nbsp;and&nbsp;return&nbsp;a&nbsp;(key,&nbsp;value)&nbsp;pair&nbsp;as&nbsp;a&nbsp;2-tuple.<br>
+&nbsp;<br>
+Pairs&nbsp;are&nbsp;returned&nbsp;in&nbsp;LIFO&nbsp;(last-in,&nbsp;first-out)&nbsp;order.<br>
+Raises&nbsp;KeyError&nbsp;if&nbsp;the&nbsp;dict&nbsp;is&nbsp;empty.</tt></dd></dl>
+
+<dl><dt><a name="Message-setdefault"><strong>setdefault</strong></a>(self, key, default=None, /)</dt><dd><tt>Insert&nbsp;key&nbsp;with&nbsp;a&nbsp;value&nbsp;of&nbsp;default&nbsp;if&nbsp;key&nbsp;is&nbsp;not&nbsp;in&nbsp;the&nbsp;dictionary.<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;value&nbsp;for&nbsp;key&nbsp;if&nbsp;key&nbsp;is&nbsp;in&nbsp;the&nbsp;dictionary,&nbsp;else&nbsp;default.</tt></dd></dl>
+
+<dl><dt><a name="Message-update"><strong>update</strong></a>(...)</dt><dd><tt>D.<a href="#Message-update">update</a>([E,&nbsp;]**F)&nbsp;-&gt;&nbsp;None.&nbsp;&nbsp;Update&nbsp;D&nbsp;from&nbsp;dict/iterable&nbsp;E&nbsp;and&nbsp;F.<br>
+If&nbsp;E&nbsp;is&nbsp;present&nbsp;and&nbsp;has&nbsp;a&nbsp;.<a href="#Message-keys">keys</a>()&nbsp;method,&nbsp;then&nbsp;does:&nbsp;&nbsp;for&nbsp;k&nbsp;in&nbsp;E:&nbsp;D[k]&nbsp;=&nbsp;E[k]<br>
+If&nbsp;E&nbsp;is&nbsp;present&nbsp;and&nbsp;lacks&nbsp;a&nbsp;.<a href="#Message-keys">keys</a>()&nbsp;method,&nbsp;then&nbsp;does:&nbsp;&nbsp;for&nbsp;k,&nbsp;v&nbsp;in&nbsp;E:&nbsp;D[k]&nbsp;=&nbsp;v<br>
+In&nbsp;either&nbsp;case,&nbsp;this&nbsp;is&nbsp;followed&nbsp;by:&nbsp;for&nbsp;k&nbsp;in&nbsp;F:&nbsp;&nbsp;D[k]&nbsp;=&nbsp;F[k]</tt></dd></dl>
+
+<dl><dt><a name="Message-values"><strong>values</strong></a>(...)</dt><dd><tt>D.<a href="#Message-values">values</a>()&nbsp;-&gt;&nbsp;an&nbsp;object&nbsp;providing&nbsp;a&nbsp;view&nbsp;on&nbsp;D's&nbsp;values</tt></dd></dl>
+
+<hr>
+Class methods inherited from <a href="builtins.html#dict">builtins.dict</a>:<br>
+<dl><dt><a name="Message-__class_getitem__"><strong>__class_getitem__</strong></a>(...)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>See&nbsp;<a href="https://www.python.org/dev/peps/pep-0585/">PEP&nbsp;585</a></tt></dd></dl>
+
+<dl><dt><a name="Message-fromkeys"><strong>fromkeys</strong></a>(iterable, value=None, /)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;a&nbsp;new&nbsp;dictionary&nbsp;with&nbsp;keys&nbsp;from&nbsp;iterable&nbsp;and&nbsp;values&nbsp;set&nbsp;to&nbsp;value.</tt></dd></dl>
+
+<hr>
+Static methods inherited from <a href="builtins.html#dict">builtins.dict</a>:<br>
+<dl><dt><a name="Message-__new__"><strong>__new__</strong></a>(*args, **kwargs)<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Create&nbsp;and&nbsp;return&nbsp;a&nbsp;new&nbsp;object.&nbsp;&nbsp;See&nbsp;help(type)&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<hr>
+Data and other attributes inherited from <a href="builtins.html#dict">builtins.dict</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>List</strong> = typing.List<br>
+<strong>Set</strong> = typing.Set<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>Union</strong> = typing.Union</td></tr></table>
+</body></html>

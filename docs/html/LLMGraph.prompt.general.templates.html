@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.prompt.general.templates</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.prompt.html"><font color="#ffffff">prompt</font></a>.<a href="LLMGraph.prompt.general.html"><font color="#ffffff">general</font></a>.templates</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/prompt/general/templates.py">/data/jiarui_ji/GraphAgent/LLMGraph/prompt/general/templates.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="yaml.html">yaml</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_prompt_class"><strong>create_prompt_class</strong></a>(node_mode)</dt></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>MODEL</strong> = 'llama'<br>
+<strong>__warningregistry__</strong> = {'version': 12}<br>
+<strong>class_name</strong> = 'interact_dianping_actionPromptTemplate'<br>
+<strong>general_prompt_default</strong> = {'edge_dianping_review': 'Rate: {rate}<font color="#c040c0">\n</font>Flavor: {flavor}<font color="#c040c0">\n</font>Environment: {envi...ere: {atmosphere}<font color="#c040c0">\n</font>Special: {special}<font color="#c040c0">\n</font>City: {CITY}', 'edge_sephora_review': 'Rating: {rating}<font color="#c040c0">\n</font>Is Recommended: {is_recommended... Title: {review_title}<font color="#c040c0">\n</font>Review Text: {review_text}', 'interact_dianping_action': 'You are a user of Dianping, you can review the p...ased")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_dianping_query': 'You are a user of Dianping, you can review the p... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_action': 'You are a sephora customer, you can interact wit...text")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_query': 'You are a sephora customer, you can interact wit... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'node_dianping_business': 'Place Name: {NAME}<font color="#c040c0">\n</font>Place CITY: {CITY}<font color="#c040c0">\n</font>Place Addr...n: {DESC}<font color="#c040c0">\n</font>Place Style: {STYLE}<font color="#c040c0">\n</font>Place Cost: {COST}', 'node_dianping_user': 'User ID: {node_id}<font color="#c040c0">\n</font>User Num Reviews: {num_review...Avg Rate: {avg_rate}<font color="#c040c0">\n</font>User Top 3 City: {top3_city}', 'node_sephora_author': 'Author ID: {node_id}<font color="#c040c0">\n</font>Skin Tone: {skin_tone}<font color="#c040c0">\n</font>Eye ...al Pos Feedback Count: {total_pos_feedback_count}', 'node_sephora_product': 'Product ID: {node_id}<font color="#c040c0">\n</font>Product Name: {product_nam..._category}<font color="#c040c0">\n</font>Tertiary Category: {tertiary_category}'}<br>
+<strong>general_prompt_registry</strong> = Registry(name='GeneralPromptRegistry', entries={...s 'abc.interact_dianping_actionPromptTemplate'&gt;})<br>
+<strong>k</strong> = 'interact_dianping_action'<br>
+<strong>node_mode</strong> = 'interact_dianping_action'<br>
+<strong>prompt_one</strong> = {'dianping_action': 'You are a user of Dianping, you can review the p...ased")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'dianping_query': 'You are a user of Dianping, you can review the p... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'sephora_action': 'You are a sephora customer, you can interact wit...text")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'sephora_query': 'You are a sephora customer, you can interact wit... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}'}<br>
+<strong>prompts</strong> = {'edge_dianping_review': 'Rate: {rate}<font color="#c040c0">\n</font>Flavor: {flavor}<font color="#c040c0">\n</font>Environment: {envi...ere: {atmosphere}<font color="#c040c0">\n</font>Special: {special}<font color="#c040c0">\n</font>City: {CITY}', 'edge_sephora_review': 'Rating: {rating}<font color="#c040c0">\n</font>Is Recommended: {is_recommended... Title: {review_title}<font color="#c040c0">\n</font>Review Text: {review_text}', 'interact_dianping_action': 'You are a user of Dianping, you can review the p...ased")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_dianping_query': 'You are a user of Dianping, you can review the p... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_action': 'You are a sephora customer, you can interact wit...text")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_query': 'You are a sephora customer, you can interact wit... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'node_dianping_business': 'Place Name: {NAME}<font color="#c040c0">\n</font>Place CITY: {CITY}<font color="#c040c0">\n</font>Place Addr...n: {DESC}<font color="#c040c0">\n</font>Place Style: {STYLE}<font color="#c040c0">\n</font>Place Cost: {COST}', 'node_dianping_user': 'User ID: {node_id}<font color="#c040c0">\n</font>User Num Reviews: {num_review...Avg Rate: {avg_rate}<font color="#c040c0">\n</font>User Top 3 City: {top3_city}', 'node_sephora_author': 'Author ID: {node_id}<font color="#c040c0">\n</font>Skin Tone: {skin_tone}<font color="#c040c0">\n</font>Eye ...al Pos Feedback Count: {total_pos_feedback_count}', 'node_sephora_product': 'Product ID: {node_id}<font color="#c040c0">\n</font>Product Name: {product_nam..._category}<font color="#c040c0">\n</font>Tertiary Category: {tertiary_category}'}<br>
+<strong>replaced_dict</strong> = {'interact_dianping_action': 'You are a user of Dianping, you can review the p...ased")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_dianping_query': 'You are a user of Dianping, you can review the p... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_action': 'You are a sephora customer, you can interact wit...text")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}', 'interact_sephora_query': 'You are a sephora customer, you can interact wit... the provided tools. <font color="#c040c0">\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}'}<br>
+<strong>structure_type</strong> = 'interact'<br>
+<strong>v</strong> = 'You are a user of Dianping, you can review the p...ased")<font color="#c040c0">\n</font>  }}<font color="#c040c0">\n</font>  ...<font color="#c040c0">\n</font>}}<font color="#c040c0">\n\n</font>Respond:<font color="#c040c0">\n</font>{agent_scratchpad}'</td></tr></table>
+</body></html>
