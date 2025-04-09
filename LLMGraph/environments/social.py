@@ -21,13 +21,16 @@ from agentscope.message import Msg, PlaceholderMessage
 
 @EnvironmentRegistry.register("social")
 class SocialEnvironment(BaseEnvironment):
-    """social environment for twitter
-
+    """社交环境类，用于模拟Twitter平台的社交互动。
     Args:
-        BaseEnvironment (_type_): _description_
+        cur_agents (dict): 存储所有agent的字典。
+        sampled_agent_ids (dict): 存储采样后的agent ID列表。
+        agent_configs (dict): agent的配置信息。
+        time_configs (dict): 时间相关配置，包含开始时间、结束时间等。
+        social_configs (dict): 社交环境配置，包含最大人数、增删人员比率等。
 
     Returns:
-        _type_: _description_
+        SocialEnvironment: 返回当前社交环境的实例。
     """
    
     cur_agents:dict = {} # 存储所有agent

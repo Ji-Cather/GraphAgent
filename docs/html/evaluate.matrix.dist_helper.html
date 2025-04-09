@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module evaluate.matrix.dist_helper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="evaluate.html"><font color="#ffffff">evaluate</font></a>.<a href="evaluate.matrix.html"><font color="#ffffff">matrix</font></a>.dist_helper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/evaluate/matrix/dist_helper.py">/data/jiarui_ji/GraphAgent/evaluate/matrix/dist_helper.py</a></font></td></tr></table>
+    <p><tt>###############################################################################<br>
+#<br>
+#&nbsp;Adapted&nbsp;from&nbsp;<a href="https://github.com/lrjconan/GRAN/">https://github.com/lrjconan/GRAN/</a>&nbsp;which&nbsp;in&nbsp;turn&nbsp;is&nbsp;adapted&nbsp;from&nbsp;<a href="https://github.com/JiaxuanYou/graph-generation">https://github.com/JiaxuanYou/graph-generation</a><br>
+#<br>
+###############################################################################</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="concurrent.html">concurrent</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pyemd.html">pyemd</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-compute_emd"><strong>compute_emd</strong></a>(samples1, samples2, kernel, is_hist=True, *args, **kwargs)</dt><dd><tt>EMD&nbsp;between&nbsp;average&nbsp;of&nbsp;two&nbsp;samples</tt></dd></dl>
+ <dl><dt><a name="-compute_mmd"><strong>compute_mmd</strong></a>(samples1, samples2, kernel, is_hist=True, *args, **kwargs)</dt><dd><tt>MMD&nbsp;between&nbsp;two&nbsp;samples</tt></dd></dl>
+ <dl><dt><a name="-disc"><strong>disc</strong></a>(samples1, samples2, kernel, is_parallel=True, *args, **kwargs)</dt><dd><tt>Discrepancy&nbsp;between&nbsp;2&nbsp;samples</tt></dd></dl>
+ <dl><dt><a name="-emd"><strong>emd</strong></a>(x, y, sigma=1.0, distance_scaling=1.0)</dt><dd><tt>EMD<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x,&nbsp;y:&nbsp;1D&nbsp;pmf&nbsp;of&nbsp;two&nbsp;distributions&nbsp;with&nbsp;the&nbsp;same&nbsp;support<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sigma:&nbsp;standard&nbsp;deviation</tt></dd></dl>
+ <dl><dt><a name="-gaussian"><strong>gaussian</strong></a>(x, y, sigma=1.0)</dt></dl>
+ <dl><dt><a name="-gaussian_emd"><strong>gaussian_emd</strong></a>(x, y, sigma=1.0, distance_scaling=1.0)</dt><dd><tt>Gaussian&nbsp;kernel&nbsp;with&nbsp;squared&nbsp;distance&nbsp;in&nbsp;exponential&nbsp;term&nbsp;replaced&nbsp;by&nbsp;EMD<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;x,&nbsp;y:&nbsp;1D&nbsp;pmf&nbsp;of&nbsp;two&nbsp;distributions&nbsp;with&nbsp;the&nbsp;same&nbsp;support<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sigma:&nbsp;standard&nbsp;deviation</tt></dd></dl>
+ <dl><dt><a name="-gaussian_tv"><strong>gaussian_tv</strong></a>(x, y, sigma=1.0)</dt></dl>
+ <dl><dt><a name="-kernel_parallel_unpacked"><strong>kernel_parallel_unpacked</strong></a>(x, samples2, kernel)</dt></dl>
+ <dl><dt><a name="-kernel_parallel_worker"><strong>kernel_parallel_worker</strong></a>(t)</dt></dl>
+ <dl><dt><a name="-l2"><strong>l2</strong></a>(x, y)</dt></dl>
+</td></tr></table>
+</body></html>

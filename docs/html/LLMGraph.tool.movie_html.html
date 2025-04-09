@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.tool.movie_html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.tool.html"><font color="#ffffff">tool</font></a>.movie_html</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/tool/movie_html.py">/data/jiarui_ji/GraphAgent/LLMGraph/tool/movie_html.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="aiohttp.html">aiohttp</a><br>
+<a href="asyncio.html">asyncio</a><br>
+</td><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="re.html">re</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+<a href="warnings.html">warnings</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>(<a href="abc.html#ABC">abc.ABC</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.tool.movie_html.html#AsyncMovieHtmlLoader">AsyncMovieHtmlLoader</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="AsyncMovieHtmlLoader">class <strong>AsyncMovieHtmlLoader</strong></a>(<a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#AsyncMovieHtmlLoader">AsyncMovieHtmlLoader</a>(web_path:&nbsp;Union[str,&nbsp;List[str]],&nbsp;header_template:&nbsp;Optional[dict]&nbsp;=&nbsp;None,&nbsp;verify_ssl:&nbsp;Optional[bool]&nbsp;=&nbsp;True,&nbsp;proxies:&nbsp;Optional[dict]&nbsp;=&nbsp;None,&nbsp;autoset_encoding:&nbsp;bool&nbsp;=&nbsp;True,&nbsp;encoding:&nbsp;Optional[str]&nbsp;=&nbsp;None,&nbsp;default_parser:&nbsp;str&nbsp;=&nbsp;'html.parser',&nbsp;requests_per_second:&nbsp;int&nbsp;=&nbsp;2,&nbsp;requests_kwargs:&nbsp;Optional[Dict[str,&nbsp;Any]]&nbsp;=&nbsp;None,&nbsp;raise_for_status:&nbsp;bool&nbsp;=&nbsp;False,&nbsp;ignore_load_errors:&nbsp;bool&nbsp;=&nbsp;False)<br>
+&nbsp;<br>
+Load&nbsp;`HTML`&nbsp;asynchronously.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.tool.movie_html.html#AsyncMovieHtmlLoader">AsyncMovieHtmlLoader</a></dd>
+<dd><a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="AsyncMovieHtmlLoader-__init__"><strong>__init__</strong></a>(self, web_path: Union[str, List[str]], header_template: Optional[dict] = None, verify_ssl: Optional[bool] = True, proxies: Optional[dict] = None, autoset_encoding: bool = True, encoding: Optional[str] = None, default_parser: str = 'html.parser', requests_per_second: int = 2, requests_kwargs: Optional[Dict[str, Any]] = None, raise_for_status: bool = False, ignore_load_errors: bool = False)</dt><dd><tt>Initialize&nbsp;with&nbsp;a&nbsp;webpage&nbsp;path.</tt></dd></dl>
+
+<dl><dt>async <a name="AsyncMovieHtmlLoader-fetch_all"><strong>fetch_all</strong></a>(self, urls: List[str]) -&gt; Any</dt><dd><tt>Fetch&nbsp;all&nbsp;urls&nbsp;concurrently&nbsp;with&nbsp;rate&nbsp;limiting.</tt></dd></dl>
+
+<dl><dt><a name="AsyncMovieHtmlLoader-lazy_load"><strong>lazy_load</strong></a>(self) -&gt; Iterator[langchain_core.documents.base.Document]</dt><dd><tt>Lazy&nbsp;load&nbsp;text&nbsp;from&nbsp;the&nbsp;url(s)&nbsp;in&nbsp;web_path.</tt></dd></dl>
+
+<dl><dt><a name="AsyncMovieHtmlLoader-load"><strong>load</strong></a>(self) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Load&nbsp;text&nbsp;from&nbsp;the&nbsp;url(s)&nbsp;in&nbsp;web_path.</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt>async <a name="AsyncMovieHtmlLoader-alazy_load"><strong>alazy_load</strong></a>(self) -&gt; 'AsyncIterator[Document]'</dt><dd><tt>A&nbsp;lazy&nbsp;loader&nbsp;for&nbsp;Documents.</tt></dd></dl>
+
+<dl><dt><a name="AsyncMovieHtmlLoader-load_and_split"><strong>load_and_split</strong></a>(self, text_splitter: 'Optional[TextSplitter]' = None) -&gt; 'List[Document]'</dt><dd><tt>Load&nbsp;Documents&nbsp;and&nbsp;split&nbsp;into&nbsp;chunks.&nbsp;Chunks&nbsp;are&nbsp;returned&nbsp;as&nbsp;Documents.<br>
+&nbsp;<br>
+Do&nbsp;not&nbsp;override&nbsp;this&nbsp;method.&nbsp;It&nbsp;should&nbsp;be&nbsp;considered&nbsp;to&nbsp;be&nbsp;deprecated!<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text_splitter:&nbsp;TextSplitter&nbsp;instance&nbsp;to&nbsp;use&nbsp;for&nbsp;splitting&nbsp;documents.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;RecursiveCharacterTextSplitter.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;of&nbsp;Documents.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Dict</strong> = typing.Dict<br>
+<strong>Iterator</strong> = typing.Iterator<br>
+<strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Union</strong> = typing.Union<br>
+<strong>default_header_template</strong> = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.5', 'Connection': 'keep-alive', 'DNT': '1', 'Referer': 'https://www.google.com/', 'Upgrade-Insecure-Requests': '1', 'User-Agent': ''}<br>
+<strong>logger</strong> = &lt;Logger LLMGraph.tool.movie_html (WARNING)&gt;</td></tr></table>
+</body></html>

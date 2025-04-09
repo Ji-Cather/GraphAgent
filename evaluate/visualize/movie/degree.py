@@ -6,14 +6,7 @@ import torch
 import json
 from scipy.stats import norm
 import matplotlib.pyplot as plt
-from matplotlib import font_manager as fm 
-font_path = 'test/Times_New_Roman/TimesNewerRoman-Regular.otf'
-font_prop = fm.FontProperties(fname=font_path)
-fm.fontManager.addfont(font_path)
 
-# 设置全局字体
-plt.rcParams['font.family'] = font_prop.get_name()
-plt.rcParams['font.sans-serif'] = [font_prop.get_name()]
 from functools import cmp_to_key
 import pandas as pd
 from datetime import datetime, date

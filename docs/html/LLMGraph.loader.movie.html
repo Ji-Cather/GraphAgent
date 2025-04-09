@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.loader.movie</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.loader.html"><font color="#ffffff">loader</font></a>.movie</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/loader/movie.py">/data/jiarui_ji/GraphAgent/LLMGraph/loader/movie.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>(<a href="abc.html#ABC">abc.ABC</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.loader.movie.html#Movie1MDatLoader">Movie1MDatLoader</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Movie1MDatLoader">class <strong>Movie1MDatLoader</strong></a>(<a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Movie1MDatLoader">Movie1MDatLoader</a>(movie_data_array,&nbsp;link_movie_path:&nbsp;str,&nbsp;cur_time:&nbsp;datetime.datetime,&nbsp;load_movie_html:&nbsp;bool&nbsp;=&nbsp;True)<br>
+&nbsp;<br>
+Load&nbsp;a&nbsp;`Dat`&nbsp;file&nbsp;into&nbsp;a&nbsp;list&nbsp;of&nbsp;Documents.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.loader.movie.html#Movie1MDatLoader">Movie1MDatLoader</a></dd>
+<dd><a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Movie1MDatLoader-__init__"><strong>__init__</strong></a>(self, movie_data_array, link_movie_path: str, cur_time: datetime.datetime, load_movie_html: bool = True)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Movie1MDatLoader-get_movie_description"><strong>get_movie_description</strong></a>(self) -&gt; str</dt><dd><tt>return&nbsp;the&nbsp;description&nbsp;of&nbsp;movie&nbsp;<br>
+and&nbsp;the&nbsp;number&nbsp;of&nbsp;movies&nbsp;available</tt></dd></dl>
+
+<dl><dt><a name="Movie1MDatLoader-get_movie_types"><strong>get_movie_types</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Movie1MDatLoader-init"><strong>init</strong></a>(self, cur_time: datetime.datetime, movie_time_delta: datetime.timedelta)</dt></dl>
+
+<dl><dt><a name="Movie1MDatLoader-lazy_load"><strong>lazy_load</strong></a>(self) -&gt; Iterator[langchain_core.documents.base.Document]</dt><dd><tt>A&nbsp;lazy&nbsp;loader&nbsp;for&nbsp;Documents.</tt></dd></dl>
+
+<dl><dt><a name="Movie1MDatLoader-load"><strong>load</strong></a>(self) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Load&nbsp;data&nbsp;into&nbsp;Document&nbsp;objects.</tt></dd></dl>
+
+<dl><dt><a name="Movie1MDatLoader-load_movie_docs_"><strong>load_movie_docs_</strong></a>(self, data)</dt></dl>
+
+<dl><dt><a name="Movie1MDatLoader-load_movie_urls_data"><strong>load_movie_urls_data</strong></a>(self, urls: List[str] = [])</dt></dl>
+
+<dl><dt><a name="Movie1MDatLoader-update"><strong>update</strong></a>(self, cur_time: datetime.datetime)</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt>async <a name="Movie1MDatLoader-alazy_load"><strong>alazy_load</strong></a>(self) -&gt; 'AsyncIterator[Document]'</dt><dd><tt>A&nbsp;lazy&nbsp;loader&nbsp;for&nbsp;Documents.</tt></dd></dl>
+
+<dl><dt><a name="Movie1MDatLoader-load_and_split"><strong>load_and_split</strong></a>(self, text_splitter: 'Optional[TextSplitter]' = None) -&gt; 'List[Document]'</dt><dd><tt>Load&nbsp;Documents&nbsp;and&nbsp;split&nbsp;into&nbsp;chunks.&nbsp;Chunks&nbsp;are&nbsp;returned&nbsp;as&nbsp;Documents.<br>
+&nbsp;<br>
+Do&nbsp;not&nbsp;override&nbsp;this&nbsp;method.&nbsp;It&nbsp;should&nbsp;be&nbsp;considered&nbsp;to&nbsp;be&nbsp;deprecated!<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text_splitter:&nbsp;TextSplitter&nbsp;instance&nbsp;to&nbsp;use&nbsp;for&nbsp;splitting&nbsp;documents.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;RecursiveCharacterTextSplitter.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;of&nbsp;Documents.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Dict</strong> = typing.Dict<br>
+<strong>Iterator</strong> = typing.Iterator<br>
+<strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>loader_registry</strong> = Registry(name='LoaderRegistry', entries={'movie1...class 'LLMGraph.loader.movie.Movie1MDatLoader'&gt;})</td></tr></table>
+</body></html>

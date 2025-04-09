@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.tool.tool_warpper</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.tool.html"><font color="#ffffff">tool</font></a>.tool_warpper</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/tool/tool_warpper.py">/data/jiarui_ji/GraphAgent/LLMGraph/tool/tool_warpper.py</a></font></td></tr></table>
+    <p><tt>Service&nbsp;factory&nbsp;for&nbsp;model&nbsp;prompt.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="collections.html">collections</a><br>
+</td><td width="25%" valign=top><a href="inspect.html">inspect</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.tool.tool_warpper.html#GraphServiceFactory">GraphServiceFactory</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GraphServiceFactory">class <strong>GraphServiceFactory</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>A&nbsp;service&nbsp;factory&nbsp;class&nbsp;that&nbsp;turns&nbsp;service&nbsp;function&nbsp;into&nbsp;string<br>
+prompt&nbsp;format.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Class methods defined here:<br>
+<dl><dt><a name="GraphServiceFactory-get"><strong>get</strong></a>(service_func: Callable[..., Any], name: str, description: str, **kwargs: Any) -&gt; Tuple[Callable[..., Any], dict]<font color="#909090"><font face="helvetica, arial"> from <a href="builtins.html#type">builtins.type</a></font></font></dt><dd><tt>Covnert&nbsp;a&nbsp;service&nbsp;function&nbsp;into&nbsp;a&nbsp;tool&nbsp;function&nbsp;that&nbsp;agent&nbsp;can<br>
+use,&nbsp;and&nbsp;generate&nbsp;a&nbsp;dictionary&nbsp;in&nbsp;JSON&nbsp;Schema&nbsp;format&nbsp;that&nbsp;can&nbsp;be<br>
+used&nbsp;in&nbsp;OpenAI&nbsp;API&nbsp;directly.&nbsp;While&nbsp;for&nbsp;open-source&nbsp;model,&nbsp;developers<br>
+should&nbsp;handle&nbsp;the&nbsp;conversation&nbsp;from&nbsp;json&nbsp;dictionary&nbsp;to&nbsp;prompt.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;service_func&nbsp;(`Callable[...,&nbsp;Any]`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;service&nbsp;function&nbsp;to&nbsp;be&nbsp;called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;kwargs&nbsp;(`Any`):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;service&nbsp;function.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`Tuple(Callable[...,&nbsp;Any],&nbsp;dict)`:&nbsp;A&nbsp;tuple&nbsp;of&nbsp;tool&nbsp;function&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;dict&nbsp;in&nbsp;JSON&nbsp;Schema&nbsp;format&nbsp;to&nbsp;describe&nbsp;the&nbsp;function.<br>
+&nbsp;<br>
+Note:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;description&nbsp;of&nbsp;the&nbsp;function&nbsp;and&nbsp;arguments&nbsp;are&nbsp;extracted&nbsp;from<br>
+&nbsp;&nbsp;&nbsp;&nbsp;its&nbsp;docstring&nbsp;automatically,&nbsp;which&nbsp;should&nbsp;be&nbsp;well-formatted&nbsp;in<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Google&nbsp;style**.&nbsp;Otherwise,&nbsp;their&nbsp;descriptions&nbsp;in&nbsp;the&nbsp;returned<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dictionary&nbsp;will&nbsp;be&nbsp;empty.<br>
+&nbsp;<br>
+Suggestions:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;service&nbsp;function&nbsp;should&nbsp;be&nbsp;self-explanatory,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;so&nbsp;that&nbsp;the&nbsp;agent&nbsp;can&nbsp;understand&nbsp;the&nbsp;function&nbsp;and&nbsp;use&nbsp;it&nbsp;properly.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;The&nbsp;typing&nbsp;of&nbsp;the&nbsp;arguments&nbsp;should&nbsp;be&nbsp;provided&nbsp;when&nbsp;defining<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;function&nbsp;(e.g.&nbsp;`def&nbsp;func(a:&nbsp;int,&nbsp;b:&nbsp;str,&nbsp;c:&nbsp;bool)`),&nbsp;so&nbsp;that<br>
+&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;agent&nbsp;can&nbsp;specify&nbsp;the&nbsp;arguments&nbsp;properly.<br>
+&nbsp;<br>
+Example:</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>Callable</strong> = typing.Callable<br>
+<strong>Literal</strong> = typing.Literal<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Tuple</strong> = typing.Tuple<br>
+<strong>Union</strong> = typing.Union<br>
+<strong>logger</strong> = &lt;loguru.logger handlers=[(id=0, level=10, sink=&lt;stderr&gt;)]&gt;</td></tr></table>
+</body></html>

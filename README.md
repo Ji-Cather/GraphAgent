@@ -149,5 +149,9 @@ python main.py --user_input "I want to simulate users interaction in tweet patfo
 
 ```
 
+## Documentation
+Documentation is being updated in the docs/html directory. For documentation about the recommendation module, please refer to docs/md/tool.md
+
+
 ## To-Do
 We're planning to adapt this framework to more text-attributed graph generation tasks in more general scenarios. 🚀 Please stay tuned! 🔍

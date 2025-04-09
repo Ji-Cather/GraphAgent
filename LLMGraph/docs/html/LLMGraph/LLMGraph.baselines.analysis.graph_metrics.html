@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.baselines.analysis.graph_metrics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.baselines.html"><font color="#ffffff">baselines</font></a>.<a href="LLMGraph.baselines.analysis.html"><font color="#ffffff">analysis</font></a>.graph_metrics</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/baselines/analysis/graph_metrics.py">/data/jiarui_ji/GraphAgent/LLMGraph/baselines/analysis/graph_metrics.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+<a href="networkx.html">networkx</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="subprocess.html">subprocess</a><br>
+</td><td width="25%" valign=top><a href="tempfile.html">tempfile</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-get_clustering_coefficients"><strong>get_clustering_coefficients</strong></a>(graphs)</dt><dd><tt>Computes&nbsp;the&nbsp;clustering&nbsp;coefficients&nbsp;of&nbsp;nodes&nbsp;in&nbsp;graphs.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`graphs`:&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NetworkX&nbsp;undirected&nbsp;graphs<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NumPy&nbsp;arrays&nbsp;(each&nbsp;of&nbsp;size&nbsp;V)&nbsp;of&nbsp;clustering<br>
+coefficients,&nbsp;where&nbsp;each&nbsp;array&nbsp;is&nbsp;ordered&nbsp;by&nbsp;the&nbsp;nodes&nbsp;in&nbsp;the&nbsp;graph.&nbsp;Note<br>
+that&nbsp;V&nbsp;can&nbsp;be&nbsp;different&nbsp;for&nbsp;each&nbsp;graph.</tt></dd></dl>
+ <dl><dt><a name="-get_degrees"><strong>get_degrees</strong></a>(graphs)</dt><dd><tt>Computes&nbsp;the&nbsp;degrees&nbsp;of&nbsp;nodes&nbsp;in&nbsp;graphs.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`graphs`:&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NetworkX&nbsp;undirected&nbsp;graphs<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NumPy&nbsp;arrays&nbsp;(each&nbsp;of&nbsp;size&nbsp;V)&nbsp;of&nbsp;degrees,&nbsp;where&nbsp;each<br>
+array&nbsp;is&nbsp;ordered&nbsp;by&nbsp;the&nbsp;nodes&nbsp;in&nbsp;the&nbsp;graph.&nbsp;Note&nbsp;that&nbsp;V&nbsp;can&nbsp;be&nbsp;different&nbsp;for<br>
+each&nbsp;graph.</tt></dd></dl>
+ <dl><dt><a name="-get_orbit_counts"><strong>get_orbit_counts</strong></a>(graphs, max_graphlet_size=4)</dt><dd><tt>Computes&nbsp;the&nbsp;orbit&nbsp;counts&nbsp;of&nbsp;nodes&nbsp;in&nbsp;graphs.&nbsp;The&nbsp;orbit&nbsp;counts&nbsp;of&nbsp;a&nbsp;node&nbsp;are<br>
+the&nbsp;number&nbsp;of&nbsp;times&nbsp;it&nbsp;appears&nbsp;in&nbsp;each&nbsp;orbit&nbsp;of&nbsp;the&nbsp;possible&nbsp;graphlets&nbsp;of<br>
+size&nbsp;up&nbsp;to&nbsp;`max_graphlet_size`.&nbsp;For&nbsp;example,&nbsp;for&nbsp;`max_graphlet_size`&nbsp;of&nbsp;4,<br>
+there&nbsp;are&nbsp;15&nbsp;orbits&nbsp;possible&nbsp;for&nbsp;a&nbsp;node.<br>
+Orbits&nbsp;are&nbsp;computed&nbsp;using&nbsp;Orca:<br>
+<a href="https://academic.oup.com/bioinformatics/article/30/4/559/205331">https://academic.oup.com/bioinformatics/article/30/4/559/205331</a><br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`graphs`:&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NetworkX&nbsp;undirected&nbsp;graphs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`max_graphlet_size`:&nbsp;maximum&nbsp;size&nbsp;of&nbsp;graphlets&nbsp;whose&nbsp;orbits&nbsp;to&nbsp;count;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;be&nbsp;either&nbsp;4&nbsp;or&nbsp;5<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NumPy&nbsp;arrays&nbsp;(of&nbsp;size&nbsp;V&nbsp;x&nbsp;O)&nbsp;of&nbsp;orbit&nbsp;counts,&nbsp;where&nbsp;each<br>
+array&nbsp;is&nbsp;ordered&nbsp;by&nbsp;the&nbsp;nodes&nbsp;in&nbsp;the&nbsp;graph.&nbsp;Note&nbsp;that&nbsp;V&nbsp;can&nbsp;be&nbsp;different&nbsp;for<br>
+each&nbsp;graph,&nbsp;but&nbsp;O&nbsp;is&nbsp;the&nbsp;same&nbsp;for&nbsp;the&nbsp;same&nbsp;`max_graphlet_size`).</tt></dd></dl>
+ <dl><dt><a name="-get_spectra"><strong>get_spectra</strong></a>(graphs)</dt><dd><tt>Computes&nbsp;the&nbsp;spectrum&nbsp;of&nbsp;graphs&nbsp;as&nbsp;the&nbsp;eigenvalues&nbsp;of&nbsp;the&nbsp;normalized<br>
+Laplacian.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`graphs`:&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NetworkX&nbsp;undirected&nbsp;graphs<br>
+Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;N&nbsp;NumPy&nbsp;arrays&nbsp;(each&nbsp;of&nbsp;size&nbsp;V)&nbsp;of&nbsp;eigenvalues.&nbsp;Note&nbsp;that<br>
+V&nbsp;can&nbsp;be&nbsp;different&nbsp;for&nbsp;each&nbsp;graph.</tt></dd></dl>
+ <dl><dt><a name="-run_orca"><strong>run_orca</strong></a>(graph, max_graphlet_size=4)</dt><dd><tt>Runs&nbsp;Orca&nbsp;on&nbsp;a&nbsp;given&nbsp;graph&nbsp;to&nbsp;count&nbsp;the&nbsp;number&nbsp;of&nbsp;orbits&nbsp;of&nbsp;each&nbsp;type&nbsp;each<br>
+node&nbsp;belongs&nbsp;in.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`graph`:&nbsp;a&nbsp;NetworkX&nbsp;undirected&nbsp;graph<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`max_graphlet_size`:&nbsp;maximum&nbsp;size&nbsp;of&nbsp;graphlets&nbsp;whose&nbsp;orbits&nbsp;to&nbsp;count;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;be&nbsp;either&nbsp;4&nbsp;or&nbsp;5<br>
+Returns&nbsp;a&nbsp;V&nbsp;x&nbsp;O&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;orbit&nbsp;counts&nbsp;for&nbsp;each&nbsp;of&nbsp;the&nbsp;V&nbsp;nodes.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ORCA_PATH</strong> = '/data/jiarui_ji/GraphAgent/LLMGraph/baselines/analysis/orca.exe'</td></tr></table>
+</body></html>

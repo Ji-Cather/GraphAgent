@@ -21,6 +21,17 @@ openai_logger.setLevel(logging.WARNING)
 
 
 class Executor():
+    """
+    Executor类负责管理和执行LLMGraph的任务。
+
+    属性:
+        environment: 任务执行的环境。
+        ex_idx (str): 实验的索引，用于标识不同的实验。
+
+    方法:
+        __init__(environment, ex_idx): 初始化Executor实例，设置环境和实验索引。
+        from_task(args): 根据任务名称构建LLMGraph，并加载相应的配置。
+    """
     def __init__(self,
                  environment,
                  ex_idx:str):

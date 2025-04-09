@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module evaluate.matrix.powerlaw</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="evaluate.html"><font color="#ffffff">evaluate</font></a>.<a href="evaluate.matrix.html"><font color="#ffffff">matrix</font></a>.powerlaw</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/evaluate/matrix/powerlaw.py">/data/jiarui_ji/GraphAgent/evaluate/matrix/powerlaw.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="matplotlib.font_manager.html">matplotlib.font_manager</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="networkx.html">networkx</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-calculate_macro_properties"><strong>calculate_macro_properties</strong></a>(G: networkx.classes.graph.Graph, save_dir: str, graph_name: str, xmin: int = 3, plt_flag: bool = False, degree_type='all', compare_distributions=['lognormal', 'exponential', 'stretched_exponential', 'lognormal_positive', 'truncated_power_law'])</dt><dd><tt>计算优先连接指数及K-S检验值<br>
+&nbsp;<br>
+Params:<br>
+-&nbsp;G&nbsp;(nx.Graph):&nbsp;网络图<br>
+-&nbsp;type&nbsp;(str):&nbsp;数据类型，可以是&nbsp;"article",&nbsp;"movielens",&nbsp;"social"（默认是&nbsp;"article")<br>
+&nbsp;<br>
+Returns:<br>
+-&nbsp;alpha&nbsp;(float):&nbsp;拟合的幂律分布的指数<br>
+-&nbsp;xmin&nbsp;(float):&nbsp;拟合的幂律分布的最小阈值<br>
+-&nbsp;ks_statistic&nbsp;(float):&nbsp;K-S&nbsp;检验的统计量<br>
+-&nbsp;p_value&nbsp;(float):&nbsp;K-S&nbsp;检验的&nbsp;p&nbsp;值</tt></dd></dl>
+ <dl><dt><a name="-calculate_power_law"><strong>calculate_power_law</strong></a>(G: networkx.classes.digraph.DiGraph, save_dir: str, graph_name='G', plt_flag=True, xmin: int = 3)</dt></dl>
+ <dl><dt><a name="-pdf"><strong>pdf</strong></a>(data, xmin=None, xmax=None, linear_bins=False, **kwargs)</dt><dd><tt>Returns&nbsp;the&nbsp;probability&nbsp;density&nbsp;function&nbsp;(normalized&nbsp;histogram)&nbsp;of&nbsp;the<br>
+data.<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+data&nbsp;:&nbsp;list&nbsp;or&nbsp;array<br>
+xmin&nbsp;:&nbsp;float,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Minimum&nbsp;value&nbsp;of&nbsp;the&nbsp;PDF.&nbsp;If&nbsp;None,&nbsp;uses&nbsp;the&nbsp;smallest&nbsp;value&nbsp;in&nbsp;the&nbsp;data.<br>
+xmax&nbsp;:&nbsp;float,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Maximum&nbsp;value&nbsp;of&nbsp;the&nbsp;PDF.&nbsp;If&nbsp;None,&nbsp;uses&nbsp;the&nbsp;largest&nbsp;value&nbsp;in&nbsp;the&nbsp;data.<br>
+linear_bins&nbsp;:&nbsp;float,&nbsp;optional<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Whether&nbsp;to&nbsp;use&nbsp;linearly&nbsp;spaced&nbsp;bins,&nbsp;as&nbsp;opposed&nbsp;to&nbsp;logarithmically<br>
+&nbsp;&nbsp;&nbsp;&nbsp;spaced&nbsp;bins&nbsp;(recommended&nbsp;for&nbsp;log-log&nbsp;plots).<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+bin_edges&nbsp;:&nbsp;array<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;edges&nbsp;of&nbsp;the&nbsp;bins&nbsp;of&nbsp;the&nbsp;probability&nbsp;density&nbsp;function.<br>
+probabilities&nbsp;:&nbsp;array<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The&nbsp;portion&nbsp;of&nbsp;the&nbsp;data&nbsp;that&nbsp;is&nbsp;within&nbsp;the&nbsp;bin.&nbsp;Length&nbsp;1&nbsp;less&nbsp;than<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bin_edges,&nbsp;as&nbsp;it&nbsp;corresponds&nbsp;to&nbsp;the&nbsp;spaces&nbsp;between&nbsp;them.</tt></dd></dl>
+</td></tr></table>
+</body></html>

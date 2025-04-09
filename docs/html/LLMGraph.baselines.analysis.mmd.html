@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.baselines.analysis.mmd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.baselines.html"><font color="#ffffff">baselines</font></a>.<a href="LLMGraph.baselines.analysis.html"><font color="#ffffff">analysis</font></a>.mmd</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/baselines/analysis/mmd.py">/data/jiarui_ji/GraphAgent/LLMGraph/baselines/analysis/mmd.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="community.community_louvain.html">community.community_louvain</a><br>
+<a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="LLMGraph.baselines.analysis.graph_metrics.html">LLMGraph.baselines.analysis.graph_metrics</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="networkx.html">networkx</a><br>
+<a href="powerlaw.html">powerlaw</a><br>
+</td><td width="25%" valign=top><a href="scipy.html">scipy</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-cal_extra_metrics"><strong>cal_extra_metrics</strong></a>(graphs: list, xmin=None)</dt></dl>
+ <dl><dt><a name="-compute_inner_prod_feature_mean"><strong>compute_inner_prod_feature_mean</strong></a>(dist_1, dist_2, kernel_type, **kwargs)</dt><dd><tt>Given&nbsp;two&nbsp;empirical&nbsp;distributions&nbsp;of&nbsp;vectors,&nbsp;computes&nbsp;the&nbsp;inner&nbsp;product&nbsp;of<br>
+the&nbsp;feature&nbsp;means&nbsp;using&nbsp;the&nbsp;specified&nbsp;kernel.&nbsp;This&nbsp;is&nbsp;equivalent&nbsp;to&nbsp;the<br>
+expected/average&nbsp;kernel&nbsp;function&nbsp;on&nbsp;all&nbsp;pairs&nbsp;of&nbsp;vectors&nbsp;between&nbsp;the&nbsp;two<br>
+distributions.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dist_1`:&nbsp;an&nbsp;M&nbsp;x&nbsp;D&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;M&nbsp;vectors,&nbsp;each&nbsp;of&nbsp;size&nbsp;D;&nbsp;all&nbsp;vectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;share&nbsp;the&nbsp;same&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;(or&nbsp;probability&nbsp;space&nbsp;if<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;vectors&nbsp;represent&nbsp;a&nbsp;probability&nbsp;distribution)&nbsp;with&nbsp;each&nbsp;other<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;with&nbsp;`dist_2`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dist_2`:&nbsp;an&nbsp;M&nbsp;x&nbsp;D&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;M&nbsp;vectors,&nbsp;each&nbsp;of&nbsp;size&nbsp;D;&nbsp;all&nbsp;vectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;share&nbsp;the&nbsp;same&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;(or&nbsp;probability&nbsp;space&nbsp;if<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;vectors&nbsp;represent&nbsp;a&nbsp;probability&nbsp;distribution)&nbsp;with&nbsp;each&nbsp;other<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;with&nbsp;`dist_1`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`kernel_type`:&nbsp;type&nbsp;of&nbsp;kernel&nbsp;to&nbsp;apply&nbsp;for&nbsp;computing&nbsp;the&nbsp;kernelized<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inner&nbsp;product;&nbsp;can&nbsp;be&nbsp;"gaussian",&nbsp;"gaussian_wasserstein",&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"gaussian_total_variation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`kwargs`:&nbsp;extra&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;kernel&nbsp;function<br>
+Returns&nbsp;a&nbsp;scalar&nbsp;which&nbsp;is&nbsp;the&nbsp;average&nbsp;kernelized&nbsp;inner&nbsp;product&nbsp;between&nbsp;all<br>
+pairs&nbsp;of&nbsp;vectors&nbsp;across&nbsp;the&nbsp;two&nbsp;distributions.</tt></dd></dl>
+ <dl><dt><a name="-compute_maximum_mean_discrepancy"><strong>compute_maximum_mean_discrepancy</strong></a>(dist_1, dist_2, kernel_type, normalize=True, **kwargs)</dt><dd><tt>Given&nbsp;two&nbsp;empirical&nbsp;distributions&nbsp;of&nbsp;vectors,&nbsp;computes&nbsp;the&nbsp;maximum&nbsp;mean<br>
+discrepancy&nbsp;(MMD)&nbsp;between&nbsp;the&nbsp;two&nbsp;distributions.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dist_1`:&nbsp;an&nbsp;M&nbsp;x&nbsp;D&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;M&nbsp;vectors,&nbsp;each&nbsp;of&nbsp;size&nbsp;D;&nbsp;all&nbsp;vectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;share&nbsp;the&nbsp;same&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;(or&nbsp;probability&nbsp;space&nbsp;if<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;vectors&nbsp;represent&nbsp;a&nbsp;probability&nbsp;distribution)&nbsp;with&nbsp;each&nbsp;other<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;with&nbsp;`dist_2`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`dist_2`:&nbsp;an&nbsp;M&nbsp;x&nbsp;D&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;M&nbsp;vectors,&nbsp;each&nbsp;of&nbsp;size&nbsp;D;&nbsp;all&nbsp;vectors<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;must&nbsp;share&nbsp;the&nbsp;same&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;(or&nbsp;probability&nbsp;space&nbsp;if<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;vectors&nbsp;represent&nbsp;a&nbsp;probability&nbsp;distribution)&nbsp;with&nbsp;each&nbsp;other<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;with&nbsp;`dist_1`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`kernel_type`:&nbsp;type&nbsp;of&nbsp;kernel&nbsp;to&nbsp;apply&nbsp;for&nbsp;computing&nbsp;the&nbsp;kernelized<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inner&nbsp;product;&nbsp;can&nbsp;be&nbsp;"gaussian",&nbsp;"gaussian_wasserstein",&nbsp;or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"gaussian_total_variation"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`normalize`:&nbsp;if&nbsp;True,&nbsp;normalize&nbsp;each&nbsp;D-vector&nbsp;to&nbsp;sum&nbsp;to&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`kwargs`:&nbsp;extra&nbsp;keyword&nbsp;arguments&nbsp;to&nbsp;be&nbsp;passed&nbsp;to&nbsp;the&nbsp;kernel&nbsp;function<br>
+Returns&nbsp;the&nbsp;scalar&nbsp;MMD&nbsp;value.</tt></dd></dl>
+ <dl><dt><a name="-evaluate_sampled_graphs"><strong>evaluate_sampled_graphs</strong></a>(sampled_graphs: list[networkx.classes.graph.Graph], real_graphs: list[networkx.classes.graph.Graph]) -&gt; dict[str, float]</dt></dl>
+ <dl><dt><a name="-gaussian_kernel"><strong>gaussian_kernel</strong></a>(vec_1, vec_2, sigma=1)</dt><dd><tt>Computes&nbsp;the&nbsp;Gaussian&nbsp;kernel&nbsp;function&nbsp;on&nbsp;two&nbsp;vectors.&nbsp;This&nbsp;is&nbsp;also&nbsp;known&nbsp;as<br>
+the&nbsp;radial&nbsp;basis&nbsp;function.&nbsp;<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_1`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_2`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;values;&nbsp;the&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;must&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;same&nbsp;as&nbsp;`vec_1`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`sigma`:&nbsp;standard&nbsp;deviation&nbsp;for&nbsp;the&nbsp;Gaussian&nbsp;kernel<br>
+Returns&nbsp;a&nbsp;scalar&nbsp;similarity&nbsp;value&nbsp;between&nbsp;0&nbsp;and&nbsp;1.</tt></dd></dl>
+ <dl><dt><a name="-gaussian_total_variation_kernel"><strong>gaussian_total_variation_kernel</strong></a>(vec_1, vec_2, sigma=1)</dt><dd><tt>Computes&nbsp;the&nbsp;Gaussian&nbsp;kernel&nbsp;function&nbsp;on&nbsp;two&nbsp;vectors,&nbsp;where&nbsp;the&nbsp;similarity<br>
+metric&nbsp;within&nbsp;the&nbsp;Gaussian&nbsp;is&nbsp;the&nbsp;total&nbsp;variation&nbsp;between&nbsp;the&nbsp;two&nbsp;vectors.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_1`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;values<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_2`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;of&nbsp;values;&nbsp;the&nbsp;underlying&nbsp;vector&nbsp;space&nbsp;must&nbsp;be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;the&nbsp;same&nbsp;as&nbsp;`vec_1`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`sigma`:&nbsp;standard&nbsp;deviation&nbsp;for&nbsp;the&nbsp;Gaussian&nbsp;kernel<br>
+Returns&nbsp;a&nbsp;scalar&nbsp;similarity&nbsp;value&nbsp;between&nbsp;0&nbsp;and&nbsp;1.</tt></dd></dl>
+ <dl><dt><a name="-gaussian_wasserstein_kernel"><strong>gaussian_wasserstein_kernel</strong></a>(vec_1, vec_2, sigma=1)</dt><dd><tt>Computes&nbsp;the&nbsp;Gaussian&nbsp;kernel&nbsp;function&nbsp;on&nbsp;two&nbsp;vectors,&nbsp;where&nbsp;the&nbsp;similarity<br>
+metric&nbsp;within&nbsp;the&nbsp;Gaussian&nbsp;is&nbsp;the&nbsp;Wasserstein&nbsp;distance&nbsp;(i.e.&nbsp;Earthmover's<br>
+distance).&nbsp;The&nbsp;two&nbsp;vectors&nbsp;must&nbsp;be&nbsp;distributions&nbsp;represented&nbsp;as&nbsp;PMFs&nbsp;over<br>
+the&nbsp;same&nbsp;probability&nbsp;space.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_1`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;representing&nbsp;a&nbsp;PMF&nbsp;distribution&nbsp;(values&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;probabilities)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`vec_2`:&nbsp;a&nbsp;NumPy&nbsp;array&nbsp;representing&nbsp;a&nbsp;PMF&nbsp;distribution&nbsp;(values&nbsp;are<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;probabilities);&nbsp;the&nbsp;underlying&nbsp;probability&nbsp;space&nbsp;(i.e.&nbsp;support)&nbsp;must<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;be&nbsp;the&nbsp;same&nbsp;as&nbsp;`vec_1`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`sigma`:&nbsp;standard&nbsp;deviation&nbsp;for&nbsp;the&nbsp;Gaussian&nbsp;kernel<br>
+Returns&nbsp;a&nbsp;scalar&nbsp;similarity&nbsp;value&nbsp;between&nbsp;0&nbsp;and&nbsp;1.</tt></dd></dl>
+ <dl><dt><a name="-get_graph_statistics"><strong>get_graph_statistics</strong></a>(graphs: list[networkx.classes.graph.Graph]) -&gt; dict[str, numpy.ndarray]</dt></dl>
+ <dl><dt><a name="-make_histograms"><strong>make_histograms</strong></a>(value_arrs, num_bins=None, bin_width=None, bin_array=None, frequency=False, epsilon=1e-06)</dt><dd><tt>Given&nbsp;a&nbsp;set&nbsp;of&nbsp;value&nbsp;arrays,&nbsp;converts&nbsp;them&nbsp;into&nbsp;histograms&nbsp;of&nbsp;counts&nbsp;or<br>
+frequencies.&nbsp;The&nbsp;bins&nbsp;may&nbsp;be&nbsp;specified&nbsp;as&nbsp;a&nbsp;number&nbsp;of&nbsp;bins,&nbsp;a&nbsp;bin&nbsp;width,&nbsp;or<br>
+a&nbsp;pre-defined&nbsp;array&nbsp;of&nbsp;bin&nbsp;edges.&nbsp;This&nbsp;function&nbsp;creates&nbsp;histograms&nbsp;such&nbsp;that<br>
+all&nbsp;value&nbsp;arrays&nbsp;given&nbsp;are&nbsp;transformed&nbsp;into&nbsp;the&nbsp;same&nbsp;histogram&nbsp;space.<br>
+Arguments:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`value_arrs`:&nbsp;an&nbsp;iterable&nbsp;of&nbsp;N&nbsp;1D&nbsp;NumPy&nbsp;arrays&nbsp;to&nbsp;make&nbsp;histograms&nbsp;of<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`num_bins`:&nbsp;if&nbsp;given,&nbsp;make&nbsp;the&nbsp;histograms&nbsp;have&nbsp;this&nbsp;number&nbsp;of&nbsp;bins&nbsp;total<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`bin_width`:&nbsp;if&nbsp;given,&nbsp;make&nbsp;the&nbsp;histograms&nbsp;have&nbsp;bins&nbsp;of&nbsp;this&nbsp;width,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aligned&nbsp;starting&nbsp;at&nbsp;the&nbsp;minimum&nbsp;value<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`bin_array`:&nbsp;if&nbsp;given,&nbsp;make&nbsp;the&nbsp;histograms&nbsp;according&nbsp;to&nbsp;this&nbsp;NumPy&nbsp;array<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of&nbsp;bin&nbsp;edges<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`frequency`:&nbsp;if&nbsp;True,&nbsp;normalize&nbsp;each&nbsp;histogram&nbsp;into&nbsp;frequencies<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`epsilon`:&nbsp;small&nbsp;number&nbsp;for&nbsp;stability&nbsp;of&nbsp;last&nbsp;endpoint&nbsp;if&nbsp;`bin_width`&nbsp;is<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;specified<br>
+Returns&nbsp;an&nbsp;N&nbsp;x&nbsp;B&nbsp;array&nbsp;of&nbsp;counts&nbsp;or&nbsp;frequencies&nbsp;(N&nbsp;is&nbsp;parallel&nbsp;to&nbsp;the&nbsp;input<br>
+`value_arrs`),&nbsp;where&nbsp;B&nbsp;is&nbsp;the&nbsp;number&nbsp;of&nbsp;bins&nbsp;in&nbsp;the&nbsp;histograms.</tt></dd></dl>
+</td></tr></table>
+</body></html>

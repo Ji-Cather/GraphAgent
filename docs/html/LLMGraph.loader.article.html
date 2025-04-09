@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module LLMGraph.loader.article</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="LLMGraph.html"><font color="#ffffff">LLMGraph</font></a>.<a href="LLMGraph.loader.html"><font color="#ffffff">loader</font></a>.article</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/data/jiarui_ji/GraphAgent/LLMGraph/loader/article.py">/data/jiarui_ji/GraphAgent/LLMGraph/loader/article.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="concurrent.html">concurrent</a><br>
+<a href="copy.html">copy</a><br>
+</td><td width="25%" valign=top><a href="logging.html">logging</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="langchain_community.document_loaders.directory.html#DirectoryLoader">langchain_community.document_loaders.directory.DirectoryLoader</a>(<a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="LLMGraph.loader.article.html#DirectoryArticleLoader">DirectoryArticleLoader</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="DirectoryArticleLoader">class <strong>DirectoryArticleLoader</strong></a>(<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">langchain_community.document_loaders.directory.DirectoryLoader</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#DirectoryArticleLoader">DirectoryArticleLoader</a>(article_meta_data:&nbsp;dict&nbsp;=&nbsp;{},&nbsp;*args,&nbsp;**kargs)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="LLMGraph.loader.article.html#DirectoryArticleLoader">DirectoryArticleLoader</a></dd>
+<dd><a href="langchain_community.document_loaders.directory.html#DirectoryLoader">langchain_community.document_loaders.directory.DirectoryLoader</a></dd>
+<dd><a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a></dd>
+<dd><a href="abc.html#ABC">abc.ABC</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="DirectoryArticleLoader-__init__"><strong>__init__</strong></a>(self, article_meta_data: dict = {}, *args, **kargs)</dt><dd><tt>Initialize&nbsp;with&nbsp;a&nbsp;path&nbsp;to&nbsp;directory&nbsp;and&nbsp;how&nbsp;to&nbsp;glob&nbsp;over&nbsp;it.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;path:&nbsp;Path&nbsp;to&nbsp;directory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;glob:&nbsp;Glob&nbsp;pattern&nbsp;to&nbsp;use&nbsp;to&nbsp;find&nbsp;files.&nbsp;Defaults&nbsp;to&nbsp;"**/[!.]*"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(all&nbsp;files&nbsp;except&nbsp;hidden).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;exclude:&nbsp;A&nbsp;pattern&nbsp;or&nbsp;list&nbsp;of&nbsp;patterns&nbsp;to&nbsp;exclude&nbsp;from&nbsp;results.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use&nbsp;glob&nbsp;syntax.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;silent_errors:&nbsp;Whether&nbsp;to&nbsp;silently&nbsp;ignore&nbsp;errors.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;load_hidden:&nbsp;Whether&nbsp;to&nbsp;load&nbsp;hidden&nbsp;files.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;loader_cls:&nbsp;Loader&nbsp;class&nbsp;to&nbsp;use&nbsp;for&nbsp;loading&nbsp;files.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;UnstructuredFileLoader.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;loader_kwargs:&nbsp;Keyword&nbsp;arguments&nbsp;to&nbsp;pass&nbsp;to&nbsp;loader_cls.&nbsp;Defaults&nbsp;to&nbsp;None.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;recursive:&nbsp;Whether&nbsp;to&nbsp;recursively&nbsp;search&nbsp;for&nbsp;files.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;show_progress:&nbsp;Whether&nbsp;to&nbsp;show&nbsp;a&nbsp;progress&nbsp;bar.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;use_multithreading:&nbsp;Whether&nbsp;to&nbsp;use&nbsp;multithreading.&nbsp;Defaults&nbsp;to&nbsp;False.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_concurrency:&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;threads&nbsp;to&nbsp;use.&nbsp;Defaults&nbsp;to&nbsp;4.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sample_size:&nbsp;The&nbsp;maximum&nbsp;number&nbsp;of&nbsp;files&nbsp;you&nbsp;would&nbsp;like&nbsp;to&nbsp;load&nbsp;from&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;directory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;randomize_sample:&nbsp;Shuffle&nbsp;the&nbsp;files&nbsp;to&nbsp;get&nbsp;a&nbsp;random&nbsp;sample.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sample_seed:&nbsp;set&nbsp;the&nbsp;seed&nbsp;of&nbsp;the&nbsp;random&nbsp;shuffle&nbsp;for&nbsp;reproducibility.<br>
+&nbsp;<br>
+Examples:<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;..&nbsp;code-block::&nbsp;python<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;from&nbsp;langchain_community.document_loaders&nbsp;import&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a><br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Load&nbsp;all&nbsp;non-hidden&nbsp;files&nbsp;in&nbsp;a&nbsp;directory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loader&nbsp;=&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a>("/path/to/directory")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Load&nbsp;all&nbsp;text&nbsp;files&nbsp;in&nbsp;a&nbsp;directory&nbsp;without&nbsp;recursion.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loader&nbsp;=&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a>("/path/to/directory",&nbsp;glob="*.txt")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Recursively&nbsp;load&nbsp;all&nbsp;text&nbsp;files&nbsp;in&nbsp;a&nbsp;directory.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loader&nbsp;=&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/path/to/directory",&nbsp;glob="*.txt",&nbsp;recursive=True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Load&nbsp;all&nbsp;files&nbsp;in&nbsp;a&nbsp;directory,&nbsp;except&nbsp;for&nbsp;py&nbsp;files.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loader&nbsp;=&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a>("/path/to/directory",&nbsp;exclude="*.py")<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;Load&nbsp;all&nbsp;files&nbsp;in&nbsp;a&nbsp;directory,&nbsp;except&nbsp;for&nbsp;py&nbsp;or&nbsp;pyc&nbsp;files.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loader&nbsp;=&nbsp;<a href="langchain_community.document_loaders.directory.html#DirectoryLoader">DirectoryLoader</a>(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"/path/to/directory",&nbsp;exclude=["*.py",&nbsp;"*.pyc"]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)</tt></dd></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-add_doc_dir"><strong>add_doc_dir</strong></a>(self, article_meta_data: dict = {})</dt></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-format_document"><strong>format_document</strong></a>(self, article_meta_data, author_data, doc)</dt></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-get_article_docs"><strong>get_article_docs</strong></a>(self, titles, article_meta_data, author_data)</dt></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-lazy_load_dir"><strong>lazy_load_dir</strong></a>(self, paths)</dt><dd><tt>Load&nbsp;documents.</tt></dd></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-load"><strong>load</strong></a>(self) -&gt; List[langchain_core.documents.base.Document]</dt><dd><tt>Load&nbsp;documents.</tt></dd></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-load_dir"><strong>load_dir</strong></a>(self, article_meta_data: dict = {}) -&gt; List[langchain_core.documents.base.Document]</dt></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__abstractmethods__</strong> = frozenset()</dl>
+
+<hr>
+Methods inherited from <a href="langchain_community.document_loaders.directory.html#DirectoryLoader">langchain_community.document_loaders.directory.DirectoryLoader</a>:<br>
+<dl><dt><a name="DirectoryArticleLoader-load_file"><strong>load_file</strong></a>(self, item: pathlib.Path, path: pathlib.Path, docs: List[langchain_core.documents.base.Document], pbar: Optional[Any]) -&gt; None</dt><dd><tt>Load&nbsp;a&nbsp;file.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;item:&nbsp;File&nbsp;path.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;path:&nbsp;Directory&nbsp;path.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;docs:&nbsp;List&nbsp;of&nbsp;documents&nbsp;to&nbsp;append&nbsp;to.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pbar:&nbsp;Progress&nbsp;bar.&nbsp;Defaults&nbsp;to&nbsp;None.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt>async <a name="DirectoryArticleLoader-alazy_load"><strong>alazy_load</strong></a>(self) -&gt; 'AsyncIterator[Document]'</dt><dd><tt>A&nbsp;lazy&nbsp;loader&nbsp;for&nbsp;Documents.</tt></dd></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-lazy_load"><strong>lazy_load</strong></a>(self) -&gt; 'Iterator[Document]'</dt><dd><tt>A&nbsp;lazy&nbsp;loader&nbsp;for&nbsp;Documents.</tt></dd></dl>
+
+<dl><dt><a name="DirectoryArticleLoader-load_and_split"><strong>load_and_split</strong></a>(self, text_splitter: 'Optional[TextSplitter]' = None) -&gt; 'List[Document]'</dt><dd><tt>Load&nbsp;Documents&nbsp;and&nbsp;split&nbsp;into&nbsp;chunks.&nbsp;Chunks&nbsp;are&nbsp;returned&nbsp;as&nbsp;Documents.<br>
+&nbsp;<br>
+Do&nbsp;not&nbsp;override&nbsp;this&nbsp;method.&nbsp;It&nbsp;should&nbsp;be&nbsp;considered&nbsp;to&nbsp;be&nbsp;deprecated!<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text_splitter:&nbsp;TextSplitter&nbsp;instance&nbsp;to&nbsp;use&nbsp;for&nbsp;splitting&nbsp;documents.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults&nbsp;to&nbsp;RecursiveCharacterTextSplitter.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;List&nbsp;of&nbsp;Documents.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="langchain_core.document_loaders.base.html#BaseLoader">langchain_core.document_loaders.base.BaseLoader</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Any</strong> = typing.Any<br>
+<strong>List</strong> = typing.List<br>
+<strong>Optional</strong> = typing.Optional<br>
+<strong>Sequence</strong> = typing.Sequence<br>
+<strong>Type</strong> = typing.Type<br>
+<strong>Union</strong> = typing.Union</td></tr></table>
+</body></html>

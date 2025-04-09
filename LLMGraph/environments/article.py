@@ -24,8 +24,20 @@ from agentscope.agents.rpc_agent import RpcAgentServerLauncher,RpcAgent
 @EnvironmentRegistry.register("article")
 class ArticleEnvironment(BaseEnvironment):
     """
-    A environment implementing the logic of conversation.
+    该环境实现了article environment的功能。
+    
+    该类负责管理文章相关的代理和配置，处理文章的生成和时间管理。
+    
+    属性:
+        agent_groups (list): 存储生成各个article的agents。
+        author_agents (dict): 存储article agent的字典，以ID为键。
+        agent_configs (dict): 存储agent的config。
+        time_configs (dict): 管理时间相关的配置，包括当前时间、结束时间、时间增量等。
+        article_written_num (int): 已写article的数量。
+        max_paper_num (int): 最大article数量。
+        save_encoded_features: 是否保存编码后的article
     """
+    
     agent_groups:list = [] # 存储生成各个article的agents
     
     author_agents:dict = {} # id: article_agent
