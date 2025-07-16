@@ -1,5 +1,5 @@
-# GraphAgent: LLM-Based Multi-Agent Systems are Scalable Graph Generative Models
-GraphAgent is a cutting-edge framework that leverages the power of Large Language Models (LLMs) to simulate human behavior and generate dynamic, text-attributed social graphs. Designed for use in **online social media, e-commerce, and paper-creation** simulation scenarios, GraphAgent facilitates deeper insights into the interactions within networks, making it an invaluable tool for research in social science, network science, and computational social simulations.
+# GAG: LLM-Based Multi-Agent Systems are Scalable Graph Generative Models
+GAG is a generative framework that leverages the power of Large Language Models (LLMs) to simulate human behavior and generate dynamic, text-attributed social graphs. Designed for use in **online social media, e-commerce, and paper-creation** simulation scenarios, GraphAgent facilitates deeper insights into the interactions within networks, making it an invaluable tool for research in social science, network science, and computational social simulations.
 ![alt text](image.png)
 
 ## Key Features
@@ -152,6 +152,17 @@ python main.py --user_input "I want to simulate users interaction in tweet patfo
 ## Documentation
 Documentation is being updated in the docs/html directory. For documentation about the recommendation module, please refer to docs/md/tool.md
 
+## Latest News
+- 2025.03 GAG has been accepted to ACL-2025(findings).
+- 2025.05 We extend GAG and develop GAG-general for general graph generation.
+Furthermore, we propose GDGB to evaluate the quality of synthesized DyTAGs. 
+    - For details, please refer to paper link: https://arxiv.org/pdf/2507.03267.
+    - For implementation, please refer to the GDGB repository: https://github.com/Lucas-PJ/GDGB-ALGO.
 
-## To-Do
-We're planning to adapt this framework to more text-attributed graph generation tasks in more general scenarios. 🚀 Please stay tuned! 🔍
+## Citation
+@article{ji2024llm,
+  title={LLM-Based Multi-Agent Systems are Scalable Graph Generative Models},
+  author={Ji, Jiarui and Lei, Runlin and Bi, Jialing and Wei, Zhewei and Chen, Xu and Lin, Yankai and Pan, Xuchen and Li, Yaliang and Ding, Bolin},
+  journal={arXiv preprint arXiv:2410.09824},
+  year={2024}
+}
