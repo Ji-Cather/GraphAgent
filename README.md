@@ -160,9 +160,30 @@ Furthermore, we propose GDGB to evaluate the quality of synthesized DyTAGs.
     - For implementation, please refer to the GDGB repository: https://github.com/Lucas-PJ/GDGB-ALGO.
 
 ## Citation
-@article{ji2024llm,
-  title={LLM-Based Multi-Agent Systems are Scalable Graph Generative Models},
-  author={Ji, Jiarui and Lei, Runlin and Bi, Jialing and Wei, Zhewei and Chen, Xu and Lin, Yankai and Pan, Xuchen and Li, Yaliang and Ding, Bolin},
-  journal={arXiv preprint arXiv:2410.09824},
-  year={2024}
+```bibtex
+@inproceedings{ji-etal-2025-llm,
+    title = "{LLM}-Based Multi-Agent Systems are Scalable Graph Generative Models",
+    author = "Ji, Jiarui  and
+      Lei, Runlin  and
+      Bi, Jialing  and
+      Wei, Zhewei  and
+      Chen, Xu  and
+      Lin, Yankai  and
+      Pan, Xuchen  and
+      Li, Yaliang  and
+      Ding, Bolin",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.78/",
+    doi = "10.18653/v1/2025.findings-acl.78",
+    pages = "1492--1523",
+    ISBN = "979-8-89176-256-5",
 }
+```
