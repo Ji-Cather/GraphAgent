@@ -55,6 +55,7 @@ create a virtual environment for LLMGraph
 pip install agentscope\[distributed\] v0.0.4 from https://github.com/modelscope/agentscope/
 ```cmd
     git clone https://github.com/modelscope/agentscope/
+    cd agentscope
     git reset --hard 1c993f9
     # From source
     pip install -e .[distribute]
@@ -62,7 +63,7 @@ pip install agentscope\[distributed\] v0.0.4 from https://github.com/modelscope/
 
 Then create the experiment, and install the required packages:
     ```
-    pip install -i "requirements.txt"
+    pip install -r "requirements.txt"
     ```
 
 ### Data preparation

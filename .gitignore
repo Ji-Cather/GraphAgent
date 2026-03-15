@@ -28,3 +28,4 @@ unzip.sh
 exp.sh
 *.log
 LLMGraph/utils/dataset_format_align.py
+GAG_data/
